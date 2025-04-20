@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>MCC on Jays Zusammenfassung</title>
-    <link>//localhost:1313///zusammenfassung/categories/mcc/</link>
+    <link>http://localhost:1313/zusammenfassung/categories/mcc/</link>
     <description>Recent content in MCC on Jays Zusammenfassung</description>
     <generator>Hugo -- 0.146.5</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 15 Apr 2025 18:22:16 +0200</lastBuildDate>
-    <atom:link href="//localhost:1313///zusammenfassung/categories/mcc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/zusammenfassung/categories/mcc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vorlesung 3: Abgrenzung Festnetz/Cloud zum Mobilnetz</title>
-      <link>//localhost:1313///zusammenfassung/posts/mcc/mcc3/</link>
+      <link>http://localhost:1313/zusammenfassung/posts/mcc/mcc3/</link>
       <pubDate>Tue, 15 Apr 2025 18:22:16 +0200</pubDate>
-      <guid>//localhost:1313///zusammenfassung/posts/mcc/mcc3/</guid>
+      <guid>http://localhost:1313/zusammenfassung/posts/mcc/mcc3/</guid>
       <description>&lt;h3 id=&#34;abgrenzung-festnetzcloud-zum-mobilnetz&#34;&gt;Abgrenzung Festnetz/Cloud zum Mobilnetz&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;🔧 Messgeräte&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -61,9 +61,9 @@
     </item>
     <item>
       <title>Vorlesung 2: Was ist Bit? &amp; Übung</title>
-      <link>//localhost:1313///zusammenfassung/posts/mcc/mcc2/</link>
+      <link>http://localhost:1313/zusammenfassung/posts/mcc/mcc2/</link>
       <pubDate>Tue, 08 Apr 2025 18:22:14 +0200</pubDate>
-      <guid>//localhost:1313///zusammenfassung/posts/mcc/mcc2/</guid>
+      <guid>http://localhost:1313/zusammenfassung/posts/mcc/mcc2/</guid>
       <description>&lt;h3 id=&#34;informationen-und-informationsgehalt&#34;&gt;Informationen und Informationsgehalt&lt;/h3&gt;
 &lt;p&gt;Der &lt;strong&gt;Informationsgehalt&lt;/strong&gt; beschreibt, wie viel „Überraschung“ oder „Neuigkeit“ in einem Ereignis steckt – je unwahrscheinlicher ein Ereignis, desto mehr Information trägt es.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Formel zur Berechnung:&lt;/strong&gt;&lt;/p&gt;
@@ -84,9 +84,9 @@
     </item>
     <item>
       <title>Vorlesung 1: Einführung in Mobile and Cloud Computing</title>
-      <link>//localhost:1313///zusammenfassung/posts/mcc/mcc1/</link>
+      <link>http://localhost:1313/zusammenfassung/posts/mcc/mcc1/</link>
       <pubDate>Tue, 01 Apr 2025 18:22:11 +0200</pubDate>
-      <guid>//localhost:1313///zusammenfassung/posts/mcc/mcc1/</guid>
+      <guid>http://localhost:1313/zusammenfassung/posts/mcc/mcc1/</guid>
       <description>&lt;h3 id=&#34;abgrenzung-festnetzcloud-zum-mobilnetz&#34;&gt;Abgrenzung Festnetz/Cloud zum Mobilnetz&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Festnetz&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;

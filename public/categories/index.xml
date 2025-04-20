@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on Jays Zusammenfassung</title>
-    <link>//localhost:1313///zusammenfassung/categories/</link>
+    <link>http://localhost:1313/zusammenfassung/categories/</link>
     <description>Recent content in Categories on Jays Zusammenfassung</description>
     <generator>Hugo -- 0.146.5</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 17 Apr 2025 18:13:15 +0200</lastBuildDate>
-    <atom:link href="//localhost:1313///zusammenfassung/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/zusammenfassung/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>KBE</title>
-      <link>//localhost:1313///zusammenfassung/categories/kbe/</link>
+      <link>http://localhost:1313/zusammenfassung/categories/kbe/</link>
       <pubDate>Thu, 17 Apr 2025 18:13:15 +0200</pubDate>
-      <guid>//localhost:1313///zusammenfassung/categories/kbe/</guid>
+      <guid>http://localhost:1313/zusammenfassung/categories/kbe/</guid>
       <description></description>
     </item>
     <item>
       <title>KBE Übung</title>
-      <link>//localhost:1313///zusammenfassung/categories/kbe-%C3%BCbung/</link>
+      <link>http://localhost:1313/zusammenfassung/categories/kbe-%C3%BCbung/</link>
       <pubDate>Thu, 17 Apr 2025 18:08:32 +0200</pubDate>
-      <guid>//localhost:1313///zusammenfassung/categories/kbe-%C3%BCbung/</guid>
+      <guid>http://localhost:1313/zusammenfassung/categories/kbe-%C3%BCbung/</guid>
       <description></description>
     </item>
     <item>
       <title>MCC</title>
-      <link>//localhost:1313///zusammenfassung/categories/mcc/</link>
+      <link>http://localhost:1313/zusammenfassung/categories/mcc/</link>
       <pubDate>Tue, 15 Apr 2025 18:22:16 +0200</pubDate>
-      <guid>//localhost:1313///zusammenfassung/categories/mcc/</guid>
+      <guid>http://localhost:1313/zusammenfassung/categories/mcc/</guid>
       <description></description>
     </item>
     <item>
       <title>NSA</title>
-      <link>//localhost:1313///zusammenfassung/categories/nsa/</link>
+      <link>http://localhost:1313/zusammenfassung/categories/nsa/</link>
       <pubDate>Mon, 14 Apr 2025 18:32:03 +0200</pubDate>
-      <guid>//localhost:1313///zusammenfassung/categories/nsa/</guid>
+      <guid>http://localhost:1313/zusammenfassung/categories/nsa/</guid>
       <description></description>
     </item>
     <item>
       <title>MAD</title>
-      <link>//localhost:1313///zusammenfassung/categories/mad/</link>
+      <link>http://localhost:1313/zusammenfassung/categories/mad/</link>
       <pubDate>Wed, 09 Apr 2025 18:30:37 +0200</pubDate>
-      <guid>//localhost:1313///zusammenfassung/categories/mad/</guid>
+      <guid>http://localhost:1313/zusammenfassung/categories/mad/</guid>
       <description></description>
     </item>
     <item>
       <title>MCC Übung</title>
-      <link>//localhost:1313///zusammenfassung/categories/mcc-%C3%BCbung/</link>
+      <link>http://localhost:1313/zusammenfassung/categories/mcc-%C3%BCbung/</link>
       <pubDate>Tue, 08 Apr 2025 18:23:41 +0200</pubDate>
-      <guid>//localhost:1313///zusammenfassung/categories/mcc-%C3%BCbung/</guid>
+      <guid>http://localhost:1313/zusammenfassung/categories/mcc-%C3%BCbung/</guid>
       <description></description>
     </item>
     <item>
       <title>SLA</title>
-      <link>//localhost:1313///zusammenfassung/categories/sla/</link>
+      <link>http://localhost:1313/zusammenfassung/categories/sla/</link>
       <pubDate>Mon, 10 Mar 2025 18:35:42 +0200</pubDate>
-      <guid>//localhost:1313///zusammenfassung/categories/sla/</guid>
+      <guid>http://localhost:1313/zusammenfassung/categories/sla/</guid>
       <description></description>
     </item>
   </channel>

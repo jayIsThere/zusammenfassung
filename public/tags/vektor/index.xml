@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Vektor on Jays Zusammenfassung</title>
-    <link>//localhost:1313///zusammenfassung/tags/vektor/</link>
+    <link>http://localhost:1313/zusammenfassung/tags/vektor/</link>
     <description>Recent content in Vektor on Jays Zusammenfassung</description>
     <generator>Hugo -- 0.146.5</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 01 Mar 2025 18:33:36 +0200</lastBuildDate>
-    <atom:link href="//localhost:1313///zusammenfassung/tags/vektor/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/zusammenfassung/tags/vektor/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vektor- und Matrix-Formeln</title>
-      <link>//localhost:1313///zusammenfassung/posts/sla/sla_la/</link>
+      <link>http://localhost:1313/zusammenfassung/posts/sla/sla_la/</link>
       <pubDate>Sat, 01 Mar 2025 18:33:36 +0200</pubDate>
-      <guid>//localhost:1313///zusammenfassung/posts/sla/sla_la/</guid>
+      <guid>http://localhost:1313/zusammenfassung/posts/sla/sla_la/</guid>
       <description>&lt;h3 id=&#34;vektor-formeln&#34;&gt;Vektor-Formeln&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -21,7 +21,7 @@ Das Skalarprodukt von zwei Vektoren \( \mathbf{u}, \mathbf{v} \in \mathbb{R}^n \
 &lt;/p&gt;
 $$
    \mathbf{u} \cdot \mathbf{v} = \sum_{i=1}^{n} u_i v_i
-   $$&lt;!-- raw HTML omitted --&gt;
+   $$&lt;img src=&#34;http://localhost:1313/zusammenfassung/../images/skalarprodukt.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34;&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Vektorlänge (Norm)&lt;/strong&gt;&lt;br&gt;
@@ -29,7 +29,7 @@ Die Länge (Norm) eines Vektors \( \mathbf{a} \in \mathbb{R}^n \) ist gegeben du
 &lt;/p&gt;
 $$
    |\mathbf{a}| = \sqrt{a_1^2 + a_2^2 + \dots + a_n^2}
-   $$&lt;!-- raw HTML omitted --&gt;
+   $$&lt;img src=&#34;{{ site.baseurl }}/vektorlaenge.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34;&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Winkel zwischen Vektoren (Angle between Vectors)&lt;/strong&gt;&lt;br&gt;

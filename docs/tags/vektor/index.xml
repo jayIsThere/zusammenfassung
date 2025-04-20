@@ -21,7 +21,7 @@ Das Skalarprodukt von zwei Vektoren \( \mathbf{u}, \mathbf{v} \in \mathbb{R}^n \
 &lt;/p&gt;
 $$
    \mathbf{u} \cdot \mathbf{v} = \sum_{i=1}^{n} u_i v_i
-   $$&lt;!-- raw HTML omitted --&gt;
+   $$&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/../images/skalarprodukt.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34;&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Vektorlänge (Norm)&lt;/strong&gt;&lt;br&gt;
@@ -29,7 +29,7 @@ Die Länge (Norm) eines Vektors \( \mathbf{a} \in \mathbb{R}^n \) ist gegeben du
 &lt;/p&gt;
 $$
    |\mathbf{a}| = \sqrt{a_1^2 + a_2^2 + \dots + a_n^2}
-   $$&lt;!-- raw HTML omitted --&gt;
+   $$&lt;img src=&#34;{{ site.baseurl }}/vektorlaenge.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34;&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Winkel zwischen Vektoren (Angle between Vectors)&lt;/strong&gt;&lt;br&gt;

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Jays Zusammenfassung</title>
-    <link>//localhost:1313///zusammenfassung/</link>
+    <link>http://localhost:1313/zusammenfassung/</link>
     <description>Recent content on Jays Zusammenfassung</description>
     <generator>Hugo -- 0.146.5</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 17 Apr 2025 18:13:15 +0200</lastBuildDate>
-    <atom:link href="//localhost:1313///zusammenfassung/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/zusammenfassung/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vorlesung 3: komponentenbasiertes Software-Engineering</title>
-      <link>//localhost:1313///zusammenfassung/posts/kbe/kbe3/</link>
+      <link>http://localhost:1313/zusammenfassung/posts/kbe/kbe3/</link>
       <pubDate>Thu, 17 Apr 2025 18:13:15 +0200</pubDate>
-      <guid>//localhost:1313///zusammenfassung/posts/kbe/kbe3/</guid>
+      <guid>http://localhost:1313/zusammenfassung/posts/kbe/kbe3/</guid>
       <description>&lt;h3 id=&#34;grundprinzipien-des-komponentenbasierten-software-engineerings&#34;&gt;Grundprinzipien des komponentenbasierten Software-Engineerings&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Unabhängige Komponenten&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -55,9 +55,9 @@
     </item>
     <item>
       <title>KBE Übung 2</title>
-      <link>//localhost:1313///zusammenfassung/posts/kbe/kbe_uebung2/</link>
+      <link>http://localhost:1313/zusammenfassung/posts/kbe/kbe_uebung2/</link>
       <pubDate>Thu, 17 Apr 2025 18:08:32 +0200</pubDate>
-      <guid>//localhost:1313///zusammenfassung/posts/kbe/kbe_uebung2/</guid>
+      <guid>http://localhost:1313/zusammenfassung/posts/kbe/kbe_uebung2/</guid>
       <description>&lt;h2 id=&#34;übungsblatt-2&#34;&gt;Übungsblatt 2&lt;/h2&gt;
 &lt;h3 id=&#34;aufgabe-1-beweggründe-für-die-entstehung-des-komponentenbasierten-software-engineerings&#34;&gt;Aufgabe 1. Beweggründe für die Entstehung des Komponentenbasierten Software-Engineerings&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Wiederverwendbarkeit&lt;/strong&gt;:&lt;/p&gt;
@@ -89,9 +89,9 @@
     </item>
     <item>
       <title>Vorlesung 3: Abgrenzung Festnetz/Cloud zum Mobilnetz</title>
-      <link>//localhost:1313///zusammenfassung/posts/mcc/mcc3/</link>
+      <link>http://localhost:1313/zusammenfassung/posts/mcc/mcc3/</link>
       <pubDate>Tue, 15 Apr 2025 18:22:16 +0200</pubDate>
-      <guid>//localhost:1313///zusammenfassung/posts/mcc/mcc3/</guid>
+      <guid>http://localhost:1313/zusammenfassung/posts/mcc/mcc3/</guid>
       <description>&lt;h3 id=&#34;abgrenzung-festnetzcloud-zum-mobilnetz&#34;&gt;Abgrenzung Festnetz/Cloud zum Mobilnetz&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;🔧 Messgeräte&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -140,9 +140,9 @@
     </item>
     <item>
       <title>Vorlesung 2: Ethics and Laws, Network Access Layer</title>
-      <link>//localhost:1313///zusammenfassung/posts/nsa/nsa1/</link>
+      <link>http://localhost:1313/zusammenfassung/posts/nsa/nsa1/</link>
       <pubDate>Mon, 14 Apr 2025 18:32:03 +0200</pubDate>
-      <guid>//localhost:1313///zusammenfassung/posts/nsa/nsa1/</guid>
+      <guid>http://localhost:1313/zusammenfassung/posts/nsa/nsa1/</guid>
       <description>&lt;h3 id=&#34;ethics-and-laws&#34;&gt;Ethics and Laws&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Lecture Objectives:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -192,9 +192,9 @@
     </item>
     <item>
       <title>KBE Übung 1</title>
-      <link>//localhost:1313///zusammenfassung/posts/kbe/kbe_uebung1/</link>
+      <link>http://localhost:1313/zusammenfassung/posts/kbe/kbe_uebung1/</link>
       <pubDate>Thu, 10 Apr 2025 18:08:29 +0200</pubDate>
-      <guid>//localhost:1313///zusammenfassung/posts/kbe/kbe_uebung1/</guid>
+      <guid>http://localhost:1313/zusammenfassung/posts/kbe/kbe_uebung1/</guid>
       <description>&lt;h2 id=&#34;übungsblatt-1&#34;&gt;Übungsblatt 1&lt;/h2&gt;
 &lt;h3 id=&#34;aufgabe-1-grundstrategie-des-software-engineerings&#34;&gt;Aufgabe 1. Grundstrategie des Software-Engineerings&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Ziel der Wiederverwendung&lt;/strong&gt;:&lt;/p&gt;
@@ -252,9 +252,9 @@
     </item>
     <item>
       <title>Vorlesung 2: Wiederverwendung von Software 2</title>
-      <link>//localhost:1313///zusammenfassung/posts/kbe/kbe2/</link>
+      <link>http://localhost:1313/zusammenfassung/posts/kbe/kbe2/</link>
       <pubDate>Thu, 10 Apr 2025 18:04:15 +0200</pubDate>
-      <guid>//localhost:1313///zusammenfassung/posts/kbe/kbe2/</guid>
+      <guid>http://localhost:1313/zusammenfassung/posts/kbe/kbe2/</guid>
       <description>&lt;h3 id=&#34;wiederverwendungstechniken-laut-sommerville&#34;&gt;Wiederverwendungstechniken (laut Sommerville)&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -283,9 +283,9 @@
     </item>
     <item>
       <title>Vorlesung 2: Konzeptionierung von Apps</title>
-      <link>//localhost:1313///zusammenfassung/posts/mad/mad1/</link>
+      <link>http://localhost:1313/zusammenfassung/posts/mad/mad1/</link>
       <pubDate>Wed, 09 Apr 2025 18:30:37 +0200</pubDate>
-      <guid>//localhost:1313///zusammenfassung/posts/mad/mad1/</guid>
+      <guid>http://localhost:1313/zusammenfassung/posts/mad/mad1/</guid>
       <description>&lt;h3 id=&#34;konzeptentwicklung&#34;&gt;Konzeptentwicklung&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Zweck/Ziele&lt;/strong&gt;: Was ist das Hauptziel der App?&lt;/p&gt;
 &lt;ul&gt;
@@ -307,9 +307,9 @@
     </item>
     <item>
       <title>MCC Übung 1</title>
-      <link>//localhost:1313///zusammenfassung/posts/mcc/mcc_uebung1/</link>
+      <link>http://localhost:1313/zusammenfassung/posts/mcc/mcc_uebung1/</link>
       <pubDate>Tue, 08 Apr 2025 18:23:41 +0200</pubDate>
-      <guid>//localhost:1313///zusammenfassung/posts/mcc/mcc_uebung1/</guid>
+      <guid>http://localhost:1313/zusammenfassung/posts/mcc/mcc_uebung1/</guid>
       <description>&lt;h4 id=&#34;11-use-case-video-streaming-zu-hause&#34;&gt;1.1 Use Case: Video-Streaming zu Hause&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;Szenario:&lt;/strong&gt;&lt;br&gt;
 Sie streamen ein Video zu Hause, Audio über Bluetooth-Box, Bild auf dem Tablet.&lt;/p&gt;
@@ -346,9 +346,9 @@ Sie streamen ein Video zu Hause, Audio über Bluetooth-Box, Bild auf dem Tablet.
     </item>
     <item>
       <title>Vorlesung 2: Was ist Bit? &amp; Übung</title>
-      <link>//localhost:1313///zusammenfassung/posts/mcc/mcc2/</link>
+      <link>http://localhost:1313/zusammenfassung/posts/mcc/mcc2/</link>
       <pubDate>Tue, 08 Apr 2025 18:22:14 +0200</pubDate>
-      <guid>//localhost:1313///zusammenfassung/posts/mcc/mcc2/</guid>
+      <guid>http://localhost:1313/zusammenfassung/posts/mcc/mcc2/</guid>
       <description>&lt;h3 id=&#34;informationen-und-informationsgehalt&#34;&gt;Informationen und Informationsgehalt&lt;/h3&gt;
 &lt;p&gt;Der &lt;strong&gt;Informationsgehalt&lt;/strong&gt; beschreibt, wie viel „Überraschung“ oder „Neuigkeit“ in einem Ereignis steckt – je unwahrscheinlicher ein Ereignis, desto mehr Information trägt es.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Formel zur Berechnung:&lt;/strong&gt;&lt;/p&gt;
@@ -369,9 +369,9 @@ Sie streamen ein Video zu Hause, Audio über Bluetooth-Box, Bild auf dem Tablet.
     </item>
     <item>
       <title>Vorlesung 1: Wiederverwendung von Software 1</title>
-      <link>//localhost:1313///zusammenfassung/posts/kbe/kbe1/</link>
+      <link>http://localhost:1313/zusammenfassung/posts/kbe/kbe1/</link>
       <pubDate>Thu, 03 Apr 2025 17:19:30 +0200</pubDate>
-      <guid>//localhost:1313///zusammenfassung/posts/kbe/kbe1/</guid>
+      <guid>http://localhost:1313/zusammenfassung/posts/kbe/kbe1/</guid>
       <description>&lt;h3 id=&#34;einführung-in-die-softwarewiederverwendung&#34;&gt;Einführung in die Softwarewiederverwendung&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Definition:&lt;/strong&gt; Wiederverwendung bestehender Softwarekomponenten (z. B. Code, Module, Systeme)&lt;/li&gt;
@@ -404,9 +404,9 @@ Sie streamen ein Video zu Hause, Audio über Bluetooth-Box, Bild auf dem Tablet.
     </item>
     <item>
       <title>Vorlesung 1: Einführung in Mobile and Cloud Computing</title>
-      <link>//localhost:1313///zusammenfassung/posts/mcc/mcc1/</link>
+      <link>http://localhost:1313/zusammenfassung/posts/mcc/mcc1/</link>
       <pubDate>Tue, 01 Apr 2025 18:22:11 +0200</pubDate>
-      <guid>//localhost:1313///zusammenfassung/posts/mcc/mcc1/</guid>
+      <guid>http://localhost:1313/zusammenfassung/posts/mcc/mcc1/</guid>
       <description>&lt;h3 id=&#34;abgrenzung-festnetzcloud-zum-mobilnetz&#34;&gt;Abgrenzung Festnetz/Cloud zum Mobilnetz&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Festnetz&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -443,38 +443,41 @@ Sie streamen ein Video zu Hause, Audio über Bluetooth-Box, Bild auf dem Tablet.
     </item>
     <item>
       <title>SLA Probeklausur</title>
-      <link>//localhost:1313///zusammenfassung/posts/sla/sla_klausur/</link>
+      <link>http://localhost:1313/zusammenfassung/posts/sla/sla_klausur/</link>
       <pubDate>Mon, 10 Mar 2025 18:35:42 +0200</pubDate>
-      <guid>//localhost:1313///zusammenfassung/posts/sla/sla_klausur/</guid>
+      <guid>http://localhost:1313/zusammenfassung/posts/sla/sla_klausur/</guid>
       <description>&lt;h2 id=&#34;probeklausur&#34;&gt;Probeklausur&lt;/h2&gt;
 &lt;h4 id=&#34;probeklausur-1&#34;&gt;Probeklausur 1&lt;/h4&gt;
 &lt;h4 id=&#34;probeklausur-2&#34;&gt;Probeklausur 2&lt;/h4&gt;</description>
     </item>
     <item>
       <title>Lineare Algebra Bonusaufgabe</title>
-      <link>//localhost:1313///zusammenfassung/posts/sla/sla_la_bonus/</link>
+      <link>http://localhost:1313/zusammenfassung/posts/sla/sla_la_bonus/</link>
       <pubDate>Mon, 03 Mar 2025 18:36:16 +0200</pubDate>
-      <guid>//localhost:1313///zusammenfassung/posts/sla/sla_la_bonus/</guid>
+      <guid>http://localhost:1313/zusammenfassung/posts/sla/sla_la_bonus/</guid>
       <description></description>
     </item>
     <item>
       <title>Lineare Algebra Übung</title>
-      <link>//localhost:1313///zusammenfassung/posts/sla/sla_la_uebung/</link>
+      <link>http://localhost:1313/zusammenfassung/posts/sla/sla_la_uebung/</link>
       <pubDate>Sun, 02 Mar 2025 18:34:00 +0200</pubDate>
-      <guid>//localhost:1313///zusammenfassung/posts/sla/sla_la_uebung/</guid>
+      <guid>http://localhost:1313/zusammenfassung/posts/sla/sla_la_uebung/</guid>
       <description>&lt;h3 id=&#34;übungsblatt-lineare-algebra&#34;&gt;Übungsblatt (Lineare Algebra)&lt;/h3&gt;
 &lt;hr&gt;
 &lt;h4 id=&#34;übungsblatt-1&#34;&gt;Übungsblatt 1&lt;/h4&gt;
-&lt;!-- raw HTML omitted --&gt;
+   &lt;img src=&#34;{{ site.baseurl }}/uebungsblatt1-1.jpg&#34; width=&#34;450px&#34; height=&#34;470px&#34;&gt;
+   &lt;img src=&#34;{{ site.baseurl }}/uebungsblatt1-2.jpg&#34; width=&#34;450px&#34; height=&#34;470px&#34;&gt;
+   &lt;img src=&#34;{{ site.baseurl }}/uebungsblatt1-3.jpg&#34; width=&#34;450px&#34; height=&#34;470px&#34;&gt;
+   &lt;img src=&#34;{{ site.baseurl }}/uebungsblatt1-4.jpg&#34; width=&#34;450px&#34; height=&#34;470px&#34;&gt;
 &lt;h4 id=&#34;übungsblatt-2&#34;&gt;Übungsblatt 2&lt;/h4&gt;
 &lt;h4 id=&#34;übungsblatt-3&#34;&gt;Übungsblatt 3&lt;/h4&gt;
 &lt;h4 id=&#34;übungsblatt-4&#34;&gt;Übungsblatt 4&lt;/h4&gt;</description>
     </item>
     <item>
       <title>Vektor- und Matrix-Formeln</title>
-      <link>//localhost:1313///zusammenfassung/posts/sla/sla_la/</link>
+      <link>http://localhost:1313/zusammenfassung/posts/sla/sla_la/</link>
       <pubDate>Sat, 01 Mar 2025 18:33:36 +0200</pubDate>
-      <guid>//localhost:1313///zusammenfassung/posts/sla/sla_la/</guid>
+      <guid>http://localhost:1313/zusammenfassung/posts/sla/sla_la/</guid>
       <description>&lt;h3 id=&#34;vektor-formeln&#34;&gt;Vektor-Formeln&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -483,7 +486,7 @@ Das Skalarprodukt von zwei Vektoren \( \mathbf{u}, \mathbf{v} \in \mathbb{R}^n \
 &lt;/p&gt;
 $$
    \mathbf{u} \cdot \mathbf{v} = \sum_{i=1}^{n} u_i v_i
-   $$&lt;!-- raw HTML omitted --&gt;
+   $$&lt;img src=&#34;http://localhost:1313/zusammenfassung/../images/skalarprodukt.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34;&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Vektorlänge (Norm)&lt;/strong&gt;&lt;br&gt;
@@ -491,7 +494,7 @@ Die Länge (Norm) eines Vektors \( \mathbf{a} \in \mathbb{R}^n \) ist gegeben du
 &lt;/p&gt;
 $$
    |\mathbf{a}| = \sqrt{a_1^2 + a_2^2 + \dots + a_n^2}
-   $$&lt;!-- raw HTML omitted --&gt;
+   $$&lt;img src=&#34;{{ site.baseurl }}/vektorlaenge.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34;&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Winkel zwischen Vektoren (Angle between Vectors)&lt;/strong&gt;&lt;br&gt;
@@ -500,9 +503,9 @@ Der Winkel \( \theta \) zwischen den Vektoren \( \mathbf{a}, \mathbf{b} \in \mat
     </item>
     <item>
       <title>Nuetzlich</title>
-      <link>//localhost:1313///zusammenfassung/posts/sla/nuetzlich/</link>
+      <link>http://localhost:1313/zusammenfassung/posts/sla/nuetzlich/</link>
       <pubDate>Thu, 20 Feb 2025 18:57:06 +0200</pubDate>
-      <guid>//localhost:1313///zusammenfassung/posts/sla/nuetzlich/</guid>
+      <guid>http://localhost:1313/zusammenfassung/posts/sla/nuetzlich/</guid>
       <description>&lt;h4 id=&#34;nützliche-website&#34;&gt;Nützliche Website&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Matrizenrechner&lt;/strong&gt;&lt;br&gt;
