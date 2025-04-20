@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Jays Zusammenfassung</title>
-    <link>/zusammenfassung/tags/</link>
+    <link>https://jayIsThere.github.io/zusammenfassung/tags/</link>
     <description>Recent content in Tags on Jays Zusammenfassung</description>
     <generator>Hugo -- 0.146.5</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 17 Apr 2025 18:13:15 +0200</lastBuildDate>
-    <atom:link href="/zusammenfassung/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jayIsThere.github.io/zusammenfassung/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Komponente</title>
-      <link>/zusammenfassung/tags/komponente/</link>
+      <link>https://jayIsThere.github.io/zusammenfassung/tags/komponente/</link>
       <pubDate>Thu, 17 Apr 2025 18:13:15 +0200</pubDate>
-      <guid>/zusammenfassung/tags/komponente/</guid>
+      <guid>https://jayIsThere.github.io/zusammenfassung/tags/komponente/</guid>
       <description></description>
     </item>
     <item>
       <title>Schnittstelle</title>
-      <link>/zusammenfassung/tags/schnittstelle/</link>
+      <link>https://jayIsThere.github.io/zusammenfassung/tags/schnittstelle/</link>
       <pubDate>Thu, 17 Apr 2025 18:13:15 +0200</pubDate>
-      <guid>/zusammenfassung/tags/schnittstelle/</guid>
+      <guid>https://jayIsThere.github.io/zusammenfassung/tags/schnittstelle/</guid>
       <description></description>
     </item>
     <item>
       <title>Framework</title>
-      <link>/zusammenfassung/tags/framework/</link>
+      <link>https://jayIsThere.github.io/zusammenfassung/tags/framework/</link>
       <pubDate>Thu, 10 Apr 2025 18:04:15 +0200</pubDate>
-      <guid>/zusammenfassung/tags/framework/</guid>
+      <guid>https://jayIsThere.github.io/zusammenfassung/tags/framework/</guid>
       <description></description>
     </item>
     <item>
       <title>Wiederverwendung</title>
-      <link>/zusammenfassung/tags/wiederverwendung/</link>
+      <link>https://jayIsThere.github.io/zusammenfassung/tags/wiederverwendung/</link>
       <pubDate>Thu, 10 Apr 2025 18:04:15 +0200</pubDate>
-      <guid>/zusammenfassung/tags/wiederverwendung/</guid>
+      <guid>https://jayIsThere.github.io/zusammenfassung/tags/wiederverwendung/</guid>
       <description></description>
     </item>
     <item>
       <title>Determinant</title>
-      <link>/zusammenfassung/tags/determinant/</link>
+      <link>https://jayIsThere.github.io/zusammenfassung/tags/determinant/</link>
       <pubDate>Sat, 01 Mar 2025 18:33:36 +0200</pubDate>
-      <guid>/zusammenfassung/tags/determinant/</guid>
+      <guid>https://jayIsThere.github.io/zusammenfassung/tags/determinant/</guid>
       <description></description>
     </item>
     <item>
       <title>Matrix</title>
-      <link>/zusammenfassung/tags/matrix/</link>
+      <link>https://jayIsThere.github.io/zusammenfassung/tags/matrix/</link>
       <pubDate>Sat, 01 Mar 2025 18:33:36 +0200</pubDate>
-      <guid>/zusammenfassung/tags/matrix/</guid>
+      <guid>https://jayIsThere.github.io/zusammenfassung/tags/matrix/</guid>
       <description></description>
     </item>
     <item>
       <title>Vektor</title>
-      <link>/zusammenfassung/tags/vektor/</link>
+      <link>https://jayIsThere.github.io/zusammenfassung/tags/vektor/</link>
       <pubDate>Sat, 01 Mar 2025 18:33:36 +0200</pubDate>
-      <guid>/zusammenfassung/tags/vektor/</guid>
+      <guid>https://jayIsThere.github.io/zusammenfassung/tags/vektor/</guid>
       <description></description>
     </item>
   </channel>

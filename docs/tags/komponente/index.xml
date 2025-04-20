@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Komponente on Jays Zusammenfassung</title>
-    <link>/zusammenfassung/tags/komponente/</link>
+    <link>https://jayIsThere.github.io/zusammenfassung/tags/komponente/</link>
     <description>Recent content in Komponente on Jays Zusammenfassung</description>
     <generator>Hugo -- 0.146.5</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 17 Apr 2025 18:13:15 +0200</lastBuildDate>
-    <atom:link href="/zusammenfassung/tags/komponente/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jayIsThere.github.io/zusammenfassung/tags/komponente/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vorlesung 3: komponentenbasiertes Software-Engineering</title>
-      <link>/zusammenfassung/posts/kbe/kbe3/</link>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/kbe/kbe3/</link>
       <pubDate>Thu, 17 Apr 2025 18:13:15 +0200</pubDate>
-      <guid>/zusammenfassung/posts/kbe/kbe3/</guid>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/kbe/kbe3/</guid>
       <description>&lt;h3 id=&#34;grundprinzipien-des-komponentenbasierten-software-engineerings&#34;&gt;Grundprinzipien des komponentenbasierten Software-Engineerings&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Unabhängige Komponenten&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;

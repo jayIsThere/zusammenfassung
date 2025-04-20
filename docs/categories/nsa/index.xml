@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>NSA on Jays Zusammenfassung</title>
-    <link>/zusammenfassung/categories/nsa/</link>
+    <link>https://jayIsThere.github.io/zusammenfassung/categories/nsa/</link>
     <description>Recent content in NSA on Jays Zusammenfassung</description>
     <generator>Hugo -- 0.146.5</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 14 Apr 2025 18:32:03 +0200</lastBuildDate>
-    <atom:link href="/zusammenfassung/categories/nsa/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jayIsThere.github.io/zusammenfassung/categories/nsa/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vorlesung 2: Ethics and Laws, Network Access Layer</title>
-      <link>/zusammenfassung/posts/nsa/nsa1/</link>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/nsa/nsa1/</link>
       <pubDate>Mon, 14 Apr 2025 18:32:03 +0200</pubDate>
-      <guid>/zusammenfassung/posts/nsa/nsa1/</guid>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/nsa/nsa1/</guid>
       <description>&lt;h3 id=&#34;ethics-and-laws&#34;&gt;Ethics and Laws&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Lecture Objectives:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;

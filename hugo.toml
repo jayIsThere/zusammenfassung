@@ -1,4 +1,4 @@
-baseURL = "/zusammenfassung"
+baseURL = "https://jayIsThere.github.io/zusammenfassung/"
 languageCode = "en-us"
 title = "Jays Zusammenfassung"
 theme = "PaperMod"

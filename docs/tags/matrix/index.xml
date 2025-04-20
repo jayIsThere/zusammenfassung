@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Matrix on Jays Zusammenfassung</title>
-    <link>/zusammenfassung/tags/matrix/</link>
+    <link>https://jayIsThere.github.io/zusammenfassung/tags/matrix/</link>
     <description>Recent content in Matrix on Jays Zusammenfassung</description>
     <generator>Hugo -- 0.146.5</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 01 Mar 2025 18:33:36 +0200</lastBuildDate>
-    <atom:link href="/zusammenfassung/tags/matrix/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jayIsThere.github.io/zusammenfassung/tags/matrix/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vektor- und Matrix-Formeln</title>
-      <link>/zusammenfassung/posts/sla/sla_la/</link>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/sla/sla_la/</link>
       <pubDate>Sat, 01 Mar 2025 18:33:36 +0200</pubDate>
-      <guid>/zusammenfassung/posts/sla/sla_la/</guid>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/sla/sla_la/</guid>
       <description>&lt;h3 id=&#34;vektor-formeln&#34;&gt;Vektor-Formeln&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;

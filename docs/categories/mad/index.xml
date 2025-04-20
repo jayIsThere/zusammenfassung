@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>MAD on Jays Zusammenfassung</title>
-    <link>/zusammenfassung/categories/mad/</link>
+    <link>https://jayIsThere.github.io/zusammenfassung/categories/mad/</link>
     <description>Recent content in MAD on Jays Zusammenfassung</description>
     <generator>Hugo -- 0.146.5</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 09 Apr 2025 18:30:37 +0200</lastBuildDate>
-    <atom:link href="/zusammenfassung/categories/mad/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jayIsThere.github.io/zusammenfassung/categories/mad/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vorlesung 2: Konzeptionierung von Apps</title>
-      <link>/zusammenfassung/posts/mad/mad1/</link>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/mad/mad1/</link>
       <pubDate>Wed, 09 Apr 2025 18:30:37 +0200</pubDate>
-      <guid>/zusammenfassung/posts/mad/mad1/</guid>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/mad/mad1/</guid>
       <description>&lt;h3 id=&#34;konzeptentwicklung&#34;&gt;Konzeptentwicklung&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Zweck/Ziele&lt;/strong&gt;: Was ist das Hauptziel der App?&lt;/p&gt;
 &lt;ul&gt;
