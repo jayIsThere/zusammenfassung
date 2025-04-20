@@ -15,7 +15,7 @@ math = true
    \mathbf{u} \cdot \mathbf{v} = \sum_{i=1}^{n} u_i v_i
    $$
 
-   <img src="/../images/skalarprodukt.jpg" width="450px" height="430px">
+  <img src="/zusammenfassung/images/skalarprodukt.jpg" width="450px" height="430px" style="display: block; margin: auto;">
 
 2. **Vektorlänge (Norm)**  
    Die Länge (Norm) eines Vektors \( \mathbf{a} \in \mathbb{R}^n \) ist gegeben durch:
