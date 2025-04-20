@@ -11,11 +11,11 @@ draft = false
 
 #### Übungsblatt 1
 
-   <img src="{{ site.baseurl }}/uebungsblatt1-1.jpg" width="450px" height="470px">
-   <img src="{{ site.baseurl }}/uebungsblatt1-2.jpg" width="450px" height="470px">
-   <img src="{{ site.baseurl }}/uebungsblatt1-3.jpg" width="450px" height="470px">
-   <img src="{{ site.baseurl }}/uebungsblatt1-4.jpg" width="450px" height="470px">
-
+  <img src="/zusammenfassung/images/uebungsblatt1-1.jpg" width="450px" height="430px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/uebungsblatt1-2.jpg" width="450px" height="430px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/uebungsblatt1-3.jpg" width="450px" height="430px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/uebungsblatt1-4.jpg" width="450px" height="430px" style="display: block; margin: auto;">
+  
 #### Übungsblatt 2
 #### Übungsblatt 3
 #### Übungsblatt 4

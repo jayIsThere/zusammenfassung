@@ -23,15 +23,15 @@ math = true
    |\mathbf{a}| = \sqrt{a_1^2 + a_2^2 + \dots + a_n^2}
    $$
 
-   <img src="{{ site.baseurl }}/vektorlaenge.jpg" width="450px" height="430px">
+  <img src="/zusammenfassung/images/vektorlaenge.jpg" width="450px" height="430px" style="display: block; margin: auto;">
 
 3. **Winkel zwischen Vektoren (Angle between Vectors)**  
    Der Winkel \( \theta \) zwischen den Vektoren \( \mathbf{a}, \mathbf{b} \in \mathbb{R}^n \) wird durch die folgende Formel berechnet:
    $$
    \cos(\theta) = \frac{\mathbf{a} \cdot \mathbf{b}}{|\mathbf{a}| |\mathbf{b}|}
    $$
-
-   <img src="{{ site.baseurl }}/winkel.jpg" width="450px" height="430px">
+   
+  <img src="/zusammenfassung/images/winkel.jpg" width="450px" height="430px" style="display: block; margin: auto;">
 
 4. **Orthogonalität (Orthogonality)**  
    Zwei Vektoren \( \mathbf{a} \) und \( \mathbf{b} \) sind orthogonal (rechtwinklig), wenn:
@@ -39,7 +39,7 @@ math = true
    \mathbf{a} \cdot \mathbf{b} = 0
    $$
 
-   <img src="{{ site.baseurl }}/orthogonal.jpg" width="450px" height="430px">
+  <img src="/zusammenfassung/images/orthogonal.jpg" width="450px" height="430px" style="display: block; margin: auto;">
 
 5. **Kreuzprodukt (Cross Product) - In 3D**  
    Das Kreuzprodukt zweier Vektoren $$ \mathbf{a} = (a_1, a_2, a_3) $$ und $$ \mathbf{b} = (b_1, b_2, b_3)$$  ist:
@@ -53,7 +53,7 @@ math = true
    = \left( a_2 b_3 - a_3 b_2, \, a_3 b_1 - a_1 b_3, \, a_1 b_2 - a_2 b_1 \right)
    $$
 
-   <img src="{{ site.baseurl }}/kreuzprodukt.jpg" width="450px" height="430px">
+  <img src="/zusammenfassung/images/kreuzprodukt.jpg" width="450px" height="430px" style="display: block; margin: auto;">
 
 ---
 
@@ -65,7 +65,7 @@ math = true
    C = AB, \quad C_{ij} = \sum_{k=1}^{n} A_{ik} B_{kj}
    $$
 
-   <img src="{{ site.baseurl }}/matrix_multiplikation.jpg" width="450px" height="430px">
+  <img src="/zusammenfassung/images/matrix_multiplikation.jpg" width="450px" height="430px" style="display: block; margin: auto;">
 
 2. **Transponierte Matrix (Transpose of a Matrix)**  
    Die Transponierte einer Matrix \( A = [a_{ij}] \) ist:
