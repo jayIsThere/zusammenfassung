@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>KBE Übung on Jays Zusammenfassung</title>
-    <link>http://localhost:1313/categories/kbe-%C3%BCbung/</link>
+    <link>//localhost:1313///zusammenfassung/categories/kbe-%C3%BCbung/</link>
     <description>Recent content in KBE Übung on Jays Zusammenfassung</description>
     <generator>Hugo -- 0.146.5</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 17 Apr 2025 18:08:32 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/kbe-%C3%BCbung/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313///zusammenfassung/categories/kbe-%C3%BCbung/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>KBE Übung 2</title>
-      <link>http://localhost:1313/posts/kbe/kbe_uebung2/</link>
+      <link>//localhost:1313///zusammenfassung/posts/kbe/kbe_uebung2/</link>
       <pubDate>Thu, 17 Apr 2025 18:08:32 +0200</pubDate>
-      <guid>http://localhost:1313/posts/kbe/kbe_uebung2/</guid>
+      <guid>//localhost:1313///zusammenfassung/posts/kbe/kbe_uebung2/</guid>
       <description>&lt;h2 id=&#34;übungsblatt-2&#34;&gt;Übungsblatt 2&lt;/h2&gt;
 &lt;h3 id=&#34;aufgabe-1-beweggründe-für-die-entstehung-des-komponentenbasierten-software-engineerings&#34;&gt;Aufgabe 1. Beweggründe für die Entstehung des Komponentenbasierten Software-Engineerings&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Wiederverwendbarkeit&lt;/strong&gt;:&lt;/p&gt;
@@ -44,9 +44,9 @@
     </item>
     <item>
       <title>KBE Übung 1</title>
-      <link>http://localhost:1313/posts/kbe/kbe_uebung1/</link>
+      <link>//localhost:1313///zusammenfassung/posts/kbe/kbe_uebung1/</link>
       <pubDate>Thu, 10 Apr 2025 18:08:29 +0200</pubDate>
-      <guid>http://localhost:1313/posts/kbe/kbe_uebung1/</guid>
+      <guid>//localhost:1313///zusammenfassung/posts/kbe/kbe_uebung1/</guid>
       <description>&lt;h2 id=&#34;übungsblatt-1&#34;&gt;Übungsblatt 1&lt;/h2&gt;
 &lt;h3 id=&#34;aufgabe-1-grundstrategie-des-software-engineerings&#34;&gt;Aufgabe 1. Grundstrategie des Software-Engineerings&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Ziel der Wiederverwendung&lt;/strong&gt;:&lt;/p&gt;
