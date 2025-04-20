@@ -3,13 +3,6 @@ languageCode = "en-us"
 title = "Jays Zusammenfassung"
 theme = "PaperMod"
 
-[[module.mounts]]
-source = 'static'
-target = 'static'
-
-[[module.mounts]]
-source = 'images'
-target = 'static/images'
 
 
 [markup]
