@@ -1,0 +1,55 @@
+baseURL = "https://jayisthere.github.io/zusammenfassung/"
+languageCode = "en-us"
+title = "Jays Zusammenfassung"
+theme = "PaperMod"
+
+[[module.mounts]]
+source = 'static'
+target = 'static'
+
+[[module.mounts]]
+source = 'images'
+target = 'static/images'
+
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
+          
+[params]
+  homeInfoParams = { Title = "Zusammenfassung", Content = "Jays Zusammenfassung" }
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  math = true
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[[menu.main]]
+  name = "categories"
+  url = "/categories/"
+  weight = 10
+  identifier = "categories"
+
+[[menu.main]]
+  name = "tags"
+  url = "/tags/"
+  weight = 20
+  identifier = "tags"
+
+[[menu.main]]
+  name = "example.org"
+  url = "https://example.org"
+  weight = 30
+  identifier = "example"
+

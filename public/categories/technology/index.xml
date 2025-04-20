@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Technology on Jays Zusammenfassung</title>
+    <link>http://localhost:1313/categories/technology/</link>
+    <description>Recent content in Technology on Jays Zusammenfassung</description>
+    <generator>Hugo -- 0.146.5</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Apr 2025 17:19:30 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>KBE</title>
+      <link>http://localhost:1313/posts/2025-04-10-kbe/</link>
+      <pubDate>Sun, 20 Apr 2025 17:19:30 +0200</pubDate>
+      <guid>http://localhost:1313/posts/2025-04-10-kbe/</guid>
+      <description>&lt;h2 id=&#34;03042025---vorlesung-1-wiederverwendung-von-software-1&#34;&gt;03.04.2025 - Vorlesung 1: Wiederverwendung von Software 1&lt;/h2&gt;
+&lt;h3 id=&#34;einführung-in-die-softwarewiederverwendung&#34;&gt;Einführung in die Softwarewiederverwendung&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Definition:&lt;/strong&gt; Wiederverwendung bestehender Softwarekomponenten (z. B. Code, Module, Systeme)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Motivation:&lt;/strong&gt; Geringere Kosten, höhere Qualität, schnellere Markteinführung&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Relevanz:&lt;/strong&gt; Besonders wichtig seit 2000 durch wachsende Softwarekomplexität und Kostendruck&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;skalierung-wiederverwendbarer-softwareeinheiten&#34;&gt;Skalierung wiederverwendbarer Softwareeinheiten&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Systeme von Systemen:&lt;/strong&gt; Integration ganzer Systeme&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Anwendungssysteme:&lt;/strong&gt; Konfigurierbare Standardsoftware&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Anwendungsfamilien / Produktlinien:&lt;/strong&gt; Gemeinsame Architektur mit Anpassungsmöglichkeiten&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Komponenten:&lt;/strong&gt; Module mittlerer Granularität&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Objekte und Funktionen:&lt;/strong&gt; Kleinste Einheiten, oft in Bibliotheken&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;vorteile-der-wiederverwendung&#34;&gt;Vorteile der Wiederverwendung&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Kosten- und Zeitersparnis:&lt;/strong&gt; Weniger Entwicklung und Validierung notwendig&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Zuverlässigkeit:&lt;/strong&gt; Durch getestete und bewährte Komponenten&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Bessere Ressourcennutzung:&lt;/strong&gt; Spezialisten und Standards werden besser genutzt&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Konsistenz und Standardisierung:&lt;/strong&gt; Z. B. bei UI-Komponenten&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;probleme-der-wiederverwendung&#34;&gt;Probleme der Wiederverwendung&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Wartungsprobleme:&lt;/strong&gt; Unbekannter Quellcode führt zu Problemen bei Wartung und Erweiterung&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Geringe Werkzeugunterstützung:&lt;/strong&gt; Besonders für eingebettete Systeme&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;„Not-invented-here“-Syndrom:&lt;/strong&gt; Widerstand gegen externe Komponenten&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Aufwand für Komponentenbibliotheken:&lt;/strong&gt; Aufbau und Pflege sind arbeitsintensiv&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Anpassung erfordert Expertise:&lt;/strong&gt; Finden und anpassen von Komponenten ist komplex&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;10042025---vorlesung-2-wiederverwendung-von-software-2&#34;&gt;10.04.2025 - Vorlesung 2: Wiederverwendung von Software 2&lt;/h2&gt;
+&lt;h3 id=&#34;wiederverwendungstechniken-laut-sommerville&#34;&gt;Wiederverwendungstechniken (laut Sommerville)&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Frameworks&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

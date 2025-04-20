@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Wiederverwendung on Jays Zusammenfassung</title>
+    <link>https://jayisthere.github.io/zusammenfassung/tags/wiederverwendung/</link>
+    <description>Recent content in Wiederverwendung on Jays Zusammenfassung</description>
+    <generator>Hugo -- 0.146.5</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Apr 2025 18:04:15 +0200</lastBuildDate>
+    <atom:link href="https://jayisthere.github.io/zusammenfassung/tags/wiederverwendung/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vorlesung 2: Wiederverwendung von Software 2</title>
+      <link>https://jayisthere.github.io/zusammenfassung/posts/kbe/kbe2/</link>
+      <pubDate>Thu, 10 Apr 2025 18:04:15 +0200</pubDate>
+      <guid>https://jayisthere.github.io/zusammenfassung/posts/kbe/kbe2/</guid>
+      <description>&lt;h3 id=&#34;wiederverwendungstechniken-laut-sommerville&#34;&gt;Wiederverwendungstechniken (laut Sommerville)&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Frameworks&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Definition:&lt;/strong&gt; Ein Framework ist ein Set von Softwarekomponenten, das eine Architektur für verwandte Anwendungen bereitstellt.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Beispiel:&lt;/strong&gt; Ein Web-Framework wie Spring MVC verwendet das Model-View-Controller-Muster.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Eigenschaft:&lt;/strong&gt; Bietet generische Funktionalität und wird erweitert, nicht ersetzt.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Inversion of Control (IoC)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Prinzip:&lt;/strong&gt; Die Steuerung liegt beim Framework, nicht bei der Anwendung. Die Anwendung registriert ihre Komponenten, und das Framework ruft sie bei Bedarf auf.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Beispiel:&lt;/strong&gt; Callbacks in Web-Frameworks.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Entwurfsmuster&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Beispiel:&lt;/strong&gt; Observer, Strategy sind gängige Muster, um wiederkehrende Probleme zu lösen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Architekturmuster&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Vorlesung 1: Wiederverwendung von Software 1</title>
+      <link>https://jayisthere.github.io/zusammenfassung/posts/kbe/kbe1/</link>
+      <pubDate>Thu, 03 Apr 2025 17:19:30 +0200</pubDate>
+      <guid>https://jayisthere.github.io/zusammenfassung/posts/kbe/kbe1/</guid>
+      <description>&lt;h3 id=&#34;einführung-in-die-softwarewiederverwendung&#34;&gt;Einführung in die Softwarewiederverwendung&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Definition:&lt;/strong&gt; Wiederverwendung bestehender Softwarekomponenten (z. B. Code, Module, Systeme)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Motivation:&lt;/strong&gt; Geringere Kosten, höhere Qualität, schnellere Markteinführung&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Relevanz:&lt;/strong&gt; Besonders wichtig seit 2000 durch wachsende Softwarekomplexität und Kostendruck&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;skalierung-wiederverwendbarer-softwareeinheiten&#34;&gt;Skalierung wiederverwendbarer Softwareeinheiten&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Systeme von Systemen:&lt;/strong&gt; Integration ganzer Systeme&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Anwendungssysteme:&lt;/strong&gt; Konfigurierbare Standardsoftware&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Anwendungsfamilien / Produktlinien:&lt;/strong&gt; Gemeinsame Architektur mit Anpassungsmöglichkeiten&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Komponenten:&lt;/strong&gt; Module mittlerer Granularität&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Objekte und Funktionen:&lt;/strong&gt; Kleinste Einheiten, oft in Bibliotheken&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;vorteile-der-wiederverwendung&#34;&gt;Vorteile der Wiederverwendung&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Kosten- und Zeitersparnis:&lt;/strong&gt; Weniger Entwicklung und Validierung notwendig&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Zuverlässigkeit:&lt;/strong&gt; Durch getestete und bewährte Komponenten&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Bessere Ressourcennutzung:&lt;/strong&gt; Spezialisten und Standards werden besser genutzt&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Konsistenz und Standardisierung:&lt;/strong&gt; Z. B. bei UI-Komponenten&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;probleme-der-wiederverwendung&#34;&gt;Probleme der Wiederverwendung&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Wartungsprobleme:&lt;/strong&gt; Unbekannter Quellcode führt zu Problemen bei Wartung und Erweiterung&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Geringe Werkzeugunterstützung:&lt;/strong&gt; Besonders für eingebettete Systeme&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;„Not-invented-here“-Syndrom:&lt;/strong&gt; Widerstand gegen externe Komponenten&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Aufwand für Komponentenbibliotheken:&lt;/strong&gt; Aufbau und Pflege sind arbeitsintensiv&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Anpassung erfordert Expertise:&lt;/strong&gt; Finden und anpassen von Komponenten ist komplex&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>
