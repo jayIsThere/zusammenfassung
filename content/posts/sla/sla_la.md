@@ -16,6 +16,7 @@ math = true
    $$
 
    <img src="/images/skalarprodukt.jpg" width="450px" height="430px">
+   ![image-test](/../images.skalarprodukt.jpg)
 
 2. **Vektorlänge (Norm)**  
    Die Länge (Norm) eines Vektors \( \mathbf{a} \in \mathbb{R}^n \) ist gegeben durch:
