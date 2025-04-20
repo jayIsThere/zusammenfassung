@@ -1,0 +1,1660 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>KBE | Jays Zusammenfassung</title>
+<meta name="keywords" content="Wiederverwendung, Framework">
+<meta name="description" content="03.04.2025 - Vorlesung 1: Wiederverwendung von Software 1
+Einführung in die Softwarewiederverwendung
+
+Definition: Wiederverwendung bestehender Softwarekomponenten (z. B. Code, Module, Systeme)
+Motivation: Geringere Kosten, höhere Qualität, schnellere Markteinführung
+Relevanz: Besonders wichtig seit 2000 durch wachsende Softwarekomplexität und Kostendruck
+
+Skalierung wiederverwendbarer Softwareeinheiten
+
+Systeme von Systemen: Integration ganzer Systeme
+Anwendungssysteme: Konfigurierbare Standardsoftware
+Anwendungsfamilien / Produktlinien: Gemeinsame Architektur mit Anpassungsmöglichkeiten
+Komponenten: Module mittlerer Granularität
+Objekte und Funktionen: Kleinste Einheiten, oft in Bibliotheken
+
+Vorteile der Wiederverwendung
+
+Kosten- und Zeitersparnis: Weniger Entwicklung und Validierung notwendig
+Zuverlässigkeit: Durch getestete und bewährte Komponenten
+Bessere Ressourcennutzung: Spezialisten und Standards werden besser genutzt
+Konsistenz und Standardisierung: Z. B. bei UI-Komponenten
+
+Probleme der Wiederverwendung
+
+Wartungsprobleme: Unbekannter Quellcode führt zu Problemen bei Wartung und Erweiterung
+Geringe Werkzeugunterstützung: Besonders für eingebettete Systeme
+„Not-invented-here“-Syndrom: Widerstand gegen externe Komponenten
+Aufwand für Komponentenbibliotheken: Aufbau und Pflege sind arbeitsintensiv
+Anpassung erfordert Expertise: Finden und anpassen von Komponenten ist komplex
+
+
+
+
+10.04.2025 - Vorlesung 2: Wiederverwendung von Software 2
+Wiederverwendungstechniken (laut Sommerville)
+
+
+Frameworks">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/2025-04-10-kbe/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/2025-04-10-kbe/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Jays Zusammenfassung (Alt + H)">Jays Zusammenfassung</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/categories/" title="categories">
+                    <span>categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="tags">
+                    <span>tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://example.org" title="example.org">
+                    <span>example.org</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      KBE
+    </h1>
+    <div class="post-meta"><span title='2025-04-20 17:19:30 +0200 CEST'>April 20, 2025</span>&nbsp;·&nbsp;14 min
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#03042025---vorlesung-1-wiederverwendung-von-software-1" aria-label="03.04.2025 - Vorlesung 1: Wiederverwendung von Software 1">03.04.2025 - Vorlesung 1: Wiederverwendung von Software 1</a><ul>
+                        
+                <li>
+                    <a href="#einf%c3%bchrung-in-die-softwarewiederverwendung" aria-label="Einführung in die Softwarewiederverwendung">Einführung in die Softwarewiederverwendung</a></li>
+                <li>
+                    <a href="#skalierung-wiederverwendbarer-softwareeinheiten" aria-label="Skalierung wiederverwendbarer Softwareeinheiten">Skalierung wiederverwendbarer Softwareeinheiten</a></li>
+                <li>
+                    <a href="#vorteile-der-wiederverwendung" aria-label="Vorteile der Wiederverwendung">Vorteile der Wiederverwendung</a></li>
+                <li>
+                    <a href="#probleme-der-wiederverwendung" aria-label="Probleme der Wiederverwendung">Probleme der Wiederverwendung</a></li></ul>
+                </li>
+                <li>
+                    <a href="#10042025---vorlesung-2-wiederverwendung-von-software-2" aria-label="10.04.2025 - Vorlesung 2: Wiederverwendung von Software 2">10.04.2025 - Vorlesung 2: Wiederverwendung von Software 2</a><ul>
+                        
+                <li>
+                    <a href="#wiederverwendungstechniken-laut-sommerville" aria-label="Wiederverwendungstechniken (laut Sommerville)">Wiederverwendungstechniken (laut Sommerville)</a></li>
+                <li>
+                    <a href="#framework-klassifizierung-nach-fayad--schmidt" aria-label="Framework-Klassifizierung (nach Fayad &amp; Schmidt)">Framework-Klassifizierung (nach Fayad &amp; Schmidt)</a></li>
+                <li>
+                    <a href="#wiederverwendung-von-anwendungssystemen" aria-label="Wiederverwendung von Anwendungssystemen">Wiederverwendung von Anwendungssystemen</a></li>
+                <li>
+                    <a href="#vorteile-und-herausforderungen" aria-label="Vorteile und Herausforderungen">Vorteile und Herausforderungen</a></li></ul>
+                </li>
+                <li>
+                    <a href="#10042025---vorlesung-2-wiederverwendung-von-software-2-1" aria-label="10.04.2025 - Vorlesung 2: Wiederverwendung von Software 2">10.04.2025 - Vorlesung 2: Wiederverwendung von Software 2</a><ul>
+                        
+                <li>
+                    <a href="#grundprinzipien-des-komponentenbasierten-software-engineerings" aria-label="Grundprinzipien des komponentenbasierten Software-Engineerings">Grundprinzipien des komponentenbasierten Software-Engineerings</a></li>
+                <li>
+                    <a href="#-probleme--herausforderungen-im-kbse" aria-label="⚠️ Probleme &amp; Herausforderungen im KBSE">⚠️ Probleme &amp; Herausforderungen im KBSE</a></li>
+                <li>
+                    <a href="#-zentrale-entwurfsprinzipien-im-kbse" aria-label="🧩 Zentrale Entwurfsprinzipien im KBSE">🧩 Zentrale Entwurfsprinzipien im KBSE</a></li>
+                <li>
+                    <a href="#komponenten-als-dienstanbieter" aria-label="Komponenten als Dienstanbieter">Komponenten als Dienstanbieter</a></li>
+                <li>
+                    <a href="#-komponenten-vs-objekte" aria-label="🔍 Komponenten vs. Objekte">🔍 Komponenten vs. Objekte</a></li>
+                <li>
+                    <a href="#-komponentenschnittstellen" aria-label="🧩 Komponentenschnittstellen">🧩 Komponentenschnittstellen</a></li>
+                <li>
+                    <a href="#-visualisierung-in-uml-kompakt" aria-label="🎯 Visualisierung in UML (kompakt)">🎯 Visualisierung in UML (kompakt)</a></li>
+                <li>
+                    <a href="#schnittstellenspezifikation-in-komponentenmodellen" aria-label="Schnittstellenspezifikation in Komponentenmodellen">Schnittstellenspezifikation in Komponentenmodellen</a></li>
+                <li>
+                    <a href="#-grundelemente-eines-komponentenmodells" aria-label="🧩 Grundelemente eines Komponentenmodells">🧩 Grundelemente eines Komponentenmodells</a></li>
+                <li>
+                    <a href="#-bereitstellung--anpassung" aria-label="⚙️ Bereitstellung &amp; Anpassung">⚙️ Bereitstellung &amp; Anpassung</a></li>
+                <li>
+                    <a href="#-middleware-dienste-im-komponentenmodell" aria-label="🛠️ Middleware-Dienste im Komponentenmodell">🛠️ Middleware-Dienste im Komponentenmodell</a></li>
+                <li>
+                    <a href="#-container-als-laufzeitumgebung" aria-label="🧃 Container als Laufzeitumgebung">🧃 Container als Laufzeitumgebung</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%c3%bcbungsblatt-1" aria-label="Übungsblatt 1">Übungsblatt 1</a><ul>
+                        
+                <li>
+                    <a href="#aufgabe-1-grundstrategie-des-software-engineerings" aria-label="Aufgabe 1. Grundstrategie des Software-Engineerings">Aufgabe 1. Grundstrategie des Software-Engineerings</a></li>
+                <li>
+                    <a href="#aufgabe-2-aspekte-die-den-ansatz-getrieben-haben" aria-label="Aufgabe 2. Aspekte, die den Ansatz getrieben haben:">Aufgabe 2. Aspekte, die den Ansatz getrieben haben:</a></li>
+                <li>
+                    <a href="#aufgabe-3-beispiele-f%c3%bcr-etablierte-wiederverwendbare-software" aria-label="Aufgabe 3. Beispiele für etablierte wiederverwendbare Software:">Aufgabe 3. Beispiele für etablierte wiederverwendbare Software:</a></li>
+                <li>
+                    <a href="#aufgabe-4-gr%c3%b6%c3%9fenordnungen-von-softwareeinheiten-von-gro%c3%9f-nach-klein" aria-label="Aufgabe 4. Größenordnungen von Softwareeinheiten (von groß nach klein):">Aufgabe 4. Größenordnungen von Softwareeinheiten (von groß nach klein):</a></li>
+                <li>
+                    <a href="#aufgabe-5-beispiele-f%c3%bcr-jede-gr%c3%b6%c3%9fenordnung" aria-label="Aufgabe 5. Beispiele für jede Größenordnung:">Aufgabe 5. Beispiele für jede Größenordnung:</a></li>
+                <li>
+                    <a href="#aufgabe-6-vorteile-der-wiederverwendung" aria-label="Aufgabe 6. Vorteile der Wiederverwendung:">Aufgabe 6. Vorteile der Wiederverwendung:</a></li>
+                <li>
+                    <a href="#aufgabe-6-probleme-der-wiederverwendung" aria-label="Aufgabe 6. Probleme der Wiederverwendung:">Aufgabe 6. Probleme der Wiederverwendung:</a></li>
+                <li>
+                    <a href="#aufgabe-7-planung-der-wiederverwendung" aria-label="Aufgabe 7. Planung der Wiederverwendung">Aufgabe 7. Planung der Wiederverwendung</a></li>
+                <li>
+                    <a href="#aufgabe-8-schl%c3%bcsselfaktoren-bei-net-und-schneller-verf%c3%bcgbarkeit" aria-label="Aufgabe 8. Schlüsselfaktoren bei .NET und schneller Verfügbarkeit:">Aufgabe 8. Schlüsselfaktoren bei .NET und schneller Verfügbarkeit:</a></li>
+                <li>
+                    <a href="#aufgabe-9-12-anwendungsframeworks" aria-label="Aufgabe 9-12. Anwendungsframeworks">Aufgabe 9-12. Anwendungsframeworks</a></li>
+                <li>
+                    <a href="#aufgabe-13-15-softwareproduktlinien" aria-label="Aufgabe 13-15. Softwareproduktlinien">Aufgabe 13-15. Softwareproduktlinien</a></li>
+                <li>
+                    <a href="#aufgabe-16-19-anwendungssysteme" aria-label="Aufgabe 16-19. Anwendungssysteme">Aufgabe 16-19. Anwendungssysteme</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%c3%bcbungsblatt-2" aria-label="Übungsblatt 2">Übungsblatt 2</a><ul>
+                        
+                <li>
+                    <a href="#aufgabe-1-beweggr%c3%bcnde-f%c3%bcr-die-entstehung-des-komponentenbasierten-software-engineerings" aria-label="Aufgabe 1. Beweggründe für die Entstehung des Komponentenbasierten Software-Engineerings">Aufgabe 1. Beweggründe für die Entstehung des Komponentenbasierten Software-Engineerings</a></li>
+                <li>
+                    <a href="#aufgabe-2-vier-grundlagen-des-komponentenbasierten-software-engineerings" aria-label="Aufgabe 2. Vier Grundlagen des Komponentenbasierten Software-Engineerings">Aufgabe 2. Vier Grundlagen des Komponentenbasierten Software-Engineerings</a></li>
+                <li>
+                    <a href="#aufgabe-3-probleme-der-vertrauensw%c3%bcrdigkeit-von-komponenten" aria-label="Aufgabe 3. Probleme der Vertrauenswürdigkeit von Komponenten">Aufgabe 3. Probleme der Vertrauenswürdigkeit von Komponenten</a></li>
+                <li>
+                    <a href="#aufgabe-4-drei-grundlegende-entwurfsprinzipien-des-komponentenbasierten-software-engineerings" aria-label="Aufgabe 4. Drei grundlegende Entwurfsprinzipien des Komponentenbasierten Software-Engineerings">Aufgabe 4. Drei grundlegende Entwurfsprinzipien des Komponentenbasierten Software-Engineerings</a></li>
+                <li>
+                    <a href="#aufgabe-5-eigenschaften-von-komponenten-sommerville" aria-label="Aufgabe 5. Eigenschaften von Komponenten (Sommerville)">Aufgabe 5. Eigenschaften von Komponenten (Sommerville)</a></li>
+                <li>
+                    <a href="#aufgabe-6-kritische-vorteile-der-betrachtung-einer-komponente-als-dienstanbieter" aria-label="Aufgabe 6. Kritische Vorteile der Betrachtung einer Komponente als Dienstanbieter">Aufgabe 6. Kritische Vorteile der Betrachtung einer Komponente als Dienstanbieter</a></li>
+                <li>
+                    <a href="#aufgabe-7-unterschiede-zwischen-komponenten-und-objekten" aria-label="Aufgabe 7. Unterschiede zwischen Komponenten und Objekten">Aufgabe 7. Unterschiede zwischen Komponenten und Objekten</a></li>
+                <li>
+                    <a href="#aufgabe-8-unterschiedliche-schnittstellen-von-komponenten" aria-label="Aufgabe 8. Unterschiedliche Schnittstellen von Komponenten">Aufgabe 8. Unterschiedliche Schnittstellen von Komponenten</a></li>
+                <li>
+                    <a href="#aufgabe-8-uml-diagramm" aria-label="Aufgabe 8. UML-Diagramm">Aufgabe 8. UML-Diagramm</a></li>
+                <li>
+                    <a href="#aufgabe-10-uml-darstellung-der-databroker-komponente" aria-label="Aufgabe 10. UML-Darstellung der „DataBroker“-Komponente">Aufgabe 10. UML-Darstellung der „DataBroker“-Komponente</a></li>
+                <li>
+                    <a href="#aufgabe-11-prinzip-eines-komponentenmodells" aria-label="Aufgabe 11. Prinzip eines Komponentenmodells">Aufgabe 11. Prinzip eines Komponentenmodells</a></li>
+                <li>
+                    <a href="#aufgabe-12-drei-allgemeine-aspekte-der-grundelemente-eines-komponentenmodells" aria-label="Aufgabe 12. Drei allgemeine Aspekte der Grundelemente eines Komponentenmodells">Aufgabe 12. Drei allgemeine Aspekte der Grundelemente eines Komponentenmodells</a></li>
+                <li>
+                    <a href="#aufgabe-13-unterschied-zwischen-plattform--und-hilfsdiensten-einer-middleware" aria-label="Aufgabe 13. Unterschied zwischen Plattform- und Hilfsdiensten einer Middleware">Aufgabe 13. Unterschied zwischen Plattform- und Hilfsdiensten einer Middleware</a></li>
+                <li>
+                    <a href="#aufgabe-14-implementierung-eines-komponentenmodells" aria-label="Aufgabe 14. Implementierung eines Komponentenmodells">Aufgabe 14. Implementierung eines Komponentenmodells</a></li>
+                <li>
+                    <a href="#aufgabe-15-aussagen-zu-containern-und-komponenten" aria-label="Aufgabe 15. Aussagen zu Containern und Komponenten">Aufgabe 15. Aussagen zu Containern und Komponenten</a><ul>
+                        
+                <li>
+                    <a href="#%c3%bcbungsblatt-3" aria-label="Übungsblatt 3">Übungsblatt 3</a></li>
+                <li>
+                    <a href="#%c3%bcbungsblatt-4" aria-label="Übungsblatt 4">Übungsblatt 4</a></li></ul>
+                </li></ul>
+                </li>
+                <li>
+                    <a href="#mamechishiki" aria-label="Mamechishiki">Mamechishiki</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h2 id="03042025---vorlesung-1-wiederverwendung-von-software-1">03.04.2025 - Vorlesung 1: Wiederverwendung von Software 1<a hidden class="anchor" aria-hidden="true" href="#03042025---vorlesung-1-wiederverwendung-von-software-1">#</a></h2>
+<h3 id="einführung-in-die-softwarewiederverwendung">Einführung in die Softwarewiederverwendung<a hidden class="anchor" aria-hidden="true" href="#einführung-in-die-softwarewiederverwendung">#</a></h3>
+<ul>
+<li><strong>Definition:</strong> Wiederverwendung bestehender Softwarekomponenten (z. B. Code, Module, Systeme)</li>
+<li><strong>Motivation:</strong> Geringere Kosten, höhere Qualität, schnellere Markteinführung</li>
+<li><strong>Relevanz:</strong> Besonders wichtig seit 2000 durch wachsende Softwarekomplexität und Kostendruck</li>
+</ul>
+<h3 id="skalierung-wiederverwendbarer-softwareeinheiten">Skalierung wiederverwendbarer Softwareeinheiten<a hidden class="anchor" aria-hidden="true" href="#skalierung-wiederverwendbarer-softwareeinheiten">#</a></h3>
+<ul>
+<li><strong>Systeme von Systemen:</strong> Integration ganzer Systeme</li>
+<li><strong>Anwendungssysteme:</strong> Konfigurierbare Standardsoftware</li>
+<li><strong>Anwendungsfamilien / Produktlinien:</strong> Gemeinsame Architektur mit Anpassungsmöglichkeiten</li>
+<li><strong>Komponenten:</strong> Module mittlerer Granularität</li>
+<li><strong>Objekte und Funktionen:</strong> Kleinste Einheiten, oft in Bibliotheken</li>
+</ul>
+<h3 id="vorteile-der-wiederverwendung">Vorteile der Wiederverwendung<a hidden class="anchor" aria-hidden="true" href="#vorteile-der-wiederverwendung">#</a></h3>
+<ul>
+<li><strong>Kosten- und Zeitersparnis:</strong> Weniger Entwicklung und Validierung notwendig</li>
+<li><strong>Zuverlässigkeit:</strong> Durch getestete und bewährte Komponenten</li>
+<li><strong>Bessere Ressourcennutzung:</strong> Spezialisten und Standards werden besser genutzt</li>
+<li><strong>Konsistenz und Standardisierung:</strong> Z. B. bei UI-Komponenten</li>
+</ul>
+<h3 id="probleme-der-wiederverwendung">Probleme der Wiederverwendung<a hidden class="anchor" aria-hidden="true" href="#probleme-der-wiederverwendung">#</a></h3>
+<ul>
+<li><strong>Wartungsprobleme:</strong> Unbekannter Quellcode führt zu Problemen bei Wartung und Erweiterung</li>
+<li><strong>Geringe Werkzeugunterstützung:</strong> Besonders für eingebettete Systeme</li>
+<li><strong>„Not-invented-here“-Syndrom:</strong> Widerstand gegen externe Komponenten</li>
+<li><strong>Aufwand für Komponentenbibliotheken:</strong> Aufbau und Pflege sind arbeitsintensiv</li>
+<li><strong>Anpassung erfordert Expertise:</strong> Finden und anpassen von Komponenten ist komplex</li>
+</ul>
+<hr>
+<hr>
+<hr>
+<h2 id="10042025---vorlesung-2-wiederverwendung-von-software-2">10.04.2025 - Vorlesung 2: Wiederverwendung von Software 2<a hidden class="anchor" aria-hidden="true" href="#10042025---vorlesung-2-wiederverwendung-von-software-2">#</a></h2>
+<h3 id="wiederverwendungstechniken-laut-sommerville">Wiederverwendungstechniken (laut Sommerville)<a hidden class="anchor" aria-hidden="true" href="#wiederverwendungstechniken-laut-sommerville">#</a></h3>
+<ol>
+<li>
+<p><strong>Frameworks</strong></p>
+<ul>
+<li><strong>Definition:</strong> Ein Framework ist ein Set von Softwarekomponenten, das eine Architektur für verwandte Anwendungen bereitstellt.</li>
+<li><strong>Beispiel:</strong> Ein Web-Framework wie Spring MVC verwendet das Model-View-Controller-Muster.</li>
+<li><strong>Eigenschaft:</strong> Bietet generische Funktionalität und wird erweitert, nicht ersetzt.</li>
+</ul>
+</li>
+<li>
+<p><strong>Inversion of Control (IoC)</strong></p>
+<ul>
+<li><strong>Prinzip:</strong> Die Steuerung liegt beim Framework, nicht bei der Anwendung. Die Anwendung registriert ihre Komponenten, und das Framework ruft sie bei Bedarf auf.</li>
+<li><strong>Beispiel:</strong> Callbacks in Web-Frameworks.</li>
+</ul>
+</li>
+<li>
+<p><strong>Entwurfsmuster</strong></p>
+<ul>
+<li><strong>Beispiel:</strong> Observer, Strategy sind gängige Muster, um wiederkehrende Probleme zu lösen.</li>
+</ul>
+</li>
+<li>
+<p><strong>Architekturmuster</strong></p>
+<ul>
+<li><strong>Beispiel:</strong> Microservices bieten eine systemweite Lösung für komplexe Anwendungen.</li>
+</ul>
+</li>
+<li>
+<p><strong>ERP-Systeme</strong></p>
+<ul>
+<li><strong>Definition:</strong> Unternehmensweite Systeme mit konfigurierbaren Modulen.</li>
+<li><strong>Vorteil:</strong> Bietet Lösungen für die Verwaltung von Geschäftsdaten und Prozessen.</li>
+</ul>
+</li>
+<li>
+<p><strong>Komponentenbasierte Entwicklung</strong></p>
+<ul>
+<li><strong>Prinzip:</strong> Systeme werden aus austauschbaren Komponenten aufgebaut.</li>
+</ul>
+</li>
+<li>
+<p><strong>Modellgetriebene Entwicklung</strong></p>
+<ul>
+<li><strong>Definition:</strong> Software wird aus plattformunabhängigen Modellen erstellt.</li>
+</ul>
+</li>
+<li>
+<p><strong>Serviceorientierte Systeme</strong></p>
+<ul>
+<li><strong>Prinzip:</strong> Nutzung verteilter Webservices (z. B. REST, SOAP) zur Kommunikation zwischen Komponenten.</li>
+</ul>
+</li>
+<li>
+<p><strong>Softwareproduktlinien</strong></p>
+<ul>
+<li><strong>Definition:</strong> Produktfamilien mit einer gemeinsamen Codebasis und variablen Komponenten.</li>
+</ul>
+</li>
+</ol>
+<h3 id="framework-klassifizierung-nach-fayad--schmidt">Framework-Klassifizierung (nach Fayad &amp; Schmidt)<a hidden class="anchor" aria-hidden="true" href="#framework-klassifizierung-nach-fayad--schmidt">#</a></h3>
+<ul>
+<li><strong>Systeminfrastruktur-Frameworks:</strong> Z. B. Kommunikation, GUI, Compiler</li>
+<li><strong>Middleware-Integrations-Frameworks:</strong> Z. B. Jakarta EE, .NET für Komponentenkommunikation</li>
+<li><strong>Unternehmensanwendungs-Frameworks:</strong> Z. B. spezialisierte Frameworks für Branchen wie Telekommunikation oder Finanzen.</li>
+</ul>
+<h3 id="wiederverwendung-von-anwendungssystemen">Wiederverwendung von Anwendungssystemen<a hidden class="anchor" aria-hidden="true" href="#wiederverwendung-von-anwendungssystemen">#</a></h3>
+<ul>
+<li><strong>Softwareproduktlinien:</strong> Gemeinsamer Kern mit anpassbaren Komponenten</li>
+<li><strong>Konfigurierbare Systeme:</strong> Über Parameter anpassbar (z. B. ERP-Systeme)</li>
+<li><strong>Integrierte Systeme:</strong> Kombination verschiedener Anwendungen über Schnittstellen</li>
+</ul>
+<h3 id="vorteile-und-herausforderungen">Vorteile und Herausforderungen<a hidden class="anchor" aria-hidden="true" href="#vorteile-und-herausforderungen">#</a></h3>
+<ul>
+<li><strong>Vorteile:</strong> Schnellere Bereitstellung und geringeres Entwicklungsrisiko</li>
+<li><strong>Herausforderungen:</strong> Anpassung an Unternehmensprozesse, fehlende Expertise, Auswahl des richtigen Systems</li>
+</ul>
+<hr>
+<hr>
+<hr>
+<h2 id="10042025---vorlesung-2-wiederverwendung-von-software-2-1">10.04.2025 - Vorlesung 2: Wiederverwendung von Software 2<a hidden class="anchor" aria-hidden="true" href="#10042025---vorlesung-2-wiederverwendung-von-software-2-1">#</a></h2>
+<h3 id="grundprinzipien-des-komponentenbasierten-software-engineerings">Grundprinzipien des komponentenbasierten Software-Engineerings<a hidden class="anchor" aria-hidden="true" href="#grundprinzipien-des-komponentenbasierten-software-engineerings">#</a></h3>
+<p><strong>Unabhängige Komponenten</strong></p>
+<ul>
+<li>Vollständig konfigurierbar über ihre Schnittstellen</li>
+<li>Schnittstelle klar getrennt von der Implementierung</li>
+<li>Austauschbar ohne Änderung am System</li>
+</ul>
+<p><strong>Komponentenstandards</strong></p>
+<ul>
+<li>Einheitliche Schnittstellendefinition &amp; Integration</li>
+<li>Umsetzung über Komponentenmodelle, z. B.:
+<ul>
+<li>Schnittstellenbeschreibung</li>
+<li>Kommunikationsweise zwischen Komponenten</li>
+</ul>
+</li>
+</ul>
+<p><strong>Middleware</strong></p>
+<ul>
+<li>Serverseitige Unterstützung für:
+<ul>
+<li>Kommunikation verteilter Komponenten</li>
+<li>Ressourcenmanagement</li>
+<li>Transaktionsverwaltung, Sicherheit, Parallelität</li>
+</ul>
+</li>
+</ul>
+<p><strong>Komponentenorientierter Entwicklungsprozess</strong></p>
+<ul>
+<li>Anforderungen an vorhandene Komponenten anpassbar</li>
+<li>Wiederverwendung während Planung &amp; Entwicklung</li>
+</ul>
+<h3 id="-probleme--herausforderungen-im-kbse">⚠️ Probleme &amp; Herausforderungen im KBSE<a hidden class="anchor" aria-hidden="true" href="#-probleme--herausforderungen-im-kbse">#</a></h3>
+<p><strong>Vertrauenswürdigkeit der Komponenten</strong></p>
+<ul>
+<li>Blackbox-Natur erschwert Vertrauen</li>
+<li>Kein Quellcode = wenig Transparenz</li>
+</ul>
+<p><strong>Komponentenzertifizierung</strong></p>
+<ul>
+<li>Wer zahlt, wer haftet?</li>
+<li>Keine klare Verantwortung, rechtlich unsicher</li>
+</ul>
+<p><strong>Vorhersage emergenter Eigenschaften</strong></p>
+<ul>
+<li>Integration ≠ Summe der Einzelteile</li>
+<li>Unerwartete Seiteneffekte durch Zusammenspiel</li>
+</ul>
+<p><strong>Anforderungskompromisse</strong></p>
+<ul>
+<li>Reale Anforderungen vs. Verfügbarkeit</li>
+<li>Notwendigkeit strukturierter Analysemethoden</li>
+</ul>
+<h3 id="-zentrale-entwurfsprinzipien-im-kbse">🧩 Zentrale Entwurfsprinzipien im KBSE<a hidden class="anchor" aria-hidden="true" href="#-zentrale-entwurfsprinzipien-im-kbse">#</a></h3>
+<p><strong>Unabhängigkeit</strong></p>
+<ul>
+<li>Komponenten beeinflussen sich nicht gegenseitig</li>
+</ul>
+<p><strong>Klar definierte Schnittstellen</strong></p>
+<ul>
+<li>Austauschbar bei stabiler API</li>
+</ul>
+<p><strong>Komponenteninfrastruktur mit Standarddiensten</strong></p>
+<ul>
+<li>Weniger Neuentwicklung nötig</li>
+<li>Fokus auf Integration statt Eigenentwicklung</li>
+</ul>
+<h3 id="komponenten-als-dienstanbieter">Komponenten als Dienstanbieter<a hidden class="anchor" aria-hidden="true" href="#komponenten-als-dienstanbieter">#</a></h3>
+<ul>
+<li>Komponenten stellen Dienste bereit und kapseln deren Implementierung.</li>
+<li>Aufgerufen vom System, ohne zu wissen:
+<ul>
+<li>Wo sie ausgeführt werden</li>
+<li>In welcher Sprache sie geschrieben sind</li>
+</ul>
+</li>
+</ul>
+<p><strong>Vorteile</strong></p>
+<ul>
+<li>Unabhängig &amp; ausführbar über ihre Schnittstelle</li>
+<li>Schnittstellenbasiert → kein Zugriff auf internen Zustand nötig</li>
+</ul>
+<p>&hellip;. (Tabelle fehlt)</p>
+<h3 id="-komponenten-vs-objekte">🔍 Komponenten vs. Objekte<a hidden class="anchor" aria-hidden="true" href="#-komponenten-vs-objekte">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Merkmal</th>
+          <th>Komponente</th>
+          <th>Objekt</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Deployment</strong></td>
+          <td>Direkt auf Plattform installierbar</td>
+          <td>Teil eines Programms (kompiliert)</td>
+      </tr>
+      <tr>
+          <td><strong>Typdefinition</strong></td>
+          <td>Ist eine Instanz</td>
+          <td>Basierend auf Klasse (Typ)</td>
+      </tr>
+      <tr>
+          <td><strong>Transparenz</strong></td>
+          <td>Blackbox, Schnittstelle-only</td>
+          <td>Oft transparenter</td>
+      </tr>
+      <tr>
+          <td><strong>Sprachabhängigkeit</strong></td>
+          <td>Sprachunabhängig</td>
+          <td>Sprachgebunden (z. B. nur Java)</td>
+      </tr>
+      <tr>
+          <td><strong>Standardisierung</strong></td>
+          <td>Muss Komponentenmodell folgen</td>
+          <td>Frei definierbar</td>
+      </tr>
+  </tbody>
+</table>
+<p>Sprachabhängigkeit : Java ist eher sprachabhängig aber .NET(Microsoft) ist universell.</p>
+<h3 id="-komponentenschnittstellen">🧩 Komponentenschnittstellen<a hidden class="anchor" aria-hidden="true" href="#-komponentenschnittstellen">#</a></h3>
+<p><strong>Stellt bereit (provided interface)</strong></p>
+<ul>
+<li>API der Komponente – was sie bietet</li>
+</ul>
+<p><strong>Benötigt (required interface)</strong></p>
+<ul>
+<li>Welche Dienste sie selbst braucht, um korrekt zu funktionieren</li>
+<li>Definiert nicht, wie diese bereitgestellt werden</li>
+</ul>
+<h3 id="-visualisierung-in-uml-kompakt">🎯 Visualisierung in UML (kompakt)<a hidden class="anchor" aria-hidden="true" href="#-visualisierung-in-uml-kompakt">#</a></h3>
+<p>🧱 <strong>Komponente</strong></p>
+<ul>
+<li>Wird mit Rechteck + 2 kleinen Rechtecken dargestellt</li>
+<li>Enthält:
+<ul>
+<li>Realisierungsklassen</li>
+<li>&ldquo;Stellt bereit&rdquo;- und &ldquo;Benötigt&rdquo;-Schnittstellen (sichtbar an Port-Notationen)</li>
+</ul>
+</li>
+</ul>
+<h3 id="schnittstellenspezifikation-in-komponentenmodellen">Schnittstellenspezifikation in Komponentenmodellen<a hidden class="anchor" aria-hidden="true" href="#schnittstellenspezifikation-in-komponentenmodellen">#</a></h3>
+<ul>
+<li>Komponenten werden über ihre Schnittstellen definiert</li>
+<li>Das Komponentenmodell regelt:
+<ul>
+<li>Wie Schnittstellen aufgebaut sind</li>
+<li>In welcher Sprache sie beschrieben werden</li>
+</ul>
+</li>
+</ul>
+<p><strong>Beispiele</strong></p>
+<ul>
+<li>SOAP Webservices → WSDL (XML)</li>
+<li>Jakarta Beans / CDI → Java</li>
+<li>Microsoft .NET → CIL</li>
+</ul>
+<h3 id="-grundelemente-eines-komponentenmodells">🧩 Grundelemente eines Komponentenmodells<a hidden class="anchor" aria-hidden="true" href="#-grundelemente-eines-komponentenmodells">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Element</th>
+          <th>Beschreibung</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Schnittstellen</strong></td>
+          <td>Bereitgestellte + benötigte Dienste</td>
+      </tr>
+      <tr>
+          <td><strong>Nutzung</strong></td>
+          <td>Globale Bezeichner/Handles (z. B. URI, JNDI)</td>
+      </tr>
+      <tr>
+          <td><strong>Bereitstellung &amp; Verpackung</strong></td>
+          <td>inkl. Konfigurationsoptionen, Doku, Meta-Infos</td>
+      </tr>
+      <tr>
+          <td><strong>Komposition</strong></td>
+          <td>Wie Komponenten zusammengebaut werden</td>
+      </tr>
+      <tr>
+          <td><strong>Anpassung</strong></td>
+          <td>Konfigurierbar für konkrete Einsatzszenarien</td>
+      </tr>
+      <tr>
+          <td><strong>Evolution</strong></td>
+          <td>Austausch- und Update-Regeln</td>
+      </tr>
+      <tr>
+          <td><strong>Dokumentation &amp; Namenskonvention</strong></td>
+          <td>Strukturierter Zugriff &amp; Übersicht</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Metadatenzugriff</strong></p>
+<ul>
+<li>z. B. via Reflection (Java)</li>
+</ul>
+<p>Beispiel für Schnittstellen : WSDL für SOAP, CDI-Beans für Java, CIL für .NET
+URI, JNDI?</p>
+<h3 id="-bereitstellung--anpassung">⚙️ Bereitstellung &amp; Anpassung<a hidden class="anchor" aria-hidden="true" href="#-bereitstellung--anpassung">#</a></h3>
+<ul>
+<li>Komponenten sind unabhängig lauffähig</li>
+<li>Müssen komplett mit benötigter Infrastruktur geliefert werden</li>
+<li>Doku &amp; Austauschregeln sind Teil des Modells</li>
+<li>Unterstützung für Konfigurierbarkeit &amp; Wiederverwendbarkeit</li>
+</ul>
+<p>Beispiel: MAVEN</p>
+<p>jar file mit free pdf?</p>
+<h3 id="-middleware-dienste-im-komponentenmodell">🛠️ Middleware-Dienste im Komponentenmodell<a hidden class="anchor" aria-hidden="true" href="#-middleware-dienste-im-komponentenmodell">#</a></h3>
+<p><strong>Zwei Kategorien:</strong></p>
+<ol>
+<li>
+<p><strong>Plattformdienste</strong><br>
+(grundlegend für verteilte Kommunikation)</p>
+<ul>
+<li>Komponentenkommunikation</li>
+<li>Ressourcenverwaltung</li>
+<li>Adressierung</li>
+<li>Ausnahmebehandlung</li>
+<li>Transaktionsverwaltung</li>
+<li>Informationssicherheit</li>
+<li>Persistenz</li>
+<li>Nebenläufigkeit</li>
+</ul>
+</li>
+<li>
+<p><strong>Hilfsdienste</strong><br>
+(ergänzend, z. B. Authentifizierung)</p>
+<ul>
+<li>Entlasten die Entwicklung, verhindern Inkompatibilitäten</li>
+</ul>
+</li>
+</ol>
+<h3 id="-container-als-laufzeitumgebung">🧃 Container als Laufzeitumgebung<a hidden class="anchor" aria-hidden="true" href="#-container-als-laufzeitumgebung">#</a></h3>
+<ul>
+<li><strong>Container</strong> = Laufzeitumgebung mit Middleware-Diensten</li>
+<li>Besteht aus:
+<ul>
+<li>Dienstimplementierungen</li>
+<li>Definitionen für Schnittstellenintegration</li>
+</ul>
+</li>
+</ul>
+<p><strong>Effekt:</strong></p>
+<ul>
+<li>Komponente nutzt Containerdienste über bereitgestellte Schnittstelle</li>
+<li>Kommunikation mit anderen Komponenten läuft indirekt über Proxys</li>
+</ul>
+<p><strong>Beispiel:</strong></p>
+<ul>
+<li>EJB-Container (mächtig, komplex)</li>
+<li>Spring Framework (leichtgewichtig, effizienter)</li>
+</ul>
+<p>Was ist Proxy? Unter den Proxys verbogen</p>
+<hr>
+<hr>
+<hr>
+<h2 id="übungsblatt-1">Übungsblatt 1<a hidden class="anchor" aria-hidden="true" href="#übungsblatt-1">#</a></h2>
+<h3 id="aufgabe-1-grundstrategie-des-software-engineerings">Aufgabe 1. Grundstrategie des Software-Engineerings<a hidden class="anchor" aria-hidden="true" href="#aufgabe-1-grundstrategie-des-software-engineerings">#</a></h3>
+<p><strong>Ziel der Wiederverwendung</strong>:</p>
+<ul>
+<li>Wiederverwendung vorhandener Software, statt neue Software von Grund auf zu entwickeln.</li>
+</ul>
+<h3 id="aufgabe-2-aspekte-die-den-ansatz-getrieben-haben">Aufgabe 2. Aspekte, die den Ansatz getrieben haben:<a hidden class="anchor" aria-hidden="true" href="#aufgabe-2-aspekte-die-den-ansatz-getrieben-haben">#</a></h3>
+<ul>
+<li>Geringere Produktions- und Wartungskosten</li>
+<li>Schnellere Auslieferung von Systemen</li>
+<li>Höhere Softwarequalität</li>
+</ul>
+<h3 id="aufgabe-3-beispiele-für-etablierte-wiederverwendbare-software">Aufgabe 3. Beispiele für etablierte wiederverwendbare Software:<a hidden class="anchor" aria-hidden="true" href="#aufgabe-3-beispiele-für-etablierte-wiederverwendbare-software">#</a></h3>
+<ul>
+<li>Open Source Code (z. B. Apache Commons)</li>
+<li>ERP-Systeme (z. B. SAP)</li>
+<li>Komponentenbibliotheken</li>
+<li>Webservices (z. B. PayPal)</li>
+</ul>
+<h3 id="aufgabe-4-größenordnungen-von-softwareeinheiten-von-groß-nach-klein">Aufgabe 4. Größenordnungen von Softwareeinheiten (von groß nach klein):<a hidden class="anchor" aria-hidden="true" href="#aufgabe-4-größenordnungen-von-softwareeinheiten-von-groß-nach-klein">#</a></h3>
+<ul>
+<li>Systeme</li>
+<li>Anwendungen</li>
+<li>Softwareproduktlinien</li>
+<li>Komponenten</li>
+<li>Objekte und Funktionen</li>
+</ul>
+<h3 id="aufgabe-5-beispiele-für-jede-größenordnung">Aufgabe 5. Beispiele für jede Größenordnung:<a hidden class="anchor" aria-hidden="true" href="#aufgabe-5-beispiele-für-jede-größenordnung">#</a></h3>
+<ul>
+<li><strong>System</strong>: Ein ERP-System, z. B. SAP</li>
+<li><strong>Anwendung</strong>: Ein CRM-System</li>
+<li><strong>Produktlinie</strong>: Softwarelinie für medizinische Geräte</li>
+<li><strong>Komponente</strong>: Zahlungsmodul</li>
+<li><strong>Funktion/Objekt</strong>: Logging-Klasse aus Apache Commons</li>
+</ul>
+<h3 id="aufgabe-6-vorteile-der-wiederverwendung">Aufgabe 6. Vorteile der Wiederverwendung:<a hidden class="anchor" aria-hidden="true" href="#aufgabe-6-vorteile-der-wiederverwendung">#</a></h3>
+<ul>
+<li>Geringere Kosten</li>
+<li>Höhere Zuverlässigkeit</li>
+<li>Geringeres Entwicklungsrisiko</li>
+<li>Schnellere Markteinführung</li>
+<li>Effektiver Einsatz von Experten</li>
+<li>Standardkonformität</li>
+</ul>
+<h3 id="aufgabe-6-probleme-der-wiederverwendung">Aufgabe 6. Probleme der Wiederverwendung:<a hidden class="anchor" aria-hidden="true" href="#aufgabe-6-probleme-der-wiederverwendung">#</a></h3>
+<ul>
+<li>Höhere Wartungskosten</li>
+<li>Mangel an Werkzeugunterstützung</li>
+<li>&ldquo;Not-invented-here&rdquo;-Syndrom</li>
+<li>Hoher Aufwand für Bibliotheksverwaltung</li>
+<li>Schwierige Suche und Anpassung von Komponenten</li>
+</ul>
+<h3 id="aufgabe-7-planung-der-wiederverwendung">Aufgabe 7. Planung der Wiederverwendung<a hidden class="anchor" aria-hidden="true" href="#aufgabe-7-planung-der-wiederverwendung">#</a></h3>
+<p><strong>Vier Schlüsselfaktoren:</strong></p>
+<ul>
+<li>Entwicklungszeitplan</li>
+<li>Erwartete Lebensdauer der Software</li>
+<li>Erfahrung des Entwicklerteams</li>
+<li>Wichtigkeit/Nicht-funktionale Anforderungen</li>
+</ul>
+<h3 id="aufgabe-8-schlüsselfaktoren-bei-net-und-schneller-verfügbarkeit">Aufgabe 8. Schlüsselfaktoren bei .NET und schneller Verfügbarkeit:<a hidden class="anchor" aria-hidden="true" href="#aufgabe-8-schlüsselfaktoren-bei-net-und-schneller-verfügbarkeit">#</a></h3>
+<ul>
+<li>Plattformabhängigkeit (→ .NET-Kompatibilität)</li>
+<li>Geringer Entwicklungsaufwand durch Wiederverwendung fertiger Systeme</li>
+</ul>
+<h3 id="aufgabe-9-12-anwendungsframeworks">Aufgabe 9-12. Anwendungsframeworks<a hidden class="anchor" aria-hidden="true" href="#aufgabe-9-12-anwendungsframeworks">#</a></h3>
+<p><strong>Attribute von Frameworks:</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Attribut</th>
+          <th>Passt?</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Konfigurierbar</td>
+          <td>✅ Ja</td>
+      </tr>
+      <tr>
+          <td>Generisch</td>
+          <td>✅ Ja</td>
+      </tr>
+      <tr>
+          <td>Call-back</td>
+          <td>✅ Ja</td>
+      </tr>
+      <tr>
+          <td>Unterstützung konkreter Geschäftsaktivitäten</td>
+          <td>✅ Ja</td>
+      </tr>
+      <tr>
+          <td>Inversion of Control</td>
+          <td>✅ Ja</td>
+      </tr>
+      <tr>
+          <td>Inhärent erweiterbar</td>
+          <td>✅ Ja</td>
+      </tr>
+      <tr>
+          <td>Basis sehr ähnlicher Systeme</td>
+          <td>✅ Ja</td>
+      </tr>
+      <tr>
+          <td>Unterstützung für Hardware-Schnittstellen</td>
+          <td>❌ Teilweise (meist Software)</td>
+      </tr>
+      <tr>
+          <td>Immer objektorientiert</td>
+          <td>❌ Nein (meist, aber nicht zwingend)</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Drei Architektur- und Entwurfsmuster, auf denen WAFs basieren:</strong></p>
+<ul>
+<li>Model-View-Controller (MVC)</li>
+<li>Observer Pattern</li>
+<li>Strategy Pattern (auch Composite Pattern möglich)</li>
+</ul>
+<p><strong>Funktion von WAFs oder Entwicklern:</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Funktion</th>
+          <th>WAF</th>
+          <th>ENT</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Zahlungstransaktion über Kreditkarte durchführen</td>
+          <td></td>
+          <td>✅</td>
+      </tr>
+      <tr>
+          <td>Verwaltung des Inhalts eines Shop-Warenkorbs</td>
+          <td>✅</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Abfragedaten in einer Tabelle aufbereiten</td>
+          <td>✅</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Am System anmelden und abmelden</td>
+          <td>✅</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Zugriff auf ein Geoinformationsdienst</td>
+          <td></td>
+          <td>✅</td>
+      </tr>
+      <tr>
+          <td>Bestimmung des aktuellen Standorts über GPS</td>
+          <td></td>
+          <td>✅</td>
+      </tr>
+      <tr>
+          <td>Asynchrone Aktualisierung durch Auswahl eines Listeneintrags</td>
+          <td>✅</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Geänderte Daten nach dem Speichern sichtbar machen</td>
+          <td>✅</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Ermittlung verschiedener Bahn-Routen</td>
+          <td></td>
+          <td>✅</td>
+      </tr>
+      <tr>
+          <td>Nutzung einer 3D-Spiele-Engine</td>
+          <td></td>
+          <td>✅</td>
+      </tr>
+      <tr>
+          <td>Geschäftsdaten persistieren</td>
+          <td>✅</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Unterschied Framework vs. Bibliothek:</strong></p>
+<ul>
+<li>Bei <strong>Bibliotheken</strong> ruft die Anwendung die Bibliothek auf.</li>
+<li>Bei <strong>Frameworks</strong> ruft das Framework die Anwendung auf.
+<ul>
+<li>→ Inversion of Control (IoC, „Hollywood Principle“: &ldquo;Don&rsquo;t call us, we&rsquo;ll call you&rdquo;)</li>
+</ul>
+</li>
+</ul>
+<h3 id="aufgabe-13-15-softwareproduktlinien">Aufgabe 13-15. Softwareproduktlinien<a hidden class="anchor" aria-hidden="true" href="#aufgabe-13-15-softwareproduktlinien">#</a></h3>
+<p><strong>Was ist eine Softwareproduktlinie und wann ist sie effizient?</strong></p>
+<ul>
+<li>Eine Produktlinie ist ein Satz verwandter Anwendungen mit gemeinsamer Architektur.</li>
+<li>Effizient, wenn viele ähnliche, aber nicht identische Systeme benötigt werden.</li>
+</ul>
+<p><strong>Aufbau des Basissystems:</strong></p>
+<ul>
+<li>Kernkomponenten (nicht veränderbar)</li>
+<li>Konfigurierbare Komponenten</li>
+<li>Spezielle Anwendungskomponenten</li>
+</ul>
+<p><strong>Voraussetzung bei Nutzung von Frameworks für Produktlinien:</strong></p>
+<ul>
+<li>Das Framework muss erweiterbar und anpassbar sein, um domänenspezifische Komponenten einzubetten.</li>
+</ul>
+<h3 id="aufgabe-16-19-anwendungssysteme">Aufgabe 16-19. Anwendungssysteme<a hidden class="anchor" aria-hidden="true" href="#aufgabe-16-19-anwendungssysteme">#</a></h3>
+<p><strong>Welche Aussagen über Anwendungssysteme sind korrekt?</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Aussage</th>
+          <th>Ja</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Lassen sich viel schneller zuverlässig bereitstellen</td>
+          <td>✅</td>
+      </tr>
+      <tr>
+          <td>Sind im Kern sehr gut auf kundenspezifische Bedürfnisse zugeschnitten</td>
+          <td>❌</td>
+      </tr>
+      <tr>
+          <td>Support-Ratschläge = Verkaufsfokus, nicht Bedarfsermittlung</td>
+          <td>✅</td>
+      </tr>
+      <tr>
+          <td>Gut zur Abbildung bestehender Geschäftsprozesse geeignet</td>
+          <td>✅</td>
+      </tr>
+      <tr>
+          <td>Anpassbar ohne Quellcode-Änderung</td>
+          <td>✅</td>
+      </tr>
+      <tr>
+          <td>Technologie-Updates = Verantwortung des Herstellers</td>
+          <td>✅</td>
+      </tr>
+      <tr>
+          <td>Für Unternehmen mit ähnlichen Systemanforderungen geeignet</td>
+          <td>✅</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Zwei Ansätze von Anwendungssystemen:</strong></p>
+<ul>
+<li><strong>Konfigurierbare Anwendungssysteme</strong>: Einzelprodukt, Konfiguration</li>
+<li><strong>Integration von Anwendungssystemen</strong>: Mehrere Systeme, Anpassung durch Integration</li>
+</ul>
+<p><strong>Zuordnung der Aussagen:</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Aussage</th>
+          <th>Ansatz</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Schwerpunkt: Systemintegration</td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td>Systemanbieter liefert Plattform</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>Einzelprodukt liefert benötigte Funktionalität</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>Entwicklung flexibler Lösungen für Kundenprozesse</td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td>System basiert auf generischer Lösung und standardisierten Prozessen</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td>Wartung = Verantwortung des Systembesitzers</td>
+          <td>2</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Beispielsysteme für beide Ansätze:</strong></p>
+<ul>
+<li><strong>Konfigurierbares Anwendungssystem</strong>: SAP ERP</li>
+<li><strong>Integriertes Anwendungssystem</strong>: E-Commerce-System mit ERP- und E-Mail-Anbindung</li>
+</ul>
+<hr>
+<hr>
+<hr>
+<h2 id="übungsblatt-2">Übungsblatt 2<a hidden class="anchor" aria-hidden="true" href="#übungsblatt-2">#</a></h2>
+<h3 id="aufgabe-1-beweggründe-für-die-entstehung-des-komponentenbasierten-software-engineerings">Aufgabe 1. Beweggründe für die Entstehung des Komponentenbasierten Software-Engineerings<a hidden class="anchor" aria-hidden="true" href="#aufgabe-1-beweggründe-für-die-entstehung-des-komponentenbasierten-software-engineerings">#</a></h3>
+<p><strong>Wiederverwendbarkeit</strong>:</p>
+<ul>
+<li>Softwarekomponenten können wiederverwendet werden, was Entwicklungszeit und Kosten spart.</li>
+</ul>
+<p><strong>Modularität</strong>:</p>
+<ul>
+<li>Komponenten sind unabhängig, was Wartung und Erweiterung vereinfacht.</li>
+</ul>
+<p><strong>Flexibilität</strong>:</p>
+<ul>
+<li>Komponenten können ausgetauscht werden, ohne das gesamte System zu ändern.</li>
+</ul>
+<p><strong>Skalierbarkeit</strong>:</p>
+<ul>
+<li>Komponenten können unabhängig skaliert und optimiert werden.</li>
+</ul>
+<h3 id="aufgabe-2-vier-grundlagen-des-komponentenbasierten-software-engineerings">Aufgabe 2. Vier Grundlagen des Komponentenbasierten Software-Engineerings<a hidden class="anchor" aria-hidden="true" href="#aufgabe-2-vier-grundlagen-des-komponentenbasierten-software-engineerings">#</a></h3>
+<p><strong>Unabhängige Komponenten</strong>:</p>
+<ul>
+<li>Komponenten können ohne Systemänderungen ausgetauscht werden.</li>
+</ul>
+<p><strong>Komponentenstandards</strong>:</p>
+<ul>
+<li>Einheitliche Schnittstellen und Integrationen sind wichtig.</li>
+</ul>
+<p><strong>Middleware</strong>:</p>
+<ul>
+<li>Unterstützung für Kommunikation, Ressourcenmanagement, Transaktionen, Sicherheit und Parallelität.</li>
+</ul>
+<p><strong>Komponentenorientierter Entwicklungsprozess</strong>:</p>
+<ul>
+<li>Komponenten können während der Planung und Entwicklung angepasst und wiederverwendet werden.</li>
+</ul>
+<h3 id="aufgabe-3-probleme-der-vertrauenswürdigkeit-von-komponenten">Aufgabe 3. Probleme der Vertrauenswürdigkeit von Komponenten<a hidden class="anchor" aria-hidden="true" href="#aufgabe-3-probleme-der-vertrauenswürdigkeit-von-komponenten">#</a></h3>
+<p><strong>Blackbox-Natur</strong>:</p>
+<ul>
+<li>Quellcode nicht verfügbar, schwierige Transparenz.</li>
+</ul>
+<p><strong>Kein Zugriff auf den Quellcode</strong>:</p>
+<ul>
+<li>Es ist schwierig, Fehler zu erkennen.</li>
+</ul>
+<p><strong>Unerwartete Seiteneffekte</strong>:</p>
+<ul>
+<li>Das Zusammenspiel von Komponenten kann unvorhergesehene Probleme verursachen.</li>
+</ul>
+<h3 id="aufgabe-4-drei-grundlegende-entwurfsprinzipien-des-komponentenbasierten-software-engineerings">Aufgabe 4. Drei grundlegende Entwurfsprinzipien des Komponentenbasierten Software-Engineerings<a hidden class="anchor" aria-hidden="true" href="#aufgabe-4-drei-grundlegende-entwurfsprinzipien-des-komponentenbasierten-software-engineerings">#</a></h3>
+<p><strong>Unabhängigkeit</strong>:</p>
+<ul>
+<li>Komponenten beeinflussen sich nicht gegenseitig.</li>
+</ul>
+<p><strong>Klar definierte Schnittstellen</strong>:</p>
+<ul>
+<li>Stabiler API-Austausch möglich.</li>
+</ul>
+<p><strong>Komponenteninfrastruktur mit Standarddiensten</strong>:</p>
+<ul>
+<li>Weniger Eigenentwicklung notwendig, Fokus auf Integration.</li>
+</ul>
+<h3 id="aufgabe-5-eigenschaften-von-komponenten-sommerville">Aufgabe 5. Eigenschaften von Komponenten (Sommerville)<a hidden class="anchor" aria-hidden="true" href="#aufgabe-5-eigenschaften-von-komponenten-sommerville">#</a></h3>
+<p><strong>Unabhängigkeit</strong>:</p>
+<ul>
+<li>Komponenten sind autonome Einheiten.</li>
+</ul>
+<p><strong>Modularität</strong>:</p>
+<ul>
+<li>Komponenten sind isolierte Einheiten, die unabhängig entwickelt werden können.</li>
+</ul>
+<p><strong>Wiederverwendbarkeit</strong>:</p>
+<ul>
+<li>Komponenten können in verschiedenen Systemen verwendet werden.</li>
+</ul>
+<p><strong>Dienstanbieter</strong>:</p>
+<ul>
+<li>Komponenten bieten Dienste, ohne dass der Benutzer den internen Zustand kennt.</li>
+</ul>
+<h3 id="aufgabe-6-kritische-vorteile-der-betrachtung-einer-komponente-als-dienstanbieter">Aufgabe 6. Kritische Vorteile der Betrachtung einer Komponente als Dienstanbieter<a hidden class="anchor" aria-hidden="true" href="#aufgabe-6-kritische-vorteile-der-betrachtung-einer-komponente-als-dienstanbieter">#</a></h3>
+<p><strong>Unabhängigkeit</strong>:</p>
+<ul>
+<li>Komponenten werden über Schnittstellen aufgerufen und sind nicht von der Umgebung abhängig.</li>
+</ul>
+<p><strong>Sprachunabhängigkeit</strong>:</p>
+<ul>
+<li>Komponenten können in verschiedenen Programmiersprachen implementiert werden.</li>
+</ul>
+<h3 id="aufgabe-7-unterschiede-zwischen-komponenten-und-objekten">Aufgabe 7. Unterschiede zwischen Komponenten und Objekten<a hidden class="anchor" aria-hidden="true" href="#aufgabe-7-unterschiede-zwischen-komponenten-und-objekten">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Merkmal</th>
+          <th>Komponente</th>
+          <th>Objekt</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Deployment</strong></td>
+          <td>Direkt auf Plattform installierbar</td>
+          <td>Teil eines Programms (kompiliert)</td>
+      </tr>
+      <tr>
+          <td><strong>Typdefinition</strong></td>
+          <td>Instanz</td>
+          <td>Basierend auf Klasse (Typ)</td>
+      </tr>
+      <tr>
+          <td><strong>Transparenz</strong></td>
+          <td>Blackbox (nur Schnittstelle sichtbar)</td>
+          <td>Oft transparenter (mehr Einblick)</td>
+      </tr>
+      <tr>
+          <td><strong>Sprachabhängigkeit</strong></td>
+          <td>Sprachunabhängig</td>
+          <td>Sprachgebunden (z. B. Java)</td>
+      </tr>
+      <tr>
+          <td><strong>Standardisierung</strong></td>
+          <td>Muss Modell folgen</td>
+          <td>Frei definierbar</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="aufgabe-8-unterschiedliche-schnittstellen-von-komponenten">Aufgabe 8. Unterschiedliche Schnittstellen von Komponenten<a hidden class="anchor" aria-hidden="true" href="#aufgabe-8-unterschiedliche-schnittstellen-von-komponenten">#</a></h3>
+<p><strong>Bereitgestellte Schnittstelle (provided interface)</strong>:</p>
+<ul>
+<li>Definiert die Dienste, die von der Komponente angeboten werden.</li>
+</ul>
+<p><strong>Benötigte Schnittstelle (required interface)</strong>:</p>
+<ul>
+<li>Definiert, welche Dienste die Komponente benötigt, ohne zu spezifizieren, wie sie bereitgestellt werden.</li>
+</ul>
+<h3 id="aufgabe-8-uml-diagramm">Aufgabe 8. UML-Diagramm<a hidden class="anchor" aria-hidden="true" href="#aufgabe-8-uml-diagramm">#</a></h3>
+<hr>
+<h3 id="aufgabe-10-uml-darstellung-der-databroker-komponente">Aufgabe 10. UML-Darstellung der „DataBroker“-Komponente<a hidden class="anchor" aria-hidden="true" href="#aufgabe-10-uml-darstellung-der-databroker-komponente">#</a></h3>
+<ul>
+<li>Eine Komponente wird durch ein Rechteck dargestellt, das die Schnittstellen und die dazugehörigen „bereitgestellten“ und „benötigten“ Schnittstellen (mit kleinen Rechtecken) enthält.</li>
+</ul>
+<h3 id="aufgabe-11-prinzip-eines-komponentenmodells">Aufgabe 11. Prinzip eines Komponentenmodells<a hidden class="anchor" aria-hidden="true" href="#aufgabe-11-prinzip-eines-komponentenmodells">#</a></h3>
+<p><strong>Prinzip</strong>:</p>
+<ul>
+<li>Ein Komponentenmodell definiert, wie Komponenten strukturiert, interagieren und konfiguriert werden.</li>
+</ul>
+<p><strong>Beispiele</strong>:</p>
+<ul>
+<li>SOAP (WSDL), Jakarta Beans (CDI), Microsoft .NET (CIL).</li>
+</ul>
+<h3 id="aufgabe-12-drei-allgemeine-aspekte-der-grundelemente-eines-komponentenmodells">Aufgabe 12. Drei allgemeine Aspekte der Grundelemente eines Komponentenmodells<a hidden class="anchor" aria-hidden="true" href="#aufgabe-12-drei-allgemeine-aspekte-der-grundelemente-eines-komponentenmodells">#</a></h3>
+<p><strong>Schnittstellen</strong>:</p>
+<ul>
+<li>Definiert die bereitgestellten und benötigten Dienste.</li>
+</ul>
+<p><strong>Nutzung</strong>:</p>
+<ul>
+<li>Globale Bezeichner (z. B. URI, JNDI).</li>
+</ul>
+<p><strong>Bereitstellung &amp; Verpackung</strong>:</p>
+<ul>
+<li>Konfiguration, Dokumentation und Meta-Informationen.</li>
+</ul>
+<h3 id="aufgabe-13-unterschied-zwischen-plattform--und-hilfsdiensten-einer-middleware">Aufgabe 13. Unterschied zwischen Plattform- und Hilfsdiensten einer Middleware<a hidden class="anchor" aria-hidden="true" href="#aufgabe-13-unterschied-zwischen-plattform--und-hilfsdiensten-einer-middleware">#</a></h3>
+<p><strong>Plattformdienste</strong>:</p>
+<ul>
+<li>Grundlegende Funktionen wie Kommunikation, Ressourcenverwaltung, Transaktionen, Persistenz.</li>
+</ul>
+<p><strong>Hilfsdienste</strong>:</p>
+<ul>
+<li>Ergänzende Dienste wie Authentifizierung, die Inkompatibilitäten verhindern.</li>
+</ul>
+<h3 id="aufgabe-14-implementierung-eines-komponentenmodells">Aufgabe 14. Implementierung eines Komponentenmodells<a hidden class="anchor" aria-hidden="true" href="#aufgabe-14-implementierung-eines-komponentenmodells">#</a></h3>
+<p><strong>Container</strong>:</p>
+<ul>
+<li>Eine Laufzeitumgebung, die Middleware-Dienste für die Ausführung von Komponenten bereitstellt.</li>
+</ul>
+<h3 id="aufgabe-15-aussagen-zu-containern-und-komponenten">Aufgabe 15. Aussagen zu Containern und Komponenten<a hidden class="anchor" aria-hidden="true" href="#aufgabe-15-aussagen-zu-containern-und-komponenten">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Aussage</th>
+          <th>Ja/Nein</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Ein Container ist die Hauptkomponente jeder Applikation</td>
+          <td>Nein</td>
+      </tr>
+      <tr>
+          <td>Eine Komponente kann auf den Transaktionsdienst zugreifen</td>
+          <td>Ja</td>
+      </tr>
+      <tr>
+          <td>Der Container ermöglicht, dass Komponente A auf die Schnittstelle von B zugreifen kann</td>
+          <td>Ja</td>
+      </tr>
+      <tr>
+          <td>Komponenten sind Hilfsdienste des Containers</td>
+          <td>Nein</td>
+      </tr>
+      <tr>
+          <td>Der Container kann auf Komponentenschnittstellen zugreifen</td>
+          <td>Nein</td>
+      </tr>
+      <tr>
+          <td>Die Adressierung von Komponenten ist ein Hilfsdienst des Containers</td>
+          <td>Ja</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<hr>
+<hr>
+<h4 id="übungsblatt-3">Übungsblatt 3<a hidden class="anchor" aria-hidden="true" href="#übungsblatt-3">#</a></h4>
+<hr>
+<h4 id="übungsblatt-4">Übungsblatt 4<a hidden class="anchor" aria-hidden="true" href="#übungsblatt-4">#</a></h4>
+<hr>
+<h2 id="mamechishiki">Mamechishiki<a hidden class="anchor" aria-hidden="true" href="#mamechishiki">#</a></h2>
+<ol>
+<li>
+<p>유연성 (Flexibility)
+예시: 서비스 구현체 변경</p>
+<p>상황: UserController가 UserService를 호출하고 있는데, 그동안 <strong>UserService</strong>는 데이터베이스에서 사용자 정보를 가져오는 방식으로 구현되었습니다. 그런데 새로운 요구 사항이 생겼어요. 이제는 외부 API에서 사용자 정보를 가져와야 한다고 합니다.</p>
+</li>
+</ol>
+<p>직접 객체 생성 방식 (수정이 필요함)</p>
+<p>public class UserController {
+private UserService userService = new UserService(); // 직접 객체 생성</p>
+<pre><code>public void getUserInfo() {
+    userService.fetchUserData();
+}
+</code></pre>
+<p>}</p>
+<pre><code>만약 **UserService**의 구현이 변경된다면, UserController도 수정해야 합니다. API 호출을 통한 사용자 정보 가져오기로 변경하려면, UserController의 코드에서 **UserService**를 새로 작성된 API 호출 서비스로 교체해야겠죠.
+</code></pre>
+<p>의존성 주입 (유연함)</p>
+<p>@RestController
+public class UserController {
+private final UserService userService;</p>
+<pre><code>@Autowired
+public UserController(UserService userService) {
+    this.userService = userService; // Spring이 자동으로 주입
+}
+
+public void getUserInfo() {
+    userService.fetchUserData();
+}
+</code></pre>
+<p>}</p>
+<pre><code>UserController는 이제 UserService에 의존하지만 구현체에 대한 구체적인 사항은 신경 쓰지 않습니다.
+
+만약 **UserService**를 **UserApiService**로 교체하고 싶다면, Spring 설정만 수정하면 됩니다. UserController 코드는 변경하지 않아도 돼요.
+
+예를 들어, Spring 컨테이너에 UserService 대신 UserApiService를 등록하면, Spring이 자동으로 UserApiService를 주입해줍니다. 그만큼 유연성이 높아집니다.
+</code></pre>
+<ol start="2">
+<li>
+<p>테스트 용이성 (Testability)
+예시: Mock 객체를 이용한 테스트</p>
+<p>상황: UserService를 테스트하는데, 실제 데이터베이스나 외부 API를 호출하는 것이 아니라, 서비스 로직만 테스트하고 싶어요. 이렇게 되면 데이터베이스나 API 호출을 Mock 처리해서 테스트할 수 있어야 합니다.</p>
+</li>
+</ol>
+<p>직접 객체 생성 방식 (테스트 어려움)</p>
+<p>public class UserController {
+private UserService userService = new UserService(); // 실제 객체를 직접 생성</p>
+<pre><code>public void getUserInfo() {
+    userService.fetchUserData(); // 실제 데이터베이스 호출
+}
+</code></pre>
+<p>}</p>
+<pre><code>UserController에서 **UserService**를 직접 생성하면, 테스트할 때마다 실제 데이터베이스나 API 호출을 해야 하므로, 테스트가 복잡하고 느려집니다.
+
+데이터베이스와 외부 API는 테스트 환경에서 설정하기 어려운 경우도 많기 때문에, 테스트하기 힘든 상황이 발생할 수 있습니다.
+</code></pre>
+<p>의존성 주입 (테스트 용이성)</p>
+<p>public class UserControllerTest {
+@Mock
+private UserService userService; // Mock 객체 사용</p>
+<pre><code>private UserController userController;
+
+@Before
+public void setUp() {
+    MockitoAnnotations.initMocks(this);
+    userController = new UserController(userService); // Mock 객체 주입
+}
+
+@Test
+public void testGetUserInfo() {
+    when(userService.fetchUserData()).thenReturn(&quot;Test User Data&quot;);
+
+    String result = userController.getUserInfo();
+
+    assertEquals(&quot;Test User Data&quot;, result);
+}
+</code></pre>
+<p>}</p>
+<pre><code>UserController는 이제 **UserService**를 의존성 주입받기 때문에, 실제 데이터베이스나 API 호출을 하지 않고도 Mock 객체를 주입하여 테스트할 수 있습니다.
+
+Mockito와 같은 라이브러리를 사용하여 UserService를 Mock 처리하고, 원하는 데이터를 반환하게 설정할 수 있어요.
+
+이 방식으로 실제 서비스가 아닌 **가짜 서비스(Mock)**를 사용해 테스트할 수 있기 때문에, 테스트가 빠르고 효율적입니다.
+
+
+
+
+
+...
+
+
+예시: UserService를 UserApiService로 교체하기
+</code></pre>
+<ol>
+<li>UserService 인터페이스와 구현체 (UserServiceImpl)</li>
+</ol>
+<p>public interface UserService {
+void fetchUserData();
+}</p>
+<p>@Service
+public class UserServiceImpl implements UserService {
+@Override
+public void fetchUserData() {
+// DB에서 사용자 정보 가져오기
+}
+}</p>
+<ol start="2">
+<li>UserApiService 구현체</li>
+</ol>
+<p>@Service
+public class UserApiService implements UserService {
+@Override
+public void fetchUserData() {
+// 외부 API에서 사용자 정보 가져오기
+}
+}</p>
+<ol start="3">
+<li>Spring 설정만 수정 (구현체 변경)</li>
+</ol>
+<p>@Configuration
+public class ServiceConfig {</p>
+<pre><code>@Bean
+public UserService userService() {
+    // 여기서 기존 UserServiceImpl을 UserApiService로 바꿔주면 됨
+    return new UserApiService();
+}
+</code></pre>
+<p>}</p>
+<p>&hellip;.</p>
+<p>SOLID</p>
+<ol>
+<li>
+<p>✅ 단일 책임 원칙 (Single Responsibility Principle)</p>
+<p>클래스는 하나의 일만 해야 한다.</p>
+</li>
+</ol>
+<p>예:
+UserService는 &ldquo;회원 가입&quot;만 해야지, &ldquo;파일 저장&quot;까지 해버리면 너무 바빠져.
+→ 기능을 나누면 유지보수가 쉬워져!
+2. 🚪 개방-폐쇄 원칙 (Open/Closed Principle)</p>
+<pre><code>코드는 확장에는 열려 있고, 변경에는 닫혀 있어야 한다.
+</code></pre>
+<p>예:
+새로운 결제 방식 추가할 때 기존 코드를 수정하지 말고, 새 클래스를 추가하자!
+→ 기존 코드 안 건드리고도 기능을 확장할 수 있음!
+3. 🧬 리스코프 치환 원칙 (Liskov Substitution Principle)</p>
+<pre><code>자식 클래스는 부모 클래스를 완전히 대체할 수 있어야 함.
+</code></pre>
+<p>예:
+Bird → Penguin 상속했는데, fly() 호출하니 오류남?
+→ 그럼 LSP 위반! 부모 대체가 안 되잖아 😅
+4. 🧩 인터페이스 분리 원칙 (Interface Segregation Principle)</p>
+<pre><code>인터페이스는 작고 구체적으로 나눠라.
+</code></pre>
+<p>예:
+Animal 인터페이스에 walk(), fly(), swim()이 다 있으면&hellip;
+고양이도 fly() 구현해야 한다고?! 🤯
+→ 기능별 인터페이스로 분리하자!
+5. 🔄 의존성 역전 원칙 (Dependency Inversion Principle)</p>
+<pre><code>구현체가 아니라 인터페이스(추상)에 의존해라
+→ 이미 앞에서 설명했지? 😊
+
+
+
+...
+
+
+🔄 컴포넌트 기반 소프트웨어 공학 vs Spring Boot
+</code></pre>
+<p>✅ 1. 컴포넌트 = 스프링 빈 (@Component, @Service 등)</p>
+<pre><code>KBSE에서는 '컴포넌트'를 독립적으로 재사용 가능한 소프트웨어 단위로 설명했지?
+
+스프링에서는 이런 단위를 @Component, @Service, @Repository, @Controller 같은 애노테이션으로 등록한 **빈(Bean)**이라고 보면 돼.
+</code></pre>
+<p>👉 예시:</p>
+<p>@Service
+public class UserService {
+public String getUser() {
+return &ldquo;홍길동&rdquo;;
+}
+}</p>
+<p>✅ 2. 제공 인터페이스 / 요구 인터페이스 = DI (의존성 주입)</p>
+<pre><code>KBSE에서 제공 인터페이스는 컴포넌트가 &quot;이 기능 해줄게!&quot;라고 약속한 API야.
+
+요구 인터페이스는 &quot;나 이거 필요해!&quot;라고 외치는 기능 요청이야.
+</code></pre>
+<p>👉 스프링에서는 이렇게 표현돼:</p>
+<p>@RestController
+public class UserController {
+private final UserService userService;</p>
+<pre><code>// 요구 인터페이스 (UserService가 필요해요!)
+public UserController(UserService userService) {
+    this.userService = userService;
+}
+
+@GetMapping(&quot;/user&quot;)
+public String getUser() {
+    return userService.getUser(); // 제공 인터페이스 호출
+}
+</code></pre>
+<p>}</p>
+<p>✅ 3. 교체 가능성 (유연성)</p>
+<pre><code>🎯 컴포넌트를 다른 것으로 교체할 수 있는 유연성 — 스프링의 가장 큰 장점 중 하나지!
+</code></pre>
+<p>👉 예시: UserService 대신 UserApiService로 바꾸고 싶을 때!</p>
+<p>public interface UserService {
+String getUser();
+}</p>
+<p>@Service
+public class UserApiService implements UserService {
+public String getUser() {
+return &ldquo;API에서 가져온 사용자&rdquo;;
+}
+}</p>
+<p>@Configuration
+public class AppConfig {
+@Bean
+public UserService userService() {
+return new UserApiService(); // 구현체 교체!
+}
+}</p>
+<p>🧠 UserController는 인터페이스만 알고 있고 구현체는 몰라! → 변경이 있어도 코드를 안 고쳐도 돼.
+✅ 4. 미들웨어 = 스프링 컨테이너</p>
+<pre><code>KBSE에서 미들웨어는 컴포넌트들이 잘 작동하도록 도와주는 환경이라고 했잖아?
+
+스프링에서는 이 역할을 ApplicationContext (스프링 컨테이너) 가 해!
+</code></pre>
+<p>👉 예를 들어:</p>
+<pre><code>트랜잭션 관리 (@Transactional)
+
+보안 (Spring Security)
+
+AOP (@Aspect)
+
+리소스 관리, 빈 주입 등등!
+</code></pre>
+<p>✅ 5. 컨테이너 = ApplicationContext (또는 IoC 컨테이너)</p>
+<pre><code>KBSE의 컨테이너는 컴포넌트를 실행시켜주는 공간.
+
+스프링에서도 우리가 만드는 모든 빈들이 이 컨테이너에서 관리돼.
+</code></pre>
+<p>✅ 6. 테스트 용이성</p>
+<pre><code>DI 덕분에 원하는 구현체로 교체해서 테스트 가능!
+</code></pre>
+<p>👉 예시:</p>
+<p>class MockUserService implements UserService {
+public String getUser() {
+return &ldquo;테스트 사용자&rdquo;;
+}
+}</p>
+<p>테스트에서는 이걸 주입해서, 실제 DB나 API 없이도 테스트할 수 있어!</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/wiederverwendung/">Wiederverwendung</a></li>
+      <li><a href="http://localhost:1313/tags/framework/">Framework</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="next" href="http://localhost:1313/posts/test/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Test</span>
+  </a>
+</nav>
+
+
+<ul class="share-buttons">
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share KBE on x"
+            href="https://x.com/intent/tweet/?text=KBE&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2f2025-04-10-kbe%2f&amp;hashtags=Wiederverwendung%2cFramework">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share KBE on linkedin"
+            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2f2025-04-10-kbe%2f&amp;title=KBE&amp;summary=KBE&amp;source=http%3a%2f%2flocalhost%3a1313%2fposts%2f2025-04-10-kbe%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share KBE on reddit"
+            href="https://reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fposts%2f2025-04-10-kbe%2f&title=KBE">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share KBE on facebook"
+            href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2f2025-04-10-kbe%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share KBE on whatsapp"
+            href="https://api.whatsapp.com/send?text=KBE%20-%20http%3a%2f%2flocalhost%3a1313%2fposts%2f2025-04-10-kbe%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share KBE on telegram"
+            href="https://telegram.me/share/url?text=KBE&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2f2025-04-10-kbe%2f">
+            <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share KBE on ycombinator"
+            href="https://news.ycombinator.com/submitlink?t=KBE&u=http%3a%2f%2flocalhost%3a1313%2fposts%2f2025-04-10-kbe%2f">
+            <svg version="1.1" xml:space="preserve" width="30px" height="30px" viewBox="0 0 512 512" fill="currentColor"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+                <path
+                    d="M449.446 0C483.971 0 512 28.03 512 62.554L512 449.446C512 483.97 483.97 512 449.446 512L62.554 512C28.03 512 0 483.97 0 449.446L0 62.554C0 28.03 28.029 0 62.554 0L449.446 0ZM183.8767 87.9921H121.8427L230.6673 292.4508V424.0079H281.3328V292.4508L390.1575 87.9921H328.1233L256 238.2489z" />
+            </svg>
+        </a>
+    </li>
+</ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Jays Zusammenfassung</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

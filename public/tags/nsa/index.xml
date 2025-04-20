@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>NSA on Jays Zusammenfassung</title>
+    <link>http://localhost:1313/tags/nsa/</link>
+    <description>Recent content in NSA on Jays Zusammenfassung</description>
+    <generator>Hugo -- 0.146.5</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/nsa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NSA</title>
+      <link>http://localhost:1313/posts/2025-04-10-nsa/</link>
+      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2025-04-10-nsa/</guid>
+      <description>&lt;h2 id=&#34;14042025---vorlesung-2-ethics-and-laws-network-access-layer&#34;&gt;14.04.2025 - Vorlesung 2: Ethics and Laws, Network Access Layer&lt;/h2&gt;
+&lt;h3 id=&#34;ethics-and-laws&#34;&gt;Ethics and Laws&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Lecture Objectives:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Understand risks in a connected world.&lt;/li&gt;
+&lt;li&gt;Learn IT security protection goals.&lt;/li&gt;
+&lt;li&gt;Explore types of attacks and legal aspects.&lt;/li&gt;
+&lt;li&gt;Discuss ethical concerns in data protection.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;key-it-security-concepts&#34;&gt;Key IT Security Concepts:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;IT Security&lt;/strong&gt;: Ensures data confidentiality, integrity, and availability.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Information Security&lt;/strong&gt;: Protects information, even offline.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cybersecurity&lt;/strong&gt;: Focuses on internet-related information security.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Protection Goals:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Confidentiality&lt;/strong&gt;: Only authorized users can access data.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Integrity&lt;/strong&gt;: Data must remain unaltered.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Availability&lt;/strong&gt;: Information must be accessible when needed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;types-of-attacks&#34;&gt;Types of Attacks:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;M:1 (Multiple-to-One)&lt;/strong&gt;: Many attackers target one victim (e.g., &lt;strong&gt;Denial of Service (DoS)&lt;/strong&gt; attack).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;1:N (One-to-Many)&lt;/strong&gt;: One attacker targets several victims (e.g., &lt;strong&gt;Ping Scan&lt;/strong&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;M:N (Many-to-Many)&lt;/strong&gt;: Multiple attackers and victims (e.g., &lt;strong&gt;Spam&lt;/strong&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;1:1 (One-to-One)&lt;/strong&gt;: One attacker targets one victim (e.g., &lt;strong&gt;Port Scan&lt;/strong&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;ethical-aspects&#34;&gt;Ethical Aspects:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;White Hat Hackers&lt;/strong&gt;: Ethical hackers who improve security.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Black Hat Hackers&lt;/strong&gt;: Cybercriminals who exploit vulnerabilities.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Gray Hat Hackers&lt;/strong&gt;: Find vulnerabilities but act without malicious intent.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;legal-framework&#34;&gt;Legal Framework:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;GDPR&lt;/strong&gt;: EU regulation protecting personal data, with heavy fines for violations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;network-threats&#34;&gt;Network Threats:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Passive Attacks&lt;/strong&gt;: Attackers intercept data (e.g., traffic analysis).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Active Attacks&lt;/strong&gt;: Attackers modify data or disrupt services (e.g., &lt;strong&gt;DoS&lt;/strong&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;the-network-access-layer&#34;&gt;The Network Access Layer&lt;/h3&gt;
+&lt;h4 id=&#34;mac-address-spoofing--arp-poisoning&#34;&gt;MAC Address Spoofing &amp;amp; ARP Poisoning&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Positive Aspects of MAC Spoofing:&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>MCC on Jays Zusammenfassung</title>
+    <link>http://localhost:1313/tags/mcc/</link>
+    <description>Recent content in MCC on Jays Zusammenfassung</description>
+    <generator>Hugo -- 0.146.5</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/mcc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MCC</title>
+      <link>http://localhost:1313/posts/2025-04-10-mcc/</link>
+      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2025-04-10-mcc/</guid>
+      <description>&lt;h2 id=&#34;01042025---vorlesung-1-einführung-in-mobile-and-cloud-computing&#34;&gt;01.04.2025 - Vorlesung 1: Einführung in Mobile and Cloud Computing&lt;/h2&gt;
+&lt;h3 id=&#34;abgrenzung-festnetzcloud-zum-mobilnetz&#34;&gt;Abgrenzung Festnetz/Cloud zum Mobilnetz&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Festnetz&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Endgeräte sind ortsfest und verkabelt&lt;br&gt;
+&lt;em&gt;(z.B. Desktop-PCs, Telefone, Drucker)&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Mobilnetz&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Endgeräte sind mobil und verbinden sich via Funkverbindung&lt;/li&gt;
+&lt;li&gt;Kombination aus festem und mobilem Teil, da nicht alle Verbindungen sinnvollerweise mobil sind&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Cloud&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Nutzt Festnetzverbindungen, aber bietet zusätzlich:
+&lt;ul&gt;
+&lt;li&gt;Computing&lt;/li&gt;
+&lt;li&gt;Speicherung&lt;/li&gt;
+&lt;li&gt;Virtualisierung&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Cloud ist mehr als nur ein Transportnetz&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;funkverbindung-und-frequenz&#34;&gt;Funkverbindung und Frequenz&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;In mobilen Netzen wird statt Kabel/Glasfaser ein &lt;strong&gt;Funksignal&lt;/strong&gt; genutzt&lt;/li&gt;
+&lt;li&gt;Eine Funkverbindung basiert auf:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Frequenz&lt;/strong&gt; (z.B. WLAN: 2412 MHz)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Bandbreite&lt;/strong&gt; (z.B. 20 MHz)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Sender und Empfänger&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

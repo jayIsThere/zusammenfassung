@@ -1,0 +1,27 @@
+baseURL = "https://jayisthere.github.io/zusammenfassung"
+title = "Zusammenfassung"
+theme = "PaperMod"
+languageCode = "ko-kr"
+defaultContentLanguage = "de"
+paginate = 10
+
+[params]
+  homeInfoParams = { Title = "Zusammenfassung", Content = "Jays Zusammenfassung" }
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[menu]
+  [[menu.main]]
+    identifier = "archives"
+    name = "글 목록"
+    url = "/archives/"
+    weight = 1
+

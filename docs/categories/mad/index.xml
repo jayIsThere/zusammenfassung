@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>MAD on Jays Zusammenfassung</title>
+    <link>https://example.org/categories/mad/</link>
+    <description>Recent content in MAD on Jays Zusammenfassung</description>
+    <generator>Hugo -- 0.146.5</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 09 Apr 2025 18:30:37 +0200</lastBuildDate>
+    <atom:link href="https://example.org/categories/mad/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vorlesung 2: Konzeptionierung von Apps</title>
+      <link>https://example.org/posts/mad/mad1/</link>
+      <pubDate>Wed, 09 Apr 2025 18:30:37 +0200</pubDate>
+      <guid>https://example.org/posts/mad/mad1/</guid>
+      <description>&lt;h3 id=&#34;konzeptentwicklung&#34;&gt;Konzeptentwicklung&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Zweck/Ziele&lt;/strong&gt;: Was ist das Hauptziel der App?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Beispiel: Eine Fitness-App, die Nutzern hilft, ihre täglichen Schritte zu verfolgen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Zielgruppe&lt;/strong&gt;: Wer sind die Nutzer*innen?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Beispiel: Berufspendler, die ihre Fitness im Alltag verbessern möchten.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Mehrwert&lt;/strong&gt;: Was unterscheidet die App von Konkurrenzprodukten?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Beispiel: Bietet personalisierte Fitnesspläne basierend auf dem täglichen Bewegungslevel.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Marktanalyse&lt;/strong&gt;: Analyse der Konkurrenz und Definition der Alleinstellungsmerkmale.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Beispiel: Analyse von Fitbit, Apple Health, und Google Fit, um Funktionen zu verbessern.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Feature Definition&lt;/strong&gt;: Festlegung des MVP (Minimum Viable Product) und Priorisierung.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

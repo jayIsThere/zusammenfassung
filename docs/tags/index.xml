@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on Jays Zusammenfassung</title>
+    <link>https://example.org/tags/</link>
+    <description>Recent content in Tags on Jays Zusammenfassung</description>
+    <generator>Hugo -- 0.146.5</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 17 Apr 2025 18:13:15 +0200</lastBuildDate>
+    <atom:link href="https://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Komponente</title>
+      <link>https://example.org/tags/komponente/</link>
+      <pubDate>Thu, 17 Apr 2025 18:13:15 +0200</pubDate>
+      <guid>https://example.org/tags/komponente/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Schnittstelle</title>
+      <link>https://example.org/tags/schnittstelle/</link>
+      <pubDate>Thu, 17 Apr 2025 18:13:15 +0200</pubDate>
+      <guid>https://example.org/tags/schnittstelle/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Framework</title>
+      <link>https://example.org/tags/framework/</link>
+      <pubDate>Thu, 10 Apr 2025 18:04:15 +0200</pubDate>
+      <guid>https://example.org/tags/framework/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Wiederverwendung</title>
+      <link>https://example.org/tags/wiederverwendung/</link>
+      <pubDate>Thu, 10 Apr 2025 18:04:15 +0200</pubDate>
+      <guid>https://example.org/tags/wiederverwendung/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Determinant</title>
+      <link>https://example.org/tags/determinant/</link>
+      <pubDate>Sat, 01 Mar 2025 18:33:36 +0200</pubDate>
+      <guid>https://example.org/tags/determinant/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Matrix</title>
+      <link>https://example.org/tags/matrix/</link>
+      <pubDate>Sat, 01 Mar 2025 18:33:36 +0200</pubDate>
+      <guid>https://example.org/tags/matrix/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vektor</title>
+      <link>https://example.org/tags/vektor/</link>
+      <pubDate>Sat, 01 Mar 2025 18:33:36 +0200</pubDate>
+      <guid>https://example.org/tags/vektor/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

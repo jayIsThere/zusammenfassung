@@ -1,0 +1,93 @@
++++
+title = 'Vorlesung 2: Ethics and Laws, Network Access Layer'
+date = 2025-04-14T18:32:03+02:00
+categories = ['NSA']
+tags = []
+draft = false
++++
+
+### Ethics and Laws
+
+**Lecture Objectives:**
+
+- Understand risks in a connected world.
+- Learn IT security protection goals.
+- Explore types of attacks and legal aspects.
+- Discuss ethical concerns in data protection.
+
+#### Key IT Security Concepts:
+
+- **IT Security**: Ensures data confidentiality, integrity, and availability.
+- **Information Security**: Protects information, even offline.
+- **Cybersecurity**: Focuses on internet-related information security.
+
+**Protection Goals:**
+
+- **Confidentiality**: Only authorized users can access data.
+- **Integrity**: Data must remain unaltered.
+- **Availability**: Information must be accessible when needed.
+
+#### Types of Attacks:
+
+- **M:1 (Multiple-to-One)**: Many attackers target one victim (e.g., **Denial of Service (DoS)** attack).
+- **1:N (One-to-Many)**: One attacker targets several victims (e.g., **Ping Scan**).
+- **M:N (Many-to-Many)**: Multiple attackers and victims (e.g., **Spam**).
+- **1:1 (One-to-One)**: One attacker targets one victim (e.g., **Port Scan**).
+
+#### Ethical Aspects:
+
+- **White Hat Hackers**: Ethical hackers who improve security.
+- **Black Hat Hackers**: Cybercriminals who exploit vulnerabilities.
+- **Gray Hat Hackers**: Find vulnerabilities but act without malicious intent.
+
+#### Legal Framework:
+
+- **GDPR**: EU regulation protecting personal data, with heavy fines for violations.
+
+#### Network Threats:
+
+- **Passive Attacks**: Attackers intercept data (e.g., traffic analysis).
+- **Active Attacks**: Attackers modify data or disrupt services (e.g., **DoS**).
+
+---
+
+### The Network Access Layer
+
+#### MAC Address Spoofing & ARP Poisoning
+
+**Positive Aspects of MAC Spoofing:**
+
+- **Prevent Device Tracking**: Randomizing MAC addresses (in Windows/Android) to avoid tracking.
+  
+**Example**:  
+- **Windows 10** allows MAC address randomization when connecting to a Wi-Fi network, making it harder for third parties to track your device's movements.
+
+**Negative Aspects:**
+
+- **ARP Poisoning**: Manipulating ARP (Address Resolution Protocol) packets to intercept data.
+
+**How ARP Poisoning Works:**
+
+- **MITM (Man-In-The-Middle)**: Attacker inserts themselves between two devices (e.g., Workstation 1 and Gateway).
+  
+**Example**:  
+- The attacker sends fake ARP packets to **Workstation 1**, making it think that the attacker’s device is the Gateway. Now, data meant for the Gateway is sent to the attacker instead.
+
+**Countermeasures:**
+
+- **IEEE 802.1X Authentication**: Prevents unauthorized devices from joining the network.
+- **Monitoring ARP Traffic**: Tools like **Snort** can detect abnormal ARP activity.
+
+**Practical Exercise**:
+
+- **Wireshark**: Analyze a packet capture file (`arp-spoofing.pcap`) to detect ARP poisoning activity.
+
+---
+
+### Ethernet & Switch Port Authentication
+
+**Ethernet**: The fundamental network protocol used in local area networks (LANs). It uses **MAC addresses** to communicate between devices.
+
+**Switch Port Authentication**: Ensures only authorized devices can connect to a network by using protocols like **IEEE 802.1X**.
+
+---
