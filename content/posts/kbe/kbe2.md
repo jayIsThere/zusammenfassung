@@ -6,59 +6,53 @@ categories = ['KBE']
 draft = false
 +++
 
-### Wiederverwendungstechniken (laut Sommerville)
+### 🔁 Wiederverwendungstechniken (nach Sommerville)
 
-1. **Frameworks**
-   - **Definition:** Ein Framework ist ein Set von Softwarekomponenten, das eine Architektur für verwandte Anwendungen bereitstellt.
-   - **Beispiel:** Ein Web-Framework wie Spring MVC verwendet das Model-View-Controller-Muster.
-   - **Eigenschaft:** Bietet generische Funktionalität und wird erweitert, nicht ersetzt.
+|**Technik**|**Beschreibung & Beispiel**|
+|------|---|
+|**Frameworks**|Architektur für verwandte Anwendungen. z. B. Spring MVC mit MVC-Muster|
+|**Inversion of Control**|Steuerung durch Framework, z. B. Callbacks|
+|**Entwurfsmuster**|Lösung wiederkehrender Probleme – z. B. Observer, Strategy|
+|**Architekturmuster**|Struktur ganzer Systeme – z. B. Microservices|
+|**ERP-Systeme**|Konfigurierbare Geschäftssysteme – z. B. SAP|
+|**Komponentenbasiert**|Austauschbare Module, klare Schnittstellen|
+|**Modellgetrieben**|Generierung aus Modellen (plattformunabhängig)|
+|**Serviceorientiert**|Verteilte Webservices – z. B. REST, SOAP|
+|**Softwareproduktlinien**|Gemeinsame Codebasis mit variabler Konfiguration|
 
-2. **Inversion of Control (IoC)**
-   - **Prinzip:** Die Steuerung liegt beim Framework, nicht bei der Anwendung. Die Anwendung registriert ihre Komponenten, und das Framework ruft sie bei Bedarf auf.
-   - **Beispiel:** Callbacks in Web-Frameworks.
+---------------------------------------
 
-3. **Entwurfsmuster**
-   - **Beispiel:** Observer, Strategy sind gängige Muster, um wiederkehrende Probleme zu lösen.
+### 🧱 Framework-Klassifizierung (Fayad & Schmidt)
 
-4. **Architekturmuster**
-   - **Beispiel:** Microservices bieten eine systemweite Lösung für komplexe Anwendungen.
+|**Typ**|**Beispiele**|
+|------|---|
+|**Systeminfrastruktur**|GUI, Compiler, Kommunikationsframeworks|
+|**Middleware-Integration**|Jakarta EE, .NET|
+|**Unternehmensanwendungen**|Branchenspezifisch: Telekom, Finanzen etc.|
 
-5. **ERP-Systeme**
-   - **Definition:** Unternehmensweite Systeme mit konfigurierbaren Modulen.
-   - **Vorteil:** Bietet Lösungen für die Verwaltung von Geschäftsdaten und Prozessen.
+---------------------------------------
 
-6. **Komponentenbasierte Entwicklung**
-   - **Prinzip:** Systeme werden aus austauschbaren Komponenten aufgebaut.
+### 🧩 Wiederverwendung von Anwendungssystemen
 
-7. **Modellgetriebene Entwicklung**
-   - **Definition:** Software wird aus plattformunabhängigen Modellen erstellt.
+|**Typ**|**Beschreibung**|
+|------|---|
+|**Softwareproduktlinien**|Gemeinsamer Kern mit variablen, anpassbaren Komponenten|
+|**Konfigurierbare Systeme**|Systeme, die über Parameter oder Module an spezifische Bedürfnisse angepasst werden können (z. B. ERP)|
+|**Integrierte Systeme**|Kombination verschiedener Anwendungen über Schnittstellen (z. B. APIs)|
 
-8. **Serviceorientierte Systeme**
-   - **Prinzip:** Nutzung verteilter Webservices (z. B. REST, SOAP) zur Kommunikation zwischen Komponenten.
+---------------------------------------
 
-9. **Softwareproduktlinien**
-   - **Definition:** Produktfamilien mit einer gemeinsamen Codebasis und variablen Komponenten.
+### ✅ Vorteile & ⚠️ Herausforderungen
 
+✅ **Vorteile**:
+- Schnellere Bereitstellung
+- Geringeres Entwicklungsrisiko
+- Wiederverwendung bewährter Lösungen
 
-### Framework-Klassifizierung (nach Fayad & Schmidt)
+⚠️ **Herausforderungen**:
+- Anpassung an unternehmensspezifische Prozesse
+- Fehlende interne Expertise
+- Schwierige Auswahl passender Systeme
 
-- **Systeminfrastruktur-Frameworks:** Z. B. Kommunikation, GUI, Compiler
-- **Middleware-Integrations-Frameworks:** Z. B. Jakarta EE, .NET für Komponentenkommunikation
-- **Unternehmensanwendungs-Frameworks:** Z. B. spezialisierte Frameworks für Branchen wie Telekommunikation oder Finanzen.
-
-
-### Wiederverwendung von Anwendungssystemen
-
-- **Softwareproduktlinien:** Gemeinsamer Kern mit anpassbaren Komponenten
-- **Konfigurierbare Systeme:** Über Parameter anpassbar (z. B. ERP-Systeme)
-- **Integrierte Systeme:** Kombination verschiedener Anwendungen über Schnittstellen
-
-
-### Vorteile und Herausforderungen
-
-- **Vorteile:** Schnellere Bereitstellung und geringeres Entwicklungsrisiko
-- **Herausforderungen:** Anpassung an Unternehmensprozesse, fehlende Expertise, Auswahl des richtigen Systems
-
----
 
 

@@ -7,31 +7,104 @@
 <meta name="robots" content="index, follow">
 <title>Vorlesung 2: Wiederverwendung von Software 2 | Jays Zusammenfassung</title>
 <meta name="keywords" content="Wiederverwendung, Framework">
-<meta name="description" content="Wiederverwendungstechniken (laut Sommerville)
+<meta name="description" content="🔁 Wiederverwendungstechniken (nach Sommerville)
+
+  
+      
+          Technik
+          Beschreibung &amp; Beispiel
+      
+  
+  
+      
+          Frameworks
+          Architektur für verwandte Anwendungen. z. B. Spring MVC mit MVC-Muster
+      
+      
+          Inversion of Control
+          Steuerung durch Framework, z. B. Callbacks
+      
+      
+          Entwurfsmuster
+          Lösung wiederkehrender Probleme – z. B. Observer, Strategy
+      
+      
+          Architekturmuster
+          Struktur ganzer Systeme – z. B. Microservices
+      
+      
+          ERP-Systeme
+          Konfigurierbare Geschäftssysteme – z. B. SAP
+      
+      
+          Komponentenbasiert
+          Austauschbare Module, klare Schnittstellen
+      
+      
+          Modellgetrieben
+          Generierung aus Modellen (plattformunabhängig)
+      
+      
+          Serviceorientiert
+          Verteilte Webservices – z. B. REST, SOAP
+      
+      
+          Softwareproduktlinien
+          Gemeinsame Codebasis mit variabler Konfiguration
+      
+  
 
 
-Frameworks
+🧱 Framework-Klassifizierung (Fayad &amp; Schmidt)
 
-Definition: Ein Framework ist ein Set von Softwarekomponenten, das eine Architektur für verwandte Anwendungen bereitstellt.
-Beispiel: Ein Web-Framework wie Spring MVC verwendet das Model-View-Controller-Muster.
-Eigenschaft: Bietet generische Funktionalität und wird erweitert, nicht ersetzt.
+  
+      
+          Typ
+          Beispiele
+      
+  
+  
+      
+          Systeminfrastruktur
+          GUI, Compiler, Kommunikationsframeworks
+      
+      
+          Middleware-Integration
+          Jakarta EE, .NET
+      
+      
+          Unternehmensanwendungen
+          Branchenspezifisch: Telekom, Finanzen etc.
+      
+  
 
 
+🧩 Wiederverwendung von Anwendungssystemen
 
-Inversion of Control (IoC)
+  
+      
+          Typ
+          Beschreibung
+      
+  
+  
+      
+          Softwareproduktlinien
+          Gemeinsamer Kern mit variablen, anpassbaren Komponenten
+      
+      
+          Konfigurierbare Systeme
+          Systeme, die über Parameter oder Module an spezifische Bedürfnisse angepasst werden können (z. B. ERP)
+      
+      
+          Integrierte Systeme
+          Kombination verschiedener Anwendungen über Schnittstellen (z. B. APIs)
+      
+  
 
-Prinzip: Die Steuerung liegt beim Framework, nicht bei der Anwendung. Die Anwendung registriert ihre Komponenten, und das Framework ruft sie bei Bedarf auf.
-Beispiel: Callbacks in Web-Frameworks.
 
-
-
-Entwurfsmuster
-
-Beispiel: Observer, Strategy sind gängige Muster, um wiederkehrende Probleme zu lösen.
-
-
-
-Architekturmuster">
+✅ Vorteile &amp; ⚠️ Herausforderungen
+✅ Vorteile:">
 <meta name="author" content="">
 <link rel="canonical" href="https://jayIsThere.github.io/zusammenfassung/posts/kbe/kbe2/">
 <link crossorigin="anonymous" href="/zusammenfassung/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
@@ -82,10 +155,7 @@ Architekturmuster">
 </noscript><meta property="og:url" content="https://jayIsThere.github.io/zusammenfassung/posts/kbe/kbe2/">
   <meta property="og:site_name" content="Jays Zusammenfassung">
   <meta property="og:title" content="Vorlesung 2: Wiederverwendung von Software 2">
-  <meta property="og:description" content="Wiederverwendungstechniken (laut Sommerville) Frameworks
-Definition: Ein Framework ist ein Set von Softwarekomponenten, das eine Architektur für verwandte Anwendungen bereitstellt. Beispiel: Ein Web-Framework wie Spring MVC verwendet das Model-View-Controller-Muster. Eigenschaft: Bietet generische Funktionalität und wird erweitert, nicht ersetzt. Inversion of Control (IoC)
-Prinzip: Die Steuerung liegt beim Framework, nicht bei der Anwendung. Die Anwendung registriert ihre Komponenten, und das Framework ruft sie bei Bedarf auf. Beispiel: Callbacks in Web-Frameworks. Entwurfsmuster
-Beispiel: Observer, Strategy sind gängige Muster, um wiederkehrende Probleme zu lösen. Architekturmuster">
+  <meta property="og:description" content="🔁 Wiederverwendungstechniken (nach Sommerville) Technik Beschreibung &amp; Beispiel Frameworks Architektur für verwandte Anwendungen. z. B. Spring MVC mit MVC-Muster Inversion of Control Steuerung durch Framework, z. B. Callbacks Entwurfsmuster Lösung wiederkehrender Probleme – z. B. Observer, Strategy Architekturmuster Struktur ganzer Systeme – z. B. Microservices ERP-Systeme Konfigurierbare Geschäftssysteme – z. B. SAP Komponentenbasiert Austauschbare Module, klare Schnittstellen Modellgetrieben Generierung aus Modellen (plattformunabhängig) Serviceorientiert Verteilte Webservices – z. B. REST, SOAP Softwareproduktlinien Gemeinsame Codebasis mit variabler Konfiguration 🧱 Framework-Klassifizierung (Fayad &amp; Schmidt) Typ Beispiele Systeminfrastruktur GUI, Compiler, Kommunikationsframeworks Middleware-Integration Jakarta EE, .NET Unternehmensanwendungen Branchenspezifisch: Telekom, Finanzen etc. 🧩 Wiederverwendung von Anwendungssystemen Typ Beschreibung Softwareproduktlinien Gemeinsamer Kern mit variablen, anpassbaren Komponenten Konfigurierbare Systeme Systeme, die über Parameter oder Module an spezifische Bedürfnisse angepasst werden können (z. B. ERP) Integrierte Systeme Kombination verschiedener Anwendungen über Schnittstellen (z. B. APIs) ✅ Vorteile &amp; ⚠️ Herausforderungen ✅ Vorteile:">
   <meta property="og:locale" content="en-us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -95,31 +165,104 @@ Beispiel: Observer, Strategy sind gängige Muster, um wiederkehrende Probleme zu
     <meta property="article:tag" content="Framework">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vorlesung 2: Wiederverwendung von Software 2">
-<meta name="twitter:description" content="Wiederverwendungstechniken (laut Sommerville)
+<meta name="twitter:description" content="🔁 Wiederverwendungstechniken (nach Sommerville)
+
+  
+      
+          Technik
+          Beschreibung &amp; Beispiel
+      
+  
+  
+      
+          Frameworks
+          Architektur für verwandte Anwendungen. z. B. Spring MVC mit MVC-Muster
+      
+      
+          Inversion of Control
+          Steuerung durch Framework, z. B. Callbacks
+      
+      
+          Entwurfsmuster
+          Lösung wiederkehrender Probleme – z. B. Observer, Strategy
+      
+      
+          Architekturmuster
+          Struktur ganzer Systeme – z. B. Microservices
+      
+      
+          ERP-Systeme
+          Konfigurierbare Geschäftssysteme – z. B. SAP
+      
+      
+          Komponentenbasiert
+          Austauschbare Module, klare Schnittstellen
+      
+      
+          Modellgetrieben
+          Generierung aus Modellen (plattformunabhängig)
+      
+      
+          Serviceorientiert
+          Verteilte Webservices – z. B. REST, SOAP
+      
+      
+          Softwareproduktlinien
+          Gemeinsame Codebasis mit variabler Konfiguration
+      
+  
 
 
-Frameworks
+🧱 Framework-Klassifizierung (Fayad &amp; Schmidt)
 
-Definition: Ein Framework ist ein Set von Softwarekomponenten, das eine Architektur für verwandte Anwendungen bereitstellt.
-Beispiel: Ein Web-Framework wie Spring MVC verwendet das Model-View-Controller-Muster.
-Eigenschaft: Bietet generische Funktionalität und wird erweitert, nicht ersetzt.
+  
+      
+          Typ
+          Beispiele
+      
+  
+  
+      
+          Systeminfrastruktur
+          GUI, Compiler, Kommunikationsframeworks
+      
+      
+          Middleware-Integration
+          Jakarta EE, .NET
+      
+      
+          Unternehmensanwendungen
+          Branchenspezifisch: Telekom, Finanzen etc.
+      
+  
 
 
+🧩 Wiederverwendung von Anwendungssystemen
 
-Inversion of Control (IoC)
+  
+      
+          Typ
+          Beschreibung
+      
+  
+  
+      
+          Softwareproduktlinien
+          Gemeinsamer Kern mit variablen, anpassbaren Komponenten
+      
+      
+          Konfigurierbare Systeme
+          Systeme, die über Parameter oder Module an spezifische Bedürfnisse angepasst werden können (z. B. ERP)
+      
+      
+          Integrierte Systeme
+          Kombination verschiedener Anwendungen über Schnittstellen (z. B. APIs)
+      
+  
 
-Prinzip: Die Steuerung liegt beim Framework, nicht bei der Anwendung. Die Anwendung registriert ihre Komponenten, und das Framework ruft sie bei Bedarf auf.
-Beispiel: Callbacks in Web-Frameworks.
 
-
-
-Entwurfsmuster
-
-Beispiel: Observer, Strategy sind gängige Muster, um wiederkehrende Probleme zu lösen.
-
-
-
-Architekturmuster">
+✅ Vorteile &amp; ⚠️ Herausforderungen
+✅ Vorteile:">
 
 
 <script type="application/ld+json">
@@ -148,12 +291,12 @@ Architekturmuster">
   "@type": "BlogPosting",
   "headline": "Vorlesung 2: Wiederverwendung von Software 2",
   "name": "Vorlesung 2: Wiederverwendung von Software 2",
-  "description": "Wiederverwendungstechniken (laut Sommerville) Frameworks\nDefinition: Ein Framework ist ein Set von Softwarekomponenten, das eine Architektur für verwandte Anwendungen bereitstellt. Beispiel: Ein Web-Framework wie Spring MVC verwendet das Model-View-Controller-Muster. Eigenschaft: Bietet generische Funktionalität und wird erweitert, nicht ersetzt. Inversion of Control (IoC)\nPrinzip: Die Steuerung liegt beim Framework, nicht bei der Anwendung. Die Anwendung registriert ihre Komponenten, und das Framework ruft sie bei Bedarf auf. Beispiel: Callbacks in Web-Frameworks. Entwurfsmuster\nBeispiel: Observer, Strategy sind gängige Muster, um wiederkehrende Probleme zu lösen. Architekturmuster\n",
+  "description": "🔁 Wiederverwendungstechniken (nach Sommerville) Technik Beschreibung \u0026amp; Beispiel Frameworks Architektur für verwandte Anwendungen. z. B. Spring MVC mit MVC-Muster Inversion of Control Steuerung durch Framework, z. B. Callbacks Entwurfsmuster Lösung wiederkehrender Probleme – z. B. Observer, Strategy Architekturmuster Struktur ganzer Systeme – z. B. Microservices ERP-Systeme Konfigurierbare Geschäftssysteme – z. B. SAP Komponentenbasiert Austauschbare Module, klare Schnittstellen Modellgetrieben Generierung aus Modellen (plattformunabhängig) Serviceorientiert Verteilte Webservices – z. B. REST, SOAP Softwareproduktlinien Gemeinsame Codebasis mit variabler Konfiguration 🧱 Framework-Klassifizierung (Fayad \u0026amp; Schmidt) Typ Beispiele Systeminfrastruktur GUI, Compiler, Kommunikationsframeworks Middleware-Integration Jakarta EE, .NET Unternehmensanwendungen Branchenspezifisch: Telekom, Finanzen etc. 🧩 Wiederverwendung von Anwendungssystemen Typ Beschreibung Softwareproduktlinien Gemeinsamer Kern mit variablen, anpassbaren Komponenten Konfigurierbare Systeme Systeme, die über Parameter oder Module an spezifische Bedürfnisse angepasst werden können (z. B. ERP) Integrierte Systeme Kombination verschiedener Anwendungen über Schnittstellen (z. B. APIs) ✅ Vorteile \u0026amp; ⚠️ Herausforderungen ✅ Vorteile:\n",
   "keywords": [
     "Wiederverwendung", "Framework"
   ],
-  "articleBody": "Wiederverwendungstechniken (laut Sommerville) Frameworks\nDefinition: Ein Framework ist ein Set von Softwarekomponenten, das eine Architektur für verwandte Anwendungen bereitstellt. Beispiel: Ein Web-Framework wie Spring MVC verwendet das Model-View-Controller-Muster. Eigenschaft: Bietet generische Funktionalität und wird erweitert, nicht ersetzt. Inversion of Control (IoC)\nPrinzip: Die Steuerung liegt beim Framework, nicht bei der Anwendung. Die Anwendung registriert ihre Komponenten, und das Framework ruft sie bei Bedarf auf. Beispiel: Callbacks in Web-Frameworks. Entwurfsmuster\nBeispiel: Observer, Strategy sind gängige Muster, um wiederkehrende Probleme zu lösen. Architekturmuster\nBeispiel: Microservices bieten eine systemweite Lösung für komplexe Anwendungen. ERP-Systeme\nDefinition: Unternehmensweite Systeme mit konfigurierbaren Modulen. Vorteil: Bietet Lösungen für die Verwaltung von Geschäftsdaten und Prozessen. Komponentenbasierte Entwicklung\nPrinzip: Systeme werden aus austauschbaren Komponenten aufgebaut. Modellgetriebene Entwicklung\nDefinition: Software wird aus plattformunabhängigen Modellen erstellt. Serviceorientierte Systeme\nPrinzip: Nutzung verteilter Webservices (z. B. REST, SOAP) zur Kommunikation zwischen Komponenten. Softwareproduktlinien\nDefinition: Produktfamilien mit einer gemeinsamen Codebasis und variablen Komponenten. Framework-Klassifizierung (nach Fayad \u0026 Schmidt) Systeminfrastruktur-Frameworks: Z. B. Kommunikation, GUI, Compiler Middleware-Integrations-Frameworks: Z. B. Jakarta EE, .NET für Komponentenkommunikation Unternehmensanwendungs-Frameworks: Z. B. spezialisierte Frameworks für Branchen wie Telekommunikation oder Finanzen. Wiederverwendung von Anwendungssystemen Softwareproduktlinien: Gemeinsamer Kern mit anpassbaren Komponenten Konfigurierbare Systeme: Über Parameter anpassbar (z. B. ERP-Systeme) Integrierte Systeme: Kombination verschiedener Anwendungen über Schnittstellen Vorteile und Herausforderungen Vorteile: Schnellere Bereitstellung und geringeres Entwicklungsrisiko Herausforderungen: Anpassung an Unternehmensprozesse, fehlende Expertise, Auswahl des richtigen Systems ",
-  "wordCount" : "222",
+  "articleBody": "🔁 Wiederverwendungstechniken (nach Sommerville) Technik Beschreibung \u0026 Beispiel Frameworks Architektur für verwandte Anwendungen. z. B. Spring MVC mit MVC-Muster Inversion of Control Steuerung durch Framework, z. B. Callbacks Entwurfsmuster Lösung wiederkehrender Probleme – z. B. Observer, Strategy Architekturmuster Struktur ganzer Systeme – z. B. Microservices ERP-Systeme Konfigurierbare Geschäftssysteme – z. B. SAP Komponentenbasiert Austauschbare Module, klare Schnittstellen Modellgetrieben Generierung aus Modellen (plattformunabhängig) Serviceorientiert Verteilte Webservices – z. B. REST, SOAP Softwareproduktlinien Gemeinsame Codebasis mit variabler Konfiguration 🧱 Framework-Klassifizierung (Fayad \u0026 Schmidt) Typ Beispiele Systeminfrastruktur GUI, Compiler, Kommunikationsframeworks Middleware-Integration Jakarta EE, .NET Unternehmensanwendungen Branchenspezifisch: Telekom, Finanzen etc. 🧩 Wiederverwendung von Anwendungssystemen Typ Beschreibung Softwareproduktlinien Gemeinsamer Kern mit variablen, anpassbaren Komponenten Konfigurierbare Systeme Systeme, die über Parameter oder Module an spezifische Bedürfnisse angepasst werden können (z. B. ERP) Integrierte Systeme Kombination verschiedener Anwendungen über Schnittstellen (z. B. APIs) ✅ Vorteile \u0026 ⚠️ Herausforderungen ✅ Vorteile:\nSchnellere Bereitstellung Geringeres Entwicklungsrisiko Wiederverwendung bewährter Lösungen ⚠️ Herausforderungen:\nAnpassung an unternehmensspezifische Prozesse Fehlende interne Expertise Schwierige Auswahl passender Systeme ",
+  "wordCount" : "163",
   "inLanguage": "en",
   "datePublished": "2025-04-10T18:04:15+02:00",
   "dateModified": "2025-04-10T18:04:15+02:00",
@@ -260,7 +403,7 @@ Architekturmuster">
     <h1 class="post-title entry-hint-parent">
       Vorlesung 2: Wiederverwendung von Software 2
     </h1>
-    <div class="post-meta"><span title='2025-04-10 18:04:15 +0200 CEST'>April 10, 2025</span>&nbsp;·&nbsp;2 min
+    <div class="post-meta"><span title='2025-04-10 18:04:15 +0200 CEST'>April 10, 2025</span>&nbsp;·&nbsp;1 min
 
 </div>
   </header> <div class="toc">
@@ -271,98 +414,128 @@ Architekturmuster">
 
         <div class="inner"><ul>
                 <li>
-                    <a href="#wiederverwendungstechniken-laut-sommerville" aria-label="Wiederverwendungstechniken (laut Sommerville)">Wiederverwendungstechniken (laut Sommerville)</a></li>
+                    <a href="#-wiederverwendungstechniken-nach-sommerville" aria-label="🔁 Wiederverwendungstechniken (nach Sommerville)">🔁 Wiederverwendungstechniken (nach Sommerville)</a></li>
                 <li>
-                    <a href="#framework-klassifizierung-nach-fayad--schmidt" aria-label="Framework-Klassifizierung (nach Fayad &amp; Schmidt)">Framework-Klassifizierung (nach Fayad &amp; Schmidt)</a></li>
+                    <a href="#-framework-klassifizierung-fayad--schmidt" aria-label="🧱 Framework-Klassifizierung (Fayad &amp; Schmidt)">🧱 Framework-Klassifizierung (Fayad &amp; Schmidt)</a></li>
                 <li>
-                    <a href="#wiederverwendung-von-anwendungssystemen" aria-label="Wiederverwendung von Anwendungssystemen">Wiederverwendung von Anwendungssystemen</a></li>
+                    <a href="#-wiederverwendung-von-anwendungssystemen" aria-label="🧩 Wiederverwendung von Anwendungssystemen">🧩 Wiederverwendung von Anwendungssystemen</a></li>
                 <li>
-                    <a href="#vorteile-und-herausforderungen" aria-label="Vorteile und Herausforderungen">Vorteile und Herausforderungen</a>
+                    <a href="#-vorteile---herausforderungen" aria-label="✅ Vorteile &amp; ⚠️ Herausforderungen">✅ Vorteile &amp; ⚠️ Herausforderungen</a>
                 </li>
             </ul>
         </div>
     </details>
 </div>
 
-  <div class="post-content"><h3 id="wiederverwendungstechniken-laut-sommerville">Wiederverwendungstechniken (laut Sommerville)<a hidden class="anchor" aria-hidden="true" href="#wiederverwendungstechniken-laut-sommerville">#</a></h3>
-<ol>
-<li>
-<p><strong>Frameworks</strong></p>
-<ul>
-<li><strong>Definition:</strong> Ein Framework ist ein Set von Softwarekomponenten, das eine Architektur für verwandte Anwendungen bereitstellt.</li>
-<li><strong>Beispiel:</strong> Ein Web-Framework wie Spring MVC verwendet das Model-View-Controller-Muster.</li>
-<li><strong>Eigenschaft:</strong> Bietet generische Funktionalität und wird erweitert, nicht ersetzt.</li>
-</ul>
-</li>
-<li>
-<p><strong>Inversion of Control (IoC)</strong></p>
-<ul>
-<li><strong>Prinzip:</strong> Die Steuerung liegt beim Framework, nicht bei der Anwendung. Die Anwendung registriert ihre Komponenten, und das Framework ruft sie bei Bedarf auf.</li>
-<li><strong>Beispiel:</strong> Callbacks in Web-Frameworks.</li>
-</ul>
-</li>
-<li>
-<p><strong>Entwurfsmuster</strong></p>
-<ul>
-<li><strong>Beispiel:</strong> Observer, Strategy sind gängige Muster, um wiederkehrende Probleme zu lösen.</li>
-</ul>
-</li>
-<li>
-<p><strong>Architekturmuster</strong></p>
-<ul>
-<li><strong>Beispiel:</strong> Microservices bieten eine systemweite Lösung für komplexe Anwendungen.</li>
-</ul>
-</li>
-<li>
-<p><strong>ERP-Systeme</strong></p>
-<ul>
-<li><strong>Definition:</strong> Unternehmensweite Systeme mit konfigurierbaren Modulen.</li>
-<li><strong>Vorteil:</strong> Bietet Lösungen für die Verwaltung von Geschäftsdaten und Prozessen.</li>
-</ul>
-</li>
-<li>
-<p><strong>Komponentenbasierte Entwicklung</strong></p>
-<ul>
-<li><strong>Prinzip:</strong> Systeme werden aus austauschbaren Komponenten aufgebaut.</li>
-</ul>
-</li>
-<li>
-<p><strong>Modellgetriebene Entwicklung</strong></p>
-<ul>
-<li><strong>Definition:</strong> Software wird aus plattformunabhängigen Modellen erstellt.</li>
-</ul>
-</li>
-<li>
-<p><strong>Serviceorientierte Systeme</strong></p>
-<ul>
-<li><strong>Prinzip:</strong> Nutzung verteilter Webservices (z. B. REST, SOAP) zur Kommunikation zwischen Komponenten.</li>
-</ul>
-</li>
-<li>
-<p><strong>Softwareproduktlinien</strong></p>
-<ul>
-<li><strong>Definition:</strong> Produktfamilien mit einer gemeinsamen Codebasis und variablen Komponenten.</li>
-</ul>
-</li>
-</ol>
-<h3 id="framework-klassifizierung-nach-fayad--schmidt">Framework-Klassifizierung (nach Fayad &amp; Schmidt)<a hidden class="anchor" aria-hidden="true" href="#framework-klassifizierung-nach-fayad--schmidt">#</a></h3>
-<ul>
-<li><strong>Systeminfrastruktur-Frameworks:</strong> Z. B. Kommunikation, GUI, Compiler</li>
-<li><strong>Middleware-Integrations-Frameworks:</strong> Z. B. Jakarta EE, .NET für Komponentenkommunikation</li>
-<li><strong>Unternehmensanwendungs-Frameworks:</strong> Z. B. spezialisierte Frameworks für Branchen wie Telekommunikation oder Finanzen.</li>
-</ul>
-<h3 id="wiederverwendung-von-anwendungssystemen">Wiederverwendung von Anwendungssystemen<a hidden class="anchor" aria-hidden="true" href="#wiederverwendung-von-anwendungssystemen">#</a></h3>
-<ul>
-<li><strong>Softwareproduktlinien:</strong> Gemeinsamer Kern mit anpassbaren Komponenten</li>
-<li><strong>Konfigurierbare Systeme:</strong> Über Parameter anpassbar (z. B. ERP-Systeme)</li>
-<li><strong>Integrierte Systeme:</strong> Kombination verschiedener Anwendungen über Schnittstellen</li>
-</ul>
-<h3 id="vorteile-und-herausforderungen">Vorteile und Herausforderungen<a hidden class="anchor" aria-hidden="true" href="#vorteile-und-herausforderungen">#</a></h3>
-<ul>
-<li><strong>Vorteile:</strong> Schnellere Bereitstellung und geringeres Entwicklungsrisiko</li>
-<li><strong>Herausforderungen:</strong> Anpassung an Unternehmensprozesse, fehlende Expertise, Auswahl des richtigen Systems</li>
-</ul>
+  <div class="post-content"><h3 id="-wiederverwendungstechniken-nach-sommerville">🔁 Wiederverwendungstechniken (nach Sommerville)<a hidden class="anchor" aria-hidden="true" href="#-wiederverwendungstechniken-nach-sommerville">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Technik</strong></th>
+          <th><strong>Beschreibung &amp; Beispiel</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Frameworks</strong></td>
+          <td>Architektur für verwandte Anwendungen. z. B. Spring MVC mit MVC-Muster</td>
+      </tr>
+      <tr>
+          <td><strong>Inversion of Control</strong></td>
+          <td>Steuerung durch Framework, z. B. Callbacks</td>
+      </tr>
+      <tr>
+          <td><strong>Entwurfsmuster</strong></td>
+          <td>Lösung wiederkehrender Probleme – z. B. Observer, Strategy</td>
+      </tr>
+      <tr>
+          <td><strong>Architekturmuster</strong></td>
+          <td>Struktur ganzer Systeme – z. B. Microservices</td>
+      </tr>
+      <tr>
+          <td><strong>ERP-Systeme</strong></td>
+          <td>Konfigurierbare Geschäftssysteme – z. B. SAP</td>
+      </tr>
+      <tr>
+          <td><strong>Komponentenbasiert</strong></td>
+          <td>Austauschbare Module, klare Schnittstellen</td>
+      </tr>
+      <tr>
+          <td><strong>Modellgetrieben</strong></td>
+          <td>Generierung aus Modellen (plattformunabhängig)</td>
+      </tr>
+      <tr>
+          <td><strong>Serviceorientiert</strong></td>
+          <td>Verteilte Webservices – z. B. REST, SOAP</td>
+      </tr>
+      <tr>
+          <td><strong>Softwareproduktlinien</strong></td>
+          <td>Gemeinsame Codebasis mit variabler Konfiguration</td>
+      </tr>
+  </tbody>
+</table>
 <hr>
+<h3 id="-framework-klassifizierung-fayad--schmidt">🧱 Framework-Klassifizierung (Fayad &amp; Schmidt)<a hidden class="anchor" aria-hidden="true" href="#-framework-klassifizierung-fayad--schmidt">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Typ</strong></th>
+          <th><strong>Beispiele</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Systeminfrastruktur</strong></td>
+          <td>GUI, Compiler, Kommunikationsframeworks</td>
+      </tr>
+      <tr>
+          <td><strong>Middleware-Integration</strong></td>
+          <td>Jakarta EE, .NET</td>
+      </tr>
+      <tr>
+          <td><strong>Unternehmensanwendungen</strong></td>
+          <td>Branchenspezifisch: Telekom, Finanzen etc.</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="-wiederverwendung-von-anwendungssystemen">🧩 Wiederverwendung von Anwendungssystemen<a hidden class="anchor" aria-hidden="true" href="#-wiederverwendung-von-anwendungssystemen">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Typ</strong></th>
+          <th><strong>Beschreibung</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Softwareproduktlinien</strong></td>
+          <td>Gemeinsamer Kern mit variablen, anpassbaren Komponenten</td>
+      </tr>
+      <tr>
+          <td><strong>Konfigurierbare Systeme</strong></td>
+          <td>Systeme, die über Parameter oder Module an spezifische Bedürfnisse angepasst werden können (z. B. ERP)</td>
+      </tr>
+      <tr>
+          <td><strong>Integrierte Systeme</strong></td>
+          <td>Kombination verschiedener Anwendungen über Schnittstellen (z. B. APIs)</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="-vorteile---herausforderungen">✅ Vorteile &amp; ⚠️ Herausforderungen<a hidden class="anchor" aria-hidden="true" href="#-vorteile---herausforderungen">#</a></h3>
+<p>✅ <strong>Vorteile</strong>:</p>
+<ul>
+<li>Schnellere Bereitstellung</li>
+<li>Geringeres Entwicklungsrisiko</li>
+<li>Wiederverwendung bewährter Lösungen</li>
+</ul>
+<p>⚠️ <strong>Herausforderungen</strong>:</p>
+<ul>
+<li>Anpassung an unternehmensspezifische Prozesse</li>
+<li>Fehlende interne Expertise</li>
+<li>Schwierige Auswahl passender Systeme</li>
+</ul>
 
 
   </div>

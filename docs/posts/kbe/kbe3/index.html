@@ -7,45 +7,145 @@
 <meta name="robots" content="index, follow">
 <title>Vorlesung 3: komponentenbasiertes Software-Engineering | Jays Zusammenfassung</title>
 <meta name="keywords" content="komponente, schnittstelle">
-<meta name="description" content="Grundprinzipien des komponentenbasierten Software-Engineerings
-Unabhängige Komponenten
+<meta name="description" content="🧩 Grundprinzipien der KBSE
 
-Vollständig konfigurierbar über ihre Schnittstellen
-Schnittstelle klar getrennt von der Implementierung
-Austauschbar ohne Änderung am System
+
+Unabhängige Komponenten
+– Austauschbar, Schnittstellen-basiert
+
 
 Komponentenstandards
-
-Einheitliche Schnittstellendefinition &amp; Integration
-Umsetzung über Komponentenmodelle, z. B.:
-
-Schnittstellenbeschreibung
-Kommunikationsweise zwischen Komponenten
+– Einheitliche Schnittstellendefinition
 
 
+Middleware-Unterstützung
+– Kommunikation, Ressourcen, Sicherheit
 
-Middleware
 
-Serverseitige Unterstützung für:
-
-Kommunikation verteilter Komponenten
-Ressourcenmanagement
-Transaktionsverwaltung, Sicherheit, Parallelität
+Wiederverwendung im Prozess
+– Schon bei Planung und Entwicklung
 
 
 
-Komponentenorientierter Entwicklungsprozess
+⚠️ Herausforderungen im KBSE
 
-Anforderungen an vorhandene Komponenten anpassbar
-Wiederverwendung während Planung &amp; Entwicklung
+  
+      
+          Thema
+          Problemstellung
+      
+  
+  
+      
+          Vertrauenswürdigkeit
+          Blackbox-Komponenten erschweren Verständnis
+      
+      
+          Komponentenzertifizierung
+          Wer haftet bei Fehlern? Rechtlich unklar
+      
+      
+          Emergente Eigenschaften
+          Unvorhersehbares Verhalten bei Integration
+      
+      
+          Anforderungskompromisse
+          Passende Komponente ≠ perfekte Erfüllung aller Anforderungen
+      
+  
 
-⚠️ Probleme &amp; Herausforderungen im KBSE
-Vertrauenswürdigkeit der Komponenten
 
-Blackbox-Natur erschwert Vertrauen
-Kein Quellcode = wenig Transparenz
+🎯 Zentrale Entwurfsprinzipien
 
-Komponentenzertifizierung">
+Unabhängigkeit der Komponenten
+Stabile, klar definierte Schnittstellen
+Standardisierte Infrastruktur mit Basisdiensten
+
+
+🧩 Komponenten als Dienstanbieter
+
+Kapseln Funktionalität → Zugriff nur über Schnittstelle
+Lokalisation &amp; Sprache irrelevant
+
+
+  
+      
+          Vorteil
+          Erklärung
+      
+  
+  
+      
+          Unabhängigkeit
+          Austauschbar ohne Einfluss auf andere Komponenten
+      
+      
+          Schnittstellenbasiert
+          Kein interner Zugriff nötig
+      
+  
+
+
+🔍 Komponenten vs. Objekte
+
+  
+      
+          Merkmal
+          Komponente
+          Objekt
+      
+  
+  
+      
+          Deployment
+          Direkt ausführbar
+          Bestandteil eines Programms
+      
+      
+          Typdefinition
+          Instanz mit eigener Struktur
+          Objekt auf Basis einer Klasse
+      
+      
+          Transparenz
+          Blackbox, nur API sichtbar
+          Intern oft sichtbar
+      
+      
+          Sprachabhängigkeit
+          Sprachunabhängig (.NET, WSDL)
+          Sprachgebunden (z. B. Java)
+      
+      
+          Standardisierung
+          Muss Modell folgen
+          Frei definierbar
+      
+  
+
+
+🧩 Komponentenschnittstellen
+
+  
+      
+          Schnittstellentyp
+          Beschreibung
+      
+  
+  
+      
+          Provided Interface
+          API der Komponente: was sie bietet
+      
+      
+          Required Interface
+          Externe Dienste, die die Komponente benötigt
+      
+  
+
+
+📐 UML-Notation für Komponenten
+🧱 Komponente">
 <meta name="author" content="">
 <link rel="canonical" href="https://jayIsThere.github.io/zusammenfassung/posts/kbe/kbe3/">
 <link crossorigin="anonymous" href="/zusammenfassung/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
@@ -96,12 +196,11 @@ Komponentenzertifizierung">
 </noscript><meta property="og:url" content="https://jayIsThere.github.io/zusammenfassung/posts/kbe/kbe3/">
   <meta property="og:site_name" content="Jays Zusammenfassung">
   <meta property="og:title" content="Vorlesung 3: komponentenbasiertes Software-Engineering">
-  <meta property="og:description" content="Grundprinzipien des komponentenbasierten Software-Engineerings Unabhängige Komponenten
-Vollständig konfigurierbar über ihre Schnittstellen Schnittstelle klar getrennt von der Implementierung Austauschbar ohne Änderung am System Komponentenstandards
-Einheitliche Schnittstellendefinition &amp; Integration Umsetzung über Komponentenmodelle, z. B.: Schnittstellenbeschreibung Kommunikationsweise zwischen Komponenten Middleware
-Serverseitige Unterstützung für: Kommunikation verteilter Komponenten Ressourcenmanagement Transaktionsverwaltung, Sicherheit, Parallelität Komponentenorientierter Entwicklungsprozess
-Anforderungen an vorhandene Komponenten anpassbar Wiederverwendung während Planung &amp; Entwicklung ⚠️ Probleme &amp; Herausforderungen im KBSE Vertrauenswürdigkeit der Komponenten
-Blackbox-Natur erschwert Vertrauen Kein Quellcode = wenig Transparenz Komponentenzertifizierung">
+  <meta property="og:description" content="🧩 Grundprinzipien der KBSE Unabhängige Komponenten – Austauschbar, Schnittstellen-basiert
+Komponentenstandards – Einheitliche Schnittstellendefinition
+Middleware-Unterstützung – Kommunikation, Ressourcen, Sicherheit
+Wiederverwendung im Prozess – Schon bei Planung und Entwicklung
+⚠️ Herausforderungen im KBSE Thema Problemstellung Vertrauenswürdigkeit Blackbox-Komponenten erschweren Verständnis Komponentenzertifizierung Wer haftet bei Fehlern? Rechtlich unklar Emergente Eigenschaften Unvorhersehbares Verhalten bei Integration Anforderungskompromisse Passende Komponente ≠ perfekte Erfüllung aller Anforderungen 🎯 Zentrale Entwurfsprinzipien Unabhängigkeit der Komponenten Stabile, klar definierte Schnittstellen Standardisierte Infrastruktur mit Basisdiensten 🧩 Komponenten als Dienstanbieter Kapseln Funktionalität → Zugriff nur über Schnittstelle Lokalisation &amp; Sprache irrelevant Vorteil Erklärung Unabhängigkeit Austauschbar ohne Einfluss auf andere Komponenten Schnittstellenbasiert Kein interner Zugriff nötig 🔍 Komponenten vs. Objekte Merkmal Komponente Objekt Deployment Direkt ausführbar Bestandteil eines Programms Typdefinition Instanz mit eigener Struktur Objekt auf Basis einer Klasse Transparenz Blackbox, nur API sichtbar Intern oft sichtbar Sprachabhängigkeit Sprachunabhängig (.NET, WSDL) Sprachgebunden (z. B. Java) Standardisierung Muss Modell folgen Frei definierbar 🧩 Komponentenschnittstellen Schnittstellentyp Beschreibung Provided Interface API der Komponente: was sie bietet Required Interface Externe Dienste, die die Komponente benötigt 📐 UML-Notation für Komponenten 🧱 Komponente">
   <meta property="og:locale" content="en-us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -111,45 +210,145 @@ Blackbox-Natur erschwert Vertrauen Kein Quellcode = wenig Transparenz Komponente
     <meta property="article:tag" content="Schnittstelle">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vorlesung 3: komponentenbasiertes Software-Engineering">
-<meta name="twitter:description" content="Grundprinzipien des komponentenbasierten Software-Engineerings
-Unabhängige Komponenten
+<meta name="twitter:description" content="🧩 Grundprinzipien der KBSE
 
-Vollständig konfigurierbar über ihre Schnittstellen
-Schnittstelle klar getrennt von der Implementierung
-Austauschbar ohne Änderung am System
+
+Unabhängige Komponenten
+– Austauschbar, Schnittstellen-basiert
+
 
 Komponentenstandards
-
-Einheitliche Schnittstellendefinition &amp; Integration
-Umsetzung über Komponentenmodelle, z. B.:
-
-Schnittstellenbeschreibung
-Kommunikationsweise zwischen Komponenten
+– Einheitliche Schnittstellendefinition
 
 
+Middleware-Unterstützung
+– Kommunikation, Ressourcen, Sicherheit
 
-Middleware
 
-Serverseitige Unterstützung für:
-
-Kommunikation verteilter Komponenten
-Ressourcenmanagement
-Transaktionsverwaltung, Sicherheit, Parallelität
+Wiederverwendung im Prozess
+– Schon bei Planung und Entwicklung
 
 
 
-Komponentenorientierter Entwicklungsprozess
+⚠️ Herausforderungen im KBSE
 
-Anforderungen an vorhandene Komponenten anpassbar
-Wiederverwendung während Planung &amp; Entwicklung
+  
+      
+          Thema
+          Problemstellung
+      
+  
+  
+      
+          Vertrauenswürdigkeit
+          Blackbox-Komponenten erschweren Verständnis
+      
+      
+          Komponentenzertifizierung
+          Wer haftet bei Fehlern? Rechtlich unklar
+      
+      
+          Emergente Eigenschaften
+          Unvorhersehbares Verhalten bei Integration
+      
+      
+          Anforderungskompromisse
+          Passende Komponente ≠ perfekte Erfüllung aller Anforderungen
+      
+  
 
-⚠️ Probleme &amp; Herausforderungen im KBSE
-Vertrauenswürdigkeit der Komponenten
 
-Blackbox-Natur erschwert Vertrauen
-Kein Quellcode = wenig Transparenz
+🎯 Zentrale Entwurfsprinzipien
 
-Komponentenzertifizierung">
+Unabhängigkeit der Komponenten
+Stabile, klar definierte Schnittstellen
+Standardisierte Infrastruktur mit Basisdiensten
+
+
+🧩 Komponenten als Dienstanbieter
+
+Kapseln Funktionalität → Zugriff nur über Schnittstelle
+Lokalisation &amp; Sprache irrelevant
+
+
+  
+      
+          Vorteil
+          Erklärung
+      
+  
+  
+      
+          Unabhängigkeit
+          Austauschbar ohne Einfluss auf andere Komponenten
+      
+      
+          Schnittstellenbasiert
+          Kein interner Zugriff nötig
+      
+  
+
+
+🔍 Komponenten vs. Objekte
+
+  
+      
+          Merkmal
+          Komponente
+          Objekt
+      
+  
+  
+      
+          Deployment
+          Direkt ausführbar
+          Bestandteil eines Programms
+      
+      
+          Typdefinition
+          Instanz mit eigener Struktur
+          Objekt auf Basis einer Klasse
+      
+      
+          Transparenz
+          Blackbox, nur API sichtbar
+          Intern oft sichtbar
+      
+      
+          Sprachabhängigkeit
+          Sprachunabhängig (.NET, WSDL)
+          Sprachgebunden (z. B. Java)
+      
+      
+          Standardisierung
+          Muss Modell folgen
+          Frei definierbar
+      
+  
+
+
+🧩 Komponentenschnittstellen
+
+  
+      
+          Schnittstellentyp
+          Beschreibung
+      
+  
+  
+      
+          Provided Interface
+          API der Komponente: was sie bietet
+      
+      
+          Required Interface
+          Externe Dienste, die die Komponente benötigt
+      
+  
+
+
+📐 UML-Notation für Komponenten
+🧱 Komponente">
 
 
 <script type="application/ld+json">
@@ -178,12 +377,12 @@ Komponentenzertifizierung">
   "@type": "BlogPosting",
   "headline": "Vorlesung 3: komponentenbasiertes Software-Engineering",
   "name": "Vorlesung 3: komponentenbasiertes Software-Engineering",
-  "description": "Grundprinzipien des komponentenbasierten Software-Engineerings Unabhängige Komponenten\nVollständig konfigurierbar über ihre Schnittstellen Schnittstelle klar getrennt von der Implementierung Austauschbar ohne Änderung am System Komponentenstandards\nEinheitliche Schnittstellendefinition \u0026amp; Integration Umsetzung über Komponentenmodelle, z. B.: Schnittstellenbeschreibung Kommunikationsweise zwischen Komponenten Middleware\nServerseitige Unterstützung für: Kommunikation verteilter Komponenten Ressourcenmanagement Transaktionsverwaltung, Sicherheit, Parallelität Komponentenorientierter Entwicklungsprozess\nAnforderungen an vorhandene Komponenten anpassbar Wiederverwendung während Planung \u0026amp; Entwicklung ⚠️ Probleme \u0026amp; Herausforderungen im KBSE Vertrauenswürdigkeit der Komponenten\nBlackbox-Natur erschwert Vertrauen Kein Quellcode = wenig Transparenz Komponentenzertifizierung\n",
+  "description": "🧩 Grundprinzipien der KBSE Unabhängige Komponenten – Austauschbar, Schnittstellen-basiert\nKomponentenstandards – Einheitliche Schnittstellendefinition\nMiddleware-Unterstützung – Kommunikation, Ressourcen, Sicherheit\nWiederverwendung im Prozess – Schon bei Planung und Entwicklung\n⚠️ Herausforderungen im KBSE Thema Problemstellung Vertrauenswürdigkeit Blackbox-Komponenten erschweren Verständnis Komponentenzertifizierung Wer haftet bei Fehlern? Rechtlich unklar Emergente Eigenschaften Unvorhersehbares Verhalten bei Integration Anforderungskompromisse Passende Komponente ≠ perfekte Erfüllung aller Anforderungen 🎯 Zentrale Entwurfsprinzipien Unabhängigkeit der Komponenten Stabile, klar definierte Schnittstellen Standardisierte Infrastruktur mit Basisdiensten 🧩 Komponenten als Dienstanbieter Kapseln Funktionalität → Zugriff nur über Schnittstelle Lokalisation \u0026amp; Sprache irrelevant Vorteil Erklärung Unabhängigkeit Austauschbar ohne Einfluss auf andere Komponenten Schnittstellenbasiert Kein interner Zugriff nötig 🔍 Komponenten vs. Objekte Merkmal Komponente Objekt Deployment Direkt ausführbar Bestandteil eines Programms Typdefinition Instanz mit eigener Struktur Objekt auf Basis einer Klasse Transparenz Blackbox, nur API sichtbar Intern oft sichtbar Sprachabhängigkeit Sprachunabhängig (.NET, WSDL) Sprachgebunden (z. B. Java) Standardisierung Muss Modell folgen Frei definierbar 🧩 Komponentenschnittstellen Schnittstellentyp Beschreibung Provided Interface API der Komponente: was sie bietet Required Interface Externe Dienste, die die Komponente benötigt 📐 UML-Notation für Komponenten 🧱 Komponente\n",
   "keywords": [
     "komponente", "schnittstelle"
   ],
-  "articleBody": "Grundprinzipien des komponentenbasierten Software-Engineerings Unabhängige Komponenten\nVollständig konfigurierbar über ihre Schnittstellen Schnittstelle klar getrennt von der Implementierung Austauschbar ohne Änderung am System Komponentenstandards\nEinheitliche Schnittstellendefinition \u0026 Integration Umsetzung über Komponentenmodelle, z. B.: Schnittstellenbeschreibung Kommunikationsweise zwischen Komponenten Middleware\nServerseitige Unterstützung für: Kommunikation verteilter Komponenten Ressourcenmanagement Transaktionsverwaltung, Sicherheit, Parallelität Komponentenorientierter Entwicklungsprozess\nAnforderungen an vorhandene Komponenten anpassbar Wiederverwendung während Planung \u0026 Entwicklung ⚠️ Probleme \u0026 Herausforderungen im KBSE Vertrauenswürdigkeit der Komponenten\nBlackbox-Natur erschwert Vertrauen Kein Quellcode = wenig Transparenz Komponentenzertifizierung\nWer zahlt, wer haftet? Keine klare Verantwortung, rechtlich unsicher Vorhersage emergenter Eigenschaften\nIntegration ≠ Summe der Einzelteile Unerwartete Seiteneffekte durch Zusammenspiel Anforderungskompromisse\nReale Anforderungen vs. Verfügbarkeit Notwendigkeit strukturierter Analysemethoden 🧩 Zentrale Entwurfsprinzipien im KBSE Unabhängigkeit\nKomponenten beeinflussen sich nicht gegenseitig Klar definierte Schnittstellen\nAustauschbar bei stabiler API Komponenteninfrastruktur mit Standarddiensten\nWeniger Neuentwicklung nötig Fokus auf Integration statt Eigenentwicklung Komponenten als Dienstanbieter Komponenten stellen Dienste bereit und kapseln deren Implementierung. Aufgerufen vom System, ohne zu wissen: Wo sie ausgeführt werden In welcher Sprache sie geschrieben sind Vorteile\nUnabhängig \u0026 ausführbar über ihre Schnittstelle Schnittstellenbasiert → kein Zugriff auf internen Zustand nötig …. (Tabelle fehlt)\n🔍 Komponenten vs. Objekte Merkmal Komponente Objekt Deployment Direkt auf Plattform installierbar Teil eines Programms (kompiliert) Typdefinition Ist eine Instanz Basierend auf Klasse (Typ) Transparenz Blackbox, Schnittstelle-only Oft transparenter Sprachabhängigkeit Sprachunabhängig Sprachgebunden (z. B. nur Java) Standardisierung Muss Komponentenmodell folgen Frei definierbar Sprachabhängigkeit : Java ist eher sprachabhängig aber .NET(Microsoft) ist universell.\n🧩 Komponentenschnittstellen Stellt bereit (provided interface)\nAPI der Komponente – was sie bietet Benötigt (required interface)\nWelche Dienste sie selbst braucht, um korrekt zu funktionieren Definiert nicht, wie diese bereitgestellt werden 🎯 Visualisierung in UML (kompakt) 🧱 Komponente\nWird mit Rechteck + 2 kleinen Rechtecken dargestellt Enthält: Realisierungsklassen “Stellt bereit”- und “Benötigt”-Schnittstellen (sichtbar an Port-Notationen) Schnittstellenspezifikation in Komponentenmodellen Komponenten werden über ihre Schnittstellen definiert Das Komponentenmodell regelt: Wie Schnittstellen aufgebaut sind In welcher Sprache sie beschrieben werden Beispiele\nSOAP Webservices → WSDL (XML) Jakarta Beans / CDI → Java Microsoft .NET → CIL 🧩 Grundelemente eines Komponentenmodells Element Beschreibung Schnittstellen Bereitgestellte + benötigte Dienste Nutzung Globale Bezeichner/Handles (z. B. URI, JNDI) Bereitstellung \u0026 Verpackung inkl. Konfigurationsoptionen, Doku, Meta-Infos Komposition Wie Komponenten zusammengebaut werden Anpassung Konfigurierbar für konkrete Einsatzszenarien Evolution Austausch- und Update-Regeln Dokumentation \u0026 Namenskonvention Strukturierter Zugriff \u0026 Übersicht Metadatenzugriff\nz. B. via Reflection (Java) Beispiel für Schnittstellen : WSDL für SOAP, CDI-Beans für Java, CIL für .NET URI, JNDI?\n⚙️ Bereitstellung \u0026 Anpassung Komponenten sind unabhängig lauffähig Müssen komplett mit benötigter Infrastruktur geliefert werden Doku \u0026 Austauschregeln sind Teil des Modells Unterstützung für Konfigurierbarkeit \u0026 Wiederverwendbarkeit Beispiel: MAVEN\njar file mit free pdf?\n🛠️ Middleware-Dienste im Komponentenmodell Zwei Kategorien:\nPlattformdienste\n(grundlegend für verteilte Kommunikation)\nKomponentenkommunikation Ressourcenverwaltung Adressierung Ausnahmebehandlung Transaktionsverwaltung Informationssicherheit Persistenz Nebenläufigkeit Hilfsdienste\n(ergänzend, z. B. Authentifizierung)\nEntlasten die Entwicklung, verhindern Inkompatibilitäten 🧃 Container als Laufzeitumgebung Container = Laufzeitumgebung mit Middleware-Diensten Besteht aus: Dienstimplementierungen Definitionen für Schnittstellenintegration Effekt:\nKomponente nutzt Containerdienste über bereitgestellte Schnittstelle Kommunikation mit anderen Komponenten läuft indirekt über Proxys Beispiel:\nEJB-Container (mächtig, komplex) Spring Framework (leichtgewichtig, effizienter) Was ist Proxy? Unter den Proxys verbogen\n",
-  "wordCount" : "500",
+  "articleBody": "🧩 Grundprinzipien der KBSE Unabhängige Komponenten – Austauschbar, Schnittstellen-basiert\nKomponentenstandards – Einheitliche Schnittstellendefinition\nMiddleware-Unterstützung – Kommunikation, Ressourcen, Sicherheit\nWiederverwendung im Prozess – Schon bei Planung und Entwicklung\n⚠️ Herausforderungen im KBSE Thema Problemstellung Vertrauenswürdigkeit Blackbox-Komponenten erschweren Verständnis Komponentenzertifizierung Wer haftet bei Fehlern? Rechtlich unklar Emergente Eigenschaften Unvorhersehbares Verhalten bei Integration Anforderungskompromisse Passende Komponente ≠ perfekte Erfüllung aller Anforderungen 🎯 Zentrale Entwurfsprinzipien Unabhängigkeit der Komponenten Stabile, klar definierte Schnittstellen Standardisierte Infrastruktur mit Basisdiensten 🧩 Komponenten als Dienstanbieter Kapseln Funktionalität → Zugriff nur über Schnittstelle Lokalisation \u0026 Sprache irrelevant Vorteil Erklärung Unabhängigkeit Austauschbar ohne Einfluss auf andere Komponenten Schnittstellenbasiert Kein interner Zugriff nötig 🔍 Komponenten vs. Objekte Merkmal Komponente Objekt Deployment Direkt ausführbar Bestandteil eines Programms Typdefinition Instanz mit eigener Struktur Objekt auf Basis einer Klasse Transparenz Blackbox, nur API sichtbar Intern oft sichtbar Sprachabhängigkeit Sprachunabhängig (.NET, WSDL) Sprachgebunden (z. B. Java) Standardisierung Muss Modell folgen Frei definierbar 🧩 Komponentenschnittstellen Schnittstellentyp Beschreibung Provided Interface API der Komponente: was sie bietet Required Interface Externe Dienste, die die Komponente benötigt 📐 UML-Notation für Komponenten 🧱 Komponente\nRechteck mit zwei kleinen Rechtecken (≙ Stecker \u0026 Buchse) Darstellung der: Realisierungsklassen Provided/Required-Interfaces 💡 Schnittstellenspezifikation in Komponentenmodellen Modell Beschreibungssprache SOAP Webservices API der Komponente: was sie bietet Java CDI Annotationen \u0026 Interfaces .NET Framework CIL (Common Intermediate Language) Beispiele für Schnittstellen-Nutzung: URI, JNDI (z. B. in Java EE)\n🧩 Grundelemente eines Komponentenmodells Element Beschreibung Schnittstellen Bereitgestellte \u0026 benötigte Dienste – definieren, was eine Komponente kann/braucht Nutzung Verwendung globaler Bezeichner wie URI, JNDI zur Identifikation und Verknüpfung Bereitstellung \u0026 Verpackung Konfigurationsoptionen, Dokumentation, Metadaten – z. B. als JAR oder DLL Komposition Wie Komponenten zusammengesetzt und integriert werden Anpassung Konfigurierbarkeit für unterschiedliche Einsatzszenarien Evolution Regeln für Austausch, Versionskontrolle und Updates Dokumentation \u0026 Namenskonvention Einheitliche Strukturen für bessere Übersicht \u0026 Wartung ⚙️ Bereitstellung \u0026 Anpassung Komponenten liefern Infrastruktur mit Konfigurierbar über Parameter Beispiel: Maven – .jar + Doku + Metadaten 🛠️ Middleware-Dienste im Komponentenmodell Plattformdienste\nKommunikation Ressourcen- \u0026 Transaktionsverwaltung Sicherheit, Nebenläufigkeit, Persistenz Hilfsdienste\nZ. B. Authentifizierung, Logging Entlasten Entwickler, verhindern Inkompatibilitäten 🧃 Container als Laufzeitumgebung Aspekt Beschreibung Container Bereitstellung der Middleware-Dienste Beispiel EJB-Container (komplex), Spring Framework (leichtgewichtig) Proxy-Prinzip Kommunikation erfolgt indirekt – über Vermittlerobjekte (“Proxy”) 🔎 Was ist ein Proxy? → Ein Proxy ist eine Stellvertreter-Komponente, die Anfragen entgegennimmt und an die eigentliche Komponente weiterleitet – z. B. für Logging, Security oder Transparenz.\n",
+  "wordCount" : "382",
   "inLanguage": "en",
   "datePublished": "2025-04-17T18:13:15+02:00",
   "dateModified": "2025-04-17T18:13:15+02:00",
@@ -290,7 +489,7 @@ Komponentenzertifizierung">
     <h1 class="post-title entry-hint-parent">
       Vorlesung 3: komponentenbasiertes Software-Engineering
     </h1>
-    <div class="post-meta"><span title='2025-04-17 18:13:15 +0200 CEST'>April 17, 2025</span>&nbsp;·&nbsp;3 min
+    <div class="post-meta"><span title='2025-04-17 18:13:15 +0200 CEST'>April 17, 2025</span>&nbsp;·&nbsp;2 min
 
 </div>
   </header> <div class="toc">
@@ -301,21 +500,21 @@ Komponentenzertifizierung">
 
         <div class="inner"><ul>
                 <li>
-                    <a href="#grundprinzipien-des-komponentenbasierten-software-engineerings" aria-label="Grundprinzipien des komponentenbasierten Software-Engineerings">Grundprinzipien des komponentenbasierten Software-Engineerings</a></li>
+                    <a href="#-grundprinzipien-der-kbse" aria-label="🧩 Grundprinzipien der KBSE">🧩 Grundprinzipien der KBSE</a></li>
                 <li>
-                    <a href="#-probleme--herausforderungen-im-kbse" aria-label="⚠️ Probleme &amp; Herausforderungen im KBSE">⚠️ Probleme &amp; Herausforderungen im KBSE</a></li>
+                    <a href="#-herausforderungen-im-kbse" aria-label="⚠️ Herausforderungen im KBSE">⚠️ Herausforderungen im KBSE</a></li>
                 <li>
-                    <a href="#-zentrale-entwurfsprinzipien-im-kbse" aria-label="🧩 Zentrale Entwurfsprinzipien im KBSE">🧩 Zentrale Entwurfsprinzipien im KBSE</a></li>
+                    <a href="#-zentrale-entwurfsprinzipien" aria-label="🎯 Zentrale Entwurfsprinzipien">🎯 Zentrale Entwurfsprinzipien</a></li>
                 <li>
-                    <a href="#komponenten-als-dienstanbieter" aria-label="Komponenten als Dienstanbieter">Komponenten als Dienstanbieter</a></li>
+                    <a href="#-komponenten-als-dienstanbieter" aria-label="🧩 Komponenten als Dienstanbieter">🧩 Komponenten als Dienstanbieter</a></li>
                 <li>
                     <a href="#-komponenten-vs-objekte" aria-label="🔍 Komponenten vs. Objekte">🔍 Komponenten vs. Objekte</a></li>
                 <li>
                     <a href="#-komponentenschnittstellen" aria-label="🧩 Komponentenschnittstellen">🧩 Komponentenschnittstellen</a></li>
                 <li>
-                    <a href="#-visualisierung-in-uml-kompakt" aria-label="🎯 Visualisierung in UML (kompakt)">🎯 Visualisierung in UML (kompakt)</a></li>
+                    <a href="#-uml-notation-f%c3%bcr-komponenten" aria-label="📐 UML-Notation für Komponenten">📐 UML-Notation für Komponenten</a></li>
                 <li>
-                    <a href="#schnittstellenspezifikation-in-komponentenmodellen" aria-label="Schnittstellenspezifikation in Komponentenmodellen">Schnittstellenspezifikation in Komponentenmodellen</a></li>
+                    <a href="#-schnittstellenspezifikation-in-komponentenmodellen" aria-label="💡 Schnittstellenspezifikation in Komponentenmodellen">💡 Schnittstellenspezifikation in Komponentenmodellen</a></li>
                 <li>
                     <a href="#-grundelemente-eines-komponentenmodells" aria-label="🧩 Grundelemente eines Komponentenmodells">🧩 Grundelemente eines Komponentenmodells</a></li>
                 <li>
@@ -330,264 +529,265 @@ Komponentenzertifizierung">
     </details>
 </div>
 
-  <div class="post-content"><h3 id="grundprinzipien-des-komponentenbasierten-software-engineerings">Grundprinzipien des komponentenbasierten Software-Engineerings<a hidden class="anchor" aria-hidden="true" href="#grundprinzipien-des-komponentenbasierten-software-engineerings">#</a></h3>
-<p><strong>Unabhängige Komponenten</strong></p>
+  <div class="post-content"><h3 id="-grundprinzipien-der-kbse">🧩 Grundprinzipien der KBSE<a hidden class="anchor" aria-hidden="true" href="#-grundprinzipien-der-kbse">#</a></h3>
 <ul>
-<li>Vollständig konfigurierbar über ihre Schnittstellen</li>
-<li>Schnittstelle klar getrennt von der Implementierung</li>
-<li>Austauschbar ohne Änderung am System</li>
-</ul>
-<p><strong>Komponentenstandards</strong></p>
-<ul>
-<li>Einheitliche Schnittstellendefinition &amp; Integration</li>
-<li>Umsetzung über Komponentenmodelle, z. B.:
-<ul>
-<li>Schnittstellenbeschreibung</li>
-<li>Kommunikationsweise zwischen Komponenten</li>
-</ul>
+<li>
+<p><strong>Unabhängige Komponenten</strong>
+– Austauschbar, Schnittstellen-basiert</p>
+</li>
+<li>
+<p><strong>Komponentenstandards</strong>
+– Einheitliche Schnittstellendefinition</p>
+</li>
+<li>
+<p><strong>Middleware-Unterstützung</strong>
+– Kommunikation, Ressourcen, Sicherheit</p>
+</li>
+<li>
+<p><strong>Wiederverwendung im Prozess</strong>
+– Schon bei Planung und Entwicklung</p>
 </li>
 </ul>
-<p><strong>Middleware</strong></p>
+<hr>
+<h3 id="-herausforderungen-im-kbse">⚠️ Herausforderungen im KBSE<a hidden class="anchor" aria-hidden="true" href="#-herausforderungen-im-kbse">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Thema</strong></th>
+          <th><strong>Problemstellung</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Vertrauenswürdigkeit</strong></td>
+          <td>Blackbox-Komponenten erschweren Verständnis</td>
+      </tr>
+      <tr>
+          <td><strong>Komponentenzertifizierung</strong></td>
+          <td>Wer haftet bei Fehlern? Rechtlich unklar</td>
+      </tr>
+      <tr>
+          <td><strong>Emergente Eigenschaften</strong></td>
+          <td>Unvorhersehbares Verhalten bei Integration</td>
+      </tr>
+      <tr>
+          <td><strong>Anforderungskompromisse</strong></td>
+          <td>Passende Komponente ≠ perfekte Erfüllung aller Anforderungen</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="-zentrale-entwurfsprinzipien">🎯 Zentrale Entwurfsprinzipien<a hidden class="anchor" aria-hidden="true" href="#-zentrale-entwurfsprinzipien">#</a></h3>
 <ul>
-<li>Serverseitige Unterstützung für:
+<li><strong>Unabhängigkeit</strong> der Komponenten</li>
+<li><strong>Stabile, klar definierte Schnittstellen</strong></li>
+<li><strong>Standardisierte Infrastruktur</strong> mit Basisdiensten</li>
+</ul>
+<hr>
+<h3 id="-komponenten-als-dienstanbieter">🧩 Komponenten als Dienstanbieter<a hidden class="anchor" aria-hidden="true" href="#-komponenten-als-dienstanbieter">#</a></h3>
 <ul>
-<li>Kommunikation verteilter Komponenten</li>
-<li>Ressourcenmanagement</li>
-<li>Transaktionsverwaltung, Sicherheit, Parallelität</li>
+<li>Kapseln Funktionalität → Zugriff nur über Schnittstelle</li>
+<li><strong>Lokalisation &amp; Sprache irrelevant</strong></li>
 </ul>
-</li>
-</ul>
-<p><strong>Komponentenorientierter Entwicklungsprozess</strong></p>
-<ul>
-<li>Anforderungen an vorhandene Komponenten anpassbar</li>
-<li>Wiederverwendung während Planung &amp; Entwicklung</li>
-</ul>
-<h3 id="-probleme--herausforderungen-im-kbse">⚠️ Probleme &amp; Herausforderungen im KBSE<a hidden class="anchor" aria-hidden="true" href="#-probleme--herausforderungen-im-kbse">#</a></h3>
-<p><strong>Vertrauenswürdigkeit der Komponenten</strong></p>
-<ul>
-<li>Blackbox-Natur erschwert Vertrauen</li>
-<li>Kein Quellcode = wenig Transparenz</li>
-</ul>
-<p><strong>Komponentenzertifizierung</strong></p>
-<ul>
-<li>Wer zahlt, wer haftet?</li>
-<li>Keine klare Verantwortung, rechtlich unsicher</li>
-</ul>
-<p><strong>Vorhersage emergenter Eigenschaften</strong></p>
-<ul>
-<li>Integration ≠ Summe der Einzelteile</li>
-<li>Unerwartete Seiteneffekte durch Zusammenspiel</li>
-</ul>
-<p><strong>Anforderungskompromisse</strong></p>
-<ul>
-<li>Reale Anforderungen vs. Verfügbarkeit</li>
-<li>Notwendigkeit strukturierter Analysemethoden</li>
-</ul>
-<h3 id="-zentrale-entwurfsprinzipien-im-kbse">🧩 Zentrale Entwurfsprinzipien im KBSE<a hidden class="anchor" aria-hidden="true" href="#-zentrale-entwurfsprinzipien-im-kbse">#</a></h3>
-<p><strong>Unabhängigkeit</strong></p>
-<ul>
-<li>Komponenten beeinflussen sich nicht gegenseitig</li>
-</ul>
-<p><strong>Klar definierte Schnittstellen</strong></p>
-<ul>
-<li>Austauschbar bei stabiler API</li>
-</ul>
-<p><strong>Komponenteninfrastruktur mit Standarddiensten</strong></p>
-<ul>
-<li>Weniger Neuentwicklung nötig</li>
-<li>Fokus auf Integration statt Eigenentwicklung</li>
-</ul>
-<h3 id="komponenten-als-dienstanbieter">Komponenten als Dienstanbieter<a hidden class="anchor" aria-hidden="true" href="#komponenten-als-dienstanbieter">#</a></h3>
-<ul>
-<li>Komponenten stellen Dienste bereit und kapseln deren Implementierung.</li>
-<li>Aufgerufen vom System, ohne zu wissen:
-<ul>
-<li>Wo sie ausgeführt werden</li>
-<li>In welcher Sprache sie geschrieben sind</li>
-</ul>
-</li>
-</ul>
-<p><strong>Vorteile</strong></p>
-<ul>
-<li>Unabhängig &amp; ausführbar über ihre Schnittstelle</li>
-<li>Schnittstellenbasiert → kein Zugriff auf internen Zustand nötig</li>
-</ul>
-<p>&hellip;. (Tabelle fehlt)</p>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Vorteil</strong></th>
+          <th><strong>Erklärung</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Unabhängigkeit</strong></td>
+          <td>Austauschbar ohne Einfluss auf andere Komponenten</td>
+      </tr>
+      <tr>
+          <td><strong>Schnittstellenbasiert</strong></td>
+          <td>Kein interner Zugriff nötig</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
 <h3 id="-komponenten-vs-objekte">🔍 Komponenten vs. Objekte<a hidden class="anchor" aria-hidden="true" href="#-komponenten-vs-objekte">#</a></h3>
 <table>
   <thead>
       <tr>
-          <th>Merkmal</th>
-          <th>Komponente</th>
-          <th>Objekt</th>
+          <th><strong>Merkmal</strong></th>
+          <th><strong>Komponente</strong></th>
+          <th><strong>Objekt</strong></th>
       </tr>
   </thead>
   <tbody>
       <tr>
           <td><strong>Deployment</strong></td>
-          <td>Direkt auf Plattform installierbar</td>
-          <td>Teil eines Programms (kompiliert)</td>
+          <td>Direkt ausführbar</td>
+          <td>Bestandteil eines Programms</td>
       </tr>
       <tr>
           <td><strong>Typdefinition</strong></td>
-          <td>Ist eine Instanz</td>
-          <td>Basierend auf Klasse (Typ)</td>
+          <td>Instanz mit eigener Struktur</td>
+          <td>Objekt auf Basis einer Klasse</td>
       </tr>
       <tr>
           <td><strong>Transparenz</strong></td>
-          <td>Blackbox, Schnittstelle-only</td>
-          <td>Oft transparenter</td>
+          <td>Blackbox, nur API sichtbar</td>
+          <td>Intern oft sichtbar</td>
       </tr>
       <tr>
           <td><strong>Sprachabhängigkeit</strong></td>
-          <td>Sprachunabhängig</td>
-          <td>Sprachgebunden (z. B. nur Java)</td>
+          <td>Sprachunabhängig (.NET, WSDL)</td>
+          <td>Sprachgebunden (z. B. Java)</td>
       </tr>
       <tr>
           <td><strong>Standardisierung</strong></td>
-          <td>Muss Komponentenmodell folgen</td>
+          <td>Muss Modell folgen</td>
           <td>Frei definierbar</td>
       </tr>
   </tbody>
 </table>
-<p>Sprachabhängigkeit : Java ist eher sprachabhängig aber .NET(Microsoft) ist universell.</p>
+<hr>
 <h3 id="-komponentenschnittstellen">🧩 Komponentenschnittstellen<a hidden class="anchor" aria-hidden="true" href="#-komponentenschnittstellen">#</a></h3>
-<p><strong>Stellt bereit (provided interface)</strong></p>
-<ul>
-<li>API der Komponente – was sie bietet</li>
-</ul>
-<p><strong>Benötigt (required interface)</strong></p>
-<ul>
-<li>Welche Dienste sie selbst braucht, um korrekt zu funktionieren</li>
-<li>Definiert nicht, wie diese bereitgestellt werden</li>
-</ul>
-<h3 id="-visualisierung-in-uml-kompakt">🎯 Visualisierung in UML (kompakt)<a hidden class="anchor" aria-hidden="true" href="#-visualisierung-in-uml-kompakt">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Schnittstellentyp</strong></th>
+          <th><strong>Beschreibung</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Provided Interface</strong></td>
+          <td>API der Komponente: was sie bietet</td>
+      </tr>
+      <tr>
+          <td><strong>Required Interface</strong></td>
+          <td>Externe Dienste, die die Komponente benötigt</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="-uml-notation-für-komponenten">📐 UML-Notation für Komponenten<a hidden class="anchor" aria-hidden="true" href="#-uml-notation-für-komponenten">#</a></h3>
 <p>🧱 <strong>Komponente</strong></p>
 <ul>
-<li>Wird mit Rechteck + 2 kleinen Rechtecken dargestellt</li>
-<li>Enthält:
+<li>Rechteck mit zwei kleinen Rechtecken (≙ Stecker &amp; Buchse)</li>
+<li>Darstellung der:
 <ul>
 <li>Realisierungsklassen</li>
-<li>&ldquo;Stellt bereit&rdquo;- und &ldquo;Benötigt&rdquo;-Schnittstellen (sichtbar an Port-Notationen)</li>
+<li>Provided/Required-Interfaces</li>
 </ul>
 </li>
 </ul>
-<h3 id="schnittstellenspezifikation-in-komponentenmodellen">Schnittstellenspezifikation in Komponentenmodellen<a hidden class="anchor" aria-hidden="true" href="#schnittstellenspezifikation-in-komponentenmodellen">#</a></h3>
-<ul>
-<li>Komponenten werden über ihre Schnittstellen definiert</li>
-<li>Das Komponentenmodell regelt:
-<ul>
-<li>Wie Schnittstellen aufgebaut sind</li>
-<li>In welcher Sprache sie beschrieben werden</li>
-</ul>
-</li>
-</ul>
-<p><strong>Beispiele</strong></p>
-<ul>
-<li>SOAP Webservices → WSDL (XML)</li>
-<li>Jakarta Beans / CDI → Java</li>
-<li>Microsoft .NET → CIL</li>
-</ul>
+<hr>
+<h3 id="-schnittstellenspezifikation-in-komponentenmodellen">💡 Schnittstellenspezifikation in Komponentenmodellen<a hidden class="anchor" aria-hidden="true" href="#-schnittstellenspezifikation-in-komponentenmodellen">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Modell</strong></th>
+          <th><strong>Beschreibungssprache</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>SOAP Webservices</strong></td>
+          <td>API der Komponente: was sie bietet</td>
+      </tr>
+      <tr>
+          <td><strong>Java CDI</strong></td>
+          <td>Annotationen &amp; Interfaces</td>
+      </tr>
+      <tr>
+          <td><strong>.NET Framework</strong></td>
+          <td>CIL (Common Intermediate Language)</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Beispiele für Schnittstellen-Nutzung</strong>: URI, JNDI (z. B. in Java EE)</p>
+<hr>
 <h3 id="-grundelemente-eines-komponentenmodells">🧩 Grundelemente eines Komponentenmodells<a hidden class="anchor" aria-hidden="true" href="#-grundelemente-eines-komponentenmodells">#</a></h3>
 <table>
   <thead>
       <tr>
-          <th>Element</th>
-          <th>Beschreibung</th>
+          <th><strong>Element</strong></th>
+          <th><strong>Beschreibung</strong></th>
       </tr>
   </thead>
   <tbody>
       <tr>
           <td><strong>Schnittstellen</strong></td>
-          <td>Bereitgestellte + benötigte Dienste</td>
+          <td>Bereitgestellte &amp; benötigte Dienste – definieren, <strong>was</strong> eine Komponente kann/braucht</td>
       </tr>
       <tr>
           <td><strong>Nutzung</strong></td>
-          <td>Globale Bezeichner/Handles (z. B. URI, JNDI)</td>
+          <td>Verwendung globaler Bezeichner wie <strong>URI</strong>, <strong>JNDI</strong> zur Identifikation und Verknüpfung</td>
       </tr>
       <tr>
           <td><strong>Bereitstellung &amp; Verpackung</strong></td>
-          <td>inkl. Konfigurationsoptionen, Doku, Meta-Infos</td>
+          <td>Konfigurationsoptionen, Dokumentation, Metadaten – z. B. als <strong>JAR</strong> oder <strong>DLL</strong></td>
       </tr>
       <tr>
           <td><strong>Komposition</strong></td>
-          <td>Wie Komponenten zusammengebaut werden</td>
+          <td>Wie Komponenten <strong>zusammengesetzt</strong> und integriert werden</td>
       </tr>
       <tr>
           <td><strong>Anpassung</strong></td>
-          <td>Konfigurierbar für konkrete Einsatzszenarien</td>
+          <td>Konfigurierbarkeit für unterschiedliche Einsatzszenarien</td>
       </tr>
       <tr>
           <td><strong>Evolution</strong></td>
-          <td>Austausch- und Update-Regeln</td>
+          <td>Regeln für Austausch, <strong>Versionskontrolle</strong> und Updates</td>
       </tr>
       <tr>
           <td><strong>Dokumentation &amp; Namenskonvention</strong></td>
-          <td>Strukturierter Zugriff &amp; Übersicht</td>
+          <td>Einheitliche Strukturen für bessere <strong>Übersicht &amp; Wartung</strong></td>
       </tr>
   </tbody>
 </table>
-<p><strong>Metadatenzugriff</strong></p>
-<ul>
-<li>z. B. via Reflection (Java)</li>
-</ul>
-<p>Beispiel für Schnittstellen : WSDL für SOAP, CDI-Beans für Java, CIL für .NET
-URI, JNDI?</p>
+<hr>
 <h3 id="-bereitstellung--anpassung">⚙️ Bereitstellung &amp; Anpassung<a hidden class="anchor" aria-hidden="true" href="#-bereitstellung--anpassung">#</a></h3>
 <ul>
-<li>Komponenten sind unabhängig lauffähig</li>
-<li>Müssen komplett mit benötigter Infrastruktur geliefert werden</li>
-<li>Doku &amp; Austauschregeln sind Teil des Modells</li>
-<li>Unterstützung für Konfigurierbarkeit &amp; Wiederverwendbarkeit</li>
+<li>Komponenten liefern Infrastruktur mit</li>
+<li>Konfigurierbar über Parameter</li>
+<li>Beispiel: <strong>Maven</strong> – <strong>.jar</strong> + Doku + Metadaten</li>
 </ul>
-<p>Beispiel: MAVEN</p>
-<p>jar file mit free pdf?</p>
+<hr>
 <h3 id="-middleware-dienste-im-komponentenmodell">🛠️ Middleware-Dienste im Komponentenmodell<a hidden class="anchor" aria-hidden="true" href="#-middleware-dienste-im-komponentenmodell">#</a></h3>
-<p><strong>Zwei Kategorien:</strong></p>
-<ol>
-<li>
-<p><strong>Plattformdienste</strong><br>
-(grundlegend für verteilte Kommunikation)</p>
+<p><strong>Plattformdienste</strong></p>
 <ul>
-<li>Komponentenkommunikation</li>
-<li>Ressourcenverwaltung</li>
-<li>Adressierung</li>
-<li>Ausnahmebehandlung</li>
-<li>Transaktionsverwaltung</li>
-<li>Informationssicherheit</li>
-<li>Persistenz</li>
-<li>Nebenläufigkeit</li>
+<li>Kommunikation</li>
+<li>Ressourcen- &amp; Transaktionsverwaltung</li>
+<li>Sicherheit, Nebenläufigkeit, Persistenz</li>
 </ul>
-</li>
-<li>
-<p><strong>Hilfsdienste</strong><br>
-(ergänzend, z. B. Authentifizierung)</p>
+<p><strong>Hilfsdienste</strong></p>
 <ul>
-<li>Entlasten die Entwicklung, verhindern Inkompatibilitäten</li>
+<li>Z. B. Authentifizierung, Logging</li>
+<li>Entlasten Entwickler, verhindern Inkompatibilitäten</li>
 </ul>
-</li>
-</ol>
+<hr>
 <h3 id="-container-als-laufzeitumgebung">🧃 Container als Laufzeitumgebung<a hidden class="anchor" aria-hidden="true" href="#-container-als-laufzeitumgebung">#</a></h3>
-<ul>
-<li><strong>Container</strong> = Laufzeitumgebung mit Middleware-Diensten</li>
-<li>Besteht aus:
-<ul>
-<li>Dienstimplementierungen</li>
-<li>Definitionen für Schnittstellenintegration</li>
-</ul>
-</li>
-</ul>
-<p><strong>Effekt:</strong></p>
-<ul>
-<li>Komponente nutzt Containerdienste über bereitgestellte Schnittstelle</li>
-<li>Kommunikation mit anderen Komponenten läuft indirekt über Proxys</li>
-</ul>
-<p><strong>Beispiel:</strong></p>
-<ul>
-<li>EJB-Container (mächtig, komplex)</li>
-<li>Spring Framework (leichtgewichtig, effizienter)</li>
-</ul>
-<p>Was ist Proxy? Unter den Proxys verbogen</p>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Aspekt</strong></th>
+          <th><strong>Beschreibung</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Container</strong></td>
+          <td>Bereitstellung der Middleware-Dienste</td>
+      </tr>
+      <tr>
+          <td><strong>Beispiel</strong></td>
+          <td><strong>EJB-Container</strong> (komplex), <strong>Spring Framework</strong> (leichtgewichtig)</td>
+      </tr>
+      <tr>
+          <td><strong>Proxy-Prinzip</strong></td>
+          <td>Kommunikation erfolgt <strong>indirekt</strong> – über Vermittlerobjekte (&ldquo;Proxy&rdquo;)</td>
+      </tr>
+  </tbody>
+</table>
+<p>🔎 <strong>Was ist ein Proxy?</strong>
+→ Ein Proxy ist eine Stellvertreter-Komponente, die Anfragen entgegennimmt und an die eigentliche Komponente weiterleitet – z. B. für Logging, Security oder Transparenz.</p>
 
 
   </div>
