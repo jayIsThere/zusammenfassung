@@ -13,4 +13,4 @@ draft = false
 5. Lee, G.-G., Latif, E., Wu, X., Liu, N., and Zhai, X. (2024a). Applying large language models and chain-of-thought for automatic scoring. Computers and Education: Artificial Intelligence, 6:100213.
 6. Meyer, J., Jansen, T., Schiller, R., Liebenow, L. W., Steinbach, M., Horbach, A., and Fleckenstein, J. (2024). Using llms to bring evidence-based feedback into the classroom: Ai-generated feedback increases secondary students’ text revision, motivation, and positive emotions. Computers and Education: Artificial Intelligence,
 6:100199.
-7. Stahl, M., Biermann, L., Nehring, A., and Wachsmuth, H.(2024). Exploring llm prompting strategies for joint essay scoring and feedback generation. Leibniz University Hannover.
+7. Stahl, M., Biermann, L., Nehring, A., and Wachsmuth, H.(2024). Exploring llm prompting strategies for joint essay scoring and feedback generation. Leibniz University Hannover. 
