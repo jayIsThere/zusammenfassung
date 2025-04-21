@@ -139,6 +139,53 @@
 &lt;p&gt;&lt;strong&gt;🔢 Berechnung: dBm&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Prompt Engineering for Feedback - Literature</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/prompt/literature/</link>
+      <pubDate>Mon, 14 Apr 2025 18:57:06 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/prompt/literature/</guid>
+      <description>&lt;ol&gt;
+&lt;li&gt;Alnajashi, A. (2024). Investigating the accuracy of large language models ’chatgpt-4’ in grading students’ writing according to a specific rubric.&lt;/li&gt;
+&lt;li&gt;Hackl, V., M¨ uller, A. E., Granitzer, M., and Sailer, M. (2023). Is gpt-4 a reliable rater? evaluating consistency in gpt-4’s text ratings. Frontiers in Education, 8.&lt;/li&gt;
+&lt;li&gt;Jacobsen, L. and Weber, K. (2023). The promises and pitfalls of chatgpt as a feedback provider in higher education: An exploratory study of prompt engineering and the quality of ai-driven feedback.&lt;/li&gt;
+&lt;li&gt;Jukiewicz, M. (2024). The future of grading programming assignments in education: The role of chatgpt in automating the assessment and feedback process. Thinking Skills and Creativity, 52:101522.&lt;/li&gt;
+&lt;li&gt;Lee, G.-G., Latif, E., Wu, X., Liu, N., and Zhai, X. (2024a). Applying large language models and chain-of-thought for automatic scoring. Computers and Education: Artificial Intelligence, 6:100213.&lt;/li&gt;
+&lt;li&gt;Meyer, J., Jansen, T., Schiller, R., Liebenow, L. W., Steinbach, M., Horbach, A., and Fleckenstein, J. (2024). Using llms to bring evidence-based feedback into the classroom: Ai-generated feedback increases secondary students’ text revision, motivation, and positive emotions. Computers and Education: Artificial Intelligence,
+6:100199.&lt;/li&gt;
+&lt;li&gt;Stahl, M., Biermann, L., Nehring, A., and Wachsmuth, H.(2024). Exploring llm prompting strategies for joint essay scoring and feedback generation. Leibniz University Hannover.&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    <item>
+      <title>Prompt Engineering for Feedback - Schema</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/prompt/schema/</link>
+      <pubDate>Mon, 14 Apr 2025 18:57:06 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/prompt/schema/</guid>
+      <description>&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/schema_of_answers.png&#34; style=&#34;display: block; margin: auto;&#34;&gt;</description>
+    </item>
+    <item>
+      <title>Prompt Engineering for Feedback - Structure</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/prompt/structure/</link>
+      <pubDate>Mon, 14 Apr 2025 18:57:06 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/prompt/structure/</guid>
+      <description>&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/data_collection_structure.png&#34; style=&#34;display: block; margin: auto;&#34;&gt;</description>
+    </item>
+    <item>
+      <title>04-14-2025</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/dev_note/2025-04-14-dev-notes/</link>
+      <pubDate>Mon, 14 Apr 2025 18:33:36 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/dev_note/2025-04-14-dev-notes/</guid>
+      <description>&lt;h2 id=&#34;java-spring-boot&#34;&gt;Java Spring Boot&lt;/h2&gt;
+&lt;h3 id=&#34;april-13-2025&#34;&gt;April 13, 2025&lt;/h3&gt;
+&lt;p&gt;Java Spring Boot (Login-function)&lt;/p&gt;
+&lt;p&gt;What I worked on:
+Tried to center a div. That’s it. Sounds simple, right? Nope.&lt;/p&gt;
+&lt;p&gt;What went wrong:
+I tried margin: auto, then flexbox, then grid. Somehow, it still didn’t look right on mobile.&lt;/p&gt;
+&lt;p&gt;What I learned:
+Viewport units can mess with your layout if you&amp;rsquo;re not careful. Also: never trust a div.&lt;/p&gt;
+&lt;p&gt;Next Steps:
+Look into responsive design best practices. Maybe try Tailwind CSS.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Vorlesung 2: Ethics and Laws, Network Access Layer</title>
       <link>https://jayIsThere.github.io/zusammenfassung/posts/nsa/nsa1/</link>
       <pubDate>Mon, 14 Apr 2025 18:32:03 +0200</pubDate>
