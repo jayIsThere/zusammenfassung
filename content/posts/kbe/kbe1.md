@@ -26,11 +26,11 @@ Wiederverwendung bestehender Softwarekomponenten (z. B. Code, Module, Systeme)
 
 |**Ebene**|**Beschreibung**|
 |------|---|
-|Systeme von Systemen|Integration ganzer, autonomer Systeme|
-|Anwendungssysteme|Konfigurierbare Standardsoftware|
-|Anwendungsfamilien|Gemeinsame Architektur mit Anpassungsmöglichkeiten|
-|Komponenten|Module mittlerer Granularität|
-|Objekte & Funktionen|Kleinste Einheiten, z. B. in Bibliotheken enthalten|
+|**Systeme von Systemen**|Integration ganzer, autonomer Systeme|
+|**Anwendungssysteme**|Konfigurierbare Standardsoftware|
+|**Anwendungsfamilien**|Gemeinsame Architektur mit Anpassungsmöglichkeiten|
+|**Komponenten**|Module mittlerer Granularität|
+|**Objekte & Funktionen**|Kleinste Einheiten, z. B. in Bibliotheken enthalten|
 
 ---------------------------------------
 

@@ -12,13 +12,14 @@ Der **Informationsgehalt** beschreibt, wie viel „Überraschung“ oder „Neui
 
 **Formel zur Berechnung:**
 
-> I(p) = −log₂(p)
+  > I(p) = −log₂(p)
 
 - **p** ist die Wahrscheinlichkeit des Ereignisses  
 - Ein **sicheres Ereignis** (p = 1) hat **keinen Informationsgehalt**  
 - Ein **zufälliges Ereignis** (p = 0,5) liefert **1 Bit Information**  
 - Ein **seltenes Ereignis** (z.B. Lottogewinn mit p = 0,0000001) liefert **~26,57 Bit**
 
+---------------------------------------
 
 ### Beispiel 1: Münzwurf
 
@@ -28,6 +29,7 @@ Der **Informationsgehalt** beschreibt, wie viel „Überraschung“ oder „Neui
 
 Ein häufiger, aber unvorhersehbarer Ausgang → *relativ wenig Überraschung*
 
+---------------------------------------
 
 ### Beispiel 2: Lotto-Gewinn
 
@@ -37,6 +39,7 @@ Ein häufiger, aber unvorhersehbarer Ausgang → *relativ wenig Überraschung*
 
 Ein extrem seltenes Ereignis → *hohe Überraschung, viel Information*
 
+---------------------------------------
 
 ### Zusammenfassung
 
@@ -46,6 +49,7 @@ Ein extrem seltenes Ereignis → *hohe Überraschung, viel Information*
 
 📌 *Bedeutung für: Informatik, Kommunikation, Datenkompression, Verschlüsselung, Codierung*
 
+---------------------------------------
 
 ### Beispiel: Informationsgehalt eines Bildes
 
@@ -62,6 +66,7 @@ Ein extrem seltenes Ereignis → *hohe Überraschung, viel Information*
 
 📌 *Nur die Position des schwarzen Pixels zählt → geringe Information*
 
+---------------------------------------
 
 ### Fazit
 

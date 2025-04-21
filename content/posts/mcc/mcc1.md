@@ -6,69 +6,61 @@ tags = []
 draft = false
 +++
 
-### Abgrenzung Festnetz/Cloud zum Mobilnetz
+### 🌐 Abgrenzung Festnetz / Mobilnetz / Cloud
 
-**Festnetz**  
-- Endgeräte sind ortsfest und verkabelt  
-  *(z.B. Desktop-PCs, Telefone, Drucker)*
+|**Netzwerkart**|**Merkmale**|
+|------|---|
+|**Festnetz**|- Geräte sind **ortsgebunden** und **verkabelt** (z. B. Desktop-PC, Drucker)|
+||- Stabil und hohe Bandbreite, aber nicht mobil|
+|**Mobilnetz**|- Geräte sind **mobil**, Verbindung über **Funk** (z. B. LTE, WLAN)|
+||- Kombiniert feste und mobile Komponenten (z. B. Basisstation + Smartphone)|
+|**Cloud**|- Nutzt meist Festnetz, bietet aber **zusätzliche Dienste**:|
+||• Rechenleistung (z. B. AWS EC2)|
+||• Speicherung (z. B. Google Drive)|
+||• Virtualisierung (z. B. virtuelle Maschinen)|
+||- **Cloud = mehr als nur Transportnetz**|
 
-**Mobilnetz**  
-- Endgeräte sind mobil und verbinden sich via Funkverbindung  
-- Kombination aus festem und mobilem Teil, da nicht alle Verbindungen sinnvollerweise mobil sind
+---------------------------------------
 
-**Cloud**  
-- Nutzt Festnetzverbindungen, aber bietet zusätzlich:
-  - Computing
-  - Speicherung
-  - Virtualisierung  
-- Cloud ist mehr als nur ein Transportnetz
+### 📡 Funkverbindung & Frequenz
 
+|**Konzept**|**Beschreibung**|
+|------|---|
+|**Frequenz**|z. B. **WLAN bei 2412 MHz**, definiert die Trägerfrequenz des Signals|
+|**Bandbreite**|z. B. **20 MHz**, bestimmt die Übertragungsrate (je breiter, desto schneller)|
+|**Sender/Empfänger**|Transmitter & Receiver – meist mit **Antennen** ausgestattet|
+|**Reichweite**|Abhängig von Leistung, Hindernissen, Frequenz|
+|**Funkzellen**|Einteilung des Versorgungsgebiets – Wechsel bei Bewegung → **Handover**|
 
-### Funkverbindung und Frequenz
+📌 **Beispiel**: Dein Handy bleibt im Zug mit dem Internet verbunden, weil es automatisch die Funkzellen wechselt.
 
-- In mobilen Netzen wird statt Kabel/Glasfaser ein **Funksignal** genutzt
-- Eine Funkverbindung basiert auf:
-  - **Frequenz** (z.B. WLAN: 2412 MHz)
-  - **Bandbreite** (z.B. 20 MHz)
+---------------------------------------
 
-**Sender und Empfänger**  
-- Bestehen aus einem **Transmitter** und einem **Receiver**, beide mit Antennen verbunden  
-- Mobilität entsteht durch großflächige Signalverteilung – Endgeräte bleiben innerhalb der Abdeckung verbunden
+### 🔐 Sicherheitsrisiken bei Funkverbindungen
 
+|**Risiko**|**Erklärung**|
+|------|---|
+|**Signal-Abgriff über Distanz**|Mit Richtantennen kann man Funksignale über größere Strecken abhören|
+|**→ Reichweite ≠ Sicherheit!**|Funkwellen machen Netzwerke **besonders anfällig** für Lauschangriffe|
+|**Sicherheitsmaßnahmen nötig**|z. B. Verschlüsselung, Zugangskontrolle, Authentifizierung|
 
-### Reichweite und Funkzellen
+---------------------------------------
 
-- **Reichweite** hängt vom Abstand Sender–Empfänger ab  
-- Eine **Funkzelle** ist der Bereich, in dem das Signal empfangen werden kann  
-- Außerhalb: Empfang nicht möglich
+### 🔄 Transceiver & Kommunikationsmodi
 
+|**Typ**|**Erklärung & Beispiel**|
+|------|---|
+|**Transceiver**|Geräte, die **sowohl senden als auch empfangen** (z. B. Smartphone, WLAN-Modul)|
+|**Halbduplex**|Wechselweise Kommunikation (z. B. Walkie-Talkie)|
+|**Vollduplex**|Gleichzeitiges Senden und Empfangen (z. B. Telefon, WhatsApp-Call)|
 
-### Sicherheitsrisiken bei Funk
+---------------------------------------
 
-- Begrenzte Reichweite ≠ Sicherheit  
-- Mit Technik wie **Richtantennen** oder **hoch empfindlichen Empfängern** kann Signal über größere Distanzen abgefangen werden  
-- → Sicherheitsaspekte sind bei mobilen Netzwerken **unerlässlich**
+### 📶 Konfiguration mobiler Netzwerke
 
-
-### Transceiver (Sender und Empfänger)
-
-- **Transceiver** = Geräte, die sowohl senden als auch empfangen können
-
-**Modi**  
-- *Halbduplex*: Abwechselnd senden und empfangen  
-- *Vollduplex*: Gleichzeitige Kommunikation möglich
-
-📱 *Beispiel: Mobile Geräte mit Transceiver – etwa für WhatsApp*
-
-
-### Konfigurationen mobiler Netze
-
-**Ad hoc Netzwerke**  
-- Direkte Vernetzung ohne zentrale Koordination
-
-**Funknetze mit lokaler Zentraleinheit**  
-- Zentrale Station (z.B. Access Point) verwaltet die Kommunikation
-
-**Netzbetreiber-Funknetze**  
-- Strukturierte, komplexe Netze eines Mobilfunkbetreibers
+|**Typ**|**Beschreibung**|
+|------|---|
+|**Ad-hoc Netzwerke**|Direkte Verbindung ohne zentrale Steuerung (z. B. Bluetooth zwischen Laptops)|
+|**Mit zentraler Einheit**|Access Point koordiniert Kommunikation (z. B. WLAN zu Hause)|
+|**Netzbetreiber-Netzwerke**|Großflächig & organisiert (z. B. Telekom LTE-Netz)|
 

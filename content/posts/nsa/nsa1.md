@@ -6,88 +6,124 @@ tags = []
 draft = false
 +++
 
-### Ethics and Laws
+### ⚖️ Ethics and Laws – IT Security and Responsibility
 
-**Lecture Objectives:**
+**🎯 Lecture Objectives**
 
-- Understand risks in a connected world.
-- Learn IT security protection goals.
-- Explore types of attacks and legal aspects.
-- Discuss ethical concerns in data protection.
+- Understand the **risks in a connected world**
+- Learn the **goals of IT security**
+- Explore **types of cyberattacks** and related **legal aspects**
+- Reflect on **ethical issues** in data handling and protection
 
-#### Key IT Security Concepts:
+---------------------------------------
 
-- **IT Security**: Ensures data confidentiality, integrity, and availability.
-- **Information Security**: Protects information, even offline.
-- **Cybersecurity**: Focuses on internet-related information security.
+### 🛡️ Key IT Security Concepts
 
-**Protection Goals:**
+|**Concept**|**Description**|
+|------|---|
+|**IT Security**|Protection of digital systems and data against threats like hacking, malware|
+|**Information Security**|Broader term – includes physical and analog data protection as well|
+|**Cybersecurity**|Focused on protecting information in internet-connected environments|
 
-- **Confidentiality**: Only authorized users can access data.
-- **Integrity**: Data must remain unaltered.
-- **Availability**: Information must be accessible when needed.
+---------------------------------------
 
-#### Types of Attacks:
+### 🎯 Protection Goals (CIA Triad)
 
-- **M:1 (Multiple-to-One)**: Many attackers target one victim (e.g., **Denial of Service (DoS)** attack).
-- **1:N (One-to-Many)**: One attacker targets several victims (e.g., **Ping Scan**).
-- **M:N (Many-to-Many)**: Multiple attackers and victims (e.g., **Spam**).
-- **1:1 (One-to-One)**: One attacker targets one victim (e.g., **Port Scan**).
+|**Goal**|**Meaning**|
+|------|---|
+|**Confidentiality**|Only authorized individuals can access the information|
+|**Integrity**|Data must remain accurate and unaltered|
+|**Availability**|Systems and data must be accessible when needed|
 
-#### Ethical Aspects:
+📌 **Example**:
+If a hospital’s patient data system is hacked and made unavailable during an emergency, it violates the **availability** principle.
 
-- **White Hat Hackers**: Ethical hackers who improve security.
-- **Black Hat Hackers**: Cybercriminals who exploit vulnerabilities.
-- **Gray Hat Hackers**: Find vulnerabilities but act without malicious intent.
+---------------------------------------
 
-#### Legal Framework:
+### 💥 Types of Cyberattacks
 
-- **GDPR**: EU regulation protecting personal data, with heavy fines for violations.
+|**Attack Model**|**Description**|**Example**|
+|------|---|---|
+|**M:1**|Many attackers target a single victim|Distributed Denial of Service|
+|**1:N**|One attacker targets multiple victims|Ping scan or phishing email|
+|**M:N**|Multiple attackers target multiple victims|Spam, botnets|
+|**1:1**|One attacker targets one specific victim|Targeted port scan|
 
-#### Network Threats:
+---------------------------------------
 
-- **Passive Attacks**: Attackers intercept data (e.g., traffic analysis).
-- **Active Attacks**: Attackers modify data or disrupt services (e.g., **DoS**).
+### 👩‍💻 Ethical Aspects of Hacking
 
----
+|**Type**|**Role & Intention**|
+|------|---|
+|**White Hat**|Ethical hackers – help organizations improve security (e.g., penetration testers)|
+|**Black Hat**|Malicious hackers – exploit vulnerabilities for personal gain or harm|
+|**Gray Hat**|Act without malicious intent, but without permission either|
 
-### The Network Access Layer
+---------------------------------------
 
-#### MAC Address Spoofing & ARP Poisoning
+### 📜 Legal Framework
 
-**Positive Aspects of MAC Spoofing:**
+|**Law / Regulation**|**Description**|
+|------|---|
+|**GDPR (General Data Protection Regulation)**|EU regulation for data protection and privacy. Ensures user rights and imposes strict fines for violations.|
 
-- **Prevent Device Tracking**: Randomizing MAC addresses (in Windows/Android) to avoid tracking.
-  
-**Example**:  
-- **Windows 10** allows MAC address randomization when connecting to a Wi-Fi network, making it harder for third parties to track your device's movements.
+📌 **Example**: A company leaking customer data without consent can be fined **up to €20 million or 4% of global revenue**.
 
-**Negative Aspects:**
+---------------------------------------
 
-- **ARP Poisoning**: Manipulating ARP (Address Resolution Protocol) packets to intercept data.
+### 🚨 Network Threats
 
-**How ARP Poisoning Works:**
+## 🔍 Passive vs. Active Attacks
 
-- **MITM (Man-In-The-Middle)**: Attacker inserts themselves between two devices (e.g., Workstation 1 and Gateway).
-  
-**Example**:  
-- The attacker sends fake ARP packets to **Workstation 1**, making it think that the attacker’s device is the Gateway. Now, data meant for the Gateway is sent to the attacker instead.
+|**Type**|**Description**|**Example**|
+|------|---|---|
+|**Passive**|Monitoring or eavesdropping|Traffic analysis, packet sniffing|
+|**Active**|Modifying or disrupting traffic|DoS attack, man-in-the-middle|
 
-**Countermeasures:**
+---------------------------------------
 
-- **IEEE 802.1X Authentication**: Prevents unauthorized devices from joining the network.
-- **Monitoring ARP Traffic**: Tools like **Snort** can detect abnormal ARP activity.
+### 🧬 MAC Address Spoofing & ARP Poisoning
 
-**Practical Exercise**:
+## 🔄 Positive Use of MAC Spoofing
 
-- **Wireshark**: Analyze a packet capture file (`arp-spoofing.pcap`) to detect ARP poisoning activity.
+|**Use Case**|**Description**|
+|------|---|
+|**Privacy Protection**|Devices (like smartphones) can randomize their MAC address to prevent tracking|
 
----
+📌 **Example**: In Windows 10, MAC randomization can be enabled in Wi-Fi settings to avoid location tracking.
 
-### Ethernet & Switch Port Authentication
 
-**Ethernet**: The fundamental network protocol used in local area networks (LANs). It uses **MAC addresses** to communicate between devices.
+## 🚨 Negative Use – ARP Poisoning 
 
-**Switch Port Authentication**: Ensures only authorized devices can connect to a network by using protocols like **IEEE 802.1X**.
+|**Concept**|**Description**|
+|------|---|
+|**ARP Poisoning**|An attacker sends forged ARP packets to a target, making it believe the attacker is the gateway|
+|**Man-In-The-Middle**|Attacker intercepts traffic between two devices by misdirecting network communication|
 
----
+📌 **Example**: Workstation A sends data to the attacker's device, believing it's the gateway → The attacker can read, modify, or drop the traffic.
+
+## 🔐 Countermeasures
+
+|**Method**|**Function**|
+|------|---|
+|**IEEE 802.1X Authentication**|Ensures only authenticated devices can access the network|
+|**ARP Monitoring Tools**|Tools like **Snort** can detect unusual ARP activity to flag attacks|
+
+## 🧪 Practical Exercise – Wireshark
+
+- Use **Wireshark** to analyze the `.pcap` file `arp-spoofing.pcap`
+- Objective: Detect ARP spoofing attacks by identifying abnormal ARP communication
+- Look for: Unexpected duplicate IP-MAC mappings, frequent ARP replies, or unprompted ARP broadcasts
+
+---------------------------------------
+
+### 🖧 Ethernet & Switch Port Authentication
+
+|**Concept**|**Description**|
+|------|---|
+|**Ethernet**|The standard protocol for LANs using MAC addresses for communication|
+|**Switch Port Authentication (802.1X)**|Limits network access to trusted, authenticated devices only|
+
+📌 **Example**:
+University campus Wi-Fi often uses **802.1X authentication**: students must log in using their university credentials to access the network, ensuring unauthorized devices are blocked.
+

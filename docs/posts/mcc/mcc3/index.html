@@ -7,11 +7,11 @@
 <meta name="robots" content="index, follow">
 <title>Vorlesung 3: Abgrenzung Festnetz/Cloud zum Mobilnetz | Jays Zusammenfassung</title>
 <meta name="keywords" content="">
-<meta name="description" content="Abgrenzung Festnetz/Cloud zum Mobilnetz
-🔧 Messgeräte
+<meta name="description" content="🔧 Messgeräte
 
 Spektrumanalysator: Zeigt Frequenzspektrum eines Signals.
 Oszilloskop: Zeigt Zeitverlauf eines Signals.
+
 
 📈 Messgrößen &amp; Vergleich zu Audio
 
@@ -27,10 +27,6 @@ Oszilloskop: Zeigt Zeitverlauf eines Signals.
           Lautstärke
       
       
-          &mdash;&mdash;&mdash;&mdash;&mdash;-
-          &mdash;&mdash;&mdash;&mdash;&mdash;-
-      
-      
           Mittenfrequenz
           Tonhöhe
       
@@ -40,6 +36,7 @@ Oszilloskop: Zeigt Zeitverlauf eines Signals.
 
 Einheit: Watt (W), oft Milliwatt (mW)
 1 W = 1000 mW
+
 
 📊 Dynamik &amp; logarithmische Darstellung
 
@@ -51,7 +48,37 @@ Beispiel: 20W = 43 dBm
 
 
 
-🔢 Berechnung: dBm">
+
+🔢 Berechnung: dBm
+
+Formel:
+
+$$P_\mathrm{dBm} = 10 \cdot \log_{10} \left( \frac{P_\mathrm{mW}}{1~\mathrm{mW}} \right)$$
+Umrechnung dBW → dBm:
+
+$$P_\mathrm{dBm} = P_\mathrm{dBW} &#43; 30$$
+⚠️ Vorsicht bei dB-Rechnungen
+
+dB, dBm, dBW sind Pseudoeinheiten
+
+Beispiel:
+13 dBW &#43; 30 = 43 dBm → mathematisch korrekt, aber nur im Kontext
+
+
+
+
+📺 Oszilloskop
+
+Darstellung: Zeitbereich
+Zeigt z.B. Cosinusschwingung → Amplitude, Periodendauer
+
+
+🌈 Spektrumanalyse
+
+Frequenzbereich: Darstellung der Frequenzen &amp; Leistungen
+Gerät misst Leistung innerhalb der RBW um eine Mittenfrequenz
+
+Wichtige Begriffe:">
 <meta name="author" content="">
 <link rel="canonical" href="https://jayIsThere.github.io/zusammenfassung/posts/mcc/mcc3/">
 <link crossorigin="anonymous" href="/zusammenfassung/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
@@ -102,11 +129,7 @@ Beispiel: 20W = 43 dBm
 </noscript><meta property="og:url" content="https://jayIsThere.github.io/zusammenfassung/posts/mcc/mcc3/">
   <meta property="og:site_name" content="Jays Zusammenfassung">
   <meta property="og:title" content="Vorlesung 3: Abgrenzung Festnetz/Cloud zum Mobilnetz">
-  <meta property="og:description" content="Abgrenzung Festnetz/Cloud zum Mobilnetz 🔧 Messgeräte
-Spektrumanalysator: Zeigt Frequenzspektrum eines Signals. Oszilloskop: Zeigt Zeitverlauf eines Signals. 📈 Messgrößen &amp; Vergleich zu Audio
-Funktechnik Audiotechnik Leistung Lautstärke —————- —————- Mittenfrequenz Tonhöhe ⚡ Leistungsmessung
-Einheit: Watt (W), oft Milliwatt (mW) 1 W = 1000 mW 📊 Dynamik &amp; logarithmische Darstellung
-Große Unterschiede: z.B. 20W ↔ 0.00000000003mW → Verhältnis = 666.7 Billionen Lösung: logarithmischer Maßstab mit Bel und Dezibel (dB) 1 Bel = 10 dB Beispiel: 20W = 43 dBm 🔢 Berechnung: dBm">
+  <meta property="og:description" content="🔧 Messgeräte Spektrumanalysator: Zeigt Frequenzspektrum eines Signals. Oszilloskop: Zeigt Zeitverlauf eines Signals. 📈 Messgrößen &amp; Vergleich zu Audio Funktechnik Audiotechnik Leistung Lautstärke Mittenfrequenz Tonhöhe ⚡ Leistungsmessung Einheit: Watt (W), oft Milliwatt (mW) 1 W = 1000 mW 📊 Dynamik &amp; logarithmische Darstellung Große Unterschiede: z.B. 20W ↔ 0.00000000003mW → Verhältnis = 666.7 Billionen Lösung: logarithmischer Maßstab mit Bel und Dezibel (dB) 1 Bel = 10 dB Beispiel: 20W = 43 dBm 🔢 Berechnung: dBm Formel: $$P_\mathrm{dBm} = 10 \cdot \log_{10} \left( \frac{P_\mathrm{mW}}{1~\mathrm{mW}} \right)$$ Umrechnung dBW → dBm: $$P_\mathrm{dBm} = P_\mathrm{dBW} &#43; 30$$ ⚠️ Vorsicht bei dB-Rechnungen dB, dBm, dBW sind Pseudoeinheiten Beispiel: 13 dBW &#43; 30 = 43 dBm → mathematisch korrekt, aber nur im Kontext 📺 Oszilloskop Darstellung: Zeitbereich Zeigt z.B. Cosinusschwingung → Amplitude, Periodendauer 🌈 Spektrumanalyse Frequenzbereich: Darstellung der Frequenzen &amp; Leistungen Gerät misst Leistung innerhalb der RBW um eine Mittenfrequenz Wichtige Begriffe:">
   <meta property="og:locale" content="en-us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -114,11 +137,11 @@ Große Unterschiede: z.B. 20W ↔ 0.00000000003mW → Verhältnis = 666.7 Billio
     <meta property="article:modified_time" content="2025-04-15T18:22:16+02:00">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vorlesung 3: Abgrenzung Festnetz/Cloud zum Mobilnetz">
-<meta name="twitter:description" content="Abgrenzung Festnetz/Cloud zum Mobilnetz
-🔧 Messgeräte
+<meta name="twitter:description" content="🔧 Messgeräte
 
 Spektrumanalysator: Zeigt Frequenzspektrum eines Signals.
 Oszilloskop: Zeigt Zeitverlauf eines Signals.
+
 
 📈 Messgrößen &amp; Vergleich zu Audio
 
@@ -134,10 +157,6 @@ Oszilloskop: Zeigt Zeitverlauf eines Signals.
           Lautstärke
       
       
-          &mdash;&mdash;&mdash;&mdash;&mdash;-
-          &mdash;&mdash;&mdash;&mdash;&mdash;-
-      
-      
           Mittenfrequenz
           Tonhöhe
       
@@ -147,6 +166,7 @@ Oszilloskop: Zeigt Zeitverlauf eines Signals.
 
 Einheit: Watt (W), oft Milliwatt (mW)
 1 W = 1000 mW
+
 
 📊 Dynamik &amp; logarithmische Darstellung
 
@@ -158,7 +178,37 @@ Beispiel: 20W = 43 dBm
 
 
 
-🔢 Berechnung: dBm">
+
+🔢 Berechnung: dBm
+
+Formel:
+
+$$P_\mathrm{dBm} = 10 \cdot \log_{10} \left( \frac{P_\mathrm{mW}}{1~\mathrm{mW}} \right)$$
+Umrechnung dBW → dBm:
+
+$$P_\mathrm{dBm} = P_\mathrm{dBW} &#43; 30$$
+⚠️ Vorsicht bei dB-Rechnungen
+
+dB, dBm, dBW sind Pseudoeinheiten
+
+Beispiel:
+13 dBW &#43; 30 = 43 dBm → mathematisch korrekt, aber nur im Kontext
+
+
+
+
+📺 Oszilloskop
+
+Darstellung: Zeitbereich
+Zeigt z.B. Cosinusschwingung → Amplitude, Periodendauer
+
+
+🌈 Spektrumanalyse
+
+Frequenzbereich: Darstellung der Frequenzen &amp; Leistungen
+Gerät misst Leistung innerhalb der RBW um eine Mittenfrequenz
+
+Wichtige Begriffe:">
 
 
 <script type="application/ld+json">
@@ -187,12 +237,12 @@ Beispiel: 20W = 43 dBm
   "@type": "BlogPosting",
   "headline": "Vorlesung 3: Abgrenzung Festnetz/Cloud zum Mobilnetz",
   "name": "Vorlesung 3: Abgrenzung Festnetz\/Cloud zum Mobilnetz",
-  "description": "Abgrenzung Festnetz/Cloud zum Mobilnetz 🔧 Messgeräte\nSpektrumanalysator: Zeigt Frequenzspektrum eines Signals. Oszilloskop: Zeigt Zeitverlauf eines Signals. 📈 Messgrößen \u0026amp; Vergleich zu Audio\nFunktechnik Audiotechnik Leistung Lautstärke \u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;- \u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;- Mittenfrequenz Tonhöhe ⚡ Leistungsmessung\nEinheit: Watt (W), oft Milliwatt (mW) 1 W = 1000 mW 📊 Dynamik \u0026amp; logarithmische Darstellung\nGroße Unterschiede: z.B. 20W ↔ 0.00000000003mW → Verhältnis = 666.7 Billionen Lösung: logarithmischer Maßstab mit Bel und Dezibel (dB) 1 Bel = 10 dB Beispiel: 20W = 43 dBm 🔢 Berechnung: dBm\n",
+  "description": "🔧 Messgeräte Spektrumanalysator: Zeigt Frequenzspektrum eines Signals. Oszilloskop: Zeigt Zeitverlauf eines Signals. 📈 Messgrößen \u0026amp; Vergleich zu Audio Funktechnik Audiotechnik Leistung Lautstärke Mittenfrequenz Tonhöhe ⚡ Leistungsmessung Einheit: Watt (W), oft Milliwatt (mW) 1 W = 1000 mW 📊 Dynamik \u0026amp; logarithmische Darstellung Große Unterschiede: z.B. 20W ↔ 0.00000000003mW → Verhältnis = 666.7 Billionen Lösung: logarithmischer Maßstab mit Bel und Dezibel (dB) 1 Bel = 10 dB Beispiel: 20W = 43 dBm 🔢 Berechnung: dBm Formel: $$P_\\mathrm{dBm} = 10 \\cdot \\log_{10} \\left( \\frac{P_\\mathrm{mW}}{1~\\mathrm{mW}} \\right)$$ Umrechnung dBW → dBm: $$P_\\mathrm{dBm} = P_\\mathrm{dBW} + 30$$ ⚠️ Vorsicht bei dB-Rechnungen dB, dBm, dBW sind Pseudoeinheiten Beispiel: 13 dBW + 30 = 43 dBm → mathematisch korrekt, aber nur im Kontext 📺 Oszilloskop Darstellung: Zeitbereich Zeigt z.B. Cosinusschwingung → Amplitude, Periodendauer 🌈 Spektrumanalyse Frequenzbereich: Darstellung der Frequenzen \u0026amp; Leistungen Gerät misst Leistung innerhalb der RBW um eine Mittenfrequenz Wichtige Begriffe:\n",
   "keywords": [
     
   ],
-  "articleBody": "Abgrenzung Festnetz/Cloud zum Mobilnetz 🔧 Messgeräte\nSpektrumanalysator: Zeigt Frequenzspektrum eines Signals. Oszilloskop: Zeigt Zeitverlauf eines Signals. 📈 Messgrößen \u0026 Vergleich zu Audio\nFunktechnik Audiotechnik Leistung Lautstärke —————- —————- Mittenfrequenz Tonhöhe ⚡ Leistungsmessung\nEinheit: Watt (W), oft Milliwatt (mW) 1 W = 1000 mW 📊 Dynamik \u0026 logarithmische Darstellung\nGroße Unterschiede: z.B. 20W ↔ 0.00000000003mW → Verhältnis = 666.7 Billionen Lösung: logarithmischer Maßstab mit Bel und Dezibel (dB) 1 Bel = 10 dB Beispiel: 20W = 43 dBm 🔢 Berechnung: dBm\nFormel: $$P_\\mathrm{dBm} = 10 \\cdot \\log_{10} \\left( \\frac{P_\\mathrm{mW}}{1~\\mathrm{mW}} \\right)$$ Umrechnung dBW → dBm: $$P_\\mathrm{dBm} = P_\\mathrm{dBW} + 30$$⚠️ Vorsicht bei dB-Rechnungen\ndB, dBm, dBW sind Pseudoeinheiten Beispiel: 13 dBW + 30 = 43 dBm → mathematisch korrekt, aber nur im Kontext 📺 Oszilloskop\nDarstellung: Zeitbereich Zeigt z.B. Cosinusschwingung → Amplitude, Periodendauer 🌈 Spektrumanalyse\nFrequenzbereich: Darstellung der Frequenzen \u0026 Leistungen Gerät misst Leistung innerhalb der RBW um eine Mittenfrequenz Wichtige Begriffe:\nRBW (Resolution Bandwidth): Breite des analysierten Frequenzfensters Center Frequency, Span, Start/Stop Frequenz 📉 Darstellung auf dem Spektrumanalysator\nx-Achse: Frequenz y-Achse: Leistung (meist in dBm) Reine Sinusschwingung → Eine Linie im Spektrum Linien erscheinen wegen Filter-Eigenschaften als „Glocken“ 👻 Geisterleistung\nFilter lassen auch Nachbarfrequenzen leicht durch → scheinbare Leistung Dämpfung abhängig von Filterabstand Genaue Anzeige nur bei Mittenfrequenz 🎛️ Einfluss von RBW\nKleinere RBW → feinere Auflösung, längere Messzeit Beispiel: RBW 300 kHz vs. 30 kHz → „schärfere“ Glocke im Spektrum 🔁 Zeit- vs. Frequenzbereich\nZeitbereich: z.B. Cosinusschwingung Frequenzbereich: zeigt Frequenzanteile (Spektrum) 📡 Hochfrequenz \u0026 Modulation\nBasisbandinformationen müssen auf hohe Trägerfrequenzen gebracht werden Erfolgt mittels Mischer ",
-  "wordCount" : "255",
+  "articleBody": "🔧 Messgeräte Spektrumanalysator: Zeigt Frequenzspektrum eines Signals. Oszilloskop: Zeigt Zeitverlauf eines Signals. 📈 Messgrößen \u0026 Vergleich zu Audio Funktechnik Audiotechnik Leistung Lautstärke Mittenfrequenz Tonhöhe ⚡ Leistungsmessung Einheit: Watt (W), oft Milliwatt (mW) 1 W = 1000 mW 📊 Dynamik \u0026 logarithmische Darstellung Große Unterschiede: z.B. 20W ↔ 0.00000000003mW → Verhältnis = 666.7 Billionen Lösung: logarithmischer Maßstab mit Bel und Dezibel (dB) 1 Bel = 10 dB Beispiel: 20W = 43 dBm 🔢 Berechnung: dBm Formel: $$P_\\mathrm{dBm} = 10 \\cdot \\log_{10} \\left( \\frac{P_\\mathrm{mW}}{1~\\mathrm{mW}} \\right)$$ Umrechnung dBW → dBm: $$P_\\mathrm{dBm} = P_\\mathrm{dBW} + 30$$ ⚠️ Vorsicht bei dB-Rechnungen dB, dBm, dBW sind Pseudoeinheiten Beispiel: 13 dBW + 30 = 43 dBm → mathematisch korrekt, aber nur im Kontext 📺 Oszilloskop Darstellung: Zeitbereich Zeigt z.B. Cosinusschwingung → Amplitude, Periodendauer 🌈 Spektrumanalyse Frequenzbereich: Darstellung der Frequenzen \u0026 Leistungen Gerät misst Leistung innerhalb der RBW um eine Mittenfrequenz Wichtige Begriffe:\nRBW (Resolution Bandwidth): Breite des analysierten Frequenzfensters Center Frequency, Span, Start/Stop Frequenz 📉 Darstellung auf dem Spektrumanalysator x-Achse: Frequenz y-Achse: Leistung (meist in dBm) Reine Sinusschwingung → Eine Linie im Spektrum Linien erscheinen wegen Filter-Eigenschaften als „Glocken“ 👻 Geisterleistung Filter lassen auch Nachbarfrequenzen leicht durch → scheinbare Leistung Dämpfung abhängig von Filterabstand Genaue Anzeige nur bei Mittenfrequenz 🎛️ Einfluss von RBW Kleinere RBW → feinere Auflösung, längere Messzeit Beispiel: RBW 300 kHz vs. 30 kHz → „schärfere“ Glocke im Spektrum 🔁 Zeit- vs. Frequenzbereich Zeitbereich: z.B. Cosinusschwingung Frequenzbereich: zeigt Frequenzanteile (Spektrum) 📡 Hochfrequenz \u0026 Modulation Basisbandinformationen müssen auf hohe Trägerfrequenzen gebracht werden Erfolgt mittels Mischer ",
+  "wordCount" : "250",
   "inLanguage": "en",
   "datePublished": "2025-04-15T18:22:16+02:00",
   "dateModified": "2025-04-15T18:22:16+02:00",
@@ -310,20 +360,44 @@ Beispiel: 20W = 43 dBm
 
         <div class="inner"><ul>
                 <li>
-                    <a href="#abgrenzung-festnetzcloud-zum-mobilnetz" aria-label="Abgrenzung Festnetz/Cloud zum Mobilnetz">Abgrenzung Festnetz/Cloud zum Mobilnetz</a>
+                    <a href="#-messger%c3%a4te" aria-label="🔧 Messgeräte">🔧 Messgeräte</a></li>
+                <li>
+                    <a href="#-messgr%c3%b6%c3%9fen--vergleich-zu-audio" aria-label="📈 Messgrößen &amp; Vergleich zu Audio">📈 Messgrößen &amp; Vergleich zu Audio</a></li>
+                <li>
+                    <a href="#-leistungsmessung" aria-label="⚡ Leistungsmessung">⚡ Leistungsmessung</a></li>
+                <li>
+                    <a href="#-dynamik--logarithmische-darstellung" aria-label="📊 Dynamik &amp; logarithmische Darstellung">📊 Dynamik &amp; logarithmische Darstellung</a></li>
+                <li>
+                    <a href="#-berechnung-dbm" aria-label="🔢 Berechnung: dBm">🔢 Berechnung: dBm</a></li>
+                <li>
+                    <a href="#-vorsicht-bei-db-rechnungen" aria-label="⚠️ Vorsicht bei dB-Rechnungen">⚠️ Vorsicht bei dB-Rechnungen</a></li>
+                <li>
+                    <a href="#-oszilloskop" aria-label="📺 Oszilloskop">📺 Oszilloskop</a></li>
+                <li>
+                    <a href="#-spektrumanalyse" aria-label="🌈 Spektrumanalyse">🌈 Spektrumanalyse</a></li>
+                <li>
+                    <a href="#-darstellung-auf-dem-spektrumanalysator" aria-label="📉 Darstellung auf dem Spektrumanalysator">📉 Darstellung auf dem Spektrumanalysator</a></li>
+                <li>
+                    <a href="#-geisterleistung" aria-label="👻 Geisterleistung">👻 Geisterleistung</a></li>
+                <li>
+                    <a href="#-einfluss-von-rbw" aria-label="🎛️ Einfluss von RBW">🎛️ Einfluss von RBW</a></li>
+                <li>
+                    <a href="#-zeit--vs-frequenzbereich" aria-label="🔁 Zeit- vs. Frequenzbereich">🔁 Zeit- vs. Frequenzbereich</a></li>
+                <li>
+                    <a href="#-hochfrequenz--modulation" aria-label="📡 Hochfrequenz &amp; Modulation">📡 Hochfrequenz &amp; Modulation</a>
                 </li>
             </ul>
         </div>
     </details>
 </div>
 
-  <div class="post-content"><h3 id="abgrenzung-festnetzcloud-zum-mobilnetz">Abgrenzung Festnetz/Cloud zum Mobilnetz<a hidden class="anchor" aria-hidden="true" href="#abgrenzung-festnetzcloud-zum-mobilnetz">#</a></h3>
-<p><strong>🔧 Messgeräte</strong></p>
+  <div class="post-content"><h3 id="-messgeräte">🔧 Messgeräte<a hidden class="anchor" aria-hidden="true" href="#-messgeräte">#</a></h3>
 <ul>
 <li>Spektrumanalysator: Zeigt Frequenzspektrum eines Signals.</li>
 <li>Oszilloskop: Zeigt Zeitverlauf eines Signals.</li>
 </ul>
-<p><strong>📈 Messgrößen &amp; Vergleich zu Audio</strong></p>
+<hr>
+<h3 id="-messgrößen--vergleich-zu-audio">📈 Messgrößen &amp; Vergleich zu Audio<a hidden class="anchor" aria-hidden="true" href="#-messgrößen--vergleich-zu-audio">#</a></h3>
 <table>
   <thead>
       <tr>
@@ -337,21 +411,18 @@ Beispiel: 20W = 43 dBm
           <td>Lautstärke</td>
       </tr>
       <tr>
-          <td>&mdash;&mdash;&mdash;&mdash;&mdash;-</td>
-          <td>&mdash;&mdash;&mdash;&mdash;&mdash;-</td>
-      </tr>
-      <tr>
           <td>Mittenfrequenz</td>
           <td>Tonhöhe</td>
       </tr>
   </tbody>
 </table>
-<p><strong>⚡ Leistungsmessung</strong></p>
+<h3 id="-leistungsmessung">⚡ Leistungsmessung<a hidden class="anchor" aria-hidden="true" href="#-leistungsmessung">#</a></h3>
 <ul>
 <li>Einheit: Watt (W), oft Milliwatt (mW)</li>
 <li>1 W = 1000 mW</li>
 </ul>
-<p><strong>📊 Dynamik &amp; logarithmische Darstellung</strong></p>
+<hr>
+<h3 id="-dynamik--logarithmische-darstellung">📊 Dynamik &amp; logarithmische Darstellung<a hidden class="anchor" aria-hidden="true" href="#-dynamik--logarithmische-darstellung">#</a></h3>
 <ul>
 <li>Große Unterschiede: z.B. 20W ↔ 0.00000000003mW → Verhältnis = 666.7 Billionen</li>
 <li>Lösung: <strong>logarithmischer Maßstab</strong> mit <strong>Bel</strong> und <strong>Dezibel (dB)</strong>
@@ -361,14 +432,16 @@ Beispiel: 20W = 43 dBm
 </ul>
 </li>
 </ul>
-<p><strong>🔢 Berechnung: dBm</strong></p>
+<hr>
+<h3 id="-berechnung-dbm">🔢 Berechnung: dBm<a hidden class="anchor" aria-hidden="true" href="#-berechnung-dbm">#</a></h3>
 <ul>
 <li>Formel:</li>
 </ul>
 $$P_\mathrm{dBm} = 10 \cdot \log_{10} \left( \frac{P_\mathrm{mW}}{1~\mathrm{mW}} \right)$$<ul>
 <li>Umrechnung dBW → dBm:</li>
 </ul>
-$$P_\mathrm{dBm} = P_\mathrm{dBW} + 30$$<p><strong>⚠️ Vorsicht bei dB-Rechnungen</strong></p>
+$$P_\mathrm{dBm} = P_\mathrm{dBW} + 30$$<hr>
+<h3 id="-vorsicht-bei-db-rechnungen">⚠️ Vorsicht bei dB-Rechnungen<a hidden class="anchor" aria-hidden="true" href="#-vorsicht-bei-db-rechnungen">#</a></h3>
 <ul>
 <li>dB, dBm, dBW sind <strong>Pseudoeinheiten</strong>
 <ul>
@@ -377,12 +450,14 @@ $$P_\mathrm{dBm} = P_\mathrm{dBW} + 30$$<p><strong>⚠️ Vorsicht bei dB-Rechnu
 </ul>
 </li>
 </ul>
-<p><strong>📺 Oszilloskop</strong></p>
+<hr>
+<h3 id="-oszilloskop">📺 Oszilloskop<a hidden class="anchor" aria-hidden="true" href="#-oszilloskop">#</a></h3>
 <ul>
 <li>Darstellung: <strong>Zeitbereich</strong></li>
 <li>Zeigt z.B. Cosinusschwingung → Amplitude, Periodendauer</li>
 </ul>
-<p><strong>🌈 Spektrumanalyse</strong></p>
+<hr>
+<h3 id="-spektrumanalyse">🌈 Spektrumanalyse<a hidden class="anchor" aria-hidden="true" href="#-spektrumanalyse">#</a></h3>
 <ul>
 <li>Frequenzbereich: Darstellung der Frequenzen &amp; Leistungen</li>
 <li>Gerät misst Leistung <strong>innerhalb der RBW</strong> um eine Mittenfrequenz</li>
@@ -392,20 +467,23 @@ $$P_\mathrm{dBm} = P_\mathrm{dBW} + 30$$<p><strong>⚠️ Vorsicht bei dB-Rechnu
 <li><strong>RBW (Resolution Bandwidth)</strong>: Breite des analysierten Frequenzfensters</li>
 <li><strong>Center Frequency</strong>, <strong>Span</strong>, <strong>Start/Stop Frequenz</strong></li>
 </ul>
-<p><strong>📉 Darstellung auf dem Spektrumanalysator</strong></p>
+<hr>
+<h3 id="-darstellung-auf-dem-spektrumanalysator">📉 Darstellung auf dem Spektrumanalysator<a hidden class="anchor" aria-hidden="true" href="#-darstellung-auf-dem-spektrumanalysator">#</a></h3>
 <ul>
 <li>x-Achse: Frequenz</li>
 <li>y-Achse: Leistung (meist in dBm)</li>
 <li>Reine Sinusschwingung → Eine Linie im Spektrum</li>
 <li>Linien erscheinen wegen Filter-Eigenschaften als „Glocken“</li>
 </ul>
-<p><strong>👻 Geisterleistung</strong></p>
+<hr>
+<h3 id="-geisterleistung">👻 Geisterleistung<a hidden class="anchor" aria-hidden="true" href="#-geisterleistung">#</a></h3>
 <ul>
 <li>Filter lassen auch Nachbarfrequenzen leicht durch → scheinbare Leistung</li>
 <li>Dämpfung abhängig von Filterabstand</li>
 <li>Genaue Anzeige nur bei Mittenfrequenz</li>
 </ul>
-<p><strong>🎛️ Einfluss von RBW</strong></p>
+<hr>
+<h3 id="-einfluss-von-rbw">🎛️ Einfluss von RBW<a hidden class="anchor" aria-hidden="true" href="#-einfluss-von-rbw">#</a></h3>
 <ul>
 <li><strong>Kleinere RBW</strong> → feinere Auflösung, längere Messzeit
 <ul>
@@ -413,12 +491,14 @@ $$P_\mathrm{dBm} = P_\mathrm{dBW} + 30$$<p><strong>⚠️ Vorsicht bei dB-Rechnu
 </ul>
 </li>
 </ul>
-<p><strong>🔁 Zeit- vs. Frequenzbereich</strong></p>
+<hr>
+<h3 id="-zeit--vs-frequenzbereich">🔁 Zeit- vs. Frequenzbereich<a hidden class="anchor" aria-hidden="true" href="#-zeit--vs-frequenzbereich">#</a></h3>
 <ul>
 <li>Zeitbereich: z.B. Cosinusschwingung</li>
 <li>Frequenzbereich: zeigt Frequenzanteile (Spektrum)</li>
 </ul>
-<p><strong>📡 Hochfrequenz &amp; Modulation</strong></p>
+<hr>
+<h3 id="-hochfrequenz--modulation">📡 Hochfrequenz &amp; Modulation<a hidden class="anchor" aria-hidden="true" href="#-hochfrequenz--modulation">#</a></h3>
 <ul>
 <li>Basisbandinformationen müssen auf hohe Trägerfrequenzen gebracht werden</li>
 <li>Erfolgt mittels <strong>Mischer</strong></li>
