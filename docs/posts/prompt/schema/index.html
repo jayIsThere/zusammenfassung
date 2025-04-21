@@ -7,7 +7,18 @@
 <meta name="robots" content="index, follow">
 <title>Prompt Engineering for Feedback - Schema | Jays Zusammenfassung</title>
 <meta name="keywords" content="LLM, AI, Prompt Engineering">
-<meta name="description" content="">
+<meta name="description" content="
+ChatGPT를 활용한 프로그래밍 과제 평가
+ChatGPT는 정확하고 일관된 평가자가 될 수 있음.
+교사 평가와 ChatGPT 평가 간 상관계수 r ≈ 0.81로 상당히 높은 일치도.
+단, ChatGPT가 더 엄격하게 점수를 부여하는 경향 있음.
+
+프롬프트 설계의 핵심 전략:
+AI가 직접 자체 정답을 생성하고, 이를 학생 코드와 비교해 평가하도록 설계함.
+결과는 **정답/부분 정답/오답 (1, 0.5, 0점)**으로 나뉨.
+**반복 평가(15회)**를 통해 ChatGPT의 일관성을 확인했고, 7회 이상 평가 후 평균값 또는 최빈값 사용 시 신뢰도 향상.
+장점: 빠른 평가, 피드백 생성, 편향 없음, 표준 준수 강조.
+단점: 환각 가능성, 비용, 재현 불가성, 교사 개입 필요성.">
 <meta name="author" content="">
 <link rel="canonical" href="https://jayIsThere.github.io/zusammenfassung/posts/prompt/schema/">
 <link crossorigin="anonymous" href="/zusammenfassung/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
@@ -58,6 +69,7 @@
 </noscript><meta property="og:url" content="https://jayIsThere.github.io/zusammenfassung/posts/prompt/schema/">
   <meta property="og:site_name" content="Jays Zusammenfassung">
   <meta property="og:title" content="Prompt Engineering for Feedback - Schema">
+  <meta property="og:description" content=" ChatGPT를 활용한 프로그래밍 과제 평가 ChatGPT는 정확하고 일관된 평가자가 될 수 있음. 교사 평가와 ChatGPT 평가 간 상관계수 r ≈ 0.81로 상당히 높은 일치도. 단, ChatGPT가 더 엄격하게 점수를 부여하는 경향 있음. 프롬프트 설계의 핵심 전략: AI가 직접 자체 정답을 생성하고, 이를 학생 코드와 비교해 평가하도록 설계함. 결과는 **정답/부분 정답/오답 (1, 0.5, 0점)**으로 나뉨. **반복 평가(15회)**를 통해 ChatGPT의 일관성을 확인했고, 7회 이상 평가 후 평균값 또는 최빈값 사용 시 신뢰도 향상. 장점: 빠른 평가, 피드백 생성, 편향 없음, 표준 준수 강조. 단점: 환각 가능성, 비용, 재현 불가성, 교사 개입 필요성.">
   <meta property="og:locale" content="en-us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -68,7 +80,18 @@
     <meta property="article:tag" content="Prompt Engineering">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Prompt Engineering for Feedback - Schema">
-<meta name="twitter:description" content="">
+<meta name="twitter:description" content="
+ChatGPT를 활용한 프로그래밍 과제 평가
+ChatGPT는 정확하고 일관된 평가자가 될 수 있음.
+교사 평가와 ChatGPT 평가 간 상관계수 r ≈ 0.81로 상당히 높은 일치도.
+단, ChatGPT가 더 엄격하게 점수를 부여하는 경향 있음.
+
+프롬프트 설계의 핵심 전략:
+AI가 직접 자체 정답을 생성하고, 이를 학생 코드와 비교해 평가하도록 설계함.
+결과는 **정답/부분 정답/오답 (1, 0.5, 0점)**으로 나뉨.
+**반복 평가(15회)**를 통해 ChatGPT의 일관성을 확인했고, 7회 이상 평가 후 평균값 또는 최빈값 사용 시 신뢰도 향상.
+장점: 빠른 평가, 피드백 생성, 편향 없음, 표준 준수 강조.
+단점: 환각 가능성, 비용, 재현 불가성, 교사 개입 필요성.">
 
 
 <script type="application/ld+json">
@@ -97,12 +120,12 @@
   "@type": "BlogPosting",
   "headline": "Prompt Engineering for Feedback - Schema",
   "name": "Prompt Engineering for Feedback - Schema",
-  "description": "",
+  "description": " ChatGPT를 활용한 프로그래밍 과제 평가 ChatGPT는 정확하고 일관된 평가자가 될 수 있음. 교사 평가와 ChatGPT 평가 간 상관계수 r ≈ 0.81로 상당히 높은 일치도. 단, ChatGPT가 더 엄격하게 점수를 부여하는 경향 있음. 프롬프트 설계의 핵심 전략: AI가 직접 자체 정답을 생성하고, 이를 학생 코드와 비교해 평가하도록 설계함. 결과는 **정답/부분 정답/오답 (1, 0.5, 0점)**으로 나뉨. **반복 평가(15회)**를 통해 ChatGPT의 일관성을 확인했고, 7회 이상 평가 후 평균값 또는 최빈값 사용 시 신뢰도 향상. 장점: 빠른 평가, 피드백 생성, 편향 없음, 표준 준수 강조. 단점: 환각 가능성, 비용, 재현 불가성, 교사 개입 필요성.\n",
   "keywords": [
     "LLM", "AI", "Prompt Engineering"
   ],
-  "articleBody": " ",
-  "wordCount" : "0",
+  "articleBody": " ChatGPT를 활용한 프로그래밍 과제 평가 ChatGPT는 정확하고 일관된 평가자가 될 수 있음. 교사 평가와 ChatGPT 평가 간 상관계수 r ≈ 0.81로 상당히 높은 일치도. 단, ChatGPT가 더 엄격하게 점수를 부여하는 경향 있음. 프롬프트 설계의 핵심 전략: AI가 직접 자체 정답을 생성하고, 이를 학생 코드와 비교해 평가하도록 설계함. 결과는 **정답/부분 정답/오답 (1, 0.5, 0점)**으로 나뉨. **반복 평가(15회)**를 통해 ChatGPT의 일관성을 확인했고, 7회 이상 평가 후 평균값 또는 최빈값 사용 시 신뢰도 향상. 장점: 빠른 평가, 피드백 생성, 편향 없음, 표준 준수 강조. 단점: 환각 가능성, 비용, 재현 불가성, 교사 개입 필요성.\n예시 프롬프트 구조:\n역할: 당신은 Python 프로그래밍 수업의 조교입니다. 목적: 학생의 코드가 과제 요구사항을 충족하는지 평가하고 피드백을 제공합니다. 방법: 먼저 모범답안을 생성하고, 학생 코드와 비교 후 1/0.5/0점 중 하나를 부여하십시오. 피드백: 코드 오류, 개선 제안, PEP8 등 스타일 개선점 포함. 피드백 품질과 프롬프트 품질의 관계 고품질 프롬프트는 고품질 피드백을 만든다는 걸 실험적으로 검증. 프롬프트 품질을 위한 8개 기준 정리: 역할 명시, 대상 설명, 채널 설명, 명확한 목표 설정, 형식 제한, 간결함, 도메인 특화 용어 사용, 논리적 구성. ChatGPT 피드백은 전반적으로 전문가 피드백보다 더 명확하고 구체적이며, 질문을 더 잘함. 그러나, 좋은 프롬프트 없이 생성된 피드백은 오류(환각) 확률 높음. 최상급 프롬프트로 생성된 피드백은 정확성, 구체성, 설명력에서 전문가보다 우수하다는 결과도 나옴. 예시 프롬프트 구조:\n역할: 당신은 교육학 교수이며, 학습 목표 진술의 오류를 찾아 피드백을 줍니다. 대상: 예비 교사 채널: 수업 피드백용 Google Doc 목표: 학생의 학습 목표 진술(예: “학생은 피타고라스 정리를 이해한다”)의 문제점을 분석하고, 구체적인 수정 제안을 포함한 피드백 제공 제한: 150자 이내 문장, 존댓말 사용, 긍정적 시작 후 제안 특화어: Bloom’s Taxonomy, Learning Outcome 등 용어 포함 프롬프트 템플릿:\n[역할] 너는 대학 수준의 Python 프로그래밍 강의 조교야. 코드 품질, 작동 여부, 그리고 스타일 가이드를 기준으로 학생들의 과제를 평가하고 피드백을 제공해야 해.\n[대상] 수업을 듣는 학생이며, 프로그래밍 초급자야.\n[목표]\n먼저 주어진 과제 내용을 이해하고, 네가 생각하는 정답 코드를 작성해. 그 다음 학생의 코드와 비교해, 과제 요구사항 충족 여부를 평가해. 점수는 [1점(정답)/0.5점(부분 정답)/0점(오답)] 중에서 부여해. 그 이유와 함께 코드 작동성, 코드 스타일, 개선 포인트에 대한 피드백을 작성해. [형식 및 제약]\n점수는 “점수: 1점”과 같이 첫 줄에 명시해줘. 피드백은 3개의 항목으로 나눠줘: (1) 코드 작동 여부 (2) 코드 스타일 (3) 개선 제안 최대 500자 이내로 간결하게 써줘. 너무 비판적으로 보이지 않도록, 긍정적인 톤을 유지해줘. [예시 출력 형식] 점수: 0.5점\n(1) 코드 작동 여부: 프로그램이 실행되지만 루프 조건이 잘못되어 무한 루프 발생 가능성이 있음.\n(2) 코드 스타일: 변수명이 직관적이지 않음. i, j 대신 의미 있는 이름 사용 권장.\n(3) 개선 제안: 루프 조건을 digit \u003c= 10으로 수정하고, for 루프 사용 고려해볼 것.\n[입력 예시] 과제 설명: “4단 곱셈표를 출력하는 프로그램을 작성하시오. 출력: 4, 8, …, 40”\n학생 코드:\ndigit = 4 while digit != 11: print(digit * 4) 오답 유형 정리하기 ",
+  "wordCount" : "435",
   "inLanguage": "en",
   "datePublished": "2025-04-14T18:57:06+02:00",
   "dateModified": "2025-04-14T18:57:06+02:00",
@@ -209,12 +232,82 @@
     <h1 class="post-title entry-hint-parent">
       Prompt Engineering for Feedback - Schema
     </h1>
-    <div class="post-meta"><span title='2025-04-14 18:57:06 +0200 CEST'>April 14, 2025</span>&nbsp;·&nbsp;0 min
+    <div class="post-meta"><span title='2025-04-14 18:57:06 +0200 CEST'>April 14, 2025</span>&nbsp;·&nbsp;3 min
 
 </div>
   </header> 
 
-  <div class="post-content">  <img src="/zusammenfassung/images/schema_of_answers.png" style="display: block; margin: auto;">
+  <div class="post-content"><ol>
+<li>ChatGPT를 활용한 프로그래밍 과제 평가
+ChatGPT는 정확하고 일관된 평가자가 될 수 있음.
+교사 평가와 ChatGPT 평가 간 상관계수 r ≈ 0.81로 상당히 높은 일치도.
+단, ChatGPT가 더 엄격하게 점수를 부여하는 경향 있음.</li>
+</ol>
+<p>프롬프트 설계의 핵심 전략:
+AI가 직접 자체 정답을 생성하고, 이를 학생 코드와 비교해 평가하도록 설계함.
+결과는 **정답/부분 정답/오답 (1, 0.5, 0점)**으로 나뉨.
+**반복 평가(15회)**를 통해 ChatGPT의 일관성을 확인했고, 7회 이상 평가 후 평균값 또는 최빈값 사용 시 신뢰도 향상.
+장점: 빠른 평가, 피드백 생성, 편향 없음, 표준 준수 강조.
+단점: 환각 가능성, 비용, 재현 불가성, 교사 개입 필요성.</p>
+<p>예시 프롬프트 구조:</p>
+<ul>
+<li>역할: 당신은 Python 프로그래밍 수업의 조교입니다.</li>
+<li>목적: 학생의 코드가 과제 요구사항을 충족하는지 평가하고 피드백을 제공합니다.</li>
+<li>방법: 먼저 모범답안을 생성하고, 학생 코드와 비교 후 1/0.5/0점 중 하나를 부여하십시오.</li>
+<li>피드백: 코드 오류, 개선 제안, PEP8 등 스타일 개선점 포함.</li>
+</ul>
+<ol start="2">
+<li>피드백 품질과 프롬프트 품질의 관계
+고품질 프롬프트는 고품질 피드백을 만든다는 걸 실험적으로 검증.
+프롬프트 품질을 위한 8개 기준 정리:
+역할 명시, 대상 설명, 채널 설명, 명확한 목표 설정, 형식 제한, 간결함, 도메인 특화 용어 사용, 논리적 구성.
+ChatGPT 피드백은 전반적으로 전문가 피드백보다 더 명확하고 구체적이며, 질문을 더 잘함.
+그러나, 좋은 프롬프트 없이 생성된 피드백은 오류(환각) 확률 높음.
+최상급 프롬프트로 생성된 피드백은 정확성, 구체성, 설명력에서 전문가보다 우수하다는 결과도 나옴.</li>
+</ol>
+<p>예시 프롬프트 구조:</p>
+<ul>
+<li>역할: 당신은 교육학 교수이며, 학습 목표 진술의 오류를 찾아 피드백을 줍니다.</li>
+<li>대상: 예비 교사</li>
+<li>채널: 수업 피드백용 Google Doc</li>
+<li>목표: 학생의 학습 목표 진술(예: &ldquo;학생은 피타고라스 정리를 이해한다&rdquo;)의 문제점을 분석하고, 구체적인 수정 제안을 포함한 피드백 제공</li>
+<li>제한: 150자 이내 문장, 존댓말 사용, 긍정적 시작 후 제안</li>
+<li>특화어: Bloom’s Taxonomy, Learning Outcome 등 용어 포함</li>
+</ul>
+<p>프롬프트 템플릿:</p>
+<p>[역할]
+너는 대학 수준의 Python 프로그래밍 강의 조교야. 코드 품질, 작동 여부, 그리고 스타일 가이드를 기준으로 학생들의 과제를 평가하고 피드백을 제공해야 해.</p>
+<p>[대상]
+수업을 듣는 학생이며, 프로그래밍 초급자야.</p>
+<p>[목표]</p>
+<ul>
+<li>먼저 주어진 과제 내용을 이해하고, 네가 생각하는 정답 코드를 작성해.</li>
+<li>그 다음 학생의 코드와 비교해, 과제 요구사항 충족 여부를 평가해.</li>
+<li>점수는 [1점(정답)/0.5점(부분 정답)/0점(오답)] 중에서 부여해.</li>
+<li>그 이유와 함께 코드 작동성, 코드 스타일, 개선 포인트에 대한 피드백을 작성해.</li>
+</ul>
+<p>[형식 및 제약]</p>
+<ul>
+<li>점수는 “점수: 1점”과 같이 첫 줄에 명시해줘.</li>
+<li>피드백은 3개의 항목으로 나눠줘: (1) 코드 작동 여부 (2) 코드 스타일 (3) 개선 제안</li>
+<li>최대 500자 이내로 간결하게 써줘.</li>
+<li>너무 비판적으로 보이지 않도록, 긍정적인 톤을 유지해줘.</li>
+</ul>
+<p>[예시 출력 형식]
+점수: 0.5점<br>
+(1) 코드 작동 여부: 프로그램이 실행되지만 루프 조건이 잘못되어 무한 루프 발생 가능성이 있음.<br>
+(2) 코드 스타일: 변수명이 직관적이지 않음. <code>i</code>, <code>j</code> 대신 의미 있는 이름 사용 권장.<br>
+(3) 개선 제안: 루프 조건을 <code>digit &lt;= 10</code>으로 수정하고, <code>for</code> 루프 사용 고려해볼 것.</p>
+<p>[입력 예시]
+과제 설명: “4단 곱셈표를 출력하는 프로그램을 작성하시오. 출력: 4, 8, &hellip;, 40”<br>
+학생 코드:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>digit <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> digit <span style="color:#f92672">!=</span> <span style="color:#ae81ff">11</span>:
+</span></span><span style="display:flex;"><span>    print(digit <span style="color:#f92672">*</span> <span style="color:#ae81ff">4</span>)
+</span></span></code></pre></div><ol start="3">
+<li>오답 유형 정리하기</li>
+</ol>
+  <img src="/zusammenfassung/images/schema_of_answers.png" style="display: block; margin: auto;">
 
 
   </div>
