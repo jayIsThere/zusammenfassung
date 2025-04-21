@@ -73,7 +73,7 @@ If a hospital’s patient data system is hacked and made unavailable during an e
 
 ### 🚨 Network Threats
 
-## 🔍 Passive vs. Active Attacks
+#### 🔍 Passive vs. Active Attacks
 
 |**Type**|**Description**|**Example**|
 |------|---|---|
@@ -84,7 +84,7 @@ If a hospital’s patient data system is hacked and made unavailable during an e
 
 ### 🧬 MAC Address Spoofing & ARP Poisoning
 
-## 🔄 Positive Use of MAC Spoofing
+#### 🔄 Positive Use of MAC Spoofing
 
 |**Use Case**|**Description**|
 |------|---|
@@ -93,7 +93,7 @@ If a hospital’s patient data system is hacked and made unavailable during an e
 📌 **Example**: In Windows 10, MAC randomization can be enabled in Wi-Fi settings to avoid location tracking.
 
 
-## 🚨 Negative Use – ARP Poisoning 
+#### 🚨 Negative Use – ARP Poisoning 
 
 |**Concept**|**Description**|
 |------|---|
@@ -102,14 +102,14 @@ If a hospital’s patient data system is hacked and made unavailable during an e
 
 📌 **Example**: Workstation A sends data to the attacker's device, believing it's the gateway → The attacker can read, modify, or drop the traffic.
 
-## 🔐 Countermeasures
+#### 🔐 Countermeasures
 
 |**Method**|**Function**|
 |------|---|
 |**IEEE 802.1X Authentication**|Ensures only authenticated devices can access the network|
 |**ARP Monitoring Tools**|Tools like **Snort** can detect unusual ARP activity to flag attacks|
 
-## 🧪 Practical Exercise – Wireshark
+#### 🧪 Practical Exercise – Wireshark
 
 - Use **Wireshark** to analyze the `.pcap` file `arp-spoofing.pcap`
 - Objective: Detect ARP spoofing attacks by identifying abnormal ARP communication

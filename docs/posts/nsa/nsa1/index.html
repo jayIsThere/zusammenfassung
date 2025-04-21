@@ -331,7 +331,7 @@ If a hospital’s patient data system is hacked and made unavailable during an e
             <span class="details">Table of Contents</span>
         </summary>
 
-        <div class="inner"><ul><ul>
+        <div class="inner"><ul>
                 <li>
                     <a href="#-ethics-and-laws--it-security-and-responsibility" aria-label="⚖️ Ethics and Laws – IT Security and Responsibility">⚖️ Ethics and Laws – IT Security and Responsibility</a></li>
                 <li>
@@ -345,14 +345,14 @@ If a hospital’s patient data system is hacked and made unavailable during an e
                 <li>
                     <a href="#-legal-framework" aria-label="📜 Legal Framework">📜 Legal Framework</a></li>
                 <li>
-                    <a href="#-network-threats" aria-label="🚨 Network Threats">🚨 Network Threats</a></li></ul>
-                    
-                <li>
-                    <a href="#-passive-vs-active-attacks" aria-label="🔍 Passive vs. Active Attacks">🔍 Passive vs. Active Attacks</a><ul>
+                    <a href="#-network-threats" aria-label="🚨 Network Threats">🚨 Network Threats</a><ul>
                         
                 <li>
-                    <a href="#-mac-address-spoofing--arp-poisoning" aria-label="🧬 MAC Address Spoofing &amp; ARP Poisoning">🧬 MAC Address Spoofing &amp; ARP Poisoning</a></li></ul>
+                    <a href="#-passive-vs-active-attacks" aria-label="🔍 Passive vs. Active Attacks">🔍 Passive vs. Active Attacks</a></li></ul>
                 </li>
+                <li>
+                    <a href="#-mac-address-spoofing--arp-poisoning" aria-label="🧬 MAC Address Spoofing &amp; ARP Poisoning">🧬 MAC Address Spoofing &amp; ARP Poisoning</a><ul>
+                        
                 <li>
                     <a href="#-positive-use-of-mac-spoofing" aria-label="🔄 Positive Use of MAC Spoofing">🔄 Positive Use of MAC Spoofing</a></li>
                 <li>
@@ -360,13 +360,11 @@ If a hospital’s patient data system is hacked and made unavailable during an e
                 <li>
                     <a href="#-countermeasures" aria-label="🔐 Countermeasures">🔐 Countermeasures</a></li>
                 <li>
-                    <a href="#-practical-exercise--wireshark" aria-label="🧪 Practical Exercise – Wireshark">🧪 Practical Exercise – Wireshark</a><ul>
-                        
+                    <a href="#-practical-exercise--wireshark" aria-label="🧪 Practical Exercise – Wireshark">🧪 Practical Exercise – Wireshark</a></li></ul>
+                </li>
                 <li>
                     <a href="#-ethernet--switch-port-authentication" aria-label="🖧 Ethernet &amp; Switch Port Authentication">🖧 Ethernet &amp; Switch Port Authentication</a>
                 </li>
-            </ul>
-            </li>
             </ul>
         </div>
     </details>
@@ -506,7 +504,7 @@ If a hospital’s patient data system is hacked and made unavailable during an e
 <p>📌 <strong>Example</strong>: A company leaking customer data without consent can be fined <strong>up to €20 million or 4% of global revenue</strong>.</p>
 <hr>
 <h3 id="-network-threats">🚨 Network Threats<a hidden class="anchor" aria-hidden="true" href="#-network-threats">#</a></h3>
-<h2 id="-passive-vs-active-attacks">🔍 Passive vs. Active Attacks<a hidden class="anchor" aria-hidden="true" href="#-passive-vs-active-attacks">#</a></h2>
+<h4 id="-passive-vs-active-attacks">🔍 Passive vs. Active Attacks<a hidden class="anchor" aria-hidden="true" href="#-passive-vs-active-attacks">#</a></h4>
 <table>
   <thead>
       <tr>
@@ -530,7 +528,7 @@ If a hospital’s patient data system is hacked and made unavailable during an e
 </table>
 <hr>
 <h3 id="-mac-address-spoofing--arp-poisoning">🧬 MAC Address Spoofing &amp; ARP Poisoning<a hidden class="anchor" aria-hidden="true" href="#-mac-address-spoofing--arp-poisoning">#</a></h3>
-<h2 id="-positive-use-of-mac-spoofing">🔄 Positive Use of MAC Spoofing<a hidden class="anchor" aria-hidden="true" href="#-positive-use-of-mac-spoofing">#</a></h2>
+<h4 id="-positive-use-of-mac-spoofing">🔄 Positive Use of MAC Spoofing<a hidden class="anchor" aria-hidden="true" href="#-positive-use-of-mac-spoofing">#</a></h4>
 <table>
   <thead>
       <tr>
@@ -546,7 +544,7 @@ If a hospital’s patient data system is hacked and made unavailable during an e
   </tbody>
 </table>
 <p>📌 <strong>Example</strong>: In Windows 10, MAC randomization can be enabled in Wi-Fi settings to avoid location tracking.</p>
-<h2 id="-negative-use--arp-poisoning">🚨 Negative Use – ARP Poisoning<a hidden class="anchor" aria-hidden="true" href="#-negative-use--arp-poisoning">#</a></h2>
+<h4 id="-negative-use--arp-poisoning">🚨 Negative Use – ARP Poisoning<a hidden class="anchor" aria-hidden="true" href="#-negative-use--arp-poisoning">#</a></h4>
 <table>
   <thead>
       <tr>
@@ -566,7 +564,7 @@ If a hospital’s patient data system is hacked and made unavailable during an e
   </tbody>
 </table>
 <p>📌 <strong>Example</strong>: Workstation A sends data to the attacker&rsquo;s device, believing it&rsquo;s the gateway → The attacker can read, modify, or drop the traffic.</p>
-<h2 id="-countermeasures">🔐 Countermeasures<a hidden class="anchor" aria-hidden="true" href="#-countermeasures">#</a></h2>
+<h4 id="-countermeasures">🔐 Countermeasures<a hidden class="anchor" aria-hidden="true" href="#-countermeasures">#</a></h4>
 <table>
   <thead>
       <tr>
@@ -585,7 +583,7 @@ If a hospital’s patient data system is hacked and made unavailable during an e
       </tr>
   </tbody>
 </table>
-<h2 id="-practical-exercise--wireshark">🧪 Practical Exercise – Wireshark<a hidden class="anchor" aria-hidden="true" href="#-practical-exercise--wireshark">#</a></h2>
+<h4 id="-practical-exercise--wireshark">🧪 Practical Exercise – Wireshark<a hidden class="anchor" aria-hidden="true" href="#-practical-exercise--wireshark">#</a></h4>
 <ul>
 <li>Use <strong>Wireshark</strong> to analyze the <code>.pcap</code> file <code>arp-spoofing.pcap</code></li>
 <li>Objective: Detect ARP spoofing attacks by identifying abnormal ARP communication</li>
