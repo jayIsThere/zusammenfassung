@@ -6,118 +6,182 @@ tags = []
 draft = false
 +++
 
-### Konzeptentwicklung
+### 🧠 Konzeptentwicklung – Von der Idee zur App
 
-**Zweck/Ziele**: Was ist das Hauptziel der App?  
-- Beispiel: Eine Fitness-App, die Nutzern hilft, ihre täglichen Schritte zu verfolgen.
+#### 🎯 Zweck & Ziele
 
-**Zielgruppe**: Wer sind die Nutzer*innen?  
-- Beispiel: Berufspendler, die ihre Fitness im Alltag verbessern möchten.
+|**Aspekt**|**Beschreibung**|
+|------|---|
+|**Ziel der App**|Was soll die App leisten?|
+|**Beispiel**|Eine Fitness-App, die Nutzern hilft, ihre täglichen Schritte zu tracken.|
 
-**Mehrwert**: Was unterscheidet die App von Konkurrenzprodukten?  
-- Beispiel: Bietet personalisierte Fitnesspläne basierend auf dem täglichen Bewegungslevel.
+#### 👥 Zielgruppe
 
-**Marktanalyse**: Analyse der Konkurrenz und Definition der Alleinstellungsmerkmale.  
-- Beispiel: Analyse von Fitbit, Apple Health, und Google Fit, um Funktionen zu verbessern.
+|**Frage**|**Erklärung**|
+|------|---|
+|**Wer nutzt die App?**|Demografische Merkmale, technisches Niveau, Lebensstil usw.|
+|**Beispiel**|Berufspendler, die ihre Fitness im Alltag verbessern wollen|
 
-**Feature Definition**: Festlegung des MVP (Minimum Viable Product) und Priorisierung.  
-- Beispiel: Fokus auf Schritte zählen und einfache Fortschrittsanzeige.
+#### 🌟 Mehrwert / USP
 
-**Technische Rahmenbedingungen**: Plattformwahl und technische Anforderungen.  
-- Beispiel: App für iOS und Android, Programmiersprache Swift/Kotlin.
+|**Frage**|**Erklärung**|
+|------|---|
+|**Was unterscheidet die App?**|Wodurch hebt sie sich von bestehenden Lösungen ab?|
+|**Beispiel**|Individuelle Fitnesspläne basierend auf täglichem Bewegungslevel|
 
-**App-Design**: Entwurf von Wireframes, Navigationsstruktur und UI/UX-Konzepte.  
-- Beispiel: Eine einfache Benutzeroberfläche mit klaren Schaltflächen und gut strukturierter Navigation.
+#### 📈 Marktanalyse
 
----
+|**Thema**|**Beschreibung**|
+|------|---|
+|**Konkurrenzanalyse**|Welche Stärken/Schwächen haben z. B. Fitbit, Apple Health, Google Fit?|
+|**Alleinstellungsmerkmal**|Definition von Funktionen, die die App einzigartig machen|
 
-### Menschzentrierte Gestaltung (nach ISO 9241-210)
+#### 🚀 Feature Definition – MVP
 
-**Nutzungskontext analysieren** (PACT: People, Activities, Context, Technologies):  
-- Menschen (Wer sind die Nutzer?)  
-- Aktivitäten (Was machen sie mit der App?)  
-- Kontext (Wann und wo wird die App verwendet?)  
-- Technologien (Welche Geräte oder Plattformen werden verwendet?)
+|**Begriff**|**Bedeutung**|
+|------|---|
+|**Minimum Viable Product**|Fokus auf die **wichtigsten Funktionen** zum Start|
+|**Beispiel**|**Schrittzähler** + einfache Anzeige des Fortschritts|
 
-**Anforderungen aus Nutzung ableiten**: Welche Anforderungen ergeben sich aus dem Nutzungskontext?  
-- Beispiel: Die App muss offline funktionieren, da Nutzer*innen nicht immer Internetzugang haben.
+#### ⚙️ Technische Rahmenbedingungen
 
-**Gestaltungslösungen (Prototypen) entwerfen**: Entwurf erster Lösungen.  
-- Beispiel: Erstellung eines einfachen Prototyps, der grundlegende Funktionen zeigt.
+|**Aspekt**|**Beispiel**|
+|------|---|
+|**Konkurrenzanalyse**|iOS & Android|
+|**Alleinstellungsmerkmal**|Swift (iOS), Kotlin (Android), evtl. Flutter|
 
-**Nutzerbeteiligung bei Evaluierung sicherstellen**: Regelmäßiges Feedback von Nutzern einholen.  
-- Beispiel: Beta-Tests durchführen, um das Design zu verfeinern.
+#### 🎨 App-Design – UI/UX
 
----
+|**Was wird gestaltet?**|**Beispiel**|
+|------|---|
+|**Wireframes**|Layout der Screens|
+|**Navigation**|Intuitive Benutzerführung|
+|**UI-Konzepte**|Klare Buttons, gut strukturierte Navigation|
 
-### Personas
+---------------------------------------
 
-**Fiktive Nutzermodelle**: Erstellen von Personas, die typische Nutzer repräsentieren.  
-- Beispiel: "Betty, 37 Jahre, Lagerleiterin, technikunsicher, hohe Verantwortung."
+### 👤 Menschzentrierte Gestaltung (ISO 9241-210)
 
-**Nutzen**: Design mit Empathie und Fokus auf echte Bedürfnisse.  
-- Beispiel: Betty benötigt eine App, die ihr hilft, Fitness in ihren hektischen Alltag zu integrieren.
+#### 🔍 Nutzungskontext analysieren (PACT)
 
----
+|**Dimension**|**Fragen**|
+|------|---|
+|**People**|Wer nutzt die App?|
+|**Activities**|Was wollen Nutzer mit der App machen?|
+|**Context**|Wann und wo wird die App genutzt?|
+|**Technology**|Welche Geräte oder Plattformen werden verwendet?|
 
-### Szenarien und Use Cases
+📌 **Beispiel**: App soll auch offline funktionieren, da nicht immer Internetzugang besteht.
 
-**Szenarien**: Narrative Beschreibungen von Nutzungssituationen (Ist-Zustand / Soll-Zustand).  
-- Beispiel: "Betty möchte ihre Schritte am Ende des Arbeitstags überprüfen."
+#### 📋 Anforderungen aus Nutzung ableiten
 
-**Use Cases**: Detaillierte Beschreibungen von Interaktionen mit dem System.  
-- Beispiel: "Benutzer öffnet die App, sieht die Schritte des Tages und stellt einen Fitnessplan zusammen."
+|**Aspekt**|**Beispiel**|
+|------|---|
+|**Nutzungsanforderung**|Schrittzählung auch ohne GPS, um Akku zu sparen|
 
-**Inhalte eines Use Cases**:
-- **Akteur**: Betty
-- **Ziel**: Schrittezählung und Fitnessplan erstellen
-- **Ablauf**: Schritte zählen → Fortschritt anzeigen → Ziel setzen
-- **Alternativen**: Fitnessplan anpassen
-- **Vor-/Nachbedingungen**: App muss geöffnet sein.
+#### ✏️ Gestaltungslösungen entwerfen (Prototyping)
 
----
+|**Aktivität**|**Beispiel**|
+|------|---|
+|**Erste Lösungen entwerfen**|Einfacher Klick-Prototyp mit z. B. Figma oder Balsamiq|
 
-### Anforderungen
+#### 🔄 Nutzerbeteiligung bei Evaluierung
 
-**Funktionale Anforderungen**: Spezifische Funktionen, z. B. Login, GPS-Nutzung.  
-- Beispiel: Die App muss GPS verwenden, um Schritte zu tracken.
+|**Methode**|**Beispiel**|
+|------|---|
+|**Feedback sammeln**|Beta-Tests, Usability-Tests|
+|**Iteration**|Prototypen verbessern durch wiederholte Nutzer-Tests|
 
-**Nicht-funktionale Anforderungen**: Performance, Datenschutz, Kompatibilität.  
-- Beispiel: Die App muss schnell laden und sicher mit persönlichen Daten umgehen.
+---------------------------------------
 
-**Kano-Modell**:
-- **Basisfaktoren**: Funktionen, die selbstverständlich sind (z. B. Schrittzählung).
-- **Leistungsfaktoren**: Je mehr, desto besser (z. B. detaillierte Fitnessanalysen).
-- **Begeisterungsfaktoren**: Unerwartete Funktionen, die positiv überraschen (z. B. personalisierte Motivationstipps).
+### 👤 Personas
 
----
+|**Begriff**|**Erklärung**|
+|------|---|
+|**Fiktive Nutzermodelle**|Typische Nutzer mit Eigenschaften, Bedürfnissen, Zielen|
+|**Beispiel**|“Betty, 37 Jahre, Lagerleiterin, technikunsicher, gestresster Alltag”|
 
-### Prototyping
+🎯 **Ziel**: Design mit Empathie – Entwicklung orientiert sich an echten Bedürfnissen
 
-**Ziel**: Ideen sichtbar und testbar machen.  
-- Beispiel: Prototyp erstellt, um die Benutzeroberfläche zu testen.
+---------------------------------------
 
-**Aspekte**: Optik, Funktionalität, ...  
+### 📘 Szenarien & Use Cases
+#### 🧾 Szenarien
 
-**Arten von Prototypen**:
-- **Low-Fidelity**: Skizzen, Papiermodelle, Interaktive Wireframes (z. B. Storyboards, Balsamiq, Figma).  
-- **High-Fidelity**: Beispiel?
-(Unterschied?)
+|**Was?**|**Beispiel**|
+|------|---|
+|**Narrativ (Ist/Soll)**|“Betty möchte nach der Arbeit ihre Schritte sehen.”|
 
-- **Evolutionäres Prototyping**: Iterativ.   
+#### 📄 Use Cases
 
-wie TIEF?
-- **Horizontal**: weniger ...
-- **Vertikal**: mehr qualität-orientiert?
+|**Element**|**Beispiel**|
+|------|---|
+|**Akteur**|Betty|
+|**Ziel**|Schritte zählen & Fitnessziel setzen|
+|**Ablauf**|App öffnen → Schrittanzahl sehen → Ziel setzen|
+|**Alternativen**|Fitnessziel anpassen|
+|**Vor-/Nachbedingungen**|App ist geöffnet; Schrittzähler ist aktiv|
 
-- **Durchstichprototyp**: testen, ob es überhaupt realisierbar ist.
+---------------------------------------
 
-- **Storyboard**: comics-artig darstellen 
-- **Index Cards**: je nach der Seite darstellen
-- **Wireframes**: je nach der Seite darstellen
+### 📋 Anforderungen
+#### ✅ Funktionale Anforderungen
 
-**Testmethoden**:  
-- **Nutzerbeobachtung**: Nutzer*innen beobachten, wie sie mit der App interagieren.
-- **Feedbackrunden**: Regelmäßige Rückmeldungen von Testnutzern einholen.
-- **Iteration**: Prototypen kontinuierlich verbessern.
+|**Typ**|**Beispiel**|
+|------|---|
+|**Funktion**|Login, GPS-Nutzung, Schrittzähler, Benachrichtigungen|
+
+#### ✅ ⚙️ Nicht-funktionale Anforderungen
+
+|**Typ**|**Beispiel**|
+|------|---|
+|**Performance**|App lädt unter 2 Sekunden|
+|**Datenschutz**|DSGVO-konform, keine Weitergabe persönlicher Daten|
+|**Kompatibilität**|Kompatibel mit Android 11+ & iOS 15+|
+
+---------------------------------------
+
+### 🧭 Kano-Modell
+
+|**Kategorie**|**Bedeutung & Beispiel**|
+|------|---|
+|**Basisfaktoren**|Selbstverständlich (z. B. Schrittzähler)|
+|**Leistungsfaktoren**|Mehr ist besser (z. B. Fitnessanalysen, Statistikfunktionen)|
+|**Begeisterungsfaktoren**|Unerwartet, aber erfreulich (z. B. Motivationsnachrichten mit KI)|
+
+---------------------------------------
+
+### 🧪 Prototyping
+
+#### 🎯 Ziel
+**Ideen sichtbar & testbar** machen, bevor Entwicklung beginnt.
+
+#### 📦 Arten von Prototypen
+
+|**Typ**|**Beschreibung**|
+|------|---|
+|**Low-Fidelity**|Skizzen, Papiermodelle, Wireframes (z. B. mit Figma/Balsamiq)|
+|**High-Fidelity**|Realitätsnah, interaktiv, visuell ausgereift|
+|**Evolutionär**|Prototyp wächst mit Feedback & Anforderungen (agil)|
+
+#### ⚖️ Tiefe vs. Breite
+
+|**Form**|**Beschreibung**|
+|------|---|
+|**Horizontaler Prototyp**|Viele Funktionen angedeutet, keine Tiefe|
+|**Vertikaler Prototyp**|Wenige Funktionen, dafür komplett durchdacht|
+|**Durchstich-Prototyp**|Ein kompletter Pfad als Machbarkeitsnachweis|
+
+#### 🎞️ Weitere Formen
+- **Storyboard**: Nutzung wie in einem Comic visualisiert
+- **Index Cards**: Jede App-Seite als Karte dargestellt
+- **Wireframes**: Layout der Seiten ohne Design
+
+#### 🧪 Testmethoden
+
+|**Methode**|**Ziel**|
+|------|---|
+|**Nutzerbeobachtung**|Nutzer bei Bedienung beobachten (z. B. Usability-Test)|
+|**Feedbackrunden**|Iterativ Meinungen & Verbesserungsvorschläge einholen|
+|**Iteration**|Prototyp mehrfach anpassen & verbessern|
 
