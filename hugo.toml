@@ -27,6 +27,7 @@ theme = "PaperMod"
   ShowCodeCopyButtons = true
   ShowToc = true
   math = true
+  socialShare = false
 
 [taxonomies]
   tag = "tags"

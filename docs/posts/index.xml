@@ -4,7 +4,7 @@
     <title>Posts on Jays Zusammenfassung</title>
     <link>https://jayIsThere.github.io/zusammenfassung/posts/</link>
     <description>Recent content in Posts on Jays Zusammenfassung</description>
-    <generator>Hugo -- 0.146.5</generator>
+    <generator>Hugo -- 0.146.6</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 17 Apr 2025 18:13:15 +0200</lastBuildDate>
     <atom:link href="https://jayIsThere.github.io/zusammenfassung/posts/index.xml" rel="self" type="application/rss+xml" />
@@ -170,9 +170,9 @@
     </item>
     <item>
       <title>04-14-2025</title>
-      <link>https://jayIsThere.github.io/zusammenfassung/posts/dev_note/2025-04-14-dev-notes/</link>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/dev_note/2025-04-14/</link>
       <pubDate>Mon, 14 Apr 2025 18:33:36 +0200</pubDate>
-      <guid>https://jayIsThere.github.io/zusammenfassung/posts/dev_note/2025-04-14-dev-notes/</guid>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/dev_note/2025-04-14/</guid>
       <description>&lt;h2 id=&#34;java-spring-boot&#34;&gt;Java Spring Boot&lt;/h2&gt;
 &lt;h3 id=&#34;april-13-2025&#34;&gt;April 13, 2025&lt;/h3&gt;
 &lt;p&gt;Java Spring Boot (Login-function)&lt;/p&gt;
