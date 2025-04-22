@@ -2,35 +2,185 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>MAD on Jays Zusammenfassung</title>
-    <link>http://localhost:1313/zusammenfassung/categories/mad/</link>
+    <link>https://jayIsThere.github.io/zusammenfassung/categories/mad/</link>
     <description>Recent content in MAD on Jays Zusammenfassung</description>
-    <generator>Hugo -- 0.146.5</generator>
+    <generator>Hugo -- 0.146.6</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 09 Apr 2025 18:30:37 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/zusammenfassung/categories/mad/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jayIsThere.github.io/zusammenfassung/categories/mad/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vorlesung 2: Konzeptionierung von Apps</title>
-      <link>http://localhost:1313/zusammenfassung/posts/mad/mad1/</link>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/mad/mad1/</link>
       <pubDate>Wed, 09 Apr 2025 18:30:37 +0200</pubDate>
-      <guid>http://localhost:1313/zusammenfassung/posts/mad/mad1/</guid>
-      <description>&lt;h3 id=&#34;konzeptentwicklung&#34;&gt;Konzeptentwicklung&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Zweck/Ziele&lt;/strong&gt;: Was ist das Hauptziel der App?&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Beispiel: Eine Fitness-App, die Nutzern hilft, ihre täglichen Schritte zu verfolgen.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Zielgruppe&lt;/strong&gt;: Wer sind die Nutzer*innen?&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Beispiel: Berufspendler, die ihre Fitness im Alltag verbessern möchten.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Mehrwert&lt;/strong&gt;: Was unterscheidet die App von Konkurrenzprodukten?&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Beispiel: Bietet personalisierte Fitnesspläne basierend auf dem täglichen Bewegungslevel.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Marktanalyse&lt;/strong&gt;: Analyse der Konkurrenz und Definition der Alleinstellungsmerkmale.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Beispiel: Analyse von Fitbit, Apple Health, und Google Fit, um Funktionen zu verbessern.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Feature Definition&lt;/strong&gt;: Festlegung des MVP (Minimum Viable Product) und Priorisierung.&lt;/p&gt;</description>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/mad/mad1/</guid>
+      <description>&lt;h3 id=&#34;-konzeptentwicklung--von-der-idee-zur-app&#34;&gt;🧠 Konzeptentwicklung – Von der Idee zur App&lt;/h3&gt;
+&lt;h4 id=&#34;-zweck--ziele&#34;&gt;🎯 Zweck &amp;amp; Ziele&lt;/h4&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Aspekt&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Beschreibung&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Ziel der App&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Was soll die App leisten?&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Beispiel&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Eine Fitness-App, die Nutzern hilft, ihre täglichen Schritte zu tracken.&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;-zielgruppe&#34;&gt;👥 Zielgruppe&lt;/h4&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Frage&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Erklärung&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Wer nutzt die App?&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Demografische Merkmale, technisches Niveau, Lebensstil usw.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Beispiel&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Berufspendler, die ihre Fitness im Alltag verbessern wollen&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;-mehrwert--usp&#34;&gt;🌟 Mehrwert / USP&lt;/h4&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Frage&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Erklärung&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Was unterscheidet die App?&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Wodurch hebt sie sich von bestehenden Lösungen ab?&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Beispiel&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Individuelle Fitnesspläne basierend auf täglichem Bewegungslevel&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;-marktanalyse&#34;&gt;📈 Marktanalyse&lt;/h4&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Thema&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Beschreibung&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Konkurrenzanalyse&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Welche Stärken/Schwächen haben z. B. Fitbit, Apple Health, Google Fit?&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Alleinstellungsmerkmal&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Definition von Funktionen, die die App einzigartig machen&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;-feature-definition--mvp&#34;&gt;🚀 Feature Definition – MVP&lt;/h4&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Begriff&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Bedeutung&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Minimum Viable Product&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Fokus auf die &lt;strong&gt;wichtigsten Funktionen&lt;/strong&gt; zum Start&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Beispiel&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;Schrittzähler&lt;/strong&gt; + einfache Anzeige des Fortschritts&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;-technische-rahmenbedingungen&#34;&gt;⚙️ Technische Rahmenbedingungen&lt;/h4&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Aspekt&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Beispiel&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Konkurrenzanalyse&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;iOS &amp;amp; Android&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Alleinstellungsmerkmal&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Swift (iOS), Kotlin (Android), evtl. Flutter&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;-app-design--uiux&#34;&gt;🎨 App-Design – UI/UX&lt;/h4&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Was wird gestaltet?&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Beispiel&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Wireframes&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Layout der Screens&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Navigation&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Intuitive Benutzerführung&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;UI-Konzepte&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Klare Buttons, gut strukturierte Navigation&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-menschzentrierte-gestaltung-iso-9241-210&#34;&gt;👤 Menschzentrierte Gestaltung (ISO 9241-210)&lt;/h3&gt;
+&lt;h4 id=&#34;-nutzungskontext-analysieren-pact&#34;&gt;🔍 Nutzungskontext analysieren (PACT)&lt;/h4&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Dimension&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Fragen&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;People&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Wer nutzt die App?&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Activities&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Was wollen Nutzer mit der App machen?&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Context&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Wann und wo wird die App genutzt?&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Technology&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Welche Geräte oder Plattformen werden verwendet?&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;📌 &lt;strong&gt;Beispiel&lt;/strong&gt;: App soll auch offline funktionieren, da nicht immer Internetzugang besteht.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

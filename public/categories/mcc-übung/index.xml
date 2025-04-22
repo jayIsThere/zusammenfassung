@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>MCC Übung on Jays Zusammenfassung</title>
-    <link>http://localhost:1313/zusammenfassung/categories/mcc-%C3%BCbung/</link>
+    <link>https://jayIsThere.github.io/zusammenfassung/categories/mcc-%C3%BCbung/</link>
     <description>Recent content in MCC Übung on Jays Zusammenfassung</description>
-    <generator>Hugo -- 0.146.5</generator>
+    <generator>Hugo -- 0.146.6</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 08 Apr 2025 18:23:41 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/zusammenfassung/categories/mcc-%C3%BCbung/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jayIsThere.github.io/zusammenfassung/categories/mcc-%C3%BCbung/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MCC Übung 1</title>
-      <link>http://localhost:1313/zusammenfassung/posts/mcc/mcc_uebung1/</link>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/mcc/mcc_uebung1/</link>
       <pubDate>Tue, 08 Apr 2025 18:23:41 +0200</pubDate>
-      <guid>http://localhost:1313/zusammenfassung/posts/mcc/mcc_uebung1/</guid>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/mcc/mcc_uebung1/</guid>
       <description>&lt;h4 id=&#34;11-use-case-video-streaming-zu-hause&#34;&gt;1.1 Use Case: Video-Streaming zu Hause&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;Szenario:&lt;/strong&gt;&lt;br&gt;
 Sie streamen ein Video zu Hause, Audio über Bluetooth-Box, Bild auf dem Tablet.&lt;/p&gt;

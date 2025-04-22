@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>MCC on Jays Zusammenfassung</title>
-    <link>http://localhost:1313/zusammenfassung/categories/mcc/</link>
+    <link>https://jayIsThere.github.io/zusammenfassung/categories/mcc/</link>
     <description>Recent content in MCC on Jays Zusammenfassung</description>
-    <generator>Hugo -- 0.146.5</generator>
+    <generator>Hugo -- 0.146.6</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 15 Apr 2025 18:22:16 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/zusammenfassung/categories/mcc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jayIsThere.github.io/zusammenfassung/categories/mcc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vorlesung 3: Abgrenzung Festnetz/Cloud zum Mobilnetz</title>
-      <link>http://localhost:1313/zusammenfassung/posts/mcc/mcc3/</link>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/mcc/mcc3/</link>
       <pubDate>Tue, 15 Apr 2025 18:22:16 +0200</pubDate>
-      <guid>http://localhost:1313/zusammenfassung/posts/mcc/mcc3/</guid>
-      <description>&lt;h3 id=&#34;abgrenzung-festnetzcloud-zum-mobilnetz&#34;&gt;Abgrenzung Festnetz/Cloud zum Mobilnetz&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;🔧 Messgeräte&lt;/strong&gt;&lt;/p&gt;
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/mcc/mcc3/</guid>
+      <description>&lt;h3 id=&#34;-messgeräte&#34;&gt;🔧 Messgeräte&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Spektrumanalysator: Zeigt Frequenzspektrum eines Signals.&lt;/li&gt;
 &lt;li&gt;Oszilloskop: Zeigt Zeitverlauf eines Signals.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;📈 Messgrößen &amp;amp; Vergleich zu Audio&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-messgrößen--vergleich-zu-audio&#34;&gt;📈 Messgrößen &amp;amp; Vergleich zu Audio&lt;/h3&gt;
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
@@ -33,21 +33,18 @@
           &lt;td&gt;Lautstärke&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/td&gt;
-          &lt;td&gt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
           &lt;td&gt;Mittenfrequenz&lt;/td&gt;
           &lt;td&gt;Tonhöhe&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;⚡ Leistungsmessung&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;-leistungsmessung&#34;&gt;⚡ Leistungsmessung&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Einheit: Watt (W), oft Milliwatt (mW)&lt;/li&gt;
 &lt;li&gt;1 W = 1000 mW&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;📊 Dynamik &amp;amp; logarithmische Darstellung&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-dynamik--logarithmische-darstellung&#34;&gt;📊 Dynamik &amp;amp; logarithmische Darstellung&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Große Unterschiede: z.B. 20W ↔ 0.00000000003mW → Verhältnis = 666.7 Billionen&lt;/li&gt;
 &lt;li&gt;Lösung: &lt;strong&gt;logarithmischer Maßstab&lt;/strong&gt; mit &lt;strong&gt;Bel&lt;/strong&gt; und &lt;strong&gt;Dezibel (dB)&lt;/strong&gt;
@@ -57,13 +54,43 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;🔢 Berechnung: dBm&lt;/strong&gt;&lt;/p&gt;</description>
+&lt;hr&gt;
+&lt;h3 id=&#34;-berechnung-dbm&#34;&gt;🔢 Berechnung: dBm&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Formel:&lt;/li&gt;
+&lt;/ul&gt;
+$$P_\mathrm{dBm} = 10 \cdot \log_{10} \left( \frac{P_\mathrm{mW}}{1~\mathrm{mW}} \right)$$&lt;ul&gt;
+&lt;li&gt;Umrechnung dBW → dBm:&lt;/li&gt;
+&lt;/ul&gt;
+$$P_\mathrm{dBm} = P_\mathrm{dBW} + 30$$&lt;hr&gt;
+&lt;h3 id=&#34;-vorsicht-bei-db-rechnungen&#34;&gt;⚠️ Vorsicht bei dB-Rechnungen&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;dB, dBm, dBW sind &lt;strong&gt;Pseudoeinheiten&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Beispiel:&lt;/li&gt;
+&lt;li&gt;13 dBW + 30 = 43 dBm → mathematisch korrekt, aber nur im Kontext&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-oszilloskop&#34;&gt;📺 Oszilloskop&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Darstellung: &lt;strong&gt;Zeitbereich&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Zeigt z.B. Cosinusschwingung → Amplitude, Periodendauer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-spektrumanalyse&#34;&gt;🌈 Spektrumanalyse&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Frequenzbereich: Darstellung der Frequenzen &amp;amp; Leistungen&lt;/li&gt;
+&lt;li&gt;Gerät misst Leistung &lt;strong&gt;innerhalb der RBW&lt;/strong&gt; um eine Mittenfrequenz&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Wichtige Begriffe:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Vorlesung 2: Was ist Bit? &amp; Übung</title>
-      <link>http://localhost:1313/zusammenfassung/posts/mcc/mcc2/</link>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/mcc/mcc2/</link>
       <pubDate>Tue, 08 Apr 2025 18:22:14 +0200</pubDate>
-      <guid>http://localhost:1313/zusammenfassung/posts/mcc/mcc2/</guid>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/mcc/mcc2/</guid>
       <description>&lt;h3 id=&#34;informationen-und-informationsgehalt&#34;&gt;Informationen und Informationsgehalt&lt;/h3&gt;
 &lt;p&gt;Der &lt;strong&gt;Informationsgehalt&lt;/strong&gt; beschreibt, wie viel „Überraschung“ oder „Neuigkeit“ in einem Ereignis steckt – je unwahrscheinlicher ein Ereignis, desto mehr Information trägt es.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Formel zur Berechnung:&lt;/strong&gt;&lt;/p&gt;
@@ -75,6 +102,7 @@
 &lt;li&gt;Ein &lt;strong&gt;zufälliges Ereignis&lt;/strong&gt; (p = 0,5) liefert &lt;strong&gt;1 Bit Information&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;Ein &lt;strong&gt;seltenes Ereignis&lt;/strong&gt; (z.B. Lottogewinn mit p = 0,0000001) liefert &lt;strong&gt;~26,57 Bit&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;hr&gt;
 &lt;h3 id=&#34;beispiel-1-münzwurf&#34;&gt;Beispiel 1: Münzwurf&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Wahrscheinlichkeit: &lt;strong&gt;p = 0,5&lt;/strong&gt;&lt;/li&gt;
@@ -84,42 +112,89 @@
     </item>
     <item>
       <title>Vorlesung 1: Einführung in Mobile and Cloud Computing</title>
-      <link>http://localhost:1313/zusammenfassung/posts/mcc/mcc1/</link>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/mcc/mcc1/</link>
       <pubDate>Tue, 01 Apr 2025 18:22:11 +0200</pubDate>
-      <guid>http://localhost:1313/zusammenfassung/posts/mcc/mcc1/</guid>
-      <description>&lt;h3 id=&#34;abgrenzung-festnetzcloud-zum-mobilnetz&#34;&gt;Abgrenzung Festnetz/Cloud zum Mobilnetz&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Festnetz&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Endgeräte sind ortsfest und verkabelt&lt;br&gt;
-&lt;em&gt;(z.B. Desktop-PCs, Telefone, Drucker)&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Mobilnetz&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Endgeräte sind mobil und verbinden sich via Funkverbindung&lt;/li&gt;
-&lt;li&gt;Kombination aus festem und mobilem Teil, da nicht alle Verbindungen sinnvollerweise mobil sind&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Cloud&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Nutzt Festnetzverbindungen, aber bietet zusätzlich:
-&lt;ul&gt;
-&lt;li&gt;Computing&lt;/li&gt;
-&lt;li&gt;Speicherung&lt;/li&gt;
-&lt;li&gt;Virtualisierung&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Cloud ist mehr als nur ein Transportnetz&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;funkverbindung-und-frequenz&#34;&gt;Funkverbindung und Frequenz&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;In mobilen Netzen wird statt Kabel/Glasfaser ein &lt;strong&gt;Funksignal&lt;/strong&gt; genutzt&lt;/li&gt;
-&lt;li&gt;Eine Funkverbindung basiert auf:
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Frequenz&lt;/strong&gt; (z.B. WLAN: 2412 MHz)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Bandbreite&lt;/strong&gt; (z.B. 20 MHz)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Sender und Empfänger&lt;/strong&gt;&lt;/p&gt;</description>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/mcc/mcc1/</guid>
+      <description>&lt;h3 id=&#34;-abgrenzung-festnetz--mobilnetz--cloud&#34;&gt;🌐 Abgrenzung Festnetz / Mobilnetz / Cloud&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Netzwerkart&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Merkmale&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Festnetz&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;- Geräte sind &lt;strong&gt;ortsgebunden&lt;/strong&gt; und &lt;strong&gt;verkabelt&lt;/strong&gt; (z. B. Desktop-PC, Drucker)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;- Stabil und hohe Bandbreite, aber nicht mobil&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Mobilnetz&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;- Geräte sind &lt;strong&gt;mobil&lt;/strong&gt;, Verbindung über &lt;strong&gt;Funk&lt;/strong&gt; (z. B. LTE, WLAN)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;- Kombiniert feste und mobile Komponenten (z. B. Basisstation + Smartphone)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Cloud&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;- Nutzt meist Festnetz, bietet aber &lt;strong&gt;zusätzliche Dienste&lt;/strong&gt;:&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;• Rechenleistung (z. B. AWS EC2)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;• Speicherung (z. B. Google Drive)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;• Virtualisierung (z. B. virtuelle Maschinen)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;- &lt;strong&gt;Cloud = mehr als nur Transportnetz&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-funkverbindung--frequenz&#34;&gt;📡 Funkverbindung &amp;amp; Frequenz&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Konzept&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Beschreibung&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Frequenz&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;z. B. &lt;strong&gt;WLAN bei 2412 MHz&lt;/strong&gt;, definiert die Trägerfrequenz des Signals&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Bandbreite&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;z. B. &lt;strong&gt;20 MHz&lt;/strong&gt;, bestimmt die Übertragungsrate (je breiter, desto schneller)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Sender/Empfänger&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Transmitter &amp;amp; Receiver – meist mit &lt;strong&gt;Antennen&lt;/strong&gt; ausgestattet&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Reichweite&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Abhängig von Leistung, Hindernissen, Frequenz&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Funkzellen&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Einteilung des Versorgungsgebiets – Wechsel bei Bewegung → &lt;strong&gt;Handover&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;📌 &lt;strong&gt;Beispiel&lt;/strong&gt;: Dein Handy bleibt im Zug mit dem Internet verbunden, weil es automatisch die Funkzellen wechselt.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

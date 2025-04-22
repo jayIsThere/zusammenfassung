@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Prompt Engineering on Jays Zusammenfassung</title>
+    <link>https://jayIsThere.github.io/zusammenfassung/categories/prompt-engineering/</link>
+    <description>Recent content in Prompt Engineering on Jays Zusammenfassung</description>
+    <generator>Hugo -- 0.146.6</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Apr 2025 18:57:06 +0200</lastBuildDate>
+    <atom:link href="https://jayIsThere.github.io/zusammenfassung/categories/prompt-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prompt Engineering for Feedback - Literature</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/prompt/literature/</link>
+      <pubDate>Mon, 14 Apr 2025 18:57:06 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/prompt/literature/</guid>
+      <description>&lt;ol&gt;
+&lt;li&gt;Alnajashi, A. (2024). Investigating the accuracy of large language models ’chatgpt-4’ in grading students’ writing according to a specific rubric.&lt;/li&gt;
+&lt;li&gt;Hackl, V., M¨ uller, A. E., Granitzer, M., and Sailer, M. (2023). Is gpt-4 a reliable rater? evaluating consistency in gpt-4’s text ratings. Frontiers in Education, 8.&lt;/li&gt;
+&lt;li&gt;Jacobsen, L. and Weber, K. (2023). The promises and pitfalls of chatgpt as a feedback provider in higher education: An exploratory study of prompt engineering and the quality of ai-driven feedback.&lt;/li&gt;
+&lt;li&gt;Jukiewicz, M. (2024). The future of grading programming assignments in education: The role of chatgpt in automating the assessment and feedback process. Thinking Skills and Creativity, 52:101522.&lt;/li&gt;
+&lt;li&gt;Lee, G.-G., Latif, E., Wu, X., Liu, N., and Zhai, X. (2024a). Applying large language models and chain-of-thought for automatic scoring. Computers and Education: Artificial Intelligence, 6:100213.&lt;/li&gt;
+&lt;li&gt;Meyer, J., Jansen, T., Schiller, R., Liebenow, L. W., Steinbach, M., Horbach, A., and Fleckenstein, J. (2024). Using llms to bring evidence-based feedback into the classroom: Ai-generated feedback increases secondary students’ text revision, motivation, and positive emotions. Computers and Education: Artificial Intelligence,
+6:100199.&lt;/li&gt;
+&lt;li&gt;Stahl, M., Biermann, L., Nehring, A., and Wachsmuth, H.(2024). Exploring llm prompting strategies for joint essay scoring and feedback generation. Leibniz University Hannover.&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    <item>
+      <title>Prompt Engineering for Feedback - Schema</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/prompt/schema/</link>
+      <pubDate>Mon, 14 Apr 2025 18:57:06 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/prompt/schema/</guid>
+      <description>&lt;ol&gt;
+&lt;li&gt;ChatGPT를 활용한 프로그래밍 과제 평가
+ChatGPT는 정확하고 일관된 평가자가 될 수 있음.
+교사 평가와 ChatGPT 평가 간 상관계수 r ≈ 0.81로 상당히 높은 일치도.
+단, ChatGPT가 더 엄격하게 점수를 부여하는 경향 있음.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;프롬프트 설계의 핵심 전략:
+AI가 직접 자체 정답을 생성하고, 이를 학생 코드와 비교해 평가하도록 설계함.
+결과는 **정답/부분 정답/오답 (1, 0.5, 0점)**으로 나뉨.
+**반복 평가(15회)**를 통해 ChatGPT의 일관성을 확인했고, 7회 이상 평가 후 평균값 또는 최빈값 사용 시 신뢰도 향상.
+장점: 빠른 평가, 피드백 생성, 편향 없음, 표준 준수 강조.
+단점: 환각 가능성, 비용, 재현 불가성, 교사 개입 필요성.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Prompt Engineering for Feedback - Structure</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/prompt/structure/</link>
+      <pubDate>Mon, 14 Apr 2025 18:57:06 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/prompt/structure/</guid>
+      <description>&lt;ol&gt;
+&lt;li&gt;피드백 자동화 과정&lt;/li&gt;
+&lt;/ol&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/data_collection_structure.png&#34; style=&#34;display: block; margin: auto;&#34;&gt;</description>
+    </item>
+  </channel>
+</rss>

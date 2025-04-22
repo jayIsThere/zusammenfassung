@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Determinant on Jays Zusammenfassung</title>
-    <link>http://localhost:1313/zusammenfassung/tags/determinant/</link>
+    <link>https://jayIsThere.github.io/zusammenfassung/tags/determinant/</link>
     <description>Recent content in Determinant on Jays Zusammenfassung</description>
-    <generator>Hugo -- 0.146.5</generator>
+    <generator>Hugo -- 0.146.6</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 01 Mar 2025 18:33:36 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/zusammenfassung/tags/determinant/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jayIsThere.github.io/zusammenfassung/tags/determinant/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vektor- und Matrix-Formeln</title>
-      <link>http://localhost:1313/zusammenfassung/posts/sla/sla_la/</link>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/sla/sla_la/</link>
       <pubDate>Sat, 01 Mar 2025 18:33:36 +0200</pubDate>
-      <guid>http://localhost:1313/zusammenfassung/posts/sla/sla_la/</guid>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/sla/sla_la/</guid>
       <description>&lt;h3 id=&#34;vektor-formeln&#34;&gt;Vektor-Formeln&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Skalarprodukt (Dot Product)&lt;/strong&gt;&lt;br&gt;
@@ -21,19 +21,59 @@ $$
    \mathbf{u} \cdot \mathbf{v} = \sum_{i=1}^{n} u_i v_i
    $$&lt;/li&gt;
 &lt;/ol&gt;
-  &lt;img src=&#34;http://localhost:1313/zusammenfassung/images/skalarprodukt.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/skalarprodukt.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
 &lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Vektorlänge (Norm)&lt;/strong&gt;&lt;br&gt;
+&lt;li&gt;&lt;strong&gt;Vektorlänge (Norm)&lt;/strong&gt;&lt;br&gt;
 Die Länge (Norm) eines Vektors \( \mathbf{a} \in \mathbb{R}^n \) ist gegeben durch:
-&lt;/p&gt;
 $$
    |\mathbf{a}| = \sqrt{a_1^2 + a_2^2 + \dots + a_n^2}
-   $$&lt;img src=&#34;{{ site.baseurl }}/vektorlaenge.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34;&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Winkel zwischen Vektoren (Angle between Vectors)&lt;/strong&gt;&lt;br&gt;
+   $$&lt;/li&gt;
+&lt;/ol&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/vektorlaenge.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Winkel zwischen Vektoren (Angle between Vectors)&lt;/strong&gt;&lt;br&gt;
 Der Winkel \( \theta \) zwischen den Vektoren \( \mathbf{a}, \mathbf{b} \in \mathbb{R}^n \) wird durch die folgende Formel berechnet:
+$$
+   \cos(\theta) = \frac{\mathbf{a} \cdot \mathbf{b}}{|\mathbf{a}| |\mathbf{b}|}
+   $$&lt;/li&gt;
+&lt;/ol&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/winkel.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Orthogonalität (Orthogonality)&lt;/strong&gt;&lt;br&gt;
+Zwei Vektoren \( \mathbf{a} \) und \( \mathbf{b} \) sind orthogonal (rechtwinklig), wenn:
+$$
+   \mathbf{a} \cdot \mathbf{b} = 0
+   $$&lt;/li&gt;
+&lt;/ol&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/orthogonal.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Kreuzprodukt (Cross Product) - In 3D&lt;/strong&gt;&lt;br&gt;
+Das Kreuzprodukt zweier Vektoren $$ \mathbf{a} = (a_1, a_2, a_3) $$ und $$ \mathbf{b} = (b_1, b_2, b_3)$$  ist:
+$$
+   \mathbf{a} \times \mathbf{b} = 
+   \begin{vmatrix}
+   \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\
+   a_1 &amp; a_2 &amp; a_3 \\
+   b_1 &amp; b_2 &amp; b_3
+   \end{vmatrix}
+   = \left( a_2 b_3 - a_3 b_2, \, a_3 b_1 - a_1 b_3, \, a_1 b_2 - a_2 b_1 \right)
+   $$&lt;/li&gt;
+&lt;/ol&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/kreuzprodukt.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;matrix-formeln&#34;&gt;Matrix-Formeln&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Matrixmultiplikation (Matrix Multiplication)&lt;/strong&gt;&lt;br&gt;
+Die Multiplikation zweier Matrizen \( A \in \mathbb{R}^{m \times n} \) und \( B \in \mathbb{R}^{n \times p} \) ergibt:
+$$
+   C = AB, \quad C_{ij} = \sum_{k=1}^{n} A_{ik} B_{kj}
+   $$&lt;/li&gt;
+&lt;/ol&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/matrix_multiplikation.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Transponierte Matrix (Transpose of a Matrix)&lt;/strong&gt;&lt;br&gt;
+Die Transponierte einer Matrix \( A = [a_{ij}] \) ist:
 &lt;/p&gt;</description>
     </item>
   </channel>
