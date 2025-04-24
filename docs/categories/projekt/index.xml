@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Projekt on Jays Zusammenfassung</title>
+    <link>https://jayIsThere.github.io/zusammenfassung/categories/projekt/</link>
+    <description>Recent content in Projekt on Jays Zusammenfassung</description>
+    <generator>Hugo -- 0.146.6</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Apr 2025 18:57:06 +0200</lastBuildDate>
+    <atom:link href="https://jayIsThere.github.io/zusammenfassung/categories/projekt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Projekt</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/projekt/projekt/</link>
+      <pubDate>Mon, 14 Apr 2025 18:57:06 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/projekt/projekt/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://jayIsThere.github.io/zusammenfassung/files/Beschreibung.pdf&#34;&gt;Hier ist die Projektbeschreibung (PDF)&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
