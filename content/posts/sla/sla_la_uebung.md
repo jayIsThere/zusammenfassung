@@ -18,16 +18,16 @@ draft = false
   
 #### Übungsblatt 2
 
-  <img src="/zusammenfassung/images/uebungsblatt2_1.jpg" width="450px" height="500px" style="display: block; margin: auto;">
-  <img src="/zusammenfassung/images/uebungsblatt2_2.jpg" width="450px" height="500px" style="display: block; margin: auto;">
-  <img src="/zusammenfassung/images/uebungsblatt2_3.jpg" width="450px" height="500px" style="display: block; margin: auto;">
-  <img src="/zusammenfassung/images/uebungsblatt2_4.jpg" width="450px" height="500px" style="display: block; margin: auto;">
-  <img src="/zusammenfassung/images/uebungsblatt2_5.jpg" width="450px" height="500px" style="display: block; margin: auto;">
-  <img src="/zusammenfassung/images/uebungsblatt2_6.jpg" width="450px" height="500px" style="display: block; margin: auto;">
-  <img src="/zusammenfassung/images/uebungsblatt2_7.jpg" width="450px" height="500px" style="display: block; margin: auto;">
-  <img src="/zusammenfassung/images/uebungsblatt2_8.jpg" width="450px" height="500px" style="display: block; margin: auto;">
-  <img src="/zusammenfassung/images/uebungsblatt2_9.jpg" width="450px" height="500px" style="display: block; margin: auto;">
-  <img src="/zusammenfassung/images/uebungsblatt2_10.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/uebung2_1.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/uebung2_2.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/uebung2_3.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/uebung2_4.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/uebung2_5.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/uebung2_6.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/uebung2_7.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/uebung2_8.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/uebung2_9.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/uebung2_10.jpg" width="450px" height="500px" style="display: block; margin: auto;">
   
 #### Übungsblatt 3
 #### Übungsblatt 4
