@@ -9,14 +9,14 @@ draft = false
 ### Übungsblatt (Lineare Algebra)
 -------------
 
-#### Übungsblatt 1
+#### Übungsblatt 5
 
   <img src="/zusammenfassung/images/uebungsblatt1-1.jpg" width="450px" height="500px" style="display: block; margin: auto;">
   <img src="/zusammenfassung/images/uebungsblatt1-2.jpg" width="450px" height="500px" style="display: block; margin: auto;">
   <img src="/zusammenfassung/images/uebungsblatt1-3.jpg" width="450px" height="500px" style="display: block; margin: auto;">
   <img src="/zusammenfassung/images/uebungsblatt1-4.jpg" width="450px" height="500px" style="display: block; margin: auto;">
   
-#### Übungsblatt 2
+#### Übungsblatt 6
 
   <img src="/zusammenfassung/images/uebung2_1.jpg" width="450px" height="500px" style="display: block; margin: auto;">
   <img src="/zusammenfassung/images/uebung2_2.jpg" width="450px" height="500px" style="display: block; margin: auto;">
