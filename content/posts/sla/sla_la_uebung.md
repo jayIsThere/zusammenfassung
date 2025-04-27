@@ -41,7 +41,6 @@ draft = false
   <img src="/zusammenfassung/images/Uebung3_8.jpg" width="450px" height="500px" style="display: block; margin: auto;">
   <img src="/zusammenfassung/images/Uebung3_9.jpg" width="450px" height="500px" style="display: block; margin: auto;">
   <img src="/zusammenfassung/images/Uebung3_10.jpg" width="450px" height="500px" style="display: block; margin: auto;">
-  <img src="/zusammenfassung/images/Uebung3_10.jpg" width="450px" height="500px" style="display: block; margin: auto;">
   <img src="/zusammenfassung/images/Uebung3_11.jpg" width="450px" height="500px" style="display: block; margin: auto;">
   <img src="/zusammenfassung/images/Uebung3_12.jpg" width="450px" height="500px" style="display: block; margin: auto;">
   <img src="/zusammenfassung/images/Uebung3_13.jpg" width="450px" height="500px" style="display: block; margin: auto;">
