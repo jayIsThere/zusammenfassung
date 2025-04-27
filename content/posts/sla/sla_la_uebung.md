@@ -29,7 +29,7 @@ draft = false
   <img src="/zusammenfassung/images/uebung2_9.jpg" width="450px" height="500px" style="display: block; margin: auto;">
   <img src="/zusammenfassung/images/uebung2_10.jpg" width="450px" height="500px" style="display: block; margin: auto;">
   
-#### Übungsblatt 3
+#### Übungsblatt 7
 
   <img src="/zusammenfassung/images/Uebung3_1.jpg" width="450px" height="500px" style="display: block; margin: auto;">
   <img src="/zusammenfassung/images/Uebung3_2.jpg" width="450px" height="500px" style="display: block; margin: auto;">
