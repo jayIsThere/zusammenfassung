@@ -17,10 +17,5 @@ draft = false
 <img src="/zusammenfassung/images/Bonusaufgabe 2_8.jpg" width="450px" height="430px" style="display: block; margin: auto;">
 <img src="/zusammenfassung/images/Bonusaufgabe 2_9.jpg" width="450px" height="430px" style="display: block; margin: auto;">
 <img src="/zusammenfassung/images/Bonusaufgabe 2_10.jpg" width="450px" height="430px" style="display: block; margin: auto;">
-<img src="/zusammenfassung/images/Bonusaufgabe 1_11.jpg" width="450px" height="430px" style="display: block; margin: auto;">
-<img src="/zusammenfassung/images/Bonusaufgabe 1_12.jpg" width="450px" height="430px" style="display: block; margin: auto;">
-<img src="/zusammenfassung/images/Bonusaufgabe 1_13.jpg" width="450px" height="430px" style="display: block; margin: auto;">
-<img src="/zusammenfassung/images/Bonusaufgabe 1_14.jpg" width="450px" height="430px" style="display: block; margin: auto;">
-<img src="/zusammenfassung/images/Bonusaufgabe 1_15.jpg" width="450px" height="430px" style="display: block; margin: auto;">
 
 
