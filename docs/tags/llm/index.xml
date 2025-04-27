@@ -25,6 +25,17 @@
 &lt;/ol&gt;</description>
     </item>
     <item>
+      <title>Prompt Engineering for Feedback - Nützliches</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/prompt/info/</link>
+      <pubDate>Mon, 14 Apr 2025 18:57:06 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/prompt/info/</guid>
+      <description>&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/prompt/oneshot.png&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/prompt/oneshot_cot.png&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/prompt/reference_prompt.png&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/prompt/reference_prompt1.png&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/prompt/reference_prompt2.png&#34; style=&#34;display: block; margin: auto;&#34;&gt;</description>
+    </item>
+    <item>
       <title>Prompt Engineering for Feedback - Schema</title>
       <link>https://jayIsThere.github.io/zusammenfassung/posts/prompt/schema/</link>
       <pubDate>Mon, 14 Apr 2025 18:57:06 +0200</pubDate>
