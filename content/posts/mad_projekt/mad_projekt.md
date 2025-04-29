@@ -64,15 +64,9 @@ Verfügbare Tech:
 
 7. **Zusätzliche, innovative Funktionsideen**
 
-~~„Geheime Tipps“-Button: Zeigt nur Orte an, die von mindestens 3 verschiedenen Nutzern als „Studenten-Geheimtipp“ markiert wurden.~~
+	„Low-Budget Score“ für Orte: Orte erhalten eine Punktzahl basierend auf Preis, Beliebtheit bei Studierenden und Bewertungen.  
 
-	„Low-Budget Score“ für Orte: Orte erhalten eine Punktzahl basierend auf Preis, Beliebtheit bei Studierenden und Bewertungen.
-
-	Offline-Mode: Ermöglicht Zugriff auf Karten oder Empfehlungen ohne Internet – nützlich im Ausland.
-
-	~~Mini-Challenges & Belohnungen: Wer z. B. 3 günstige Orte empfiehlt, erhält ein Abzeichen oder wird auf einer Rangliste gezeigt → Community-Motivation\!~~
-
-	~~Tagesbudget-Planer: Nutzer geben ein Budget ein (z. B. „20 € für den Tag“) → die App schlägt Routen, Essen und Aktivitäten innerhalb des Budgets vor.~~
+	Offline-Mode: Ermöglicht Zugriff auf Karten oder Empfehlungen ohne Internet – nützlich im Ausland.  
 
 	Verfügbare Tech:   
 Supabse(Bewertung sortieren), PWA \+ Service Worker(Offline-Mode)
