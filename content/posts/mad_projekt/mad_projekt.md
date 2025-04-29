@@ -6,4 +6,4 @@ tags = []
 draft = false
 +++
 
-[Hier ist die Projektbeschreibung (PDF)](/zusammenfassung/files/Beschreibung.pdf)
+[Hier ist die Projektbeschreibung (PDF)](/zusammenfassung/files/MAD Projekt Plan.pdf)
