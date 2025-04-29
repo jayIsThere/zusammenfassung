@@ -7,3 +7,5 @@ draft = false
 +++
 
 [Hier ist die Projektbeschreibung (PDF)](/zusammenfassung/files/MAD Projekt Plan.pdf)
+
+<a href="/zusammenfassung/files/MAD Projekt Plan.pdf" download>📥 PDF herunterladen</a>
