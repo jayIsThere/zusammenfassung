@@ -47,6 +47,13 @@ draft = false
   <img src="/zusammenfassung/images/Uebung3_14.jpg" width="450px" height="500px" style="display: block; margin: auto;">
 
 
-#### Übungsblatt 4
+#### Übungsblatt 8
 
-
+  <img src="/zusammenfassung/images/Uebung4_1.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/Uebung4_2.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/Uebung4_3.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/Uebung4_4.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/Uebung4_5.jpg" width="450px" height="500px" style="display: block; margin: auto;">  
+  <img src="/zusammenfassung/images/Uebung4_6.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/Uebung4_7.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/Uebung4_8.jpg" width="450px" height="500px" style="display: block; margin: auto;">

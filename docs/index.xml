@@ -410,6 +410,52 @@ Look into responsive design best practices. Maybe try Tailwind CSS.&lt;/p&gt;</d
 If a hospital’s patient data system is hacked and made unavailable during an emergency, it violates the &lt;strong&gt;availability&lt;/strong&gt; principle.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Vorlesung 3, 4: Android-Entwicklung</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/mad/mad2/</link>
+      <pubDate>Thu, 10 Apr 2025 18:30:37 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/mad/mad2/</guid>
+      <description>&lt;h3 id=&#34;-konzeptentwicklung--von-der-idee-zur-app&#34;&gt;🧠 Konzeptentwicklung – Von der Idee zur App&lt;/h3&gt;
+&lt;h4 id=&#34;-zweck--ziele&#34;&gt;🎯 Zweck &amp;amp; Ziele&lt;/h4&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Aspekt&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Beschreibung&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Ziel der App&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Was soll die App leisten?&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Beispiel&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Eine Fitness-App, die Nutzern hilft, ihre täglichen Schritte zu tracken.&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;-zielgruppe&#34;&gt;👥 Zielgruppe&lt;/h4&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Frage&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Erklärung&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Wer nutzt die App?&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Demografische Merkmale, technisches Niveau, Lebensstil usw.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Beispiel&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Berufspendler, die ihre Fitness im Alltag verbessern wollen&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;</description>
+    </item>
+    <item>
       <title>KBE Übung 1</title>
       <link>https://jayIsThere.github.io/zusammenfassung/posts/kbe/kbe_uebung1/</link>
       <pubDate>Thu, 10 Apr 2025 18:08:29 +0200</pubDate>
@@ -1071,7 +1117,15 @@ Wiederverwendung bestehender Softwarekomponenten (z. B. Code, Module, Systeme)
   &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung3_12.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
   &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung3_13.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
   &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung3_14.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
-&lt;h4 id=&#34;übungsblatt-4&#34;&gt;Übungsblatt 4&lt;/h4&gt;</description>
+&lt;h4 id=&#34;übungsblatt-8&#34;&gt;Übungsblatt 8&lt;/h4&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung4_1.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung4_2.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung4_3.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung4_4.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung4_5.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;  
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung4_6.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung4_7.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung4_8.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;</description>
     </item>
     <item>
       <title>Vektor- und Matrix-Formeln</title>

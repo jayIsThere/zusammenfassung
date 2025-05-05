@@ -6,8 +6,54 @@
     <description>Recent content in MAD on Jays Zusammenfassung</description>
     <generator>Hugo -- 0.146.6</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 09 Apr 2025 18:30:37 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 10 Apr 2025 18:30:37 +0200</lastBuildDate>
     <atom:link href="https://jayIsThere.github.io/zusammenfassung/categories/mad/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vorlesung 3, 4: Android-Entwicklung</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/mad/mad2/</link>
+      <pubDate>Thu, 10 Apr 2025 18:30:37 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/mad/mad2/</guid>
+      <description>&lt;h3 id=&#34;-konzeptentwicklung--von-der-idee-zur-app&#34;&gt;🧠 Konzeptentwicklung – Von der Idee zur App&lt;/h3&gt;
+&lt;h4 id=&#34;-zweck--ziele&#34;&gt;🎯 Zweck &amp;amp; Ziele&lt;/h4&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Aspekt&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Beschreibung&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Ziel der App&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Was soll die App leisten?&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Beispiel&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Eine Fitness-App, die Nutzern hilft, ihre täglichen Schritte zu tracken.&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;-zielgruppe&#34;&gt;👥 Zielgruppe&lt;/h4&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Frage&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Erklärung&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Wer nutzt die App?&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Demografische Merkmale, technisches Niveau, Lebensstil usw.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Beispiel&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Berufspendler, die ihre Fitness im Alltag verbessern wollen&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;</description>
+    </item>
     <item>
       <title>Vorlesung 2: Konzeptionierung von Apps</title>
       <link>https://jayIsThere.github.io/zusammenfassung/posts/mad/mad1/</link>
