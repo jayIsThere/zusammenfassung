@@ -57,3 +57,19 @@ draft = false
   <img src="/zusammenfassung/images/Uebung4_6.jpg" width="450px" height="500px" style="display: block; margin: auto;">
   <img src="/zusammenfassung/images/Uebung4_7.jpg" width="450px" height="500px" style="display: block; margin: auto;">
   <img src="/zusammenfassung/images/Uebung4_8.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+  
+  
+#### Übungsblatt 9
+
+  <img src="/zusammenfassung/images/Uebung5_1.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/Uebung5_2.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/Uebung5_3.jpg" width="450px" height="500px" style="display: block; margin: auto;">    
+  <img src="/zusammenfassung/images/Uebung5_4.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/Uebung5_5.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/Uebung5_6.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/Uebung5_7.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/Uebung5_8.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/Uebung5_9.jpg" width="450px" height="500px" style="display: block; margin: auto;">    
+  <img src="/zusammenfassung/images/Uebung5_10.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/Uebung5_11.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+
