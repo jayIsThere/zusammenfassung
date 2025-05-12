@@ -73,3 +73,25 @@ draft = false
   <img src="/zusammenfassung/images/Uebung5_10.jpg" width="450px" height="500px" style="display: block; margin: auto;">
   <img src="/zusammenfassung/images/Uebung5_11.jpg" width="450px" height="500px" style="display: block; margin: auto;">
 
+#### Übungsblatt 10
+
+  <img src="/zusammenfassung/images/Uebung6_1.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/Uebung6_2.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/Uebung6_3.jpg" width="450px" height="500px" style="display: block; margin: auto;">    
+  <img src="/zusammenfassung/images/Uebung6_4.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/Uebung6_5.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/Uebung6_6.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/Uebung6_7.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/Uebung6_8.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+
+#### Übungsblatt 11
+
+  <img src="/zusammenfassung/images/Uebung7_1.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/Uebung7_2.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/Uebung7_3.jpg" width="450px" height="500px" style="display: block; margin: auto;">    
+  <img src="/zusammenfassung/images/Uebung7_4.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/Uebung7_5.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/Uebung7_6.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/Uebung7_7.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/Uebung7_8.jpg" width="450px" height="500px" style="display: block; margin: auto;">
+
