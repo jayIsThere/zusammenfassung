@@ -4,11 +4,14 @@ date = 2025-03-10T18:35:42+02:00
 categories = ['SLA']
 tags = []
 draft = false
-disable_right_click = true
 +++
 
 Probeklausur
 -------------
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() { document.addEventListenr('contextmenu', function(e) { e.preventDefault(); }); }); 
+</script>
 
 #### Probeklausur 1
 
