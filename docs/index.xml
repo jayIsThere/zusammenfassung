@@ -4,7 +4,7 @@
     <title>Jays Zusammenfassung</title>
     <link>https://jayIsThere.github.io/zusammenfassung/</link>
     <description>Recent content on Jays Zusammenfassung</description>
-    <generator>Hugo -- 0.146.6</generator>
+    <generator>Hugo -- 0.147.5</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 17 Apr 2025 18:13:15 +0200</lastBuildDate>
     <atom:link href="https://jayIsThere.github.io/zusammenfassung/index.xml" rel="self" type="application/rss+xml" />
@@ -1038,6 +1038,15 @@ Wiederverwendung bestehender Softwarekomponenten (z. B. Code, Module, Systeme)
       <link>https://jayIsThere.github.io/zusammenfassung/posts/sla/sla_klausur/</link>
       <pubDate>Mon, 10 Mar 2025 18:35:42 +0200</pubDate>
       <guid>https://jayIsThere.github.io/zusammenfassung/posts/sla/sla_klausur/</guid>
+      <description>&lt;h2 id=&#34;probeklausur&#34;&gt;Probeklausur&lt;/h2&gt;
+&lt;h4 id=&#34;probeklausur-1&#34;&gt;Probeklausur 1&lt;/h4&gt;
+&lt;h4 id=&#34;probeklausur-2&#34;&gt;Probeklausur 2&lt;/h4&gt;</description>
+    </item>
+    <item>
+      <title>SLA Probeklausur</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/sla/sla_klausur_loesung/</link>
+      <pubDate>Mon, 10 Mar 2025 18:35:42 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/sla/sla_klausur_loesung/</guid>
       <description>&lt;h2 id=&#34;probeklausur&#34;&gt;Probeklausur&lt;/h2&gt;
 &lt;h4 id=&#34;probeklausur-1&#34;&gt;Probeklausur 1&lt;/h4&gt;
 &lt;h4 id=&#34;probeklausur-2&#34;&gt;Probeklausur 2&lt;/h4&gt;</description>
