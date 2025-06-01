@@ -1,5 +1,5 @@
 +++
-title = 'SLA Probeklausur'
+title = 'SLA Probeklausur Lösung'
 date = 2025-03-10T18:35:42+02:00
 categories = ['SLA']
 tags = []
