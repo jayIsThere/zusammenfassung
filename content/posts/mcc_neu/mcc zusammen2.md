@@ -28,7 +28,7 @@ draft = false
 - dBm은 신호의 세기를 로그로 표현한 단위야.
   - 기준: 1mW
   
-  <img src="/zusammenfassung/images/mcc2.jpg" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/mcc2.png" style="display: block; margin: auto;">
   
 ---------------------------------------
 
@@ -36,8 +36,8 @@ draft = false
 
 - dBW는 기준이 1W임.
 
-  <img src="/zusammenfassung/images/mcc3.jpg" style="display: block; margin: auto;">
-  <img src="/zusammenfassung/images/mcc4.jpg" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/mcc3.png" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/mcc4.png" style="display: block; margin: auto;">
   
 ---------------------------------------
 
@@ -133,13 +133,13 @@ draft = false
 - 왜 사인 곡선일까?
   - 전압과 전류가 시간에 따라 진동(+) ↔ (−) 하니까 그래프가 사인파로 나와.
 
-  <img src="/zusammenfassung/images/mcc5.jpg" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/mcc5.png" style="display: block; margin: auto;">
 
 - 그런데 전력 그래프는 왜 사인곡선이 아닐까?
   - 전력 P(t)=U(t)×I(t)P(t)=U(t)×I(t) 이니까,
   - 전력 파형은 다음과 같이 계산됨:
 
-  <img src="/zusammenfassung/images/mcc6.jpg" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/mcc6.png" style="display: block; margin: auto;">
   
 - 여기서 포인트:
   - sin⁡2(ωt)sin2(ωt)는 사인파처럼 위아래로 진동하지 않음.

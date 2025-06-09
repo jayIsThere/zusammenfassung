@@ -92,7 +92,7 @@ draft = false
   - 하지만 기술이 발전해서:
   - 똑같은 대역폭으로도 더 똑똑하게, 더 빠르게 데이터를 보내기도 해.
   
-  <img src="/zusammenfassung/images/mcc1.jpg" style="display: block; margin: auto;">
+  <img src="/zusammenfassung/images/mcc1.png" style="display: block; margin: auto;">
 
 ---------------------------------------
 

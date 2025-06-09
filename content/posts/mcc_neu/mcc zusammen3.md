@@ -75,7 +75,7 @@ draft = false
 ### 5. Bandbreiteneffizienz (스펙트럼 효율)
 
 
-  <img src="/zusammenfassung/images/mcc8.jpg" style="display: block; margin: auto;"> 
+  <img src="/zusammenfassung/images/mcc8.png" style="display: block; margin: auto;"> 
   
 - 스펙트럼 효율이 높을수록 더 많은 데이터를 좁은 공간에 전송 가능
 - 단, 신호 품질(SNR)이 중요함!
@@ -86,7 +86,7 @@ draft = false
 
 심볼이 가질 수 있는 상태 수를 x라고 할 때:
 
-  <img src="/zusammenfassung/images/mcc9.jpg" style="display: block; margin: auto;"> 
+  <img src="/zusammenfassung/images/mcc9.png" style="display: block; margin: auto;"> 
   
 - 예시:
   - BPSK: 2가지 상태 → log₂(2) = 1 bit
