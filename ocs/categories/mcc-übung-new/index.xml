@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>MCC Übung New on Jays Zusammenfassung</title>
+    <link>https://jayIsThere.github.io/zusammenfassung/categories/mcc-%C3%BCbung-new/</link>
+    <description>Recent content in MCC Übung New on Jays Zusammenfassung</description>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Apr 2025 18:23:41 +0200</lastBuildDate>
+    <atom:link href="https://jayIsThere.github.io/zusammenfassung/categories/mcc-%C3%BCbung-new/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MCC Übung 1</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/mcc_neu/mcc_uebung1/</link>
+      <pubDate>Tue, 08 Apr 2025 18:23:41 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/mcc_neu/mcc_uebung1/</guid>
+      <description>&lt;h4 id=&#34;11-use-case-video-streaming-zu-hause&#34;&gt;1.1 Use Case: Video-Streaming zu Hause&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Szenario:&lt;/strong&gt;&lt;br&gt;
+Sie streamen ein Video zu Hause, Audio über Bluetooth-Box, Bild auf dem Tablet.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;a) Topologie-Skizze:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Server (Provider X)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;→ &lt;strong&gt;Internet&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;→ &lt;strong&gt;Router&lt;/strong&gt; (ortsgebunden, Heimnetzwerk)&lt;/li&gt;
+&lt;li&gt;→ &lt;strong&gt;Tablet&lt;/strong&gt; (mobil, zeigt das Video über WLAN)&lt;/li&gt;
+&lt;li&gt;→ &lt;strong&gt;Bluetooth Box&lt;/strong&gt; (mobil, empfängt Audio)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;b) Verbindungsarten:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Festnetz:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Verbindung Server ↔ Internet ↔ Router&lt;/li&gt;
+&lt;li&gt;WLAN (als Heimnetzwerk-Verbindung)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Funk:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bluetooth zwischen Tablet ↔ Box&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;c) Mobile vs. ortsfeste Knoten:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Mobil:&lt;/strong&gt; Tablet, Bluetooth Box&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ortsfest:&lt;/strong&gt; Server, Router&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;d) Vermutete Funktechnologien:&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

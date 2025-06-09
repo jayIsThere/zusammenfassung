@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>MAD Projekt on Jays Zusammenfassung</title>
+    <link>https://jayIsThere.github.io/zusammenfassung/categories/mad-projekt/</link>
+    <description>Recent content in MAD Projekt on Jays Zusammenfassung</description>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 09 Apr 2025 18:30:37 +0200</lastBuildDate>
+    <atom:link href="https://jayIsThere.github.io/zusammenfassung/categories/mad-projekt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MAD Projekt</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/mad_projekt/mad_projekt/</link>
+      <pubDate>Wed, 09 Apr 2025 18:30:37 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/mad_projekt/mad_projekt/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://jayIsThere.github.io/zusammenfassung/files/MAD Projekt Plan.pdf&#34; download&gt;📥 PDF herunterladen&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Broke n Go&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Schlüsselpartner&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;OpenStreetMap (kostenlose Karten-API)&lt;br&gt;
+Offene Datenportale (z. B. Wetterdienste, lokale Tourismusinformationen)&lt;br&gt;
+Verzeichnisse lokaler Fahrradverleihe (ggf. via Web-Crawling)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Verfügbare Tech:&lt;br&gt;
+&lt;a href=&#34;https://www.openstreetmap.org/&#34;&gt;OpenStreetMap&lt;/a&gt;(Karte), &lt;a href=&#34;https://openweathermap.org/&#34;&gt;OpenWeatherMap&lt;/a&gt;(Wetter), &lt;a href=&#34;https://github.com/ubahnverleih/WoBike&#34;&gt;WoBike&lt;/a&gt;(Fahrradverleihe)&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Leistungsversprechen&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Empfehlungen für günstige Routen &amp;amp; Fahrradtouren&lt;br&gt;
+Einfaches Teilen lokaler Infos (z. B. via Text-Pinnwand)&lt;br&gt;
+Vorstellung günstiger Restaurants und Verkehrsmittel&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Verfügbare Tech:&lt;br&gt;
+OpenStreetMap(Karten-Visualisierung und Routenempfehlung), &lt;a href=&#34;https://supabase.com/&#34;&gt;Supabase&lt;/a&gt;(Realtime Text-Pinnwand)&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Kundenbeziehung&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Einfache Community-Funktionen wie ein anonymes oder nickname-basiertes Forum&lt;br&gt;
+Feedback über ein Formular oder via E-Mail&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

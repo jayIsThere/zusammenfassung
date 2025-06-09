@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>NSA on Jays Zusammenfassung</title>
+    <link>https://jayIsThere.github.io/zusammenfassung/categories/nsa/</link>
+    <description>Recent content in NSA on Jays Zusammenfassung</description>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Apr 2025 18:32:03 +0200</lastBuildDate>
+    <atom:link href="https://jayIsThere.github.io/zusammenfassung/categories/nsa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vorlesung 2: Ethics and Laws, Network Access Layer</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/nsa/nsa1/</link>
+      <pubDate>Mon, 14 Apr 2025 18:32:03 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/nsa/nsa1/</guid>
+      <description>&lt;h3 id=&#34;-ethics-and-laws--it-security-and-responsibility&#34;&gt;⚖️ Ethics and Laws – IT Security and Responsibility&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;🎯 Lecture Objectives&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Understand the &lt;strong&gt;risks in a connected world&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Learn the &lt;strong&gt;goals of IT security&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Explore &lt;strong&gt;types of cyberattacks&lt;/strong&gt; and related &lt;strong&gt;legal aspects&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Reflect on &lt;strong&gt;ethical issues&lt;/strong&gt; in data handling and protection&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-key-it-security-concepts&#34;&gt;🛡️ Key IT Security Concepts&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Concept&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Description&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;IT Security&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Protection of digital systems and data against threats like hacking, malware&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Information Security&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Broader term – includes physical and analog data protection as well&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Cybersecurity&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Focused on protecting information in internet-connected environments&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-protection-goals-cia-triad&#34;&gt;🎯 Protection Goals (CIA Triad)&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Goal&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Meaning&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Confidentiality&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Only authorized individuals can access the information&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Integrity&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Data must remain accurate and unaltered&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Availability&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Systems and data must be accessible when needed&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;📌 &lt;strong&gt;Example&lt;/strong&gt;:
+If a hospital’s patient data system is hacked and made unavailable during an emergency, it violates the &lt;strong&gt;availability&lt;/strong&gt; principle.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Vorlesung 2: Konzeptionierung von Apps | Jays Zusammenfassung</title>
+<meta name="keywords" content="">
+<meta name="description" content="🧠 Konzeptentwicklung – Von der Idee zur App
+🎯 Zweck &amp; Ziele
+
+  
+      
+          Aspekt
+          Beschreibung
+      
+  
+  
+      
+          Ziel der App
+          Was soll die App leisten?
+      
+      
+          Beispiel
+          Eine Fitness-App, die Nutzern hilft, ihre täglichen Schritte zu tracken.
+      
+  
+
+👥 Zielgruppe
+
+  
+      
+          Frage
+          Erklärung
+      
+  
+  
+      
+          Wer nutzt die App?
+          Demografische Merkmale, technisches Niveau, Lebensstil usw.
+      
+      
+          Beispiel
+          Berufspendler, die ihre Fitness im Alltag verbessern wollen
+      
+  
+
+🌟 Mehrwert / USP
+
+  
+      
+          Frage
+          Erklärung
+      
+  
+  
+      
+          Was unterscheidet die App?
+          Wodurch hebt sie sich von bestehenden Lösungen ab?
+      
+      
+          Beispiel
+          Individuelle Fitnesspläne basierend auf täglichem Bewegungslevel
+      
+  
+
+📈 Marktanalyse
+
+  
+      
+          Thema
+          Beschreibung
+      
+  
+  
+      
+          Konkurrenzanalyse
+          Welche Stärken/Schwächen haben z. B. Fitbit, Apple Health, Google Fit?
+      
+      
+          Alleinstellungsmerkmal
+          Definition von Funktionen, die die App einzigartig machen
+      
+  
+
+🚀 Feature Definition – MVP
+
+  
+      
+          Begriff
+          Bedeutung
+      
+  
+  
+      
+          Minimum Viable Product
+          Fokus auf die wichtigsten Funktionen zum Start
+      
+      
+          Beispiel
+          Schrittzähler &#43; einfache Anzeige des Fortschritts
+      
+  
+
+⚙️ Technische Rahmenbedingungen
+
+  
+      
+          Aspekt
+          Beispiel
+      
+  
+  
+      
+          Konkurrenzanalyse
+          iOS &amp; Android
+      
+      
+          Alleinstellungsmerkmal
+          Swift (iOS), Kotlin (Android), evtl. Flutter
+      
+  
+
+🎨 App-Design – UI/UX
+
+  
+      
+          Was wird gestaltet?
+          Beispiel
+      
+  
+  
+      
+          Wireframes
+          Layout der Screens
+      
+      
+          Navigation
+          Intuitive Benutzerführung
+      
+      
+          UI-Konzepte
+          Klare Buttons, gut strukturierte Navigation
+      
+  
+
+
+👤 Menschzentrierte Gestaltung (ISO 9241-210)
+🔍 Nutzungskontext analysieren (PACT)
+
+  
+      
+          Dimension
+          Fragen
+      
+  
+  
+      
+          People
+          Wer nutzt die App?
+      
+      
+          Activities
+          Was wollen Nutzer mit der App machen?
+      
+      
+          Context
+          Wann und wo wird die App genutzt?
+      
+      
+          Technology
+          Welche Geräte oder Plattformen werden verwendet?
+      
+  
+
+📌 Beispiel: App soll auch offline funktionieren, da nicht immer Internetzugang besteht.">
+<meta name="author" content="">
+<link rel="canonical" href="https://jayIsThere.github.io/zusammenfassung/posts/mad/mad1/">
+<link crossorigin="anonymous" href="/zusammenfassung/assets/css/stylesheet.93f625d739f1d6a5c6f20c146bc6a8d26b233492b34b2220c54b12fd46a04ded.css" integrity="sha256-k/Yl1znx1qXG8gwUa8ao0msjNJKzSyIgxUsS/UagTe0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://jayIsThere.github.io/zusammenfassung/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://jayIsThere.github.io/zusammenfassung/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://jayIsThere.github.io/zusammenfassung/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://jayIsThere.github.io/zusammenfassung/apple-touch-icon.png">
+<link rel="mask-icon" href="https://jayIsThere.github.io/zusammenfassung/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://jayIsThere.github.io/zusammenfassung/posts/mad/mad1/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="https://jayIsThere.github.io/zusammenfassung/posts/mad/mad1/">
+  <meta property="og:site_name" content="Jays Zusammenfassung">
+  <meta property="og:title" content="Vorlesung 2: Konzeptionierung von Apps">
+  <meta property="og:description" content="🧠 Konzeptentwicklung – Von der Idee zur App 🎯 Zweck &amp; Ziele Aspekt Beschreibung Ziel der App Was soll die App leisten? Beispiel Eine Fitness-App, die Nutzern hilft, ihre täglichen Schritte zu tracken. 👥 Zielgruppe Frage Erklärung Wer nutzt die App? Demografische Merkmale, technisches Niveau, Lebensstil usw. Beispiel Berufspendler, die ihre Fitness im Alltag verbessern wollen 🌟 Mehrwert / USP Frage Erklärung Was unterscheidet die App? Wodurch hebt sie sich von bestehenden Lösungen ab? Beispiel Individuelle Fitnesspläne basierend auf täglichem Bewegungslevel 📈 Marktanalyse Thema Beschreibung Konkurrenzanalyse Welche Stärken/Schwächen haben z. B. Fitbit, Apple Health, Google Fit? Alleinstellungsmerkmal Definition von Funktionen, die die App einzigartig machen 🚀 Feature Definition – MVP Begriff Bedeutung Minimum Viable Product Fokus auf die wichtigsten Funktionen zum Start Beispiel Schrittzähler &#43; einfache Anzeige des Fortschritts ⚙️ Technische Rahmenbedingungen Aspekt Beispiel Konkurrenzanalyse iOS &amp; Android Alleinstellungsmerkmal Swift (iOS), Kotlin (Android), evtl. Flutter 🎨 App-Design – UI/UX Was wird gestaltet? Beispiel Wireframes Layout der Screens Navigation Intuitive Benutzerführung UI-Konzepte Klare Buttons, gut strukturierte Navigation 👤 Menschzentrierte Gestaltung (ISO 9241-210) 🔍 Nutzungskontext analysieren (PACT) Dimension Fragen People Wer nutzt die App? Activities Was wollen Nutzer mit der App machen? Context Wann und wo wird die App genutzt? Technology Welche Geräte oder Plattformen werden verwendet? 📌 Beispiel: App soll auch offline funktionieren, da nicht immer Internetzugang besteht.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-04-09T18:30:37+02:00">
+    <meta property="article:modified_time" content="2025-04-09T18:30:37+02:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Vorlesung 2: Konzeptionierung von Apps">
+<meta name="twitter:description" content="🧠 Konzeptentwicklung – Von der Idee zur App
+🎯 Zweck &amp; Ziele
+
+  
+      
+          Aspekt
+          Beschreibung
+      
+  
+  
+      
+          Ziel der App
+          Was soll die App leisten?
+      
+      
+          Beispiel
+          Eine Fitness-App, die Nutzern hilft, ihre täglichen Schritte zu tracken.
+      
+  
+
+👥 Zielgruppe
+
+  
+      
+          Frage
+          Erklärung
+      
+  
+  
+      
+          Wer nutzt die App?
+          Demografische Merkmale, technisches Niveau, Lebensstil usw.
+      
+      
+          Beispiel
+          Berufspendler, die ihre Fitness im Alltag verbessern wollen
+      
+  
+
+🌟 Mehrwert / USP
+
+  
+      
+          Frage
+          Erklärung
+      
+  
+  
+      
+          Was unterscheidet die App?
+          Wodurch hebt sie sich von bestehenden Lösungen ab?
+      
+      
+          Beispiel
+          Individuelle Fitnesspläne basierend auf täglichem Bewegungslevel
+      
+  
+
+📈 Marktanalyse
+
+  
+      
+          Thema
+          Beschreibung
+      
+  
+  
+      
+          Konkurrenzanalyse
+          Welche Stärken/Schwächen haben z. B. Fitbit, Apple Health, Google Fit?
+      
+      
+          Alleinstellungsmerkmal
+          Definition von Funktionen, die die App einzigartig machen
+      
+  
+
+🚀 Feature Definition – MVP
+
+  
+      
+          Begriff
+          Bedeutung
+      
+  
+  
+      
+          Minimum Viable Product
+          Fokus auf die wichtigsten Funktionen zum Start
+      
+      
+          Beispiel
+          Schrittzähler &#43; einfache Anzeige des Fortschritts
+      
+  
+
+⚙️ Technische Rahmenbedingungen
+
+  
+      
+          Aspekt
+          Beispiel
+      
+  
+  
+      
+          Konkurrenzanalyse
+          iOS &amp; Android
+      
+      
+          Alleinstellungsmerkmal
+          Swift (iOS), Kotlin (Android), evtl. Flutter
+      
+  
+
+🎨 App-Design – UI/UX
+
+  
+      
+          Was wird gestaltet?
+          Beispiel
+      
+  
+  
+      
+          Wireframes
+          Layout der Screens
+      
+      
+          Navigation
+          Intuitive Benutzerführung
+      
+      
+          UI-Konzepte
+          Klare Buttons, gut strukturierte Navigation
+      
+  
+
+
+👤 Menschzentrierte Gestaltung (ISO 9241-210)
+🔍 Nutzungskontext analysieren (PACT)
+
+  
+      
+          Dimension
+          Fragen
+      
+  
+  
+      
+          People
+          Wer nutzt die App?
+      
+      
+          Activities
+          Was wollen Nutzer mit der App machen?
+      
+      
+          Context
+          Wann und wo wird die App genutzt?
+      
+      
+          Technology
+          Welche Geräte oder Plattformen werden verwendet?
+      
+  
+
+📌 Beispiel: App soll auch offline funktionieren, da nicht immer Internetzugang besteht.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://jayIsThere.github.io/zusammenfassung/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Vorlesung 2: Konzeptionierung von Apps",
+      "item": "https://jayIsThere.github.io/zusammenfassung/posts/mad/mad1/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Vorlesung 2: Konzeptionierung von Apps",
+  "name": "Vorlesung 2: Konzeptionierung von Apps",
+  "description": "🧠 Konzeptentwicklung – Von der Idee zur App 🎯 Zweck \u0026amp; Ziele Aspekt Beschreibung Ziel der App Was soll die App leisten? Beispiel Eine Fitness-App, die Nutzern hilft, ihre täglichen Schritte zu tracken. 👥 Zielgruppe Frage Erklärung Wer nutzt die App? Demografische Merkmale, technisches Niveau, Lebensstil usw. Beispiel Berufspendler, die ihre Fitness im Alltag verbessern wollen 🌟 Mehrwert / USP Frage Erklärung Was unterscheidet die App? Wodurch hebt sie sich von bestehenden Lösungen ab? Beispiel Individuelle Fitnesspläne basierend auf täglichem Bewegungslevel 📈 Marktanalyse Thema Beschreibung Konkurrenzanalyse Welche Stärken/Schwächen haben z. B. Fitbit, Apple Health, Google Fit? Alleinstellungsmerkmal Definition von Funktionen, die die App einzigartig machen 🚀 Feature Definition – MVP Begriff Bedeutung Minimum Viable Product Fokus auf die wichtigsten Funktionen zum Start Beispiel Schrittzähler + einfache Anzeige des Fortschritts ⚙️ Technische Rahmenbedingungen Aspekt Beispiel Konkurrenzanalyse iOS \u0026amp; Android Alleinstellungsmerkmal Swift (iOS), Kotlin (Android), evtl. Flutter 🎨 App-Design – UI/UX Was wird gestaltet? Beispiel Wireframes Layout der Screens Navigation Intuitive Benutzerführung UI-Konzepte Klare Buttons, gut strukturierte Navigation 👤 Menschzentrierte Gestaltung (ISO 9241-210) 🔍 Nutzungskontext analysieren (PACT) Dimension Fragen People Wer nutzt die App? Activities Was wollen Nutzer mit der App machen? Context Wann und wo wird die App genutzt? Technology Welche Geräte oder Plattformen werden verwendet? 📌 Beispiel: App soll auch offline funktionieren, da nicht immer Internetzugang besteht.\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "🧠 Konzeptentwicklung – Von der Idee zur App 🎯 Zweck \u0026 Ziele Aspekt Beschreibung Ziel der App Was soll die App leisten? Beispiel Eine Fitness-App, die Nutzern hilft, ihre täglichen Schritte zu tracken. 👥 Zielgruppe Frage Erklärung Wer nutzt die App? Demografische Merkmale, technisches Niveau, Lebensstil usw. Beispiel Berufspendler, die ihre Fitness im Alltag verbessern wollen 🌟 Mehrwert / USP Frage Erklärung Was unterscheidet die App? Wodurch hebt sie sich von bestehenden Lösungen ab? Beispiel Individuelle Fitnesspläne basierend auf täglichem Bewegungslevel 📈 Marktanalyse Thema Beschreibung Konkurrenzanalyse Welche Stärken/Schwächen haben z. B. Fitbit, Apple Health, Google Fit? Alleinstellungsmerkmal Definition von Funktionen, die die App einzigartig machen 🚀 Feature Definition – MVP Begriff Bedeutung Minimum Viable Product Fokus auf die wichtigsten Funktionen zum Start Beispiel Schrittzähler + einfache Anzeige des Fortschritts ⚙️ Technische Rahmenbedingungen Aspekt Beispiel Konkurrenzanalyse iOS \u0026 Android Alleinstellungsmerkmal Swift (iOS), Kotlin (Android), evtl. Flutter 🎨 App-Design – UI/UX Was wird gestaltet? Beispiel Wireframes Layout der Screens Navigation Intuitive Benutzerführung UI-Konzepte Klare Buttons, gut strukturierte Navigation 👤 Menschzentrierte Gestaltung (ISO 9241-210) 🔍 Nutzungskontext analysieren (PACT) Dimension Fragen People Wer nutzt die App? Activities Was wollen Nutzer mit der App machen? Context Wann und wo wird die App genutzt? Technology Welche Geräte oder Plattformen werden verwendet? 📌 Beispiel: App soll auch offline funktionieren, da nicht immer Internetzugang besteht.\n📋 Anforderungen aus Nutzung ableiten Aspekt Beispiel Nutzungsanforderung Schrittzählung auch ohne GPS, um Akku zu sparen ✏️ Gestaltungslösungen entwerfen (Prototyping) Aktivität Beispiel Erste Lösungen entwerfen Einfacher Klick-Prototyp mit z. B. Figma oder Balsamiq 🔄 Nutzerbeteiligung bei Evaluierung Methode Beispiel Feedback sammeln Beta-Tests, Usability-Tests Iteration Prototypen verbessern durch wiederholte Nutzer-Tests 👤 Personas Begriff Erklärung Fiktive Nutzermodelle Typische Nutzer mit Eigenschaften, Bedürfnissen, Zielen Beispiel “Betty, 37 Jahre, Lagerleiterin, technikunsicher, gestresster Alltag” 🎯 Ziel: Design mit Empathie – Entwicklung orientiert sich an echten Bedürfnissen\n📘 Szenarien \u0026 Use Cases 🧾 Szenarien Was? Beispiel Narrativ (Ist/Soll) “Betty möchte nach der Arbeit ihre Schritte sehen.” 📄 Use Cases Element Beispiel Akteur Betty Ziel Schritte zählen \u0026 Fitnessziel setzen Ablauf App öffnen → Schrittanzahl sehen → Ziel setzen Alternativen Fitnessziel anpassen Vor-/Nachbedingungen App ist geöffnet; Schrittzähler ist aktiv 📋 Anforderungen ✅ Funktionale Anforderungen Typ Beispiel Funktion Login, GPS-Nutzung, Schrittzähler, Benachrichtigungen ✅ ⚙️ Nicht-funktionale Anforderungen Typ Beispiel Performance App lädt unter 2 Sekunden Datenschutz DSGVO-konform, keine Weitergabe persönlicher Daten Kompatibilität Kompatibel mit Android 11+ \u0026 iOS 15+ 🧭 Kano-Modell Kategorie Bedeutung \u0026 Beispiel Basisfaktoren Selbstverständlich (z. B. Schrittzähler) Leistungsfaktoren Mehr ist besser (z. B. Fitnessanalysen, Statistikfunktionen) Begeisterungsfaktoren Unerwartet, aber erfreulich (z. B. Motivationsnachrichten mit KI) 🧪 Prototyping 🎯 Ziel Ideen sichtbar \u0026 testbar machen, bevor Entwicklung beginnt.\n📦 Arten von Prototypen Typ Beschreibung Low-Fidelity Skizzen, Papiermodelle, Wireframes (z. B. mit Figma/Balsamiq) High-Fidelity Realitätsnah, interaktiv, visuell ausgereift Evolutionär Prototyp wächst mit Feedback \u0026 Anforderungen (agil) ⚖️ Tiefe vs. Breite Form Beschreibung Horizontaler Prototyp Viele Funktionen angedeutet, keine Tiefe Vertikaler Prototyp Wenige Funktionen, dafür komplett durchdacht Durchstich-Prototyp Ein kompletter Pfad als Machbarkeitsnachweis 🎞️ Weitere Formen Storyboard: Nutzung wie in einem Comic visualisiert Index Cards: Jede App-Seite als Karte dargestellt Wireframes: Layout der Seiten ohne Design 🧪 Testmethoden Methode Ziel Nutzerbeobachtung Nutzer bei Bedienung beobachten (z. B. Usability-Test) Feedbackrunden Iterativ Meinungen \u0026 Verbesserungsvorschläge einholen Iteration Prototyp mehrfach anpassen \u0026 verbessern ",
+  "wordCount" : "527",
+  "inLanguage": "en",
+  "datePublished": "2025-04-09T18:30:37+02:00",
+  "dateModified": "2025-04-09T18:30:37+02:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://jayIsThere.github.io/zusammenfassung/posts/mad/mad1/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jays Zusammenfassung",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jayIsThere.github.io/zusammenfassung/favicon.ico"
+    }
+  }
+}
+</script>
+    
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    },
+    loader:{
+      load: ['ui/safe']
+    },
+  };
+</script>
+
+    
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://jayIsThere.github.io/zusammenfassung/" accesskey="h" title="Jays Zusammenfassung (Alt + H)">Jays Zusammenfassung</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://jayIsThere.github.io/zusammenfassung/categories/" title="categories">
+                    <span>categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://jayIsThere.github.io/zusammenfassung/tags/" title="tags">
+                    <span>tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://example.org" title="example.org">
+                    <span>example.org</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://jayIsThere.github.io/zusammenfassung/">Home</a>&nbsp;»&nbsp;<a href="https://jayIsThere.github.io/zusammenfassung/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Vorlesung 2: Konzeptionierung von Apps
+    </h1>
+    <div class="post-meta"><span title='2025-04-09 18:30:37 +0200 CEST'>April 9, 2025</span>&nbsp;·&nbsp;3 min
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-konzeptentwicklung--von-der-idee-zur-app" aria-label="🧠 Konzeptentwicklung – Von der Idee zur App">🧠 Konzeptentwicklung – Von der Idee zur App</a><ul>
+                        
+                <li>
+                    <a href="#-zweck--ziele" aria-label="🎯 Zweck &amp; Ziele">🎯 Zweck &amp; Ziele</a></li>
+                <li>
+                    <a href="#-zielgruppe" aria-label="👥 Zielgruppe">👥 Zielgruppe</a></li>
+                <li>
+                    <a href="#-mehrwert--usp" aria-label="🌟 Mehrwert / USP">🌟 Mehrwert / USP</a></li>
+                <li>
+                    <a href="#-marktanalyse" aria-label="📈 Marktanalyse">📈 Marktanalyse</a></li>
+                <li>
+                    <a href="#-feature-definition--mvp" aria-label="🚀 Feature Definition – MVP">🚀 Feature Definition – MVP</a></li>
+                <li>
+                    <a href="#-technische-rahmenbedingungen" aria-label="⚙️ Technische Rahmenbedingungen">⚙️ Technische Rahmenbedingungen</a></li>
+                <li>
+                    <a href="#-app-design--uiux" aria-label="🎨 App-Design – UI/UX">🎨 App-Design – UI/UX</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-menschzentrierte-gestaltung-iso-9241-210" aria-label="👤 Menschzentrierte Gestaltung (ISO 9241-210)">👤 Menschzentrierte Gestaltung (ISO 9241-210)</a><ul>
+                        
+                <li>
+                    <a href="#-nutzungskontext-analysieren-pact" aria-label="🔍 Nutzungskontext analysieren (PACT)">🔍 Nutzungskontext analysieren (PACT)</a></li>
+                <li>
+                    <a href="#-anforderungen-aus-nutzung-ableiten" aria-label="📋 Anforderungen aus Nutzung ableiten">📋 Anforderungen aus Nutzung ableiten</a></li>
+                <li>
+                    <a href="#-gestaltungsl%c3%b6sungen-entwerfen-prototyping" aria-label="✏️ Gestaltungslösungen entwerfen (Prototyping)">✏️ Gestaltungslösungen entwerfen (Prototyping)</a></li>
+                <li>
+                    <a href="#-nutzerbeteiligung-bei-evaluierung" aria-label="🔄 Nutzerbeteiligung bei Evaluierung">🔄 Nutzerbeteiligung bei Evaluierung</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-personas" aria-label="👤 Personas">👤 Personas</a></li>
+                <li>
+                    <a href="#-szenarien--use-cases" aria-label="📘 Szenarien &amp; Use Cases">📘 Szenarien &amp; Use Cases</a><ul>
+                        
+                <li>
+                    <a href="#-szenarien" aria-label="🧾 Szenarien">🧾 Szenarien</a></li>
+                <li>
+                    <a href="#-use-cases" aria-label="📄 Use Cases">📄 Use Cases</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-anforderungen" aria-label="📋 Anforderungen">📋 Anforderungen</a><ul>
+                        
+                <li>
+                    <a href="#-funktionale-anforderungen" aria-label="✅ Funktionale Anforderungen">✅ Funktionale Anforderungen</a></li>
+                <li>
+                    <a href="#--nicht-funktionale-anforderungen" aria-label="✅ ⚙️ Nicht-funktionale Anforderungen">✅ ⚙️ Nicht-funktionale Anforderungen</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-kano-modell" aria-label="🧭 Kano-Modell">🧭 Kano-Modell</a></li>
+                <li>
+                    <a href="#-prototyping" aria-label="🧪 Prototyping">🧪 Prototyping</a><ul>
+                        
+                <li>
+                    <a href="#-ziel" aria-label="🎯 Ziel">🎯 Ziel</a></li>
+                <li>
+                    <a href="#-arten-von-prototypen" aria-label="📦 Arten von Prototypen">📦 Arten von Prototypen</a></li>
+                <li>
+                    <a href="#-tiefe-vs-breite" aria-label="⚖️ Tiefe vs. Breite">⚖️ Tiefe vs. Breite</a></li>
+                <li>
+                    <a href="#-weitere-formen" aria-label="🎞️ Weitere Formen">🎞️ Weitere Formen</a></li>
+                <li>
+                    <a href="#-testmethoden" aria-label="🧪 Testmethoden">🧪 Testmethoden</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h3 id="-konzeptentwicklung--von-der-idee-zur-app">🧠 Konzeptentwicklung – Von der Idee zur App<a hidden class="anchor" aria-hidden="true" href="#-konzeptentwicklung--von-der-idee-zur-app">#</a></h3>
+<h4 id="-zweck--ziele">🎯 Zweck &amp; Ziele<a hidden class="anchor" aria-hidden="true" href="#-zweck--ziele">#</a></h4>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Aspekt</strong></th>
+          <th><strong>Beschreibung</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Ziel der App</strong></td>
+          <td>Was soll die App leisten?</td>
+      </tr>
+      <tr>
+          <td><strong>Beispiel</strong></td>
+          <td>Eine Fitness-App, die Nutzern hilft, ihre täglichen Schritte zu tracken.</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="-zielgruppe">👥 Zielgruppe<a hidden class="anchor" aria-hidden="true" href="#-zielgruppe">#</a></h4>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Frage</strong></th>
+          <th><strong>Erklärung</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Wer nutzt die App?</strong></td>
+          <td>Demografische Merkmale, technisches Niveau, Lebensstil usw.</td>
+      </tr>
+      <tr>
+          <td><strong>Beispiel</strong></td>
+          <td>Berufspendler, die ihre Fitness im Alltag verbessern wollen</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="-mehrwert--usp">🌟 Mehrwert / USP<a hidden class="anchor" aria-hidden="true" href="#-mehrwert--usp">#</a></h4>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Frage</strong></th>
+          <th><strong>Erklärung</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Was unterscheidet die App?</strong></td>
+          <td>Wodurch hebt sie sich von bestehenden Lösungen ab?</td>
+      </tr>
+      <tr>
+          <td><strong>Beispiel</strong></td>
+          <td>Individuelle Fitnesspläne basierend auf täglichem Bewegungslevel</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="-marktanalyse">📈 Marktanalyse<a hidden class="anchor" aria-hidden="true" href="#-marktanalyse">#</a></h4>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Thema</strong></th>
+          <th><strong>Beschreibung</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Konkurrenzanalyse</strong></td>
+          <td>Welche Stärken/Schwächen haben z. B. Fitbit, Apple Health, Google Fit?</td>
+      </tr>
+      <tr>
+          <td><strong>Alleinstellungsmerkmal</strong></td>
+          <td>Definition von Funktionen, die die App einzigartig machen</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="-feature-definition--mvp">🚀 Feature Definition – MVP<a hidden class="anchor" aria-hidden="true" href="#-feature-definition--mvp">#</a></h4>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Begriff</strong></th>
+          <th><strong>Bedeutung</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Minimum Viable Product</strong></td>
+          <td>Fokus auf die <strong>wichtigsten Funktionen</strong> zum Start</td>
+      </tr>
+      <tr>
+          <td><strong>Beispiel</strong></td>
+          <td><strong>Schrittzähler</strong> + einfache Anzeige des Fortschritts</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="-technische-rahmenbedingungen">⚙️ Technische Rahmenbedingungen<a hidden class="anchor" aria-hidden="true" href="#-technische-rahmenbedingungen">#</a></h4>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Aspekt</strong></th>
+          <th><strong>Beispiel</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Konkurrenzanalyse</strong></td>
+          <td>iOS &amp; Android</td>
+      </tr>
+      <tr>
+          <td><strong>Alleinstellungsmerkmal</strong></td>
+          <td>Swift (iOS), Kotlin (Android), evtl. Flutter</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="-app-design--uiux">🎨 App-Design – UI/UX<a hidden class="anchor" aria-hidden="true" href="#-app-design--uiux">#</a></h4>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Was wird gestaltet?</strong></th>
+          <th><strong>Beispiel</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Wireframes</strong></td>
+          <td>Layout der Screens</td>
+      </tr>
+      <tr>
+          <td><strong>Navigation</strong></td>
+          <td>Intuitive Benutzerführung</td>
+      </tr>
+      <tr>
+          <td><strong>UI-Konzepte</strong></td>
+          <td>Klare Buttons, gut strukturierte Navigation</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="-menschzentrierte-gestaltung-iso-9241-210">👤 Menschzentrierte Gestaltung (ISO 9241-210)<a hidden class="anchor" aria-hidden="true" href="#-menschzentrierte-gestaltung-iso-9241-210">#</a></h3>
+<h4 id="-nutzungskontext-analysieren-pact">🔍 Nutzungskontext analysieren (PACT)<a hidden class="anchor" aria-hidden="true" href="#-nutzungskontext-analysieren-pact">#</a></h4>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Dimension</strong></th>
+          <th><strong>Fragen</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>People</strong></td>
+          <td>Wer nutzt die App?</td>
+      </tr>
+      <tr>
+          <td><strong>Activities</strong></td>
+          <td>Was wollen Nutzer mit der App machen?</td>
+      </tr>
+      <tr>
+          <td><strong>Context</strong></td>
+          <td>Wann und wo wird die App genutzt?</td>
+      </tr>
+      <tr>
+          <td><strong>Technology</strong></td>
+          <td>Welche Geräte oder Plattformen werden verwendet?</td>
+      </tr>
+  </tbody>
+</table>
+<p>📌 <strong>Beispiel</strong>: App soll auch offline funktionieren, da nicht immer Internetzugang besteht.</p>
+<h4 id="-anforderungen-aus-nutzung-ableiten">📋 Anforderungen aus Nutzung ableiten<a hidden class="anchor" aria-hidden="true" href="#-anforderungen-aus-nutzung-ableiten">#</a></h4>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Aspekt</strong></th>
+          <th><strong>Beispiel</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Nutzungsanforderung</strong></td>
+          <td>Schrittzählung auch ohne GPS, um Akku zu sparen</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="-gestaltungslösungen-entwerfen-prototyping">✏️ Gestaltungslösungen entwerfen (Prototyping)<a hidden class="anchor" aria-hidden="true" href="#-gestaltungslösungen-entwerfen-prototyping">#</a></h4>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Aktivität</strong></th>
+          <th><strong>Beispiel</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Erste Lösungen entwerfen</strong></td>
+          <td>Einfacher Klick-Prototyp mit z. B. Figma oder Balsamiq</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="-nutzerbeteiligung-bei-evaluierung">🔄 Nutzerbeteiligung bei Evaluierung<a hidden class="anchor" aria-hidden="true" href="#-nutzerbeteiligung-bei-evaluierung">#</a></h4>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Methode</strong></th>
+          <th><strong>Beispiel</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Feedback sammeln</strong></td>
+          <td>Beta-Tests, Usability-Tests</td>
+      </tr>
+      <tr>
+          <td><strong>Iteration</strong></td>
+          <td>Prototypen verbessern durch wiederholte Nutzer-Tests</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="-personas">👤 Personas<a hidden class="anchor" aria-hidden="true" href="#-personas">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Begriff</strong></th>
+          <th><strong>Erklärung</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Fiktive Nutzermodelle</strong></td>
+          <td>Typische Nutzer mit Eigenschaften, Bedürfnissen, Zielen</td>
+      </tr>
+      <tr>
+          <td><strong>Beispiel</strong></td>
+          <td>“Betty, 37 Jahre, Lagerleiterin, technikunsicher, gestresster Alltag”</td>
+      </tr>
+  </tbody>
+</table>
+<p>🎯 <strong>Ziel</strong>: Design mit Empathie – Entwicklung orientiert sich an echten Bedürfnissen</p>
+<hr>
+<h3 id="-szenarien--use-cases">📘 Szenarien &amp; Use Cases<a hidden class="anchor" aria-hidden="true" href="#-szenarien--use-cases">#</a></h3>
+<h4 id="-szenarien">🧾 Szenarien<a hidden class="anchor" aria-hidden="true" href="#-szenarien">#</a></h4>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Was?</strong></th>
+          <th><strong>Beispiel</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Narrativ (Ist/Soll)</strong></td>
+          <td>“Betty möchte nach der Arbeit ihre Schritte sehen.”</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="-use-cases">📄 Use Cases<a hidden class="anchor" aria-hidden="true" href="#-use-cases">#</a></h4>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Element</strong></th>
+          <th><strong>Beispiel</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Akteur</strong></td>
+          <td>Betty</td>
+      </tr>
+      <tr>
+          <td><strong>Ziel</strong></td>
+          <td>Schritte zählen &amp; Fitnessziel setzen</td>
+      </tr>
+      <tr>
+          <td><strong>Ablauf</strong></td>
+          <td>App öffnen → Schrittanzahl sehen → Ziel setzen</td>
+      </tr>
+      <tr>
+          <td><strong>Alternativen</strong></td>
+          <td>Fitnessziel anpassen</td>
+      </tr>
+      <tr>
+          <td><strong>Vor-/Nachbedingungen</strong></td>
+          <td>App ist geöffnet; Schrittzähler ist aktiv</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="-anforderungen">📋 Anforderungen<a hidden class="anchor" aria-hidden="true" href="#-anforderungen">#</a></h3>
+<h4 id="-funktionale-anforderungen">✅ Funktionale Anforderungen<a hidden class="anchor" aria-hidden="true" href="#-funktionale-anforderungen">#</a></h4>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Typ</strong></th>
+          <th><strong>Beispiel</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Funktion</strong></td>
+          <td>Login, GPS-Nutzung, Schrittzähler, Benachrichtigungen</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="--nicht-funktionale-anforderungen">✅ ⚙️ Nicht-funktionale Anforderungen<a hidden class="anchor" aria-hidden="true" href="#--nicht-funktionale-anforderungen">#</a></h4>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Typ</strong></th>
+          <th><strong>Beispiel</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Performance</strong></td>
+          <td>App lädt unter 2 Sekunden</td>
+      </tr>
+      <tr>
+          <td><strong>Datenschutz</strong></td>
+          <td>DSGVO-konform, keine Weitergabe persönlicher Daten</td>
+      </tr>
+      <tr>
+          <td><strong>Kompatibilität</strong></td>
+          <td>Kompatibel mit Android 11+ &amp; iOS 15+</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="-kano-modell">🧭 Kano-Modell<a hidden class="anchor" aria-hidden="true" href="#-kano-modell">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Kategorie</strong></th>
+          <th><strong>Bedeutung &amp; Beispiel</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Basisfaktoren</strong></td>
+          <td>Selbstverständlich (z. B. Schrittzähler)</td>
+      </tr>
+      <tr>
+          <td><strong>Leistungsfaktoren</strong></td>
+          <td>Mehr ist besser (z. B. Fitnessanalysen, Statistikfunktionen)</td>
+      </tr>
+      <tr>
+          <td><strong>Begeisterungsfaktoren</strong></td>
+          <td>Unerwartet, aber erfreulich (z. B. Motivationsnachrichten mit KI)</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="-prototyping">🧪 Prototyping<a hidden class="anchor" aria-hidden="true" href="#-prototyping">#</a></h3>
+<h4 id="-ziel">🎯 Ziel<a hidden class="anchor" aria-hidden="true" href="#-ziel">#</a></h4>
+<p><strong>Ideen sichtbar &amp; testbar</strong> machen, bevor Entwicklung beginnt.</p>
+<h4 id="-arten-von-prototypen">📦 Arten von Prototypen<a hidden class="anchor" aria-hidden="true" href="#-arten-von-prototypen">#</a></h4>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Typ</strong></th>
+          <th><strong>Beschreibung</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Low-Fidelity</strong></td>
+          <td>Skizzen, Papiermodelle, Wireframes (z. B. mit Figma/Balsamiq)</td>
+      </tr>
+      <tr>
+          <td><strong>High-Fidelity</strong></td>
+          <td>Realitätsnah, interaktiv, visuell ausgereift</td>
+      </tr>
+      <tr>
+          <td><strong>Evolutionär</strong></td>
+          <td>Prototyp wächst mit Feedback &amp; Anforderungen (agil)</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="-tiefe-vs-breite">⚖️ Tiefe vs. Breite<a hidden class="anchor" aria-hidden="true" href="#-tiefe-vs-breite">#</a></h4>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Form</strong></th>
+          <th><strong>Beschreibung</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Horizontaler Prototyp</strong></td>
+          <td>Viele Funktionen angedeutet, keine Tiefe</td>
+      </tr>
+      <tr>
+          <td><strong>Vertikaler Prototyp</strong></td>
+          <td>Wenige Funktionen, dafür komplett durchdacht</td>
+      </tr>
+      <tr>
+          <td><strong>Durchstich-Prototyp</strong></td>
+          <td>Ein kompletter Pfad als Machbarkeitsnachweis</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="-weitere-formen">🎞️ Weitere Formen<a hidden class="anchor" aria-hidden="true" href="#-weitere-formen">#</a></h4>
+<ul>
+<li><strong>Storyboard</strong>: Nutzung wie in einem Comic visualisiert</li>
+<li><strong>Index Cards</strong>: Jede App-Seite als Karte dargestellt</li>
+<li><strong>Wireframes</strong>: Layout der Seiten ohne Design</li>
+</ul>
+<h4 id="-testmethoden">🧪 Testmethoden<a hidden class="anchor" aria-hidden="true" href="#-testmethoden">#</a></h4>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Methode</strong></th>
+          <th><strong>Ziel</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Nutzerbeobachtung</strong></td>
+          <td>Nutzer bei Bedienung beobachten (z. B. Usability-Test)</td>
+      </tr>
+      <tr>
+          <td><strong>Feedbackrunden</strong></td>
+          <td>Iterativ Meinungen &amp; Verbesserungsvorschläge einholen</td>
+      </tr>
+      <tr>
+          <td><strong>Iteration</strong></td>
+          <td>Prototyp mehrfach anpassen &amp; verbessern</td>
+      </tr>
+  </tbody>
+</table>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://jayIsThere.github.io/zusammenfassung/posts/mad_projekt/mad_projekt/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>MAD Projekt</span>
+  </a>
+  <a class="next" href="https://jayIsThere.github.io/zusammenfassung/posts/mcc/mcc_uebung1/">
+    <span class="title">Next »</span>
+    <br>
+    <span>MCC Übung 1</span>
+  </a>
+</nav>
+
+
+<ul class="share-buttons">
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Vorlesung 2: Konzeptionierung von Apps on x"
+            href="https://x.com/intent/tweet/?text=Vorlesung%202%3a%20Konzeptionierung%20von%20Apps&amp;url=https%3a%2f%2fjayIsThere.github.io%2fzusammenfassung%2fposts%2fmad%2fmad1%2f&amp;hashtags=">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Vorlesung 2: Konzeptionierung von Apps on linkedin"
+            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fjayIsThere.github.io%2fzusammenfassung%2fposts%2fmad%2fmad1%2f&amp;title=Vorlesung%202%3a%20Konzeptionierung%20von%20Apps&amp;summary=Vorlesung%202%3a%20Konzeptionierung%20von%20Apps&amp;source=https%3a%2f%2fjayIsThere.github.io%2fzusammenfassung%2fposts%2fmad%2fmad1%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Vorlesung 2: Konzeptionierung von Apps on reddit"
+            href="https://reddit.com/submit?url=https%3a%2f%2fjayIsThere.github.io%2fzusammenfassung%2fposts%2fmad%2fmad1%2f&title=Vorlesung%202%3a%20Konzeptionierung%20von%20Apps">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Vorlesung 2: Konzeptionierung von Apps on facebook"
+            href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fjayIsThere.github.io%2fzusammenfassung%2fposts%2fmad%2fmad1%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Vorlesung 2: Konzeptionierung von Apps on whatsapp"
+            href="https://api.whatsapp.com/send?text=Vorlesung%202%3a%20Konzeptionierung%20von%20Apps%20-%20https%3a%2f%2fjayIsThere.github.io%2fzusammenfassung%2fposts%2fmad%2fmad1%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Vorlesung 2: Konzeptionierung von Apps on telegram"
+            href="https://telegram.me/share/url?text=Vorlesung%202%3a%20Konzeptionierung%20von%20Apps&amp;url=https%3a%2f%2fjayIsThere.github.io%2fzusammenfassung%2fposts%2fmad%2fmad1%2f">
+            <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Vorlesung 2: Konzeptionierung von Apps on ycombinator"
+            href="https://news.ycombinator.com/submitlink?t=Vorlesung%202%3a%20Konzeptionierung%20von%20Apps&u=https%3a%2f%2fjayIsThere.github.io%2fzusammenfassung%2fposts%2fmad%2fmad1%2f">
+            <svg version="1.1" xml:space="preserve" width="30px" height="30px" viewBox="0 0 512 512" fill="currentColor"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+                <path
+                    d="M449.446 0C483.971 0 512 28.03 512 62.554L512 449.446C512 483.97 483.97 512 449.446 512L62.554 512C28.03 512 0 483.97 0 449.446L0 62.554C0 28.03 28.029 0 62.554 0L449.446 0ZM183.8767 87.9921H121.8427L230.6673 292.4508V424.0079H281.3328V292.4508L390.1575 87.9921H328.1233L256 238.2489z" />
+            </svg>
+        </a>
+    </li>
+</ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://jayIsThere.github.io/zusammenfassung/">Jays Zusammenfassung</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

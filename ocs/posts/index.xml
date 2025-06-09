@@ -1,0 +1,1461 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Jays Zusammenfassung</title>
+    <link>https://jayIsThere.github.io/zusammenfassung/posts/</link>
+    <description>Recent content in Posts on Jays Zusammenfassung</description>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 17 Apr 2025 18:13:15 +0200</lastBuildDate>
+    <atom:link href="https://jayIsThere.github.io/zusammenfassung/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vorlesung 3: komponentenbasiertes Software-Engineering</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/kbe/kbe3/</link>
+      <pubDate>Thu, 17 Apr 2025 18:13:15 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/kbe/kbe3/</guid>
+      <description>&lt;h3 id=&#34;-grundprinzipien-der-kbse&#34;&gt;🧩 Grundprinzipien der KBSE&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Unabhängige Komponenten&lt;/strong&gt;
+– Austauschbar, Schnittstellen-basiert&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Komponentenstandards&lt;/strong&gt;
+– Einheitliche Schnittstellendefinition&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Middleware-Unterstützung&lt;/strong&gt;
+– Kommunikation, Ressourcen, Sicherheit&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Wiederverwendung im Prozess&lt;/strong&gt;
+– Schon bei Planung und Entwicklung&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-herausforderungen-im-kbse&#34;&gt;⚠️ Herausforderungen im KBSE&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Thema&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Problemstellung&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Vertrauenswürdigkeit&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Blackbox-Komponenten erschweren Verständnis&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Komponentenzertifizierung&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Wer haftet bei Fehlern? Rechtlich unklar&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Emergente Eigenschaften&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Unvorhersehbares Verhalten bei Integration&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Anforderungskompromisse&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Passende Komponente ≠ perfekte Erfüllung aller Anforderungen&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-zentrale-entwurfsprinzipien&#34;&gt;🎯 Zentrale Entwurfsprinzipien&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Unabhängigkeit&lt;/strong&gt; der Komponenten&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stabile, klar definierte Schnittstellen&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Standardisierte Infrastruktur&lt;/strong&gt; mit Basisdiensten&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-komponenten-als-dienstanbieter&#34;&gt;🧩 Komponenten als Dienstanbieter&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Kapseln Funktionalität → Zugriff nur über Schnittstelle&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Lokalisation &amp;amp; Sprache irrelevant&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Vorteil&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Erklärung&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Unabhängigkeit&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Austauschbar ohne Einfluss auf andere Komponenten&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Schnittstellenbasiert&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Kein interner Zugriff nötig&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-komponenten-vs-objekte&#34;&gt;🔍 Komponenten vs. Objekte&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Merkmal&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Komponente&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Objekt&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Deployment&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Direkt ausführbar&lt;/td&gt;
+          &lt;td&gt;Bestandteil eines Programms&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Typdefinition&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Instanz mit eigener Struktur&lt;/td&gt;
+          &lt;td&gt;Objekt auf Basis einer Klasse&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Transparenz&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Blackbox, nur API sichtbar&lt;/td&gt;
+          &lt;td&gt;Intern oft sichtbar&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Sprachabhängigkeit&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Sprachunabhängig (.NET, WSDL)&lt;/td&gt;
+          &lt;td&gt;Sprachgebunden (z. B. Java)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Standardisierung&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Muss Modell folgen&lt;/td&gt;
+          &lt;td&gt;Frei definierbar&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-komponentenschnittstellen&#34;&gt;🧩 Komponentenschnittstellen&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Schnittstellentyp&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Beschreibung&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Provided Interface&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;API der Komponente: was sie bietet&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Required Interface&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Externe Dienste, die die Komponente benötigt&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-uml-notation-für-komponenten&#34;&gt;📐 UML-Notation für Komponenten&lt;/h3&gt;
+&lt;p&gt;🧱 &lt;strong&gt;Komponente&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>KBE Übung 2</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/kbe/kbe_uebung2/</link>
+      <pubDate>Thu, 17 Apr 2025 18:08:32 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/kbe/kbe_uebung2/</guid>
+      <description>&lt;h2 id=&#34;übungsblatt-2&#34;&gt;Übungsblatt 2&lt;/h2&gt;
+&lt;h3 id=&#34;aufgabe-1-beweggründe-für-die-entstehung-des-komponentenbasierten-software-engineerings&#34;&gt;Aufgabe 1. Beweggründe für die Entstehung des Komponentenbasierten Software-Engineerings&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Wiederverwendbarkeit&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Softwarekomponenten können wiederverwendet werden, was Entwicklungszeit und Kosten spart.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Modularität&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Komponenten sind unabhängig, was Wartung und Erweiterung vereinfacht.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Flexibilität&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Komponenten können ausgetauscht werden, ohne das gesamte System zu ändern.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Skalierbarkeit&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Komponenten können unabhängig skaliert und optimiert werden.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;aufgabe-2-vier-grundlagen-des-komponentenbasierten-software-engineerings&#34;&gt;Aufgabe 2. Vier Grundlagen des Komponentenbasierten Software-Engineerings&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Unabhängige Komponenten&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Komponenten können ohne Systemänderungen ausgetauscht werden.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Komponentenstandards&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Einheitliche Schnittstellen und Integrationen sind wichtig.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Middleware&lt;/strong&gt;:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Einführung in Mobile and Cloud Computing Stand</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/mcc_neu/mcc-zusammen1/</link>
+      <pubDate>Tue, 15 Apr 2025 18:22:16 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/mcc_neu/mcc-zusammen1/</guid>
+      <description>&lt;h3 id=&#34;1-고정망festnetz-모바일망mobilnetz-클라우드cloud&#34;&gt;1. 고정망(Festnetz), 모바일망(Mobilnetz), 클라우드(Cloud)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;고정망 (Festnetz): 선 연결된 컴퓨터&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;장소 고정&lt;/li&gt;
+&lt;li&gt;속도 빠름&lt;/li&gt;
+&lt;li&gt;안정적&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;모바일망 (Mobilnetz): 와이파이, LTE, 5G&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;무선&lt;/li&gt;
+&lt;li&gt;스마트폰, 노트북처럼 이동 가능&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;클라우드 (Cloud): 인터넷으로 연결된 저장공간과 컴퓨터&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;구글 드라이브, AWS처럼&lt;/li&gt;
+&lt;li&gt;저장/계산 다 해줌&lt;/li&gt;
+&lt;li&gt;단순 연결망 이상 (기능 제공)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;2-무선통신-기초-주파수--구성요소&#34;&gt;2. 무선통신 기초: 주파수 &amp;amp; 구성요소&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Frequenz: 신호가 몇 번 진동하는지 (Hz 단위)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Wi-Fi: 2412 MHz&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Bandbreite	: 얼마나 넓은 범위 쓰는지 (속도에 영향)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Wi-Fi: 20 MHz&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Sender/Empfänger: 송신기/수신기 (안테나 달림)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Messung von Funksignalen</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/mcc_neu/mcc-zusammen2/</link>
+      <pubDate>Tue, 15 Apr 2025 18:22:16 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/mcc_neu/mcc-zusammen2/</guid>
+      <description>&lt;h3 id=&#34;1-측정-장비messgeräte--신호를-보는-두-가지-방식&#34;&gt;1. 측정 장비(Messgeräte) – 신호를 보는 두 가지 방식&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;오실로스코프 (Oszilloskop): 시간에 따라 신호가 어떻게 바뀌는지	&amp;gt; 시간 영역&lt;/li&gt;
+&lt;li&gt;스펙트럼 분석기 (Spektrumanalysator): 신호에 어떤 주파수 성분이 얼마나 있는지	 &amp;gt; 주파수 영역&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;2-신호-세기leistung--크기를-어떻게-표현할까&#34;&gt;2. 신호 세기(Leistung) – 크기를 어떻게 표현할까?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;보통 Watt (W) 또는 Milliwatt (mW) 단위로 표현&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1W = 1000mW&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;하지만 너무 차이가 크면 불편함&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;→ 그래서 로그 단위(dB, dBm, dBW) 사용&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;3-dbm이란&#34;&gt;3. dBm이란?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;dBm은 신호의 세기를 로그로 표현한 단위야.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;기준: 1mW&lt;/li&gt;
+&lt;/ul&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/mcc2.jpg&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;4-dbw는-뭐야&#34;&gt;4. dBW는 뭐야?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;dBW는 기준이 1W임.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Radio Access Stand</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/mcc_neu/mcc-zusammen3/</link>
+      <pubDate>Tue, 15 Apr 2025 18:22:16 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/mcc_neu/mcc-zusammen3/</guid>
+      <description>&lt;h3 id=&#34;1-디지털-변조란&#34;&gt;1. 디지털 변조란?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;정보를 전송하기 위해 아날로그 전파(사인파)의 특성을 **디지털 신호(0과 1)**에 맞게 바꾸는 것.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;변조 시 바꿀 수 있는 세 가지:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;진폭 (Amplitude)&lt;/li&gt;
+&lt;li&gt;주파수 (Frequenz)&lt;/li&gt;
+&lt;li&gt;위상 (Phase)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;2-symbol과-symbolrate-기초-개념&#34;&gt;2. Symbol과 Symbolrate (기초 개념)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Symbol: 한 번에 전송하는 &amp;ldquo;신호 단위&amp;rdquo;, 꼭 1비트일 필요 없음&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Symbolrate (R&lt;sub&gt;s&lt;/sub&gt;)	: 초당 전송되는 심볼 수 (Symbole/s)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Bitrate (R&lt;sub&gt;b&lt;/sub&gt;): 초당 전송되는 비트 수 (bit/s) = Symbolrate × (bit/심볼 수)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;예: QPSK는 1개 심볼로 2비트를 전송하므로 R&lt;sub&gt;b&lt;/sub&gt; = 2 × R&lt;sub&gt;s&lt;/sub&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;3-modulationsarten-변조-방식-종류&#34;&gt;3. Modulationsarten (변조 방식 종류)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;BPSK&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Vorlesung 3: Abgrenzung Festnetz/Cloud zum Mobilnetz</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/mcc/mcc3/</link>
+      <pubDate>Tue, 15 Apr 2025 18:22:16 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/mcc/mcc3/</guid>
+      <description>&lt;h3 id=&#34;-messgeräte&#34;&gt;🔧 Messgeräte&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Spektrumanalysator: Zeigt Frequenzspektrum eines Signals.&lt;/li&gt;
+&lt;li&gt;Oszilloskop: Zeigt Zeitverlauf eines Signals.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-messgrößen--vergleich-zu-audio&#34;&gt;📈 Messgrößen &amp;amp; Vergleich zu Audio&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Funktechnik&lt;/th&gt;
+          &lt;th&gt;Audiotechnik&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Leistung&lt;/td&gt;
+          &lt;td&gt;Lautstärke&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Mittenfrequenz&lt;/td&gt;
+          &lt;td&gt;Tonhöhe&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;-leistungsmessung&#34;&gt;⚡ Leistungsmessung&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Einheit: Watt (W), oft Milliwatt (mW)&lt;/li&gt;
+&lt;li&gt;1 W = 1000 mW&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-dynamik--logarithmische-darstellung&#34;&gt;📊 Dynamik &amp;amp; logarithmische Darstellung&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Große Unterschiede: z.B. 20W ↔ 0.00000000003mW → Verhältnis = 666.7 Billionen&lt;/li&gt;
+&lt;li&gt;Lösung: &lt;strong&gt;logarithmischer Maßstab&lt;/strong&gt; mit &lt;strong&gt;Bel&lt;/strong&gt; und &lt;strong&gt;Dezibel (dB)&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;1 Bel = 10 dB&lt;/li&gt;
+&lt;li&gt;Beispiel: 20W = &lt;strong&gt;43 dBm&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-berechnung-dbm&#34;&gt;🔢 Berechnung: dBm&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Formel:&lt;/li&gt;
+&lt;/ul&gt;
+$$P_\mathrm{dBm} = 10 \cdot \log_{10} \left( \frac{P_\mathrm{mW}}{1~\mathrm{mW}} \right)$$&lt;ul&gt;
+&lt;li&gt;Umrechnung dBW → dBm:&lt;/li&gt;
+&lt;/ul&gt;
+$$P_\mathrm{dBm} = P_\mathrm{dBW} + 30$$&lt;hr&gt;
+&lt;h3 id=&#34;-vorsicht-bei-db-rechnungen&#34;&gt;⚠️ Vorsicht bei dB-Rechnungen&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;dB, dBm, dBW sind &lt;strong&gt;Pseudoeinheiten&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Beispiel:&lt;/li&gt;
+&lt;li&gt;13 dBW + 30 = 43 dBm → mathematisch korrekt, aber nur im Kontext&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-oszilloskop&#34;&gt;📺 Oszilloskop&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Darstellung: &lt;strong&gt;Zeitbereich&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Zeigt z.B. Cosinusschwingung → Amplitude, Periodendauer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-spektrumanalyse&#34;&gt;🌈 Spektrumanalyse&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Frequenzbereich: Darstellung der Frequenzen &amp;amp; Leistungen&lt;/li&gt;
+&lt;li&gt;Gerät misst Leistung &lt;strong&gt;innerhalb der RBW&lt;/strong&gt; um eine Mittenfrequenz&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Wichtige Begriffe:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Projekt</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/projekt/projekt/</link>
+      <pubDate>Mon, 14 Apr 2025 18:57:06 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/projekt/projekt/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://jayIsThere.github.io/zusammenfassung/files/Beschreibung.pdf&#34;&gt;Hier ist die Projektbeschreibung (PDF)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://jayIsThere.github.io/zusammenfassung/files/Beschreibung.pdf&#34; download&gt;📥 PDF herunterladen&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Prompt Engineering for Feedback - Literature</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/prompt/literature/</link>
+      <pubDate>Mon, 14 Apr 2025 18:57:06 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/prompt/literature/</guid>
+      <description>&lt;ol&gt;
+&lt;li&gt;Alnajashi, A. (2024). Investigating the accuracy of large language models ’chatgpt-4’ in grading students’ writing according to a specific rubric.&lt;/li&gt;
+&lt;li&gt;Hackl, V., M¨ uller, A. E., Granitzer, M., and Sailer, M. (2023). Is gpt-4 a reliable rater? evaluating consistency in gpt-4’s text ratings. Frontiers in Education, 8.&lt;/li&gt;
+&lt;li&gt;Jacobsen, L. and Weber, K. (2023). The promises and pitfalls of chatgpt as a feedback provider in higher education: An exploratory study of prompt engineering and the quality of ai-driven feedback.&lt;/li&gt;
+&lt;li&gt;Jukiewicz, M. (2024). The future of grading programming assignments in education: The role of chatgpt in automating the assessment and feedback process. Thinking Skills and Creativity, 52:101522.&lt;/li&gt;
+&lt;li&gt;Lee, G.-G., Latif, E., Wu, X., Liu, N., and Zhai, X. (2024a). Applying large language models and chain-of-thought for automatic scoring. Computers and Education: Artificial Intelligence, 6:100213.&lt;/li&gt;
+&lt;li&gt;Meyer, J., Jansen, T., Schiller, R., Liebenow, L. W., Steinbach, M., Horbach, A., and Fleckenstein, J. (2024). Using llms to bring evidence-based feedback into the classroom: Ai-generated feedback increases secondary students’ text revision, motivation, and positive emotions. Computers and Education: Artificial Intelligence,
+6:100199.&lt;/li&gt;
+&lt;li&gt;Stahl, M., Biermann, L., Nehring, A., and Wachsmuth, H.(2024). Exploring llm prompting strategies for joint essay scoring and feedback generation. Leibniz University Hannover.&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    <item>
+      <title>Prompt Engineering for Feedback - Nützliches</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/prompt/info/</link>
+      <pubDate>Mon, 14 Apr 2025 18:57:06 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/prompt/info/</guid>
+      <description>&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/prompt/oneshot.png&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/prompt/oneshot_cot.png&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/prompt/reference_prompt.png&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/prompt/reference_prompt1.png&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/prompt/reference_prompt2.png&#34; style=&#34;display: block; margin: auto;&#34;&gt;</description>
+    </item>
+    <item>
+      <title>Prompt Engineering for Feedback - Schema</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/prompt/schema/</link>
+      <pubDate>Mon, 14 Apr 2025 18:57:06 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/prompt/schema/</guid>
+      <description>&lt;ol&gt;
+&lt;li&gt;ChatGPT를 활용한 프로그래밍 과제 평가
+ChatGPT는 정확하고 일관된 평가자가 될 수 있음.
+교사 평가와 ChatGPT 평가 간 상관계수 r ≈ 0.81로 상당히 높은 일치도.
+단, ChatGPT가 더 엄격하게 점수를 부여하는 경향 있음.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;프롬프트 설계의 핵심 전략:
+AI가 직접 자체 정답을 생성하고, 이를 학생 코드와 비교해 평가하도록 설계함.
+결과는 **정답/부분 정답/오답 (1, 0.5, 0점)**으로 나뉨.
+**반복 평가(15회)**를 통해 ChatGPT의 일관성을 확인했고, 7회 이상 평가 후 평균값 또는 최빈값 사용 시 신뢰도 향상.
+장점: 빠른 평가, 피드백 생성, 편향 없음, 표준 준수 강조.
+단점: 환각 가능성, 비용, 재현 불가성, 교사 개입 필요성.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Prompt Engineering for Feedback - Structure</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/prompt/structure/</link>
+      <pubDate>Mon, 14 Apr 2025 18:57:06 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/prompt/structure/</guid>
+      <description>&lt;ol&gt;
+&lt;li&gt;피드백 자동화 과정&lt;/li&gt;
+&lt;/ol&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/data_collection_structure.png&#34; style=&#34;display: block; margin: auto;&#34;&gt;</description>
+    </item>
+    <item>
+      <title>04-14-2025</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/dev_note/2025-04-14/</link>
+      <pubDate>Mon, 14 Apr 2025 18:33:36 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/dev_note/2025-04-14/</guid>
+      <description>&lt;h2 id=&#34;java-spring-boot&#34;&gt;Java Spring Boot&lt;/h2&gt;
+&lt;h3 id=&#34;april-13-2025&#34;&gt;April 13, 2025&lt;/h3&gt;
+&lt;p&gt;Java Spring Boot (Login-function)&lt;/p&gt;
+&lt;p&gt;What I worked on:
+Tried to center a div. That’s it. Sounds simple, right? Nope.&lt;/p&gt;
+&lt;p&gt;What went wrong:
+I tried margin: auto, then flexbox, then grid. Somehow, it still didn’t look right on mobile.&lt;/p&gt;
+&lt;p&gt;What I learned:
+Viewport units can mess with your layout if you&amp;rsquo;re not careful. Also: never trust a div.&lt;/p&gt;
+&lt;p&gt;Next Steps:
+Look into responsive design best practices. Maybe try Tailwind CSS.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Vorlesung 2: Ethics and Laws, Network Access Layer</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/nsa/nsa1/</link>
+      <pubDate>Mon, 14 Apr 2025 18:32:03 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/nsa/nsa1/</guid>
+      <description>&lt;h3 id=&#34;-ethics-and-laws--it-security-and-responsibility&#34;&gt;⚖️ Ethics and Laws – IT Security and Responsibility&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;🎯 Lecture Objectives&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Understand the &lt;strong&gt;risks in a connected world&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Learn the &lt;strong&gt;goals of IT security&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Explore &lt;strong&gt;types of cyberattacks&lt;/strong&gt; and related &lt;strong&gt;legal aspects&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Reflect on &lt;strong&gt;ethical issues&lt;/strong&gt; in data handling and protection&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-key-it-security-concepts&#34;&gt;🛡️ Key IT Security Concepts&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Concept&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Description&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;IT Security&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Protection of digital systems and data against threats like hacking, malware&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Information Security&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Broader term – includes physical and analog data protection as well&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Cybersecurity&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Focused on protecting information in internet-connected environments&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-protection-goals-cia-triad&#34;&gt;🎯 Protection Goals (CIA Triad)&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Goal&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Meaning&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Confidentiality&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Only authorized individuals can access the information&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Integrity&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Data must remain accurate and unaltered&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Availability&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Systems and data must be accessible when needed&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;📌 &lt;strong&gt;Example&lt;/strong&gt;:
+If a hospital’s patient data system is hacked and made unavailable during an emergency, it violates the &lt;strong&gt;availability&lt;/strong&gt; principle.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Vorlesung 3, 4: Android-Entwicklung</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/mad/mad2/</link>
+      <pubDate>Thu, 10 Apr 2025 18:30:37 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/mad/mad2/</guid>
+      <description>&lt;h3 id=&#34;-konzeptentwicklung--von-der-idee-zur-app&#34;&gt;🧠 Konzeptentwicklung – Von der Idee zur App&lt;/h3&gt;
+&lt;h4 id=&#34;-zweck--ziele&#34;&gt;🎯 Zweck &amp;amp; Ziele&lt;/h4&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Aspekt&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Beschreibung&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Ziel der App&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Was soll die App leisten?&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Beispiel&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Eine Fitness-App, die Nutzern hilft, ihre täglichen Schritte zu tracken.&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;-zielgruppe&#34;&gt;👥 Zielgruppe&lt;/h4&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Frage&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Erklärung&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Wer nutzt die App?&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Demografische Merkmale, technisches Niveau, Lebensstil usw.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Beispiel&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Berufspendler, die ihre Fitness im Alltag verbessern wollen&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;</description>
+    </item>
+    <item>
+      <title>KBE Übung 1</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/kbe/kbe_uebung1/</link>
+      <pubDate>Thu, 10 Apr 2025 18:08:29 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/kbe/kbe_uebung1/</guid>
+      <description>&lt;h2 id=&#34;übungsblatt-1&#34;&gt;Übungsblatt 1&lt;/h2&gt;
+&lt;h3 id=&#34;aufgabe-1-grundstrategie-des-software-engineerings&#34;&gt;Aufgabe 1. Grundstrategie des Software-Engineerings&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Ziel der Wiederverwendung&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Wiederverwendung vorhandener Software, statt neue Software von Grund auf zu entwickeln.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;aufgabe-2-aspekte-die-den-ansatz-getrieben-haben&#34;&gt;Aufgabe 2. Aspekte, die den Ansatz getrieben haben:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Geringere Produktions- und Wartungskosten&lt;/li&gt;
+&lt;li&gt;Schnellere Auslieferung von Systemen&lt;/li&gt;
+&lt;li&gt;Höhere Softwarequalität&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;aufgabe-3-beispiele-für-etablierte-wiederverwendbare-software&#34;&gt;Aufgabe 3. Beispiele für etablierte wiederverwendbare Software:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Open Source Code (z. B. Apache Commons)&lt;/li&gt;
+&lt;li&gt;ERP-Systeme (z. B. SAP)&lt;/li&gt;
+&lt;li&gt;Komponentenbibliotheken&lt;/li&gt;
+&lt;li&gt;Webservices (z. B. PayPal)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;aufgabe-4-größenordnungen-von-softwareeinheiten-von-groß-nach-klein&#34;&gt;Aufgabe 4. Größenordnungen von Softwareeinheiten (von groß nach klein):&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Systeme&lt;/li&gt;
+&lt;li&gt;Anwendungen&lt;/li&gt;
+&lt;li&gt;Softwareproduktlinien&lt;/li&gt;
+&lt;li&gt;Komponenten&lt;/li&gt;
+&lt;li&gt;Objekte und Funktionen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;aufgabe-5-beispiele-für-jede-größenordnung&#34;&gt;Aufgabe 5. Beispiele für jede Größenordnung:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;System&lt;/strong&gt;: Ein ERP-System, z. B. SAP&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Anwendung&lt;/strong&gt;: Ein CRM-System&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Produktlinie&lt;/strong&gt;: Softwarelinie für medizinische Geräte&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Komponente&lt;/strong&gt;: Zahlungsmodul&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Funktion/Objekt&lt;/strong&gt;: Logging-Klasse aus Apache Commons&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;aufgabe-6-vorteile-der-wiederverwendung&#34;&gt;Aufgabe 6. Vorteile der Wiederverwendung:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Geringere Kosten&lt;/li&gt;
+&lt;li&gt;Höhere Zuverlässigkeit&lt;/li&gt;
+&lt;li&gt;Geringeres Entwicklungsrisiko&lt;/li&gt;
+&lt;li&gt;Schnellere Markteinführung&lt;/li&gt;
+&lt;li&gt;Effektiver Einsatz von Experten&lt;/li&gt;
+&lt;li&gt;Standardkonformität&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;aufgabe-6-probleme-der-wiederverwendung&#34;&gt;Aufgabe 6. Probleme der Wiederverwendung:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Höhere Wartungskosten&lt;/li&gt;
+&lt;li&gt;Mangel an Werkzeugunterstützung&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Not-invented-here&amp;rdquo;-Syndrom&lt;/li&gt;
+&lt;li&gt;Hoher Aufwand für Bibliotheksverwaltung&lt;/li&gt;
+&lt;li&gt;Schwierige Suche und Anpassung von Komponenten&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;aufgabe-7-planung-der-wiederverwendung&#34;&gt;Aufgabe 7. Planung der Wiederverwendung&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Vier Schlüsselfaktoren:&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Vorlesung 2: Wiederverwendung von Software 2</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/kbe/kbe2/</link>
+      <pubDate>Thu, 10 Apr 2025 18:04:15 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/kbe/kbe2/</guid>
+      <description>&lt;h3 id=&#34;-wiederverwendungstechniken-nach-sommerville&#34;&gt;🔁 Wiederverwendungstechniken (nach Sommerville)&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Technik&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Beschreibung &amp;amp; Beispiel&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Frameworks&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Architektur für verwandte Anwendungen. z. B. Spring MVC mit MVC-Muster&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Inversion of Control&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Steuerung durch Framework, z. B. Callbacks&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Entwurfsmuster&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Lösung wiederkehrender Probleme – z. B. Observer, Strategy&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Architekturmuster&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Struktur ganzer Systeme – z. B. Microservices&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;ERP-Systeme&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Konfigurierbare Geschäftssysteme – z. B. SAP&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Komponentenbasiert&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Austauschbare Module, klare Schnittstellen&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Modellgetrieben&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Generierung aus Modellen (plattformunabhängig)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Serviceorientiert&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Verteilte Webservices – z. B. REST, SOAP&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Softwareproduktlinien&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Gemeinsame Codebasis mit variabler Konfiguration&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-framework-klassifizierung-fayad--schmidt&#34;&gt;🧱 Framework-Klassifizierung (Fayad &amp;amp; Schmidt)&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Typ&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Beispiele&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Systeminfrastruktur&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;GUI, Compiler, Kommunikationsframeworks&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Middleware-Integration&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Jakarta EE, .NET&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Unternehmensanwendungen&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Branchenspezifisch: Telekom, Finanzen etc.&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-wiederverwendung-von-anwendungssystemen&#34;&gt;🧩 Wiederverwendung von Anwendungssystemen&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Typ&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Beschreibung&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Softwareproduktlinien&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Gemeinsamer Kern mit variablen, anpassbaren Komponenten&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Konfigurierbare Systeme&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Systeme, die über Parameter oder Module an spezifische Bedürfnisse angepasst werden können (z. B. ERP)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Integrierte Systeme&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Kombination verschiedener Anwendungen über Schnittstellen (z. B. APIs)&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-vorteile---herausforderungen&#34;&gt;✅ Vorteile &amp;amp; ⚠️ Herausforderungen&lt;/h3&gt;
+&lt;p&gt;✅ &lt;strong&gt;Vorteile&lt;/strong&gt;:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MAD Projekt</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/mad_projekt/mad_projekt/</link>
+      <pubDate>Wed, 09 Apr 2025 18:30:37 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/mad_projekt/mad_projekt/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://jayIsThere.github.io/zusammenfassung/files/MAD Projekt Plan.pdf&#34; download&gt;📥 PDF herunterladen&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Broke n Go&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Schlüsselpartner&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;OpenStreetMap (kostenlose Karten-API)&lt;br&gt;
+Offene Datenportale (z. B. Wetterdienste, lokale Tourismusinformationen)&lt;br&gt;
+Verzeichnisse lokaler Fahrradverleihe (ggf. via Web-Crawling)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Verfügbare Tech:&lt;br&gt;
+&lt;a href=&#34;https://www.openstreetmap.org/&#34;&gt;OpenStreetMap&lt;/a&gt;(Karte), &lt;a href=&#34;https://openweathermap.org/&#34;&gt;OpenWeatherMap&lt;/a&gt;(Wetter), &lt;a href=&#34;https://github.com/ubahnverleih/WoBike&#34;&gt;WoBike&lt;/a&gt;(Fahrradverleihe)&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Leistungsversprechen&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Empfehlungen für günstige Routen &amp;amp; Fahrradtouren&lt;br&gt;
+Einfaches Teilen lokaler Infos (z. B. via Text-Pinnwand)&lt;br&gt;
+Vorstellung günstiger Restaurants und Verkehrsmittel&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Verfügbare Tech:&lt;br&gt;
+OpenStreetMap(Karten-Visualisierung und Routenempfehlung), &lt;a href=&#34;https://supabase.com/&#34;&gt;Supabase&lt;/a&gt;(Realtime Text-Pinnwand)&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Kundenbeziehung&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Einfache Community-Funktionen wie ein anonymes oder nickname-basiertes Forum&lt;br&gt;
+Feedback über ein Formular oder via E-Mail&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Vorlesung 2: Konzeptionierung von Apps</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/mad/mad1/</link>
+      <pubDate>Wed, 09 Apr 2025 18:30:37 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/mad/mad1/</guid>
+      <description>&lt;h3 id=&#34;-konzeptentwicklung--von-der-idee-zur-app&#34;&gt;🧠 Konzeptentwicklung – Von der Idee zur App&lt;/h3&gt;
+&lt;h4 id=&#34;-zweck--ziele&#34;&gt;🎯 Zweck &amp;amp; Ziele&lt;/h4&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Aspekt&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Beschreibung&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Ziel der App&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Was soll die App leisten?&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Beispiel&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Eine Fitness-App, die Nutzern hilft, ihre täglichen Schritte zu tracken.&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;-zielgruppe&#34;&gt;👥 Zielgruppe&lt;/h4&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Frage&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Erklärung&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Wer nutzt die App?&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Demografische Merkmale, technisches Niveau, Lebensstil usw.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Beispiel&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Berufspendler, die ihre Fitness im Alltag verbessern wollen&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;-mehrwert--usp&#34;&gt;🌟 Mehrwert / USP&lt;/h4&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Frage&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Erklärung&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Was unterscheidet die App?&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Wodurch hebt sie sich von bestehenden Lösungen ab?&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Beispiel&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Individuelle Fitnesspläne basierend auf täglichem Bewegungslevel&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;-marktanalyse&#34;&gt;📈 Marktanalyse&lt;/h4&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Thema&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Beschreibung&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Konkurrenzanalyse&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Welche Stärken/Schwächen haben z. B. Fitbit, Apple Health, Google Fit?&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Alleinstellungsmerkmal&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Definition von Funktionen, die die App einzigartig machen&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;-feature-definition--mvp&#34;&gt;🚀 Feature Definition – MVP&lt;/h4&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Begriff&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Bedeutung&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Minimum Viable Product&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Fokus auf die &lt;strong&gt;wichtigsten Funktionen&lt;/strong&gt; zum Start&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Beispiel&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;Schrittzähler&lt;/strong&gt; + einfache Anzeige des Fortschritts&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;-technische-rahmenbedingungen&#34;&gt;⚙️ Technische Rahmenbedingungen&lt;/h4&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Aspekt&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Beispiel&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Konkurrenzanalyse&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;iOS &amp;amp; Android&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Alleinstellungsmerkmal&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Swift (iOS), Kotlin (Android), evtl. Flutter&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;-app-design--uiux&#34;&gt;🎨 App-Design – UI/UX&lt;/h4&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Was wird gestaltet?&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Beispiel&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Wireframes&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Layout der Screens&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Navigation&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Intuitive Benutzerführung&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;UI-Konzepte&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Klare Buttons, gut strukturierte Navigation&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-menschzentrierte-gestaltung-iso-9241-210&#34;&gt;👤 Menschzentrierte Gestaltung (ISO 9241-210)&lt;/h3&gt;
+&lt;h4 id=&#34;-nutzungskontext-analysieren-pact&#34;&gt;🔍 Nutzungskontext analysieren (PACT)&lt;/h4&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Dimension&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Fragen&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;People&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Wer nutzt die App?&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Activities&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Was wollen Nutzer mit der App machen?&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Context&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Wann und wo wird die App genutzt?&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Technology&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Welche Geräte oder Plattformen werden verwendet?&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;📌 &lt;strong&gt;Beispiel&lt;/strong&gt;: App soll auch offline funktionieren, da nicht immer Internetzugang besteht.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MCC Übung 1</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/mcc/mcc_uebung1/</link>
+      <pubDate>Tue, 08 Apr 2025 18:23:41 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/mcc/mcc_uebung1/</guid>
+      <description>&lt;h4 id=&#34;11-use-case-video-streaming-zu-hause&#34;&gt;1.1 Use Case: Video-Streaming zu Hause&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Szenario:&lt;/strong&gt;&lt;br&gt;
+Sie streamen ein Video zu Hause, Audio über Bluetooth-Box, Bild auf dem Tablet.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;a) Topologie-Skizze:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Server (Provider X)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;→ &lt;strong&gt;Internet&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;→ &lt;strong&gt;Router&lt;/strong&gt; (ortsgebunden, Heimnetzwerk)&lt;/li&gt;
+&lt;li&gt;→ &lt;strong&gt;Tablet&lt;/strong&gt; (mobil, zeigt das Video über WLAN)&lt;/li&gt;
+&lt;li&gt;→ &lt;strong&gt;Bluetooth Box&lt;/strong&gt; (mobil, empfängt Audio)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;b) Verbindungsarten:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Festnetz:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Verbindung Server ↔ Internet ↔ Router&lt;/li&gt;
+&lt;li&gt;WLAN (als Heimnetzwerk-Verbindung)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Funk:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bluetooth zwischen Tablet ↔ Box&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;c) Mobile vs. ortsfeste Knoten:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Mobil:&lt;/strong&gt; Tablet, Bluetooth Box&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ortsfest:&lt;/strong&gt; Server, Router&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;d) Vermutete Funktechnologien:&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MCC Übung 1</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/mcc_neu/mcc_uebung1/</link>
+      <pubDate>Tue, 08 Apr 2025 18:23:41 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/mcc_neu/mcc_uebung1/</guid>
+      <description>&lt;h4 id=&#34;11-use-case-video-streaming-zu-hause&#34;&gt;1.1 Use Case: Video-Streaming zu Hause&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Szenario:&lt;/strong&gt;&lt;br&gt;
+Sie streamen ein Video zu Hause, Audio über Bluetooth-Box, Bild auf dem Tablet.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;a) Topologie-Skizze:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Server (Provider X)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;→ &lt;strong&gt;Internet&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;→ &lt;strong&gt;Router&lt;/strong&gt; (ortsgebunden, Heimnetzwerk)&lt;/li&gt;
+&lt;li&gt;→ &lt;strong&gt;Tablet&lt;/strong&gt; (mobil, zeigt das Video über WLAN)&lt;/li&gt;
+&lt;li&gt;→ &lt;strong&gt;Bluetooth Box&lt;/strong&gt; (mobil, empfängt Audio)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;b) Verbindungsarten:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Festnetz:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Verbindung Server ↔ Internet ↔ Router&lt;/li&gt;
+&lt;li&gt;WLAN (als Heimnetzwerk-Verbindung)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Funk:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bluetooth zwischen Tablet ↔ Box&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;c) Mobile vs. ortsfeste Knoten:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Mobil:&lt;/strong&gt; Tablet, Bluetooth Box&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ortsfest:&lt;/strong&gt; Server, Router&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;d) Vermutete Funktechnologien:&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Vorlesung 2: Was ist Bit? &amp; Übung</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/mcc/mcc2/</link>
+      <pubDate>Tue, 08 Apr 2025 18:22:14 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/mcc/mcc2/</guid>
+      <description>&lt;h3 id=&#34;informationen-und-informationsgehalt&#34;&gt;Informationen und Informationsgehalt&lt;/h3&gt;
+&lt;p&gt;Der &lt;strong&gt;Informationsgehalt&lt;/strong&gt; beschreibt, wie viel „Überraschung“ oder „Neuigkeit“ in einem Ereignis steckt – je unwahrscheinlicher ein Ereignis, desto mehr Information trägt es.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Formel zur Berechnung:&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I(p) = −log₂(p)&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;p&lt;/strong&gt; ist die Wahrscheinlichkeit des Ereignisses&lt;/li&gt;
+&lt;li&gt;Ein &lt;strong&gt;sicheres Ereignis&lt;/strong&gt; (p = 1) hat &lt;strong&gt;keinen Informationsgehalt&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Ein &lt;strong&gt;zufälliges Ereignis&lt;/strong&gt; (p = 0,5) liefert &lt;strong&gt;1 Bit Information&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Ein &lt;strong&gt;seltenes Ereignis&lt;/strong&gt; (z.B. Lottogewinn mit p = 0,0000001) liefert &lt;strong&gt;~26,57 Bit&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;beispiel-1-münzwurf&#34;&gt;Beispiel 1: Münzwurf&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Wahrscheinlichkeit: &lt;strong&gt;p = 0,5&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Informationsgehalt:
+&lt;blockquote&gt;
+&lt;p&gt;I(0,5) = −log₂(0,5) = &lt;strong&gt;1 Bit&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Vorlesung 1: Wiederverwendung von Software 1</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/kbe/kbe1/</link>
+      <pubDate>Thu, 03 Apr 2025 17:19:30 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/kbe/kbe1/</guid>
+      <description>&lt;h3 id=&#34;-einführung-in-die-softwarewiederverwendung&#34;&gt;🧩 Einführung in die Softwarewiederverwendung&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;📌 Definition:&lt;/strong&gt;
+Wiederverwendung bestehender Softwarekomponenten (z. B. Code, Module, Systeme)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;🎯 Motivation:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Geringere Kosten&lt;/li&gt;
+&lt;li&gt;Höhere Qualität&lt;/li&gt;
+&lt;li&gt;Schnellere Markteinführung&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;📈 Relevanz:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Wichtiger seit 2000&lt;/li&gt;
+&lt;li&gt;Gründe: steigende Softwarekomplexität, höherer Kostendruck&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-skalierung-wiederverwendbarer-softwareeinheiten&#34;&gt;🧱 Skalierung wiederverwendbarer Softwareeinheiten&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Ebene&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Beschreibung&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Systeme von Systemen&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Integration ganzer, autonomer Systeme&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Anwendungssysteme&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Konfigurierbare Standardsoftware&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Anwendungsfamilien&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Gemeinsame Architektur mit Anpassungsmöglichkeiten&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Komponenten&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Module mittlerer Granularität&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Objekte &amp;amp; Funktionen&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Kleinste Einheiten, z. B. in Bibliotheken enthalten&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-vorteile-der-wiederverwendung&#34;&gt;✅ Vorteile der Wiederverwendung&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;💰 &lt;strong&gt;Kosten- und Zeitersparnis&lt;/strong&gt;
+→ Weniger Entwicklungs- und Testaufwand&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Vorlesung 1: Einführung in Mobile and Cloud Computing</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/mcc/mcc1/</link>
+      <pubDate>Tue, 01 Apr 2025 18:22:11 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/mcc/mcc1/</guid>
+      <description>&lt;h3 id=&#34;-abgrenzung-festnetz--mobilnetz--cloud&#34;&gt;🌐 Abgrenzung Festnetz / Mobilnetz / Cloud&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Netzwerkart&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Merkmale&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Festnetz&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;- Geräte sind &lt;strong&gt;ortsgebunden&lt;/strong&gt; und &lt;strong&gt;verkabelt&lt;/strong&gt; (z. B. Desktop-PC, Drucker)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;- Stabil und hohe Bandbreite, aber nicht mobil&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Mobilnetz&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;- Geräte sind &lt;strong&gt;mobil&lt;/strong&gt;, Verbindung über &lt;strong&gt;Funk&lt;/strong&gt; (z. B. LTE, WLAN)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;- Kombiniert feste und mobile Komponenten (z. B. Basisstation + Smartphone)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Cloud&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;- Nutzt meist Festnetz, bietet aber &lt;strong&gt;zusätzliche Dienste&lt;/strong&gt;:&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;• Rechenleistung (z. B. AWS EC2)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;• Speicherung (z. B. Google Drive)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;• Virtualisierung (z. B. virtuelle Maschinen)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;- &lt;strong&gt;Cloud = mehr als nur Transportnetz&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-funkverbindung--frequenz&#34;&gt;📡 Funkverbindung &amp;amp; Frequenz&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Konzept&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Beschreibung&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Frequenz&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;z. B. &lt;strong&gt;WLAN bei 2412 MHz&lt;/strong&gt;, definiert die Trägerfrequenz des Signals&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Bandbreite&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;z. B. &lt;strong&gt;20 MHz&lt;/strong&gt;, bestimmt die Übertragungsrate (je breiter, desto schneller)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Sender/Empfänger&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Transmitter &amp;amp; Receiver – meist mit &lt;strong&gt;Antennen&lt;/strong&gt; ausgestattet&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Reichweite&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Abhängig von Leistung, Hindernissen, Frequenz&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Funkzellen&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Einteilung des Versorgungsgebiets – Wechsel bei Bewegung → &lt;strong&gt;Handover&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;📌 &lt;strong&gt;Beispiel&lt;/strong&gt;: Dein Handy bleibt im Zug mit dem Internet verbunden, weil es automatisch die Funkzellen wechselt.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SLA Probeklausur</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/sla/sla_klausur/</link>
+      <pubDate>Mon, 10 Mar 2025 18:35:42 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/sla/sla_klausur/</guid>
+      <description>&lt;h2 id=&#34;probeklausur&#34;&gt;Probeklausur&lt;/h2&gt;
+&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function() { document.addEventListenr(&#39;contextmenu&#39;, function(e) { e.preventDefault(); }); }); 
+&lt;/script&gt;
+&lt;h4 id=&#34;probeklausur-1&#34;&gt;Probeklausur 1&lt;/h4&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/LineareAlgebra_reko_page-0001.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/LineareAlgebra_reko_page-0002.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt; 
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/LineareAlgebra_reko_page-0003.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt; 
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/LineareAlgebra_reko_page-0004.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt; 
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/LineareAlgebra_reko_page-0005.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt; 
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/LineareAlgebra_reko_page-0006.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt; 
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/LineareAlgebra_reko_page-0007.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt; 
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/LineareAlgebra_reko_page-0008.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt; 
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/LineareAlgebra_reko_page-0009.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;h4 id=&#34;probeklausur-2&#34;&gt;Probeklausur 2&lt;/h4&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Statistik_Reko_page-0001.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Statistik_Reko_page-0002.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Statistik_Reko_page-0003.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Statistik_Reko_page-0004.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Statistik_Reko_page-0005.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Statistik_Reko_page-0006.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Statistik_Reko_page-0007.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Statistik_Reko_page-0008.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;</description>
+    </item>
+    <item>
+      <title>SLA Probeklausur Lösung</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/sla/sla_klausur_loesung/</link>
+      <pubDate>Mon, 10 Mar 2025 18:35:42 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/sla/sla_klausur_loesung/</guid>
+      <description>&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function() { document.addEventListenr(&#39;contextmenu&#39;, function(e) { e.preventDefault(); }); }); 
+&lt;/script&gt;
+&lt;h2 id=&#34;probeklausur&#34;&gt;Probeklausur&lt;/h2&gt;
+&lt;h4 id=&#34;probeklausur-1&#34;&gt;Probeklausur 1&lt;/h4&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Probeklausur_LineareAlgebra_Loesung_page-0001.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Probeklausur_LineareAlgebra_Loesung_page-0002.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt; 
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Probeklausur_LineareAlgebra_Loesung_page-0003.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt; 
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Probeklausur_LineareAlgebra_Loesung_page-0004.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt; 
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Probeklausur_LineareAlgebra_Loesung_page-0005.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt; 
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Probeklausur_LineareAlgebra_Loesung_page-0006.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt; 
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Probeklausur_LineareAlgebra_Loesung_page-0007.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt; 
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Probeklausur_LineareAlgebra_Loesung_page-0008.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt; 
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Probeklausur_LineareAlgebra_Loesung_page-0009.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;h4 id=&#34;probeklausur-2&#34;&gt;Probeklausur 2&lt;/h4&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Probeklausur_Statistik_Loesung_page-0001.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Probeklausur_Statistik_Loesung_page-0002.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Probeklausur_Statistik_Loesung_page-0003.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Probeklausur_Statistik_Loesung_page-0004.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Probeklausur_Statistik_Loesung_page-0005.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Probeklausur_Statistik_Loesung_page-0006.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Probeklausur_Statistik_Loesung_page-0007.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Probeklausur_Statistik_Loesung_page-0008.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;</description>
+    </item>
+    <item>
+      <title>Lineare Algebra Bonusaufgabe 2</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/sla/sla_la_bonus2/</link>
+      <pubDate>Tue, 04 Mar 2025 18:36:16 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/sla/sla_la_bonus2/</guid>
+      <description>&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 2_1.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 2_2.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 2_3.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 2_4.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 2_5.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 2_6.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 2_7.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 2_8.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 2_9.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 2_10.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;</description>
+    </item>
+    <item>
+      <title>Lineare Algebra Bonusaufgabe 1</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/sla/sla_la_bonus1/</link>
+      <pubDate>Mon, 03 Mar 2025 18:36:16 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/sla/sla_la_bonus1/</guid>
+      <description>&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 1_1.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 1_2.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 1_3.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 1_4.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 1_5.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 1_6.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 1_7.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 1_8.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 1_9.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 1_10.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 1_11.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 1_12.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 1_13.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 1_14.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 1_15.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;</description>
+    </item>
+    <item>
+      <title>Lineare Algebra Übung</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/sla/sla_la_uebung/</link>
+      <pubDate>Sun, 02 Mar 2025 18:34:00 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/sla/sla_la_uebung/</guid>
+      <description>&lt;h3 id=&#34;übungsblatt-lineare-algebra&#34;&gt;Übungsblatt (Lineare Algebra)&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;übungsblatt-5&#34;&gt;Übungsblatt 5&lt;/h4&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/uebungsblatt1-1.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/uebungsblatt1-2.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/uebungsblatt1-3.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/uebungsblatt1-4.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;h4 id=&#34;übungsblatt-6&#34;&gt;Übungsblatt 6&lt;/h4&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/uebung2_1.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/uebung2_2.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/uebung2_3.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/uebung2_4.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/uebung2_5.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/uebung2_6.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/uebung2_7.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/uebung2_8.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/uebung2_9.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/uebung2_10.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;h4 id=&#34;übungsblatt-7&#34;&gt;Übungsblatt 7&lt;/h4&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung3_1.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung3_2.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung3_3.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung3_4.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung3_5.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung3_6.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung3_7.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung3_8.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung3_9.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung3_10.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung3_11.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung3_12.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung3_13.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung3_14.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;h4 id=&#34;übungsblatt-8&#34;&gt;Übungsblatt 8&lt;/h4&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung4_1.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung4_2.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung4_3.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung4_4.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung4_5.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;  
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung4_6.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung4_7.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung4_8.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;h4 id=&#34;übungsblatt-9&#34;&gt;Übungsblatt 9&lt;/h4&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung5_1.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung5_2.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung5_3.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;    
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung5_4.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung5_5.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung5_6.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung5_7.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung5_8.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung5_9.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;    
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung5_10.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung5_11.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;h4 id=&#34;übungsblatt-10&#34;&gt;Übungsblatt 10&lt;/h4&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung6_1.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung6_2.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung6_3.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;    
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung6_4.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung6_5.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung6_6.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung6_7.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung6_8.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;h4 id=&#34;übungsblatt-11&#34;&gt;Übungsblatt 11&lt;/h4&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung7_1.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung7_2.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung7_3.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;    
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung7_4.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung7_5.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung7_6.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung7_7.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung7_8.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;</description>
+    </item>
+    <item>
+      <title>Vektor- und Matrix-Formeln</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/sla/sla_la/</link>
+      <pubDate>Sat, 01 Mar 2025 18:33:36 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/sla/sla_la/</guid>
+      <description>&lt;h3 id=&#34;vektor-formeln&#34;&gt;Vektor-Formeln&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Skalarprodukt (Dot Product)&lt;/strong&gt;&lt;br&gt;
+Das Skalarprodukt von zwei Vektoren \( \mathbf{u}, \mathbf{v} \in \mathbb{R}^n \) ist definiert als:
+$$
+   \mathbf{u} \cdot \mathbf{v} = \sum_{i=1}^{n} u_i v_i
+   $$&lt;/li&gt;
+&lt;/ol&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/skalarprodukt.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Vektorlänge (Norm)&lt;/strong&gt;&lt;br&gt;
+Die Länge (Norm) eines Vektors \( \mathbf{a} \in \mathbb{R}^n \) ist gegeben durch:
+$$
+   |\mathbf{a}| = \sqrt{a_1^2 + a_2^2 + \dots + a_n^2}
+   $$&lt;/li&gt;
+&lt;/ol&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/vektorlaenge.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Winkel zwischen Vektoren (Angle between Vectors)&lt;/strong&gt;&lt;br&gt;
+Der Winkel \( \theta \) zwischen den Vektoren \( \mathbf{a}, \mathbf{b} \in \mathbb{R}^n \) wird durch die folgende Formel berechnet:
+$$
+   \cos(\theta) = \frac{\mathbf{a} \cdot \mathbf{b}}{|\mathbf{a}| |\mathbf{b}|}
+   $$&lt;/li&gt;
+&lt;/ol&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/winkel.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Orthogonalität (Orthogonality)&lt;/strong&gt;&lt;br&gt;
+Zwei Vektoren \( \mathbf{a} \) und \( \mathbf{b} \) sind orthogonal (rechtwinklig), wenn:
+$$
+   \mathbf{a} \cdot \mathbf{b} = 0
+   $$&lt;/li&gt;
+&lt;/ol&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/orthogonal.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Kreuzprodukt (Cross Product) - In 3D&lt;/strong&gt;&lt;br&gt;
+Das Kreuzprodukt zweier Vektoren $$ \mathbf{a} = (a_1, a_2, a_3) $$ und $$ \mathbf{b} = (b_1, b_2, b_3)$$  ist:
+$$
+   \mathbf{a} \times \mathbf{b} = 
+   \begin{vmatrix}
+   \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\
+   a_1 &amp; a_2 &amp; a_3 \\
+   b_1 &amp; b_2 &amp; b_3
+   \end{vmatrix}
+   = \left( a_2 b_3 - a_3 b_2, \, a_3 b_1 - a_1 b_3, \, a_1 b_2 - a_2 b_1 \right)
+   $$&lt;/li&gt;
+&lt;/ol&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/kreuzprodukt.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;matrix-formeln&#34;&gt;Matrix-Formeln&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Matrixmultiplikation (Matrix Multiplication)&lt;/strong&gt;&lt;br&gt;
+Die Multiplikation zweier Matrizen \( A \in \mathbb{R}^{m \times n} \) und \( B \in \mathbb{R}^{n \times p} \) ergibt:
+$$
+   C = AB, \quad C_{ij} = \sum_{k=1}^{n} A_{ik} B_{kj}
+   $$&lt;/li&gt;
+&lt;/ol&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/matrix_multiplikation.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Transponierte Matrix (Transpose of a Matrix)&lt;/strong&gt;&lt;br&gt;
+Die Transponierte einer Matrix \( A = [a_{ij}] \) ist:
+&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Nuetzlich</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/sla/nuetzlich/</link>
+      <pubDate>Thu, 20 Feb 2025 18:57:06 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/sla/nuetzlich/</guid>
+      <description>&lt;h4 id=&#34;nützliche-website&#34;&gt;Nützliche Website&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Matrizenrechner&lt;/strong&gt;&lt;br&gt;
+&lt;a href=&#34;https://matrixcalc.org/&#34;&gt;https://matrixcalc.org/&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+  </channel>
+</rss>

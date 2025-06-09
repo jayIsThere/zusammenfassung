@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>SLA on Jays Zusammenfassung</title>
+    <link>https://jayIsThere.github.io/zusammenfassung/categories/sla/</link>
+    <description>Recent content in SLA on Jays Zusammenfassung</description>
+    <generator>Hugo -- 0.147.8</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Mar 2025 18:35:42 +0200</lastBuildDate>
+    <atom:link href="https://jayIsThere.github.io/zusammenfassung/categories/sla/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SLA Probeklausur</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/sla/sla_klausur/</link>
+      <pubDate>Mon, 10 Mar 2025 18:35:42 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/sla/sla_klausur/</guid>
+      <description>&lt;h2 id=&#34;probeklausur&#34;&gt;Probeklausur&lt;/h2&gt;
+&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function() { document.addEventListenr(&#39;contextmenu&#39;, function(e) { e.preventDefault(); }); }); 
+&lt;/script&gt;
+&lt;h4 id=&#34;probeklausur-1&#34;&gt;Probeklausur 1&lt;/h4&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/LineareAlgebra_reko_page-0001.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/LineareAlgebra_reko_page-0002.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt; 
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/LineareAlgebra_reko_page-0003.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt; 
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/LineareAlgebra_reko_page-0004.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt; 
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/LineareAlgebra_reko_page-0005.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt; 
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/LineareAlgebra_reko_page-0006.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt; 
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/LineareAlgebra_reko_page-0007.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt; 
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/LineareAlgebra_reko_page-0008.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt; 
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/LineareAlgebra_reko_page-0009.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;h4 id=&#34;probeklausur-2&#34;&gt;Probeklausur 2&lt;/h4&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Statistik_Reko_page-0001.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Statistik_Reko_page-0002.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Statistik_Reko_page-0003.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Statistik_Reko_page-0004.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Statistik_Reko_page-0005.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Statistik_Reko_page-0006.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Statistik_Reko_page-0007.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Statistik_Reko_page-0008.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;</description>
+    </item>
+    <item>
+      <title>SLA Probeklausur Lösung</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/sla/sla_klausur_loesung/</link>
+      <pubDate>Mon, 10 Mar 2025 18:35:42 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/sla/sla_klausur_loesung/</guid>
+      <description>&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function() { document.addEventListenr(&#39;contextmenu&#39;, function(e) { e.preventDefault(); }); }); 
+&lt;/script&gt;
+&lt;h2 id=&#34;probeklausur&#34;&gt;Probeklausur&lt;/h2&gt;
+&lt;h4 id=&#34;probeklausur-1&#34;&gt;Probeklausur 1&lt;/h4&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Probeklausur_LineareAlgebra_Loesung_page-0001.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Probeklausur_LineareAlgebra_Loesung_page-0002.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt; 
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Probeklausur_LineareAlgebra_Loesung_page-0003.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt; 
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Probeklausur_LineareAlgebra_Loesung_page-0004.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt; 
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Probeklausur_LineareAlgebra_Loesung_page-0005.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt; 
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Probeklausur_LineareAlgebra_Loesung_page-0006.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt; 
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Probeklausur_LineareAlgebra_Loesung_page-0007.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt; 
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Probeklausur_LineareAlgebra_Loesung_page-0008.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt; 
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Probeklausur_LineareAlgebra_Loesung_page-0009.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;h4 id=&#34;probeklausur-2&#34;&gt;Probeklausur 2&lt;/h4&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Probeklausur_Statistik_Loesung_page-0001.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Probeklausur_Statistik_Loesung_page-0002.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Probeklausur_Statistik_Loesung_page-0003.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Probeklausur_Statistik_Loesung_page-0004.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Probeklausur_Statistik_Loesung_page-0005.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Probeklausur_Statistik_Loesung_page-0006.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Probeklausur_Statistik_Loesung_page-0007.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Probeklausur_Statistik_Loesung_page-0008.jpg&#34; width=&#34;650px&#34; height=&#34;700px&#34; style=&#34;display: block; margin: auto;&#34;&gt;</description>
+    </item>
+    <item>
+      <title>Lineare Algebra Bonusaufgabe 2</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/sla/sla_la_bonus2/</link>
+      <pubDate>Tue, 04 Mar 2025 18:36:16 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/sla/sla_la_bonus2/</guid>
+      <description>&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 2_1.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 2_2.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 2_3.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 2_4.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 2_5.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 2_6.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 2_7.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 2_8.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 2_9.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 2_10.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;</description>
+    </item>
+    <item>
+      <title>Lineare Algebra Bonusaufgabe 1</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/sla/sla_la_bonus1/</link>
+      <pubDate>Mon, 03 Mar 2025 18:36:16 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/sla/sla_la_bonus1/</guid>
+      <description>&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 1_1.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 1_2.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 1_3.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 1_4.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 1_5.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 1_6.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 1_7.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 1_8.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 1_9.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 1_10.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 1_11.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 1_12.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 1_13.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 1_14.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Bonusaufgabe 1_15.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;</description>
+    </item>
+    <item>
+      <title>Lineare Algebra Übung</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/sla/sla_la_uebung/</link>
+      <pubDate>Sun, 02 Mar 2025 18:34:00 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/sla/sla_la_uebung/</guid>
+      <description>&lt;h3 id=&#34;übungsblatt-lineare-algebra&#34;&gt;Übungsblatt (Lineare Algebra)&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;übungsblatt-5&#34;&gt;Übungsblatt 5&lt;/h4&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/uebungsblatt1-1.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/uebungsblatt1-2.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/uebungsblatt1-3.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/uebungsblatt1-4.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;h4 id=&#34;übungsblatt-6&#34;&gt;Übungsblatt 6&lt;/h4&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/uebung2_1.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/uebung2_2.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/uebung2_3.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/uebung2_4.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/uebung2_5.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/uebung2_6.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/uebung2_7.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/uebung2_8.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/uebung2_9.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/uebung2_10.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;h4 id=&#34;übungsblatt-7&#34;&gt;Übungsblatt 7&lt;/h4&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung3_1.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung3_2.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung3_3.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung3_4.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung3_5.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung3_6.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung3_7.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung3_8.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung3_9.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung3_10.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung3_11.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung3_12.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung3_13.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung3_14.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;h4 id=&#34;übungsblatt-8&#34;&gt;Übungsblatt 8&lt;/h4&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung4_1.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung4_2.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung4_3.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung4_4.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung4_5.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;  
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung4_6.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung4_7.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung4_8.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;h4 id=&#34;übungsblatt-9&#34;&gt;Übungsblatt 9&lt;/h4&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung5_1.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung5_2.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung5_3.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;    
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung5_4.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung5_5.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung5_6.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung5_7.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung5_8.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung5_9.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;    
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung5_10.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung5_11.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;h4 id=&#34;übungsblatt-10&#34;&gt;Übungsblatt 10&lt;/h4&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung6_1.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung6_2.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung6_3.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;    
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung6_4.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung6_5.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung6_6.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung6_7.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung6_8.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;h4 id=&#34;übungsblatt-11&#34;&gt;Übungsblatt 11&lt;/h4&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung7_1.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung7_2.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung7_3.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;    
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung7_4.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung7_5.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung7_6.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung7_7.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/Uebung7_8.jpg&#34; width=&#34;450px&#34; height=&#34;500px&#34; style=&#34;display: block; margin: auto;&#34;&gt;</description>
+    </item>
+    <item>
+      <title>Vektor- und Matrix-Formeln</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/sla/sla_la/</link>
+      <pubDate>Sat, 01 Mar 2025 18:33:36 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/sla/sla_la/</guid>
+      <description>&lt;h3 id=&#34;vektor-formeln&#34;&gt;Vektor-Formeln&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Skalarprodukt (Dot Product)&lt;/strong&gt;&lt;br&gt;
+Das Skalarprodukt von zwei Vektoren \( \mathbf{u}, \mathbf{v} \in \mathbb{R}^n \) ist definiert als:
+$$
+   \mathbf{u} \cdot \mathbf{v} = \sum_{i=1}^{n} u_i v_i
+   $$&lt;/li&gt;
+&lt;/ol&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/skalarprodukt.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Vektorlänge (Norm)&lt;/strong&gt;&lt;br&gt;
+Die Länge (Norm) eines Vektors \( \mathbf{a} \in \mathbb{R}^n \) ist gegeben durch:
+$$
+   |\mathbf{a}| = \sqrt{a_1^2 + a_2^2 + \dots + a_n^2}
+   $$&lt;/li&gt;
+&lt;/ol&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/vektorlaenge.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Winkel zwischen Vektoren (Angle between Vectors)&lt;/strong&gt;&lt;br&gt;
+Der Winkel \( \theta \) zwischen den Vektoren \( \mathbf{a}, \mathbf{b} \in \mathbb{R}^n \) wird durch die folgende Formel berechnet:
+$$
+   \cos(\theta) = \frac{\mathbf{a} \cdot \mathbf{b}}{|\mathbf{a}| |\mathbf{b}|}
+   $$&lt;/li&gt;
+&lt;/ol&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/winkel.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Orthogonalität (Orthogonality)&lt;/strong&gt;&lt;br&gt;
+Zwei Vektoren \( \mathbf{a} \) und \( \mathbf{b} \) sind orthogonal (rechtwinklig), wenn:
+$$
+   \mathbf{a} \cdot \mathbf{b} = 0
+   $$&lt;/li&gt;
+&lt;/ol&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/orthogonal.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Kreuzprodukt (Cross Product) - In 3D&lt;/strong&gt;&lt;br&gt;
+Das Kreuzprodukt zweier Vektoren $$ \mathbf{a} = (a_1, a_2, a_3) $$ und $$ \mathbf{b} = (b_1, b_2, b_3)$$  ist:
+$$
+   \mathbf{a} \times \mathbf{b} = 
+   \begin{vmatrix}
+   \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\
+   a_1 &amp; a_2 &amp; a_3 \\
+   b_1 &amp; b_2 &amp; b_3
+   \end{vmatrix}
+   = \left( a_2 b_3 - a_3 b_2, \, a_3 b_1 - a_1 b_3, \, a_1 b_2 - a_2 b_1 \right)
+   $$&lt;/li&gt;
+&lt;/ol&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/kreuzprodukt.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;matrix-formeln&#34;&gt;Matrix-Formeln&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Matrixmultiplikation (Matrix Multiplication)&lt;/strong&gt;&lt;br&gt;
+Die Multiplikation zweier Matrizen \( A \in \mathbb{R}^{m \times n} \) und \( B \in \mathbb{R}^{n \times p} \) ergibt:
+$$
+   C = AB, \quad C_{ij} = \sum_{k=1}^{n} A_{ik} B_{kj}
+   $$&lt;/li&gt;
+&lt;/ol&gt;
+  &lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/matrix_multiplikation.jpg&#34; width=&#34;450px&#34; height=&#34;430px&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Transponierte Matrix (Transpose of a Matrix)&lt;/strong&gt;&lt;br&gt;
+Die Transponierte einer Matrix \( A = [a_{ij}] \) ist:
+&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Nuetzlich</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/sla/nuetzlich/</link>
+      <pubDate>Thu, 20 Feb 2025 18:57:06 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/sla/nuetzlich/</guid>
+      <description>&lt;h4 id=&#34;nützliche-website&#34;&gt;Nützliche Website&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Matrizenrechner&lt;/strong&gt;&lt;br&gt;
+&lt;a href=&#34;https://matrixcalc.org/&#34;&gt;https://matrixcalc.org/&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+  </channel>
+</rss>
