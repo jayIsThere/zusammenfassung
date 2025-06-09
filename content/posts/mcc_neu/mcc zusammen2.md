@@ -145,7 +145,7 @@ draft = false
   - sin⁡2(ωt)sin2(ωt)는 사인파처럼 위아래로 진동하지 않음.
   - 대신 다음 공식을 이용하면:
   
-  <img src="/zusammenfassung/images/mcc7.jpg" style="display: block; margin: auto;"> 
+  <img src="/zusammenfassung/images/mcc7.png" style="display: block; margin: auto;"> 
   
   - 즉, 전력 파형은 항상 양수이고, 진동의 주기는 2배, 중앙값 중심의 웅덩이 모양이야.
   - 그래서 세 번째 그래프(전력)는 사인곡선처럼 보이지 않고, "출렁이는 양의 값" 그래프로 보임.
