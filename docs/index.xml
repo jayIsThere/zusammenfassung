@@ -4,7 +4,7 @@
     <title>Jays Zusammenfassung</title>
     <link>https://jayIsThere.github.io/zusammenfassung/</link>
     <description>Recent content on Jays Zusammenfassung</description>
-    <generator>Hugo -- 0.147.5</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 17 Apr 2025 18:13:15 +0200</lastBuildDate>
     <atom:link href="https://jayIsThere.github.io/zusammenfassung/index.xml" rel="self" type="application/rss+xml" />
@@ -186,6 +186,139 @@
 &lt;li&gt;Einheitliche Schnittstellen und Integrationen sind wichtig.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Middleware&lt;/strong&gt;:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Einführung in Mobile and Cloud Computing Stand</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/mcc_neu/mcc-zusammen1/</link>
+      <pubDate>Tue, 15 Apr 2025 18:22:16 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/mcc_neu/mcc-zusammen1/</guid>
+      <description>&lt;h3 id=&#34;1-고정망festnetz-모바일망mobilnetz-클라우드cloud&#34;&gt;1. 고정망(Festnetz), 모바일망(Mobilnetz), 클라우드(Cloud)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;고정망 (Festnetz): 선 연결된 컴퓨터&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;장소 고정&lt;/li&gt;
+&lt;li&gt;속도 빠름&lt;/li&gt;
+&lt;li&gt;안정적&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;모바일망 (Mobilnetz): 와이파이, LTE, 5G&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;무선&lt;/li&gt;
+&lt;li&gt;스마트폰, 노트북처럼 이동 가능&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;클라우드 (Cloud): 인터넷으로 연결된 저장공간과 컴퓨터&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;구글 드라이브, AWS처럼&lt;/li&gt;
+&lt;li&gt;저장/계산 다 해줌&lt;/li&gt;
+&lt;li&gt;단순 연결망 이상 (기능 제공)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;2-무선통신-기초-주파수--구성요소&#34;&gt;2. 무선통신 기초: 주파수 &amp;amp; 구성요소&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Frequenz: 신호가 몇 번 진동하는지 (Hz 단위)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Wi-Fi: 2412 MHz&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Bandbreite	: 얼마나 넓은 범위 쓰는지 (속도에 영향)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Wi-Fi: 20 MHz&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Sender/Empfänger: 송신기/수신기 (안테나 달림)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Messung von Funksignalen</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/mcc_neu/mcc-zusammen2/</link>
+      <pubDate>Tue, 15 Apr 2025 18:22:16 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/mcc_neu/mcc-zusammen2/</guid>
+      <description>&lt;h3 id=&#34;1-측정-장비messgeräte--신호를-보는-두-가지-방식&#34;&gt;1. 측정 장비(Messgeräte) – 신호를 보는 두 가지 방식&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;오실로스코프 (Oszilloskop): 시간에 따라 신호가 어떻게 바뀌는지	&amp;gt; 시간 영역&lt;/li&gt;
+&lt;li&gt;스펙트럼 분석기 (Spektrumanalysator): 신호에 어떤 주파수 성분이 얼마나 있는지	 &amp;gt; 주파수 영역&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;2-신호-세기leistung--크기를-어떻게-표현할까&#34;&gt;2. 신호 세기(Leistung) – 크기를 어떻게 표현할까?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;보통 Watt (W) 또는 Milliwatt (mW) 단위로 표현&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1W = 1000mW&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;하지만 너무 차이가 크면 불편함&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;→ 그래서 로그 단위(dB, dBm, dBW) 사용&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;3-dbm이란&#34;&gt;3. dBm이란?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;dBm은 신호의 세기를 로그로 표현한 단위야.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;기준: 1mW&lt;/li&gt;
+&lt;/ul&gt;
+&lt;img src=&#34;https://jayIsThere.github.io/zusammenfassung/images/mcc2.jpg&#34; style=&#34;display: block; margin: auto;&#34;&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;4-dbw는-뭐야&#34;&gt;4. dBW는 뭐야?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;dBW는 기준이 1W임.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Radio Access Stand</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/mcc_neu/mcc-zusammen3/</link>
+      <pubDate>Tue, 15 Apr 2025 18:22:16 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/mcc_neu/mcc-zusammen3/</guid>
+      <description>&lt;h3 id=&#34;1-디지털-변조란&#34;&gt;1. 디지털 변조란?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;정보를 전송하기 위해 아날로그 전파(사인파)의 특성을 **디지털 신호(0과 1)**에 맞게 바꾸는 것.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;변조 시 바꿀 수 있는 세 가지:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;진폭 (Amplitude)&lt;/li&gt;
+&lt;li&gt;주파수 (Frequenz)&lt;/li&gt;
+&lt;li&gt;위상 (Phase)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;2-symbol과-symbolrate-기초-개념&#34;&gt;2. Symbol과 Symbolrate (기초 개념)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Symbol: 한 번에 전송하는 &amp;ldquo;신호 단위&amp;rdquo;, 꼭 1비트일 필요 없음&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Symbolrate (R&lt;sub&gt;s&lt;/sub&gt;)	: 초당 전송되는 심볼 수 (Symbole/s)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Bitrate (R&lt;sub&gt;b&lt;/sub&gt;): 초당 전송되는 비트 수 (bit/s) = Symbolrate × (bit/심볼 수)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;예: QPSK는 1개 심볼로 2비트를 전송하므로 R&lt;sub&gt;b&lt;/sub&gt; = 2 × R&lt;sub&gt;s&lt;/sub&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;3-modulationsarten-변조-방식-종류&#34;&gt;3. Modulationsarten (변조 방식 종류)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;BPSK&lt;/p&gt;</description>
     </item>
     <item>
       <title>Vorlesung 3: Abgrenzung Festnetz/Cloud zum Mobilnetz</title>
@@ -831,6 +964,45 @@ Feedback über ein Formular oder via E-Mail&lt;/p&gt;</description>
       <link>https://jayIsThere.github.io/zusammenfassung/posts/mcc/mcc_uebung1/</link>
       <pubDate>Tue, 08 Apr 2025 18:23:41 +0200</pubDate>
       <guid>https://jayIsThere.github.io/zusammenfassung/posts/mcc/mcc_uebung1/</guid>
+      <description>&lt;h4 id=&#34;11-use-case-video-streaming-zu-hause&#34;&gt;1.1 Use Case: Video-Streaming zu Hause&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Szenario:&lt;/strong&gt;&lt;br&gt;
+Sie streamen ein Video zu Hause, Audio über Bluetooth-Box, Bild auf dem Tablet.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;a) Topologie-Skizze:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Server (Provider X)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;→ &lt;strong&gt;Internet&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;→ &lt;strong&gt;Router&lt;/strong&gt; (ortsgebunden, Heimnetzwerk)&lt;/li&gt;
+&lt;li&gt;→ &lt;strong&gt;Tablet&lt;/strong&gt; (mobil, zeigt das Video über WLAN)&lt;/li&gt;
+&lt;li&gt;→ &lt;strong&gt;Bluetooth Box&lt;/strong&gt; (mobil, empfängt Audio)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;b) Verbindungsarten:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Festnetz:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Verbindung Server ↔ Internet ↔ Router&lt;/li&gt;
+&lt;li&gt;WLAN (als Heimnetzwerk-Verbindung)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Funk:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bluetooth zwischen Tablet ↔ Box&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;c) Mobile vs. ortsfeste Knoten:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Mobil:&lt;/strong&gt; Tablet, Bluetooth Box&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ortsfest:&lt;/strong&gt; Server, Router&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;d) Vermutete Funktechnologien:&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MCC Übung 1</title>
+      <link>https://jayIsThere.github.io/zusammenfassung/posts/mcc_neu/mcc_uebung1/</link>
+      <pubDate>Tue, 08 Apr 2025 18:23:41 +0200</pubDate>
+      <guid>https://jayIsThere.github.io/zusammenfassung/posts/mcc_neu/mcc_uebung1/</guid>
       <description>&lt;h4 id=&#34;11-use-case-video-streaming-zu-hause&#34;&gt;1.1 Use Case: Video-Streaming zu Hause&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;Szenario:&lt;/strong&gt;&lt;br&gt;
 Sie streamen ein Video zu Hause, Audio über Bluetooth-Box, Bild auf dem Tablet.&lt;/p&gt;
